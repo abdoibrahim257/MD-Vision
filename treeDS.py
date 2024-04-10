@@ -23,7 +23,7 @@ class TreeNode:
 
 
 #write a tree data structure for if-else rule based chat bot
-class Tree:
+class TreeDS:
     def __init__(self, root_question, symptom):
         self.root = TreeNode(root_question)
         self.symptom = symptom
@@ -58,11 +58,15 @@ class Tree:
                 parentQ = nodeDetails.get('Q')
                 yesNode = nodeDetails.get('Yes')
                 noNode = nodeDetails.get('No')
-
                 if yesNode:
-                    self.add_node(parentQ, yesNode.get('Q', ''), "Yes")
-                    self.build_tree(yesNode)
-
+                    self.add_node(parentQ, yesNode['question'].get('Q'), "Yes")
+                    self.build_tree1(yesNode)
+                else:
+                    return
                 if noNode:
-                    self.add_node(parentQ, noNode.get('Q', ''), "No")
-                    self.build_tree(noNode)
+                    self.add_node(parentQ, noNode['question'].get('Q'), "No")
+                    self.build_tree1(noNode)
+                else:
+                    return
+            else:
+                return

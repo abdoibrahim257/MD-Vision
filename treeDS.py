@@ -4,6 +4,7 @@ class TreeNode:
         self.question_string = question_string
         self.children = {}  # dictionary of children nodes key:value are Left:TreeNode and Right: TreeNode
 
+    #setters
     def add_child(self, child, direction): 
         self.children[direction] = child  # child here is a tree node
 
@@ -12,6 +13,16 @@ class TreeNode:
 
     def add_Right(self, RightQuestion):
         self.children['Yes'] = TreeNode(RightQuestion)
+        
+    #getters
+    def get_question(self):
+        return self.question_string
+    
+    def get_yes(self):
+        return self.children.get('Yes', None)
+    
+    def get_no(self):
+        return self.children.get('No', None)
 
     def print_node(self):
         print(f"Current Question: {self.question_string}")

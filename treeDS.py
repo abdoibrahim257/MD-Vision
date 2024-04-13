@@ -1,4 +1,3 @@
-
 class TreeNode:
     def __init__(self, question_string):
         self.question_string = question_string
@@ -32,13 +31,17 @@ class TreeNode:
         print(f"If the answer is No: {self.children.get('No', 'None').question_string}")
         print(f"If the answer is Yes: {self.children.get('Yes', 'None').question_string}")
 
-
-#write a tree data structure for if-else rule based chat bot
+class anotherTreeNode:
+    def __init__(self, root_question, symptom): #not the actual tree but a reference for another tree
+        self.root = TreeNode(root_question)
+        self.symptom = symptom
+        
 class TreeDS:
     def __init__(self, root_question, symptom):
         self.root = TreeNode(root_question)
         self.symptom = symptom
-    
+        
+    #setters    
     def add_node(self, parent_question, newNodeQuestion, direction):
         # find the parent node
         parent_node = self._find_node(parent_question)
@@ -47,6 +50,21 @@ class TreeDS:
             parent_node.add_Left(newNodeQuestion) if direction == 'No' else parent_node.add_Right(newNodeQuestion)
         else:
             print(f"Parent node {parent_question} not found")
+            
+    def add_tree(self, parent_question, treeRoot, Symptom, direction):
+        newTree = anotherTreeNode(treeRoot, Symptom)
+        parent_node = self._find_node(parent_question)
+        if parent_node:
+            parent_node.add_child(newTree, direction)
+        else:
+            print(f"Parent node {parent_question} not found")
+    
+    #getters
+    def get_root(self):
+        return self.root
+    
+    def get_symptom(self):
+        return self.symptom
     
     def _find_node(self, question):
         # search BFS since solution is sparse and tree is not deep
@@ -64,18 +82,27 @@ class TreeDS:
         Recursively build a decision tree from a JSON object.
         """
         if isinstance(jsonObject, dict):
-            nodeDetails = jsonObject.get('question')
+            nodeDetails = jsonObject.get('question', None)
             if nodeDetails:
                 parentQ = nodeDetails.get('Q')
                 yesNode = nodeDetails.get('Yes')
                 noNode = nodeDetails.get('No')
                 if yesNode:
-                    self.add_node(parentQ, yesNode['question'].get('Q'), "Yes")
+                    #get tyoe of next node a question ot a tree
+                    if yesNode.get('question', None):
+                        self.add_node(parentQ, yesNode['question'].get('Q'), "Yes")
+                    else:
+                        self.add_tree(parentQ, yesNode['tree'].get('Q'), yesNode['tree'].get('symptom'), "Yes")
+                        return
                     self.build_tree1(yesNode)
                 else:
                     return
                 if noNode:
-                    self.add_node(parentQ, noNode['question'].get('Q'), "No")
+                    if noNode.get('question', None):
+                        self.add_node(parentQ, noNode['question'].get('Q'), "No")
+                    else:
+                        self.add_tree(parentQ, noNode['tree'].get('Q'), noNode['tree'].get('symptom'), "No")
+                        return
                     self.build_tree1(noNode)
                 else:
                     return

@@ -8,16 +8,19 @@
                     "question": {
                         "Q": "A tendency to be overweight runs in some families, usually as a result of learned eating habits. Talk to your doctor about losing weight.",
                         "Yes": {},
-                        "No": {}
+                        "No": {},
+                        "diagnosis": ["A HEALTHY WEIGHT"]
                     }
                 },
                 "No": {
                     "question": {
                         "Q": "You are probably overweight because you consume more calories than your body burns.",
                         "Yes": {},
-                        "No": {}
+                        "No": {},
+                        "diagnosis": ["A HEALTHY WEIGHT"]
                     }
-                }
+                },
+                "diagnosis": []
             }
         },
         "No": {
@@ -27,7 +30,8 @@
                     "question": {
                         "Q": "Weight gain after quitting smoking averages about 5 to 10 pounds and usually results from a combination of changes in metabolism and overeating to compensate for not smoking.",
                         "Yes": {},
-                        "No": {}
+                        "No": {},
+                        "diagnosis": ["LOSING WEGIGHT SENISBLY"]
                     }
                 },
                 "No": {
@@ -40,7 +44,8 @@
                                     "question": {
                                         "Q": "Many women gain too much weight during pregnancy and have difficulty losing it afterward.",
                                         "Yes": {},
-                                        "No": {}
+                                        "No": {},
+                                        "diagnosis": ["LOSING WEGIGHT SENISBLY"]
                                     }
                                 },
                                 "No": {
@@ -54,7 +59,8 @@
                                                         "symptom": "DEPRESSION"
                                                     }
                                                 },
-                                                "No": {}
+                                                "No": {},
+                                                "diagnosis": ["DEPRESSION"]
                                             }
                                         },
                                         "No": {
@@ -64,7 +70,8 @@
                                                     "question": {
                                                         "Q": "You probably burned more calories in your Frevious job than you do now. Make an effort to eat less and exercise more.",
                                                         "Yes": {},
-                                                        "No": {}
+                                                        "No": {},
+                                                        "diagnosis": ["LOSING WEGIGHT SENISBLY", "HEALTH BENEFITS OF PHYSICAL ACTIVITY"]
                                                     }
                                                 },
                                                 "No": {
@@ -74,7 +81,8 @@
                                                             "question": {
                                                                 "Q": "See your doctor. You may have an underactive thyroid gland.",
                                                                 "Yes": {},
-                                                                "No": {}
+                                                                "No": {},
+                                                                "diagnosis": ["HYPOTHYROIDISM"]
                                                             }
                                                         },
                                                         "No": {
@@ -84,7 +92,8 @@
                                                                     "question": {
                                                                         "Q": "Talk to your doctor. Oral corticosteroid medications can cause weight gain.",
                                                                         "Yes": {},
-                                                                        "No": {}
+                                                                        "No": {},
+                                                                        "diagnosis": []
                                                                     }
                                                                 },
                                                                 "No": {
@@ -94,26 +103,34 @@
                                                                             "question": {
                                                                                 "Q": "In many cases, weight gain after age 40 results from getting less exercise. Try to stay active.",
                                                                                 "Yes": {},
-                                                                                "No": {}
+                                                                                "No": {},
+                                                                                "diagnosis": ["HEALTH BENEFITS OF PHYSICAL ACTIVITY"]
                                                                             }
                                                                         },
                                                                         "No": {
                                                                             "question": {
                                                                                 "Q": "See your doctor if you are unable to make a diagnosis from this chat. Your excess weight probably results from eating too much and exercising too little. Ask your doctor to recommend a diet and exercise program that is appropriate for you.",
                                                                                 "Yes": {},
-                                                                                "No": {}
+                                                                                "No": {},
+                                                                                "diagnosis": []
                                                                             }
-                                                                        }
+                                                                        },
+                                                                        "diagnosis": []
                                                                     }
-                                                                }
+                                                                },
+                                                                "diagnosis": []
                                                             }
-                                                        }
+                                                        },
+                                                        "diagnosis": []
                                                     }
-                                                }
+                                                },
+                                                "diagnosis": []
                                             }
-                                        }
+                                        },
+                                        "diagnosis": []
                                     }
-                                }
+                                },
+                                "diagnosis": []
                             }
                         },
                         "No": {
@@ -127,7 +144,8 @@
                                                 "symptom": "DEPRESSION"
                                             }
                                         },
-                                        "No": {}
+                                        "No": {},
+                                        "diagnosis": ["DEPRESSION"]
                                     }
                                 },
                                 "No": {
@@ -137,7 +155,8 @@
                                             "question": {
                                                 "Q": "You probably burned more calories in your Frevious job than you do now. Make an effort to eat less and exercise more.",
                                                 "Yes": {},
-                                                "No": {}
+                                                "No": {},
+                                                "diagnosis": ["LOSING WEGIGHT SENISBLY", "HEALTH BENEFITS OF PHYSICAL ACTIVITY"]
                                             }
                                         },
                                         "No": {
@@ -147,7 +166,8 @@
                                                     "question": {
                                                         "Q": "See your doctor. You may have an underactive thyroid gland.",
                                                         "Yes": {},
-                                                        "No": {}
+                                                        "No": {},
+                                                        "diagnosis": ["HYPOTHYROIDISM"]
                                                     }
                                                 },
                                                 "No": {
@@ -157,7 +177,8 @@
                                                             "question": {
                                                                 "Q": "Talk to your doctor. Oral corticosteroid medications can cause weight gain.",
                                                                 "Yes": {},
-                                                                "No": {}
+                                                                "No": {},
+                                                                "diagnosis": []
                                                             }
                                                         },
                                                         "No": {
@@ -167,29 +188,39 @@
                                                                     "question": {
                                                                         "Q": "In many cases, weight gain after age 40 results from getting less exercise. Try to stay active.",
                                                                         "Yes": {},
-                                                                        "No": {}
+                                                                        "No": {},
+                                                                        "diagnosis": ["HEALTH BENEFITS OF PHYSICAL ACTIVITY"]
                                                                     }
                                                                 },
                                                                 "No": {
                                                                     "question": {
                                                                         "Q": "See your doctor if you are unable to make a diagnosis from this chat. Your excess weight probably results from eating too much and exercising too little. Ask your doctor to recommend a diet and exercise program that is appropriate for you.",
                                                                         "Yes": {},
-                                                                        "No": {}
+                                                                        "No": {},
+                                                                        "diagnosis": []
                                                                     }
-                                                                }
+                                                                },
+                                                                "diagnosis": []
                                                             }
-                                                        }
+                                                        },
+                                                        "diagnosis": []
                                                     }
-                                                }
+                                                },
+                                                "diagnosis": []
                                             }
-                                        }
+                                        },
+                                        "diagnosis": []
                                     }
-                                }
+                                },
+                                "diagnosis": []
                             }
-                        }
+                        },
+                        "diagnosis": []
                     }
-                }
+                },
+                "diagnosis": []
             }
-        }
+        },
+        "diagnosis": []
     }
 }

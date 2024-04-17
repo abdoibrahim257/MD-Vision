@@ -1,0 +1,14 @@
+{
+    "question": {
+        "Q": "",
+        "Yes": {},
+        "No": {},
+        "diagnosis": []
+    },
+    
+    "age-group": "",
+
+    "tree": {
+        "symptom": ""
+    }
+}

@@ -13,7 +13,7 @@
                 },
                 "No": {
                     "question" : {
-                        "Q": "Do you have one or more of the following symptoms? \n• Unusually frequent urination \n• Increased thirst \n• Unexplained fatigue \n• Itching around the genitals \n• Blurred vision",
+                        "Q": "Do you have one or more of the following symptoms? \n\u2022 Unusually frequent urination \n\u2022 Increased thirst \n\u2022 Unexplained fatigue \n\u2022 Itching around the genitals \n\u2022 Blurred vision",
                         "Yes": {
                             "question": {
                                 "Q": "See a doctor immediately You may have DIABETES.",
@@ -23,7 +23,7 @@
                         },
                         "No": {
                             "question" : {
-                                "Q": "Do you have two or more of the following symptoms? \n• Excessive sweating \n• Weakness or trembling \n• Unexplained fatigue \n• Bulging eyes",
+                                "Q": "Do you have two or more of the following symptoms? \n\u2022 Excessive sweating \n\u2022 Weakness or trembling \n\u2022 Unexplained fatigue \n\u2022 Bulging eyes",
                                 "Yes": {
                                     "question": {
                                         "Q": "See your doctor. You may have an OVERACTIVE THYROID GLAND.",
@@ -88,7 +88,7 @@
                                 },
                                 "No": {
                                     "question": {
-                                        "Q" : "Do you have two or more of the following symptoms?\n• Sweating at night\n• Recurring fever\n• Unexplained fatigue\n• Feeling generally ill\n• Persistent cough\n• Coughing up blood-ting ed mucus",
+                                        "Q" : "Do you have two or more of the following symptoms?\n\u2022 Sweating at night\n\u2022 Recurring fever\n\u2022 Unexplained fatigue\n\u2022 Feeling generally ill\n\u2022 Persistent cough\n\u2022 Coughing up blood-ting ed mucus",
                                         "Yes": {
                                             "question": {
                                                 "Q" : "See a doctor immediately. You may have a serious chronic infection, such as TUBERCULOSIS or HIV. See HIV INFECTION AND AIDS. Or you could have a type of cancer such as HODGKIN'S DISEASE.",

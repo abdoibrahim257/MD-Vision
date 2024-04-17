@@ -51,8 +51,11 @@ class TreeDS:
         else:
             print(f"Parent node {parent_question} not found")
             
+    #here in this function we need to link the warehouse we just did in the other file
+    #another note that we dont need the TreeRoot for anython since the warehouse exists
+    #we just need to get the whole tree from the warehouse
     def add_tree(self, parent_question, treeRoot, Symptom, direction):
-        newTree = anotherTreeNode(treeRoot, Symptom)
+        newTree = anotherTreeNode(treeRoot, Symptom) #need to get the whole other tree not create a new one 
         parent_node = self._find_node(parent_question)
         if parent_node:
             parent_node.add_child(newTree, direction)
@@ -87,6 +90,7 @@ class TreeDS:
                 parentQ = nodeDetails.get('Q')
                 yesNode = nodeDetails.get('Yes')
                 noNode = nodeDetails.get('No')
+                #mmkn ba3d ma n5las build lel trees n3ml el diagnosis w el care 3lashan el chat yb2a more lively
                 if yesNode:
                     #get tyoe of next node a question ot a tree
                     if yesNode.get('question', None):

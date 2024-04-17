@@ -75,7 +75,7 @@
 - [ ] Fainting
 - [ ] Fatigue
 - [ ] Feeling faint and fainting
-- [x] Feeling generally ill
+- [x] ~~Feeling generally ill~~
 - [ ] Feelings, disturbing
 - [ ] Fever
 - [ ] see also Fever in children
@@ -142,7 +142,7 @@
 - [ ] Nose, runny
 - [ ] Numbness or tingling
 - [ ] Obesity
-- [x] Overweight
+- [x] ~~Overweight~~
 - [ ] Pain, abdominal
 - [ ] see also Abdominal pain in children
 - [ ] see also Recurring abdominal pain
@@ -222,7 +222,7 @@
 - [ ] Toothache
 - [ ] Trembling
 - [ ] Twitching and trembling
-- [x] Unexplained weight loss
+- [x] ~~Unexplained weight loss~~
 - [ ] Unhappiness
 - [ ] Unusual behavior
 - [ ] Urination, abnormally frequent

@@ -1,0 +1,516 @@
+{
+    "question": {
+        "Q": "Do you often have difficulty falling asleep at night?",
+        "Yes": {
+            "question": {
+                "Q": "Have you been feeling tense during the day?",
+                "Yes": {
+                    "question": {
+                        "Q": "You may be experiencing too much stress.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "DO you wake up during the night or very early in the morning and find it difficult to fall asleep again?",
+                        "Yes": {
+                            "question": {
+                                "Q": "When you wake up, do you often brood about your problems or feel worthless?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "You may be experiencing depression. Would you like to review symptoms commonly associated with depression?",
+                                        "Yes": {
+                                            "tree": {
+                                                "symptom": "depression"
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "You may be experiencing anxiety. Would you like to review symptoms commonly associated with anxiety?",
+                                                "Yes": {
+                                                    "tree": {
+                                                        "symptom": "anxiety"
+                                                    }
+                                                },
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you often wake up during the night feeling short of breath?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See a doctor immediately. Some lung disorders or heart disorders such as CONGESTIVE HEART FAILURE can make you short of breath when you lie down.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["CONGESTIVE HEART FAILURE"]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Are you over 60?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Some people find it harder to sleep as they get older.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Are you pregnant?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Difficulty sleeping is common during pregnancy, especially in the weeks before delivery.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Have you had more coffee, tea, cola, or other caffeine-containing beverages than usual?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Caffeine is a stimulant that can cause sleeplessness. Avoid or reduce your intake of caffeine, especially in the late afternoon and evening.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Did you eat a lot late in the day, or drink a lot Of alcohol?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Try eating a lighter meal earlier in the evening or reduce your alcohol intake to a moderate level.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Have you recently stopped taking or reduced the dose of a tranquilizer or other sleep medication you have been taking?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "Talk to your doctor. If you have been using tranquilizers or sleep medication, suddenly stopping or reducing the dose can interfere with sleep and cause other problems. Your doctor can help you gradually and safely reduce the dose.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Do you get little or no exercise on most days?",
+                                                                                        "Yes": {
+                                                                                            "question": {
+                                                                                                "Q": "You may not be tired enough to fall asleep easily. Try exercising during the day, but not right before bedtime.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and the self-help measures do not work. \nImproving your sleep\n If you have difficulty sleeping for any reason, try the following self-help measures: \n\u2022 Cut back on caffeinated beverages and alcohol or eliminate them completely. \n\u2022 Avoid eating heavy meals just before going to bed. \n\u2022 Drink a glass of warm milk belote going to bed. Milk contains an essential amino acid called tryptophan, which acts as a natural sleep inducer. \n\u2022 Take a warm bath to help you relax. \n\u2022 Do not use your bed for any activities Other than sleeping \n\u2022 Make sure the bedroom is not too warm and that your mattress is comfortable.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you often wake up during the night feeling short of breath?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See a doctor immediately. Some lung disorders or heart disorders such as CONGESTIVE HEART FAILURE can make you short of breath when you lie down.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["CONGESTIVE HEART FAILURE"]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you over 60?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Some people find it harder to sleep as they get older.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Are you pregnant?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Difficulty sleeping is common during pregnancy, especially in the weeks before delivery.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Have you had more coffee, tea, cola, or other caffeine-containing beverages than usual?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Caffeine is a stimulant that can cause sleeplessness. Avoid or reduce your intake of caffeine, especially in the late afternoon and evening.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Did you eat a lot late in the day, or drink a lot Of alcohol?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Try eating a lighter meal earlier in the evening or reduce your alcohol intake to a moderate level.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Have you recently stopped taking or reduced the dose of a tranquilizer or other sleep medication you have been taking?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Talk to your doctor. If you have been using tranquilizers or sleep medication, suddenly stopping or reducing the dose can interfere with sleep and cause other problems. Your doctor can help you gradually and safely reduce the dose.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Do you get little or no exercise on most days?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "You may not be tired enough to fall asleep easily. Try exercising during the day, but not right before bedtime.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and the self-help measures do not work. \nImproving your sleep\n If you have difficulty sleeping for any reason, try the following self-help measures: \n\u2022 Cut back on caffeinated beverages and alcohol or eliminate them completely. \n\u2022 Avoid eating heavy meals just before going to bed. \n\u2022 Drink a glass of warm milk belote going to bed. Milk contains an essential amino acid called tryptophan, which acts as a natural sleep inducer. \n\u2022 Take a warm bath to help you relax. \n\u2022 Do not use your bed for any activities Other than sleeping \n\u2022 Make sure the bedroom is not too warm and that your mattress is comfortable.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "DO you wake up during the night or very early in the morning and find it difficult to fall asleep again?",
+                "Yes": {
+                    "question": {
+                        "Q": "When you wake up, do you often brood about your problems or feel worthless?",
+                        "Yes": {
+                            "question": {
+                                "Q": "You may be experiencing depression. Would you like to review symptoms commonly associated with depression?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "depression"
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "You may be experiencing anxiety. Would you like to review symptoms commonly associated with anxiety?",
+                                        "Yes": {
+                                            "tree": {
+                                                "symptom": "anxiety"
+                                            }
+                                        },
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you often wake up during the night feeling short of breath?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See a doctor immediately. Some lung disorders or heart disorders such as CONGESTIVE HEART FAILURE can make you short of breath when you lie down.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["CONGESTIVE HEART FAILURE"]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you over 60?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Some people find it harder to sleep as they get older.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Are you pregnant?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Difficulty sleeping is common during pregnancy, especially in the weeks before delivery.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Have you had more coffee, tea, cola, or other caffeine-containing beverages than usual?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Caffeine is a stimulant that can cause sleeplessness. Avoid or reduce your intake of caffeine, especially in the late afternoon and evening.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Did you eat a lot late in the day, or drink a lot Of alcohol?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Try eating a lighter meal earlier in the evening or reduce your alcohol intake to a moderate level.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Have you recently stopped taking or reduced the dose of a tranquilizer or other sleep medication you have been taking?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Talk to your doctor. If you have been using tranquilizers or sleep medication, suddenly stopping or reducing the dose can interfere with sleep and cause other problems. Your doctor can help you gradually and safely reduce the dose.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Do you get little or no exercise on most days?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "You may not be tired enough to fall asleep easily. Try exercising during the day, but not right before bedtime.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and the self-help measures do not work. \nImproving your sleep\n If you have difficulty sleeping for any reason, try the following self-help measures: \n\u2022 Cut back on caffeinated beverages and alcohol or eliminate them completely. \n\u2022 Avoid eating heavy meals just before going to bed. \n\u2022 Drink a glass of warm milk belote going to bed. Milk contains an essential amino acid called tryptophan, which acts as a natural sleep inducer. \n\u2022 Take a warm bath to help you relax. \n\u2022 Do not use your bed for any activities Other than sleeping \n\u2022 Make sure the bedroom is not too warm and that your mattress is comfortable.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do you often wake up during the night feeling short of breath?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See a doctor immediately. Some lung disorders or heart disorders such as CONGESTIVE HEART FAILURE can make you short of breath when you lie down.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CONGESTIVE HEART FAILURE"]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Are you over 60?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Some people find it harder to sleep as they get older.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you pregnant?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Difficulty sleeping is common during pregnancy, especially in the weeks before delivery.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Have you had more coffee, tea, cola, or other caffeine-containing beverages than usual?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Caffeine is a stimulant that can cause sleeplessness. Avoid or reduce your intake of caffeine, especially in the late afternoon and evening.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Did you eat a lot late in the day, or drink a lot Of alcohol?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Try eating a lighter meal earlier in the evening or reduce your alcohol intake to a moderate level.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Have you recently stopped taking or reduced the dose of a tranquilizer or other sleep medication you have been taking?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Talk to your doctor. If you have been using tranquilizers or sleep medication, suddenly stopping or reducing the dose can interfere with sleep and cause other problems. Your doctor can help you gradually and safely reduce the dose.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you get little or no exercise on most days?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "You may not be tired enough to fall asleep easily. Try exercising during the day, but not right before bedtime.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and the self-help measures do not work. \nImproving your sleep\n If you have difficulty sleeping for any reason, try the following self-help measures: \n\u2022 Cut back on caffeinated beverages and alcohol or eliminate them completely. \n\u2022 Avoid eating heavy meals just before going to bed. \n\u2022 Drink a glass of warm milk belote going to bed. Milk contains an essential amino acid called tryptophan, which acts as a natural sleep inducer. \n\u2022 Take a warm bath to help you relax. \n\u2022 Do not use your bed for any activities Other than sleeping \n\u2022 Make sure the bedroom is not too warm and that your mattress is comfortable.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+
+    "age-group": ""
+}

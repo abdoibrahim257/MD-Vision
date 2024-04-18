@@ -1,8 +1,8 @@
 - [x] Feeling generally ill
 - [x] Unexplained weight loss
 - [x] Overweight
-- [ ] Difficulty sleeping
-- [ ] Fever
+- [x] Difficulty sleeping
+- [x] Fever
 - [ ] Excessive sweating
 - [ ] Swellings under the skin
 - [ ] Itching without a rash

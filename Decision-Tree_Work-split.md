@@ -1,7 +1,7 @@
 - [x] Feeling generally ill
 - [x] Unexplained weight loss
 - [x] Overweight
-- [ ] Difficulty sleeping
+- [x] Difficulty sleeping
 - [ ] Fever
 - [ ] Excessive sweating
 - [ ] Swellings under the skin

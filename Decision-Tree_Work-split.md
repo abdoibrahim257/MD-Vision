@@ -2,7 +2,7 @@
 - [x] Unexplained weight loss
 - [x] Overweight
 - [x] Difficulty sleeping
-- [ ] Fever
+- [x] Fever
 - [ ] Excessive sweating
 - [ ] Swellings under the skin
 - [ ] Itching without a rash

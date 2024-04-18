@@ -33,10 +33,12 @@
 - [ ] Noises in the ear
 - [ ] Hearing loss
 - [ ] Runny nose
----------------------------------------------------------------------------------------
-- [ ] Sore throat
-- [ ] Hoarseness or loss of voice
-- [ ] Coughing
+
+---
+
+- [x] Sore throat
+- [x] Hoarseness or loss of voice
+- [x] Coughing
 - [ ] Coughing up blood
 - [ ] Wheezing
 - [ ] Difficulty breathing

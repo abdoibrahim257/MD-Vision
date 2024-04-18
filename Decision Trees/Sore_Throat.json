@@ -1,0 +1,171 @@
+{
+  "question": {
+    "Q": "Is your temperature 100F or higher?",
+    "Yes": {
+      "question": {
+        "Q": "Do you have two or more Of the following symptoms? • Headache • Cough • Aching joints or bones",
+        "Yes": {
+          "question": {
+            "Q": "Talk to your doctor. You probably have a viral infection such as INFLUENZA",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["INFLUENZA"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you have swelling or tenderness in your neck?",
+            "Yes": {
+              "question": {
+                "Q": "Is the swollen or tender area in front of your ear or at the angle of the jaw?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have MUMPS",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["MUMPS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See your doctor. You probably have STREP THROAT, TONSILLITIS, or PHARYNGITIS. If your symptoms persist for more than a week, you may have INFECTIOUS MONONUCLEOSIS.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["STREP THROAT", "TONSILLITIS", "PHARYNGITIS"]
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do you have a stuffy or runny nose, or have you been sneezing?",
+                "Yes": {
+                  "question": {
+                    "Q": "You probably have a COLD.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["COLD"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you smoke or drinka lot of alcohol, or were you in a smoky place (such as a bar) just before your throat got sore?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Call your doctor. Smoking. inhaling secondhand smoke, and drinking alcohol can all cause throat inflammation.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["PHARYNGITIS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Are you hoarse, or have you lost your voice?",
+                        "Yes": {
+                          "tree": {
+                            "symptom": "HOARSENESS OR LOSS OF VOICE"
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "See your doctor if you are unable to make a diagnosis from this chart and your sore throat persists for more than 2 days.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Do you have swelling or tenderness in your neck?",
+        "Yes": {
+          "question": {
+            "Q": "Is the swollen or tender area in front of your ear or at the angle of the jaw?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have MUMPS",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["MUMPS"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "See your doctor. You probably have STREP THROAT, TONSILLITIS, or PHARYNGITIS. If your symptoms persist for more than a week, you may have INFECTIOUS MONONUCLEOSIS.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["STREP THROAT", "TONSILLITIS", "PHARYNGITIS"]
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you have a stuffy or runny nose, or have you been sneezing?",
+            "Yes": {
+              "question": {
+                "Q": "You probably have a COLD.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["COLD"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do you smoke or drinka lot of alcohol, or were you in a smoky place (such as a bar) just before your throat got sore?",
+                "Yes": {
+                  "question": {
+                    "Q": "Call your doctor. Smoking. inhaling secondhand smoke, and drinking alcohol can all cause throat inflammation.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["PHARYNGITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Are you hoarse, or have you lost your voice?",
+                    "Yes": {
+                      "tree": {
+                        "symptom": "HOARSENESS OR LOSS OF VOICE"
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your sore throat persists for more than 2 days.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  },
+  "age-group": ""
+}

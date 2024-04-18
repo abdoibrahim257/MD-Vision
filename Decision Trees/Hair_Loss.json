@@ -1,0 +1,23 @@
+{
+  "question": {
+    "Q": "Has your hair become generally thin?",
+    "Yes": {
+      "question": {
+        "Q": "Did the thinning occur 2 to 3 months after a fever?",
+        "Yes": {
+          "question": {
+            "Q": "Call your doctor if you are concerned about your hair loss. Temporary hair loss sometimes occurs a few months after a fever. Your hair should return to normal within a few months.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {},
+        "diagnosis": []
+      }
+    },
+    "No": {},
+    "diagnosis": []
+  },
+  "age-group": ""
+}

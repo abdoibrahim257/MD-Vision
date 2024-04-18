@@ -1,4 +1,4 @@
-- [ ] Abdomen, swollen
+- [x] ~~Abdomen, swollen~~
 - [ ] Abdominal pain
 - [ ] see also Abdominal pain in children
 - [ ] see also Abdominal pain, recurring

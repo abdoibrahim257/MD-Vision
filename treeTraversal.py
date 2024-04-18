@@ -47,7 +47,7 @@ def traverseTree(tree, warehouse):
             
 warehouse = treeWarehouse()            
            
-with open('./unexplained_weight_loss.json') as f:
+with open('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/unexplained_weight_loss.json') as f:
     data = json.load(f)
 unexpectedWeightLoss = TreeDS(data['question'].get('Q'), "Unexpected Weight Loss")
 unexpectedWeightLoss.build_tree1(data)
@@ -55,6 +55,3 @@ unexpectedWeightLoss.build_tree1(data)
 warehouse.addTree(unexpectedWeightLoss)
 
 traverseTree(unexpectedWeightLoss, warehouse)
-
-
-

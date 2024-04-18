@@ -72,6 +72,8 @@ class TreeDS:
     def _find_node(self, question):
         # search BFS since solution is sparse and tree is not deep
         queue = [self.root]
+        #lazem ne check lw el node el maskenha de another tree node wla node question
+        # w dymn 3ndna el question node how el parent ely bndawra 3aleh
         while queue:
             node = queue.pop(0)
             if node.question_string == question:

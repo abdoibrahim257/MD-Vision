@@ -1,11 +1,10 @@
 - [x] ~~Abdomen, swollen~~
-- [ ] Abdominal pain
+- [x] ~~Abdominal pain~~
 - [ ] see also Abdominal pain in children
 - [ ] see also Abdominal pain, recurring
 - [ ] Abnormal hair growth in women
-- [ ] Abnormal-looking bowel movements
-- [ ] Abnormal-looking stools
-- [ ] Abnormal-looking urine
+- [x] ~~Abnormal-looking stools~~
+- [x] ~~Abnormal-looking urine~~
 - [ ] Abnormal vaginal discharge
 - [ ] Abnormally frequent urination
 - [ ] Absentmindedness

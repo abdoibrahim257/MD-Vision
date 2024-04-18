@@ -1,248 +1,71 @@
-- [x] ~~Abdomen, swollen~~
-- [x] ~~Abdominal pain~~
-- [ ] see also Abdominal pain in children
-- [ ] see also Abdominal pain, recurring
-- [ ] Abnormal hair growth in women
-- [x] ~~Abnormal-looking stools~~
-- [x] ~~Abnormal-looking urine~~
-- [ ] Abnormal vaginal discharge
-- [ ] Abnormally frequent urination
-- [ ] Absentmindedness
-- [ ] Absent periods
-- [ ] Ankles, painful
-- [ ] Ankles, swollen
-- [ ] Anxiety
-- [ ] Arm, painful
-- [ ] Backache
-- [ ] Bad breath
-- [ ] Balance, loss of
-- [ ] Baldness
-- [ ] Behavior, unusual
-- [ ] Belching
-- [ ] Bladder control, lack of
-- [ ] see also Lack of bladder control in older people
-- [ ] Bleeding, vaginal
-- [ ] Blood, coughing up
-- [ ] Blood in bowel movements
-- [ ] Blood in stools
-- [ ] Blood in urine
-- [ ] Blurred vision
-- [ ] Bowel movements, abnormal-looking
-- [ ] Bowel movements, hard
-- [ ] Bowel movements, loose
-- [ ] Breast, painful
-- [ ] Breast lumps
-- [ ] Breast problems in new mothers
-- [ ] Breath, bad
-- [ ] Breathing difficulty
-- [ ] Chest pain
-- [ ] Cloudy urine
-- [ ] Confusion
-- [ ] see also Confusion in older people
-- [ ] Constipation
-- [ ] Coughing
-- [ ] Coughing in children
-- [ ] Coughing up blood
-- [ ] Cramp
-- [ ] Crying in infants
-- [ ] Deafness
-- [ ] Depression
-- [ ] Diarrhea
-- [ ] Diarrhea in infants
-- [ ] Difficulty breathing
+- [x] Feeling generally ill
+- [x] Unexplained weight loss
+- [x] Overweight
 - [ ] Difficulty sleeping
-- [ ] see also Waking at night in children
-- [ ] Difficulty speaking
-- [ ] Difficulty swallowing
-- [ ] Discharge, abnormal vaginal
-- [ ] Disturbed or impaired vision
-- [ ] Disturbing thoughts or feelings
-- [ ] Dizziness
-- [ ] Double vision
-- [ ] Ear, noises in the
-- [ ] Earache
-- [ ] Edginess
-- [ ] Energy, lack of
-- [ ] Enlarged testicles
-- [ ] Excess weight
-- [ ] Excessive sweating
-- [ ] Eye, painful
-- [ ] Eye problems
-- [ ] Face, painful
-- [ ] Facial hair in women
-- [ ] Facial skin problems
-- [ ] Fainting
-- [ ] Fatigue
-- [ ] Feeling faint and fainting
-- [x] ~~Feeling generally ill~~
-- [ ] Feelings, disturbing
 - [ ] Fever
-- [ ] see also Fever in children
-- [ ] see also Fever in young children
-- [ ] Fever with rash
-- [ ] Flashing lights, seeing
-- [ ] Flatulence
-- [ ] Flushing
-- [ ] Foot problems
-- [ ] Forgetfulness
-- [ ] Frequent urination, abnormally
-- [ ] Gas and belching
-- [ ] General illness
-- [ ] General skin problems
-- [ ] Hair, facial, in women
-- [ ] Hair growth, abnormal, in women
-- [ ] Hair loss
-- [ ] Hallucinations
-- [ ] Hand, painful
-- [ ] Headache
-- [ ] Hearing loss
-- [ ] Hearing things
-- [ ] see also Noises in the ear
-- [ ] Heart fluttering
-- [ ] Heavy periods
-- [ ] Hoarseness or loss of voice
-- [ ] Impaired memory
-- [ ] Impaired or disturbed vision
-- [ ] Incontinence
-- [ ] see also Lack of bladder control in older people
-- [ ] Infertility
-- [ ] Insomnia
-- [ ] Intercourse, painful, in men; in women
-- [ ] Irregular vaginal bleeding
-- [ ] Irritation, vaginal
-- [ ] Itching in children
-- [ ] Itching without a rash
-- [ ] Itchy spots and rashes
-- [ ] Knee, painful
-- [ ] see also Limping in children
-- [ ] Lack of bladder control
-- [ ] see also Lack of bladder control in older people
-- [ ] Leakage of urine; in older people
-- [ ] Leg, painful
-- [ ] see also Limping in children
-- [ ] Limping in children
-- [ ] ------------------------------------------------------------------------------------------------------------
-- [ ] Loss of balance
-- [ ] Loss of hair
-- [ ] Loss of hearing
-- [ ] Loss of voice
-- [ ] Loss of weight
-- [ ] Lower abdominal pain in women
-- [ ] Lumps, breast
-- [ ] Lumps and spots, raised
-- [ ] Memory, impaired
-- [ ] Mouth, sore
-- [ ] Neck, painful
-- [ ] Neck, stiff
-- [ ] Nervousness
-- [ ] Nightmares
-- [ ] Noises in the ear
-- [ ] see also Hallucinations
-- [ ] Nose, runny
-- [ ] Numbness or tingling
-- [ ] Obesity
-- [x] ~~Overweight~~
-- [ ] Pain, abdominal
-- [ ] see also Abdominal pain in children
-- [ ] see also Recurring abdominal pain
-- [ ] Pain, ankle
-- [ ] Pain, arm
-- [ ] Pain, back
-- [ ] Pain, breast
-- [ ] Pain, chest
-- [ ] Pain, ear
-- [ ] Pain, eye
-- [ ] Pain, face
-- [ ] Pain, hand
-- [ ] Pain, knee
-- [ ] see also Limping in children
-- [ ] Pain, leg
-- [ ] see also Limping in children
-- [ ] Pain, neck
-- [ ] Pain, pelvic, in women
-- [ ] Pain, shoulder
-- [ ] Pain, testicle
-- [ ] Pain, tooth
-- [ ] Painful intercourse in men; in women
-- [ ] Painful periods
-- [ ] Painful urination
-- [ ] Palpitations
-- [ ] Pelvic pain in women
-- [ ] Periods, absent
-- [ ] Periods, heavy
-- [ ] Periods, painful
-- [ ] Perspiration, excessive
-- [ ] Raised spots and lumps
-- [ ] Rashes
-- [ ] Rash with fever
-- [ ] Recurring abdominal pain
-- [ ] Recurring vomiting
-- [ ] Ringing in the ear
-- [ ] Runny nose
-- [ ] Sadness
-- [ ] Seeing spots
-- [ ] Seeing things
-- [ ] Sexual intercourse, painful, in men; in women
-- [ ] Shoulder, painful
-- [ ] Sight, disturbed or impaired
-- [ ] Skin problems, facial
-- [ ] Skin problems, general
-- [ ] Skin problems in young children
-- [ ] Skin, swellings under the
-- [ ] Sleeping difficulty
-- [ ] see also Waking at night in children
-- [ ] Slow weight gain in young children
-- [ ] Sore mouth or tongue
-- [ ] Sore throat
-- [ ] Speaking difficulty
-- [ ] Spots and lumps, raised
-- [ ] Sterility
-- [ ] Stiff neck
-- [ ] Stomachache
-- [ ] Stools, abnormal-lookin
-- [ ] Stools, hard
-- [ ] Stools, loose
-- [ ] Swallowing difficulty
-- [ ] Sweating, excessive
-- [ ] Swellings in children
+- [ ] Excessive sweating
 - [ ] Swellings under the skin
-- [ ] Swollen abdomen
-- [ ] Swollen ankles
-- [ ] Tension
-- [ ] Testicles, enlarged
-- [ ] Testicles, painful
-- [ ] Thoughts, disturbing
-- [ ] Throat, sore
-- [ ] Tics
-- [ ] Tingling
-- [ ] Tiredness
-- [ ] Toe problems
-- [ ] Tongue, sore
-- [ ] Toothache
-- [ ] Trembling
+- [ ] Itching without a rash
+- [ ] Feeling faint and fainting
+- [ ] Dizziness
+- [ ] Headache
+- [ ] Numbness or tingling
 - [ ] Twitching and trembling
-- [x] ~~Unexplained weight loss~~
-- [ ] Unhappiness
+- [ ] Pain in the face
+- [ ] Confusion
+- [ ] Impaired memory
+- [ ] Difficulty speaking
+- [ ] Disturbing thought or feelings
 - [ ] Unusual behavior
-- [ ] Urination, abnormally frequent
-- [ ] Urination, painful
-- [ ] Urine, abnormal-looking
-- [ ] Urine, cloudy
-- [ ] Urine, leakage of; in older people
-- [ ] Vaginal bleeding, irregular
-- [ ] Vaginal discharge, abnormal
-- [ ] Vaginal irritation
-- [ ] Vision, disturbed or impaired
-- [ ] Voice loss
-- [ ] Vomiting
-- [ ] see also Recurring vomiting
-- [ ] Vomiting in infants
-- [ ] Vomiting, recurring
-- [ ] Waking at night in children
-- [ ] Weight, excess
-- [ ] Weight loss
-- [ ] Weight, slow gain in young children
+- [ ] Depression
+- [ ] Anxiety
+- [ ] Hallucinations
+- [ ] Nightmares
+- [ ] Hair loss
+- [ ] General skin problems
+- [ ] Facial skin problems
+- [ ] Itchy spots and rashes
+- [ ] Rash with fever
+- [ ] Raised spots and lumps
+- [ ] Painful eye
+- [ ] Disturbed or impaired vision
+- [ ] Earache
+- [ ] Noises in the ear
+- [ ] Hearing loss
+- [ ] Runny nose
+---------------------------------------------------------------------------------------
+- [ ] Sore throat
+- [ ] Hoarseness or loss of voice
+- [ ] Coughing
+- [ ] Coughing up blood
 - [ ] Wheezing
-- [ ] Withdrawal
-- [ ] Worrying
-- [ ] Wrist, painful
+- [ ] Difficulty breathing
+- [ ] Toothache
+- [ ] Difficulty swallowing
+- [ ] Sore mouth or tongue
+- [ ] Bad breath
+- [ ] Vomiting
+- [ ] Recurring vomiting
+- [x] Abdominal pain
+- [ ] Recurring abdominal pain
+- [x] Swollen abdomen
+- [ ] Gas and belching
+- [ ] Diarrhea
+- [ ] Constipation
+- [x] Abnormal-looking stools
+- [ ] Palpitations
+- [ ] Chest pain
+- [ ] Abnormally frequent urination
+- [ ] Abnormal-looking urine
+- [ ] Painful urination
+- [ ] Lack of bladder control
+- [ ] Backache
+- [ ] Cramp
+- [ ] Painful or stiff neck
+- [ ] Painful arm or hand
+- [ ] Painful leg
+- [ ] Painful knee
+- [ ] Painful shoulder
+- [ ] Painful ankles
+- [ ] Swollen ankles
+- [ ] Foot problems

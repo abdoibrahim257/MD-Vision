@@ -1,0 +1,179 @@
+{
+    "question": {
+        "Q": "IS the itching around the anus only?",
+        "Yes": {
+            "question": {
+                "Q": "Is the itching more severe at night?",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor if you have young children or work with young children. You could have PINWORMS.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Have you had any bleeding from the anus, or are bowel movements painful?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You could have HEMORRHOIDS or an ANAL flSSURE, but there is also a Slight possibility Of COLON CANCER.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "HEMORRHOIDS",
+                                    "ANAL FISSURE",
+                                    "COLON CANCER"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Have you recently had severe diarrhea?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor if the itching continues. Itching around the anus is common after severe diarrhea and usually stops in a day or two.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you a woman, and is the itching confined to the genital area?",
+                                        "Yes": {
+                                            "tree": {
+                                                "symptom": "VAGINAL IRRIATION"
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do the whites of your eyes look yellow?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See a doctor immediately. You may have JAUNDICE caused by a liver disorder.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "JAUNDICE"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Is your skin very dry?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Is the itching relieved by applying a soothing cream to the itchy areas?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Dry skin often itches.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this Chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this Chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Are you a woman, and is the itching confined to the genital area?",
+                "Yes": {
+                    "tree": {
+                        "symptom": "VAGINAL IRRIATION"
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do the whites of your eyes look yellow?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See a doctor immediately. You may have JAUNDICE caused by a liver disorder.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "JAUNDICE"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Is your skin very dry?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Is the itching relieved by applying a soothing cream to the itchy areas?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Dry skin often itches.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this Chat.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this Chat.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

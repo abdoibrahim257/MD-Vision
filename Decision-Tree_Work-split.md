@@ -3,11 +3,11 @@
 - [x] Overweight
 - [x] Difficulty sleeping
 - [x] Fever
-- [ ] Excessive sweating
-- [ ] Swellings under the skin
-- [ ] Itching without a rash
-- [ ] Feeling faint and fainting
-- [ ] Dizziness
+- [x] Excessive sweating
+- [x] Swellings under the skin
+- [x] Itching without a rash
+- [x] Feeling faint and fainting
+- [x] Dizziness
 - [ ] Headache
 - [ ] Numbness or tingling
 - [ ] Twitching and trembling

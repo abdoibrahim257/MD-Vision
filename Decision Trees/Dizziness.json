@@ -1,0 +1,132 @@
+{
+    "question": {
+        "Q": "Do you feel as though the room is spinning around you?",
+        "Yes": {
+            "question": {
+                "Q": "Have you noticed one or more of the following symptoms? \n\u2022 Weakness in your arms or legs \n\u2022 Numbness or tingling in any part of your body \n\u2022 Blurred vision \n\u2022 Difficulty speaking",
+                "Yes": {
+                    "question": {
+                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE or a TZANSIENT ISCHEMIC ATTACK.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["STROKE", "TRANSIENT ISCHEMIC ATTACK"]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do you have any hearing loss, or do you hear noises in your ear when there is no external source of noise?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You could have an inner ear disorder such as LABYRINTHITIS or MÉNIÉRE'S DISEASE.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["LABYRINTHITIS", "MÉNIÉRE'S DISEASE"]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Are you over 50?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Does raising your head bring on dizziness?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. This symptom can occur in a disorder involving the nerves and bones in the neck called cervical osteoarthritis. See your eye doctor if you wear bifocals; they may be improperly fitted.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["OSTEOARTHRITIS"]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have recurring severe headaches in the mornings, accompanied by nausea or vomiting?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Did you injure your head recently?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have a SUBDURAL HEMORRHAGE AND HEMATOMA.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": ["SUBDURAL HEMORRHAGE AND HEMATOMA"]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital ernergency department. You could have increased fluid pressure inside your brain, which is life-threatening. However, you may be having MIGRAINE HEADACHES.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": ["MIGRAINE HEADACHES"]
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you have recurring severe headaches in the mornings, accompanied by nausea or vomiting?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Did you injure your head recently?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have a SUBDURAL HEMORRHAGE AND HEMATOMA.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["SUBDURAL HEMORRHAGE AND HEMATOMA"]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital ernergency department. You could have increased fluid pressure inside your brain, which is life-threatening. However, you may be having MIGRAINE HEADACHES.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["MIGRAINE HEADACHES"]
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "tree": {
+                "symptom": "FEELING FAINT AND FAINTING"
+              }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

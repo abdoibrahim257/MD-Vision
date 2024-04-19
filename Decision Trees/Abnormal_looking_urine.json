@@ -3,7 +3,7 @@
         "Q": "Is your urine dark yellow or orange?",
         "Yes": {
             "question": {
-                "Q": "Is your temperature 100\u2109(37.8\u2103) or higher, is the weather very hot, or have you been exercising?",
+                "Q": "Is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher, is the weather very hot, or have you been exercising?",
                 "Yes": {
                     "question": {
                         "Q": "Losing fluid through perspiration concentrates the urine, making it darker than usual. Drink more fluids, especially water. Would you like to review symptoms commonly associated with FEVER?",

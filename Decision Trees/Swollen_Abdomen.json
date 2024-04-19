@@ -9,7 +9,7 @@
                         "Q": "Do you have one or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Diarrhea \n\u2022 Temperature over 1OO\u2109 \n\u2022 NO bowel movements for the past few days",
                         "Yes": {
                             "question": {
-                                "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have a dangerous abdominal condition such as an INTESTINAL OBSTRUCTION",
+                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have a dangerous abdominal condition such as an INTESTINAL OBSTRUCTION",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis": ["INTESTINAL OBSTRUCTION"]
@@ -42,7 +42,7 @@
                                         "Q": "Are you urinating less than usual?",
                                         "Yes": {
                                             "question": {
-                                                "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have ACUTE KIDNEY FAILURE or a chronic kidney disease such as GLOMERULONEPHRITIS.",
+                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have ACUTE KIDNEY FAILURE or a chronic kidney disease such as GLOMERULONEPHRITIS.",
                                                 "Yes": {},
                                                 "No": {},
                                                 "diagnosis": ["ACUTE KIDNEY FAILURE", "GLOMERULONEPHRITIS"]
@@ -319,7 +319,7 @@
                                 "Q": "Are you urinating less than usual?",
                                 "Yes": {
                                     "question": {
-                                        "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have ACUTE KIDNEY FAILURE or a chronic kidney disease such as GLOMERULONEPHRITIS.",
+                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have ACUTE KIDNEY FAILURE or a chronic kidney disease such as GLOMERULONEPHRITIS.",
                                         "Yes": {},
                                         "No": {},
                                         "diagnosis": ["ACUTE KIDNEY FAILURE", "GLOMERULONEPHRITIS"]

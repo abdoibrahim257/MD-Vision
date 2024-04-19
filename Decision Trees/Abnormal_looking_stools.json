@@ -3,7 +3,7 @@
         "Q": "Have you noticed red blood in your stools?",
         "Yes": {
             "question": {
-                "Q": "Do you feel generally ill, or is your temperature 100\u2109(37.8\u2103) or higher?",
+                "Q": "Do you feel generally ill, or is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
                 "Yes": {
                     "question": {
                         "Q": "See your doctor. You may have INFLAMMATORY BOWEL DISEASE.",

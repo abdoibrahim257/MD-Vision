@@ -7,10 +7,10 @@ class treeWarehouse:
         self.trees = {}
 
     def addTree(self, tree):
-        self.trees[tree.get_symptom()] = tree
+        self.trees[tree.get_symptom().lower()] = tree
 
     def getTree(self, symptom):
-        return self.trees.get(symptom, None)
+        return self.trees.get(symptom.lower(), None)
 
     def getTrees(self):
         return self.trees
@@ -23,7 +23,8 @@ class treeWarehouse:
 
 
 # function to traverse the tree according to user input (yes or no) and return the diagnosis
-def traverseTree(tree, warehouse):
+def traverseTree(symptom, warehouse):
+    tree = warehouse.getTree(symptom.lower())
     current_node = tree.get_root()
     while current_node:
         #check type of current node class to determine if it is a tree node or another tree node
@@ -41,17 +42,34 @@ def traverseTree(tree, warehouse):
                 print("Invalid input. Please enter Yes or No.")
         else:
             #get this tree from the warehouse
-            tree = warehouse.getTree(current_node.symptom)
+            tree = warehouse.getTree(current_node.symptom.lower())
             print(f"Symptom: {current_node.symptom}")
             current_node = tree.get_root()
             
 warehouse = treeWarehouse()            
-           
-with open('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/Abnormal_looking_urine.json') as f:
-    data = json.load(f)
-unexpectedWeightLoss = TreeDS(data['question'].get('Q'), "Unexpected Weight Loss")
-unexpectedWeightLoss.build_tree1(data)
 
-warehouse.addTree(unexpectedWeightLoss)
+def add_tree_to_warehouse(file_path, symptom, warehouse):
+    with open(file_path) as f:
+        data = json.load(f)
+    tree = TreeDS(data['question'].get('Q'), symptom)
+    tree.build_tree1(data)
+    warehouse.addTree(tree)
 
-traverseTree(unexpectedWeightLoss, warehouse)
+#FILL THE WAREHOUSE WITH TREES
+
+# unexplained weight loss tree construction
+add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/unexplained_weight_loss.json', "Unexpected Weight Loss", warehouse)
+
+# Abdominal pain tree construction
+add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/Abdominal_pain.json', "Abdominal Pain", warehouse)
+
+#abnormal looking stools tree construction
+add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/Abnormal_looking_stools.json', "Abnormal Looking Stools", warehouse)
+
+# sore throat tree construction
+add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/Sore_Throat.json', "Sore Throat", warehouse)
+
+# hoarseness tree construction
+add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/Hoarseness_or_Loss_of_Voice.json', "hoarseness or loss of voice", warehouse)
+
+traverseTree("sore throat", warehouse)

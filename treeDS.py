@@ -32,14 +32,13 @@ class TreeNode:
         print(f"If the answer is Yes: {self.children.get('Yes', 'None').question_string}")
 
 class anotherTreeNode:
-    def __init__(self, root_question, symptom): #not the actual tree but a reference for another tree
-        self.root = TreeNode(root_question)
-        self.symptom = symptom
+    def __init__(self, symptom): #not the actual tree but a reference for another tree
+        self.symptom = symptom.lower()
         
 class TreeDS:
     def __init__(self, root_question, symptom):
         self.root = TreeNode(root_question)
-        self.symptom = symptom
+        self.symptom = symptom.lower()
         
     #setters    
     def add_node(self, parent_question, newNodeQuestion, direction):
@@ -54,8 +53,8 @@ class TreeDS:
     #here in this function we need to link the warehouse we just did in the other file
     #another note that we dont need the TreeRoot for anython since the warehouse exists
     #we just need to get the whole tree from the warehouse
-    def add_tree(self, parent_question, treeRoot, Symptom, direction):
-        newTree = anotherTreeNode(treeRoot, Symptom) #need to get the whole other tree not create a new one 
+    def add_tree(self, parent_question, Symptom, direction):
+        newTree = anotherTreeNode(Symptom) #need to get the whole other tree not create a new one 
         parent_node = self._find_node(parent_question)
         if parent_node:
             parent_node.add_child(newTree, direction)
@@ -79,7 +78,8 @@ class TreeDS:
             if node.question_string == question:
                 return node
             for child in node.children.values():
-                queue.append(child)
+                if isinstance(child, TreeNode):
+                    queue.append(child)
                 
                 
     def build_tree1(self, jsonObject):
@@ -97,19 +97,19 @@ class TreeDS:
                     #get tyoe of next node a question ot a tree
                     if yesNode.get('question', None):
                         self.add_node(parentQ, yesNode['question'].get('Q'), "Yes")
+                        self.build_tree1(yesNode)
                     else:
-                        self.add_tree(parentQ, yesNode['tree'].get('Q'), yesNode['tree'].get('symptom'), "Yes")
-                        return
-                    self.build_tree1(yesNode)
+                        self.add_tree(parentQ, yesNode['tree'].get('symptom'), "Yes")
+                        # return
                 else:
                     return
                 if noNode:
                     if noNode.get('question', None):
                         self.add_node(parentQ, noNode['question'].get('Q'), "No")
+                        self.build_tree1(noNode)
                     else:
                         self.add_tree(parentQ, noNode['tree'].get('Q'), noNode['tree'].get('symptom'), "No")
-                        return
-                    self.build_tree1(noNode)
+                        # return
                 else:
                     return
             else:

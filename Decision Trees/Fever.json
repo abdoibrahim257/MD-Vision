@@ -31,7 +31,7 @@
                                         "Q": "Do you have one or more of the following symptoms? \n\u2022 pain when bending your head forward \n\u2022 Nausea or vomiting \n\u2022 Sensitivity of eyes to bright light \n\u2022 Drowsiness or confusion",
                                         "Yes": {
                                             "question": {
-                                                "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a potentially life-threatening infection of the brain.",
+                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a potentially life-threatening infection of the brain.",
                                                 "Yes": {},
                                                 "No": {},
                                                 "diagnosis": ["MENINGITIS"]
@@ -109,7 +109,7 @@
                                                                                         "Q": "Have you spent most Of the day in strong sunlight or in very hot conditions?",
                                                                                         "Yes": {
                                                                                             "question": {
-                                                                                                "Q": "EMERGENCY Get medical help now! call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have heat exhaustion or heatstroke.",
+                                                                                                "Q": "EMERGENCY Get medical help now! call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have heat exhaustion or heatstroke.",
                                                                                                 "Yes": {},
                                                                                                 "No": {},
                                                                                                 "diagnosis": ["Heat exhaustion", "Heatstroke"]
@@ -161,7 +161,7 @@
                         "Q": "Do you have one or more of the following symptoms? \n\u2022 pain when bending your head forward \n\u2022 Nausea or vomiting \n\u2022 Sensitivity of eyes to bright light \n\u2022 Drowsiness or confusion",
                         "Yes": {
                             "question": {
-                                "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a potentially life-threatening infection of the brain.",
+                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a potentially life-threatening infection of the brain.",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis": ["MENINGITIS"]
@@ -239,7 +239,7 @@
                                                                         "Q": "Have you spent most Of the day in strong sunlight or in very hot conditions?",
                                                                         "Yes": {
                                                                             "question": {
-                                                                                "Q": "EMERGENCY Get medical help now! call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have heat exhaustion or heatstroke.",
+                                                                                "Q": "EMERGENCY Get medical help now! call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have heat exhaustion or heatstroke.",
                                                                                 "Yes": {},
                                                                                 "No": {},
                                                                                 "diagnosis": ["Heat exhaustion", "Heatstroke"]

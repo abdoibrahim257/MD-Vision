@@ -17,7 +17,7 @@
             "Q": "Are you coughing up mucus that is pink and frothy?",
             "Yes": {
               "question": {
-                "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have CONGESTIVE HEART.",
+                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have CONGESTIVE HEART.",
                 "Yes": {},
                 "No": {},
                 "diagnosis": ["CONGESTIVE HEART"]
@@ -28,7 +28,7 @@
                 "Q": "Have you recently had surgery, been confined to bed, or sat for prolonged periods during a trip?",
                 "Yes": {
                   "question": {
-                    "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a blood clot in your lung. Would you like to continue diagnosis?",
+                    "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a blood clot in your lung. Would you like to continue diagnosis?",
                     "Yes": {},
                     "No": {},
                     "diagnosis": ["PULMONARY EMBOLISM"]
@@ -81,7 +81,7 @@
             "Q": "Have you recently had surgery, been confined to bed, or sat for prolonged periods during a trip?",
             "Yes": {
               "question": {
-                "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a blood clot in your lung. Would you like to continue diagnosis?",
+                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a blood clot in your lung. Would you like to continue diagnosis?",
                 "Yes": {},
                 "No": {},
                 "diagnosis": ["PULMONARY EMBOLISM"]

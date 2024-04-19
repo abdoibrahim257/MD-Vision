@@ -1,0 +1,400 @@
+{
+    "question": {
+        "Q": "Is your temperature 100F or higher?",
+        "Yes": {
+            "question": {
+                "Q": "is the pain severe?",
+                "Yes": {
+                    "question": {
+                        "Q": "Is it painful to bend your head forward, or does light hurt your eyes?",
+                        "Yes": {
+                            "question": {
+                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS, a life-threatening infection of the brain. Or you could have bleeding inside your brain",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "Meningitis",
+                                    "SUBARACHNOID HEMORRHAGE"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Headaches often occur with fevers. Would you like to review symptoms commonly associated with Fever?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "Fever"
+                                    }
+                                },
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Headaches often occur with fevers. Would you like to review symptoms commonly associated with Fever?",
+                        "Yes": {
+                            "tree": {
+                                "symptom": "Fever"
+                            }
+                        },
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Have you injured your head recently?",
+                "Yes": {
+                    "question": {
+                        "Q": "Do you feel unusually drowsy, or have you felt nauseous or been vomiting?",
+                        "Yes": {
+                            "question": {
+                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have bleeding in your brain.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "See your doctor. A persistent headache is common after a head injury.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Have you felt nauseous or been vomiting?",
+                        "Yes": {
+                            "question": {
+                                "Q": "Do you have severe pain in and around one eye, or is your vision blurred?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See a doctor immediately. You may have a MIGRAINE or a CLUSTER HEADACHE. Or the pressure inside your eyeball may be increased, which can affect vision.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "Migraine",
+                                            "Cluster Headache",
+                                            "Glaucoma"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you also have any of the following symptoms? \n\u2022 Pain when you bend your head forward \n\u2022 Drowsiness or confusion \n\u2022 Fever",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a life-threatening infection of the brain. Or you could have bleeding inside your brain.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "Meningitis",
+                                                    "SUBARACHNOID HEMORRHAGE"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Was the pain preceded by visual disturbances, and does bright light hurt your eyes?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. You may have a MICRAINE, particularly if you also feel nauseous or are vomiting.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "Migraine"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Have you had a similar headache on waking up several days in the past week?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Do the headaches occur only after you have consumed a lot of alcohol the night before?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "You probably have a hangover.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See a doctor immediately. Such headaches may be a symptom of ANXIETY, HIGH BLOOD PRESSURE, or, in very rare cases, a BRAIN TUMOR. They can also indicate CARBON MONOXIDE POISONING.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "Anxiety",
+                                                                            "High Blood Pressure",
+                                                                            "Brain Tumor",
+                                                                            "Carbon Monoxide Poisoning"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Are you currently taking any medications?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Talk to your doctor. Some drugs can cause headaches.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you or did you recently have a stuffy or runny nose?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Do you have sharp pain in and around one eye or on one side of your face that has recurred over several days?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. You may have CLUSTER HEADACHES.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": [
+                                                                                            "Cluster Headache"
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Do you have dull pain and tenderness around the eyes and cheekbones that worsen when you bend forward?",
+                                                                                        "Yes": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor. You may have a sinus infection.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": [
+                                                                                                    "SINUSITIS"
+                                                                                                ]
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "Headaches are a common symptom of COLDS.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": ["COLDs"]
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Are you feeling anxious or under stress, or are you having difficulty sleeping?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. Anxiety, stress, and lack Of sleep often cause headaches.Would you like to review symptoms commonly associated with anxiety?",
+                                                                                        "Yes": {
+                                                                                            "tree": {
+                                                                                                "symptom": "Anxiety"
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Did the headache occur after you had been reading or doing close-up work such as sewing?",
+                                                                                        "Yes": {
+                                                                                            "question": {
+                                                                                                "Q": "Talk to your doctor. Strain on your neck muscles may have caused a TENSION HEADACHE. See your eye doctor if you wear glasses; you may need a new prescription.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": ["Tension Headache"]
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "Did any of the following occur within the 12 hours before your headache started? \n\u2022 You were exposed to strong sunlight. \n\u2022 You were in stuffy, smoky, or noisy surroundings. \n\u2022 You drank more alcohol than usual. \n\u2022 You missed a meal.",
+                                                                                                "Yes": {
+                                                                                                    "question": {
+                                                                                                        "Q": "These factors Often bring on headaches.",
+                                                                                                        "Yes": {},
+                                                                                                        "No": {},
+                                                                                                        "diagnosis": []
+                                                                                                    }
+                                                                                                },
+                                                                                                "No": {
+                                                                                                    "question": {
+                                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms. \n\n If you have worsening headaches\nSee a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly ii you also have vomiting without musea.",
+                                                                                                        "Yes": {},
+                                                                                                        "No": {},
+                                                                                                        "diagnosis": []
+                                                                                                    }
+                                                                                                },
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Are you currently taking any medications?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Talk to your doctor. Some drugs can cause headaches.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you or did you recently have a stuffy or runny nose?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Do you have sharp pain in and around one eye or on one side of your face that has recurred over several days?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. You may have CLUSTER HEADACHES.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "Cluster Headache"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have dull pain and tenderness around the eyes and cheekbones that worsen when you bend forward?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor. You may have a sinus infection.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                    "SINUSITIS"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Headaches are a common symptom of COLDS.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": ["COLDs"]
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Are you feeling anxious or under stress, or are you having difficulty sleeping?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. Anxiety, stress, and lack Of sleep often cause headaches.Would you like to review symptoms commonly associated with anxiety?",
+                                                        "Yes": {
+                                                            "tree": {
+                                                                "symptom": "Anxiety"
+                                                            }
+                                                        },
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Did the headache occur after you had been reading or doing close-up work such as sewing?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Talk to your doctor. Strain on your neck muscles may have caused a TENSION HEADACHE. See your eye doctor if you wear glasses; you may need a new prescription.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": ["Tension Headache"]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Did any of the following occur within the 12 hours before your headache started? \n\u2022 You were exposed to strong sunlight. \n\u2022 You were in stuffy, smoky, or noisy surroundings. \n\u2022 You drank more alcohol than usual. \n\u2022 You missed a meal.",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "These factors Often bring on headaches.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms. \n\n If you have worsening headaches\nSee a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly ii you also have vomiting without musea.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

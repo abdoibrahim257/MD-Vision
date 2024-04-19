@@ -1,0 +1,123 @@
+{
+    "question": {
+        "Q": "Do you feel that life is not worth living?",
+        "Yes": {
+            "tree": {
+                "symptom": "DEPRESSION"
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you feel worried or uneasy?",
+                "Yes": {
+                    "tree": {
+                        "symptom": "ANXIETY"
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do you worry about your health even though your doctor assures you that you are healthy?",
+                        "Yes": {
+                            "question": {
+                                "Q": "Talk to your doctor. You may have emotional conflicts that result from DEPRESSION or ANXIETY.Would you like to review symptoms commonly associated with depression?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "DEPRESSION"
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Would you like to review symptoms commonly associated with Anxiety?",
+                                        "Yes": {
+                                            "tree": {
+                                                "symptom": "ANXIETY"
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Are you concerned that your sexual thoughts, feelings, or fantasies might be abnormal or unhealthy?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor if you are concerned about your sexual thoughts or feelings or if you have an urge to act out sexual fantasies involving violence or children. Sexual thoughts and fantasies are common and are usually harmless.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Are your thoughts or feelings particularly aggressive or violent or are you under unusual stress?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor if your thoughts or feelings seem out of proportion to the situation or involve harming yourself or others. Aggressive thoughts or feelings often occur in highly stressful situations.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your thoughts or feelings continue to bother you.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Are you concerned that your sexual thoughts, feelings, or fantasies might be abnormal or unhealthy?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor if you are concerned about your sexual thoughts or feelings or if you have an urge to act out sexual fantasies involving violence or children. Sexual thoughts and fantasies are common and are usually harmless.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are your thoughts or feelings particularly aggressive or violent or are you under unusual stress?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor if your thoughts or feelings seem out of proportion to the situation or involve harming yourself or others. Aggressive thoughts or feelings often occur in highly stressful situations.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your thoughts or feelings continue to bother you.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

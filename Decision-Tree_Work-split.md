@@ -8,14 +8,14 @@
 - [x] Itching without a rash
 - [x] Feeling faint and fainting
 - [x] Dizziness
-- [ ] Headache
-- [ ] Numbness or tingling
+- [x] Headache
+- [x] Numbness or tingling
 - [ ] Twitching and trembling
 - [ ] Pain in the face
 - [ ] Confusion
 - [ ] Impaired memory
 - [ ] Difficulty speaking
-- [ ] Disturbing thought or feelings
+- [x] Disturbing thought or feelings
 - [ ] Unusual behavior
 - [ ] Depression
 - [ ] Anxiety

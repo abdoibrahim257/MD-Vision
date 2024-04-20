@@ -1,0 +1,443 @@
+{
+    "question": {
+        "Q": "Are you unable to recall a specific period of time?",
+        "Yes": {
+            "question": {
+                "Q": "Are you unable to recall the period of time immediately before or after a head iniury?",
+                "Yes": {
+                    "question": {
+                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. Your injury needs to be evaluated by a doctor to determine the severity and to check for any bleeding inside your skull.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Have you forgotten things that happened when you were drinking alcohol?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your Doctor. Abusing alcohol can often result in blackouts, or memory loss.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Have you forgotten events surrounding any of the following? \n\u2022 A severe illness with a fever, such as pneumonia \n\u2022 Surgery \n\u2022 An epileptic seizure or diabetic coma",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor to find out if you are recovering normally. Memory loss frequently occurs in such situations and is usually not a cause for concern.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you sometimes have difficulty remembering routine things, such as what you intend to buy when you are shopping?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Are you under a lot of stress, or do you feel anxious?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor if you are feeling anxious. However, stress may be affecting your ability to concentrate. Would you like to review symptoms commonly associated with anxiety?",
+                                                        "Yes": {
+                                                            "tree": {
+                                                                "symptom": "anxiety"
+                                                            }
+                                                        },
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you feel depressed?",
+                                                        "Yes": {
+                                                            "tree": {
+                                                                "symptom": "depression"
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you recall things that happened long ago more easily than recent events?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Decreased ability to deal with everyday activities such as cooking, driving, paying bills, and balancing a checkbook \n\u2022 Personality changes \n\u2022 Decline in personal appearance and cleanliness \n\u2022 Difficulty following conversations or instructions",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor. This combination of symptoms may indicate the onset of ALZHEIMER'S DISEASE.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": [
+                                                                                    "Alzheimer's disease"
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Has your memory gradually become less sharp over the past 10 years or longer?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. This type of memory loss can be caused by a physical disorder such as HYPOTHYROIDISM, although it may be a natural part of aging. To help you remember, get into the habit of writing things down—for example, make shopping lists.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": [
+                                                                                            "Hypothyroidism"
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Is your memory loss complete—that is, you remember nothing about the past?",
+                                                                                        "Yes": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor. Complete memory loss usually results from a severe emotional or mental disorder.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "Are you currently taking any medication?",
+                                                                                                "Yes": {
+                                                                                                    "question": {
+                                                                                                        "Q": "Talk to your doctor. Some medications, especially sleep medications, can cause memory loss.",
+                                                                                                        "Yes": {},
+                                                                                                        "No": {},
+                                                                                                        "diagnosis": []
+                                                                                                    }
+                                                                                                },
+                                                                                                "No": {
+                                                                                                    "question": {
+                                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                                        "Yes": {},
+                                                                                                        "No": {},
+                                                                                                        "diagnosis": []
+                                                                                                    }
+                                                                                                },
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Has your memory gradually become less sharp over the past 10 years or longer?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor. This type of memory loss can be caused by a physical disorder such as HYPOTHYROIDISM, although it may be a natural part of aging. To help you remember, get into the habit of writing things down—for example, make shopping lists.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": [
+                                                                                    "Hypothyroidism"
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Is your memory loss complete—that is, you remember nothing about the past?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. Complete memory loss usually results from a severe emotional or mental disorder.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Are you currently taking any medication?",
+                                                                                        "Yes": {
+                                                                                            "question": {
+                                                                                                "Q": "Talk to your doctor. Some medications, especially sleep medications, can cause memory loss.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Is your memory loss complete—that is, you remember nothing about the past?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. Complete memory loss usually results from a severe emotional or mental disorder.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Are you currently taking any medication?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Talk to your doctor. Some medications, especially sleep medications, can cause memory loss.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you sometimes have difficulty remembering routine things, such as what you intend to buy when you are shopping?",
+                "Yes": {
+                    "question": {
+                        "Q": "Are you under a lot of stress, or do you feel anxious?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor if you are feeling anxious. However, stress may be affecting your ability to concentrate. Would you like to review symptoms commonly associated with anxiety?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "anxiety"
+                                    }
+                                },
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you feel depressed?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "depression"
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you recall things that happened long ago more easily than recent events?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Do you have two or more of the following symptoms? \n\u2022 Decreased ability to deal with everyday activities such as cooking, driving, paying bills, and balancing a checkbook \n\u2022 Personality changes \n\u2022 Decline in personal appearance and cleanliness \n\u2022 Difficulty following conversations or instructions",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. This combination of symptoms may indicate the onset of ALZHEIMER'S DISEASE.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "Alzheimer's disease"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Has your memory gradually become less sharp over the past 10 years or longer?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor. This type of memory loss can be caused by a physical disorder such as HYPOTHYROIDISM, although it may be a natural part of aging. To help you remember, get into the habit of writing things down—for example, make shopping lists.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                    "Hypothyroidism"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Is your memory loss complete—that is, you remember nothing about the past?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. Complete memory loss usually results from a severe emotional or mental disorder.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Are you currently taking any medication?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Talk to your doctor. Some medications, especially sleep medications, can cause memory loss.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Has your memory gradually become less sharp over the past 10 years or longer?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. This type of memory loss can be caused by a physical disorder such as HYPOTHYROIDISM, although it may be a natural part of aging. To help you remember, get into the habit of writing things down—for example, make shopping lists.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "Hypothyroidism"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Is your memory loss complete—that is, you remember nothing about the past?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor. Complete memory loss usually results from a severe emotional or mental disorder.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Are you currently taking any medication?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Talk to your doctor. Some medications, especially sleep medications, can cause memory loss.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Is your memory loss complete—that is, you remember nothing about the past?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. Complete memory loss usually results from a severe emotional or mental disorder.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Are you currently taking any medication?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Talk to your doctor. Some medications, especially sleep medications, can cause memory loss.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

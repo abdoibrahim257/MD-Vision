@@ -1,0 +1,160 @@
+{
+    "question": {
+        "Q": "Have you had one or more of the following symptoms? \n\u2022 Dizziness \n\u2022 Headache \n\u2022 Weakness in your arms or legs \n\u2022 Numbness or tingling in any part of your body \n\u2022 Blurred vision \n\u2022 Difficulty swallowing",
+        "Yes": {
+            "question": {
+                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE or a TRANSIENT ISCHEMIC ATTACK.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["Stroke", "Transient ischemic attack"]
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you think that you are pronouncing words correctly but what you say does not seem to make sense to others?",
+                "Yes": {
+                    "question": {
+                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Decreased ability to deal with everyday activities such as cooking, driving, paying bills, and balancing a checkbook \n\u2022 Decline in personal appearance or cleanliness \n\u2022 Difficulty following complex conversations and instructions",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. This combination of symptoms may indicate the onset of ALZHEIMER'S DISEASE. In rare cases, these symptoms can result from a BRAIN TUMOR or STROKE.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["Alzheimer's disease", "Brain tumor", "Stroke"]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "See your doctor. You may have a mental disorder such as SCHIZOPHRENIA.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["Schizophrenia"]
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Is it difficult to speak because of pain inside your mouth or in your tongue?",
+                        "Yes": {
+                            "tree": {
+                                "symptom": "SORE MOUTH OT TONGUE"
+                              }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Have you been drinking alcohol?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Drinking can make you slur your speech.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you taking any medication?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Talk to your doctor. Some drugs can affect speech.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Is it difficult to speak because you are unable to move the muscles on one side of your face?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE. However, you could have a less serious nerve disorder called BELL's PALSY.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["Stroke", "Bell's palsy"]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do people say you speak very softly, and does your speech lack normal variations in tone and pauses, making it sound expressionless?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Do your hands tremble?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local ernergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE. Or you could have a nervous system disorder such as PARKINSON'S DISEASE.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": ["Stroke", "Parkinson's disease"]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Are you sometimes unable to speak even though you know what you want to say, or do you sometimes get stuck at the beginning of a word and find yourself repeating the first consonant for several seconds before you can say the entire word?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Talk to your doctor. This problem, called stuttering, often develops in early childhood and may recur during adulthood when a person is under stress.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Are you sometimes unable to speak even though you know what you want to say, or do you sometimes get stuck at the beginning of a word and find yourself repeating the first consonant for several seconds before you can say the entire word?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Talk to your doctor. This problem, called stuttering, often develops in early childhood and may recur during adulthood when a person is under stress.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

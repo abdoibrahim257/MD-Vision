@@ -1,0 +1,401 @@
+{
+    "question": {
+        "Q": "Do you or did you recently have a red, blistering rash where you now feel pain?",
+        "Yes": {
+            "question": {
+                "Q": "See your doctor. You may have SHINGLES.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": [
+                    "SHINGLES"
+                ]
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have severe pain radiating from one bloodshot eye?",
+                "Yes": {
+                    "question": {
+                        "Q": "See a doctor immediately. The pressure inside your eyeball may be increased, which can affect vision.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Is the pain between your eye and nose on one side of your face?",
+                        "Yes": {
+                            "question": {
+                                "Q": "Are your nose and the affected eye both runny?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor. You may have a MIGRAINE or an infected or blocked lacrimal duct.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "MIGRAINE"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you have dull pain or tenderness around your eyes or cheekbones that worsens when you bend forward?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. You probably have a sinus infection, especially if you recently had a cold.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "SINUSITIS"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have continuous, throbbing pain on one side of your face?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Is the pain worse at night, when you eat, or when you touch a particular tooth?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See a doctor or dentist immediately. You may have a TOOTH ABSCESS.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                    "TOOTH ABSCESS"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have severe, throbbing pain that comes on suddenly in one or both temples?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Have you been feeling sick, or does your scalp hurt when you touch it?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See a doctor immediately. You may have temporal arteritis (inflammation Of the arteries in your head), which can affect your vision.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": [
+                                                                                            "TRIGEMINAL NEURALGIA"
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": [
+                                                                                    "TRIGEMINAL NEURALGIA"
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have severe, throbbing pain that comes on suddenly in one or both temples?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Have you been feeling sick, or does your scalp hurt when you touch it?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See a doctor immediately. You may have temporal arteritis (inflammation Of the arteries in your head), which can affect your vision.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": [
+                                                                                    "TRIGEMINAL NEURALGIA"
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "TRIGEMINAL NEURALGIA"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have dull pain or tenderness around your eyes or cheekbones that worsens when you bend forward?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor. You probably have a sinus infection, especially if you recently had a cold.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "SINUSITIS"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you have continuous, throbbing pain on one side of your face?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Is the pain worse at night, when you eat, or when you touch a particular tooth?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See a doctor or dentist immediately. You may have a TOOTH ABSCESS.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "TOOTH ABSCESS"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have severe, throbbing pain that comes on suddenly in one or both temples?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Have you been feeling sick, or does your scalp hurt when you touch it?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See a doctor immediately. You may have temporal arteritis (inflammation Of the arteries in your head), which can affect your vision.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": [
+                                                                                    "TRIGEMINAL NEURALGIA"
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "TRIGEMINAL NEURALGIA"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have severe, throbbing pain that comes on suddenly in one or both temples?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Have you been feeling sick, or does your scalp hurt when you touch it?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See a doctor immediately. You may have temporal arteritis (inflammation Of the arteries in your head), which can affect your vision.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "TRIGEMINAL NEURALGIA"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                    "TRIGEMINAL NEURALGIA"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

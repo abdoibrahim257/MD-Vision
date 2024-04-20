@@ -10,11 +10,11 @@
 - [x] Dizziness
 - [x] Headache
 - [x] Numbness or tingling
-- [ ] Twitching and trembling
-- [ ] Pain in the face
-- [ ] Confusion
-- [ ] Impaired memory
-- [ ] Difficulty speaking
+- [x] Twitching and trembling
+- [x] Pain in the face
+- [x] Confusion
+- [x] Impaired memory
+- [x] Difficulty speaking
 - [x] Disturbing thought or feelings
 - [ ] Unusual behavior
 - [ ] Depression

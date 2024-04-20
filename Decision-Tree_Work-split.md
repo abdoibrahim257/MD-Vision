@@ -39,13 +39,13 @@
 - [x] Sore throat
 - [x] Hoarseness or loss of voice
 - [x] Coughing
-- [ ] Coughing up blood
-- [ ] Wheezing
-- [ ] Difficulty breathing
-- [ ] Toothache
-- [ ] Difficulty swallowing
-- [ ] Sore mouth or tongue
-- [ ] Bad breath
+- [x] Coughing up blood
+- [x] Wheezing
+- [x] Difficulty breathing
+- [x] Toothache
+- [x] Difficulty swallowing
+- [x] Sore mouth or tongue
+- [x] Bad breath
 - [ ] Vomiting
 - [ ] Recurring vomiting
 - [x] Abdominal pain

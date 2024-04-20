@@ -1,0 +1,192 @@
+{
+  "question": {
+    "Q": "Is your tongue sore?",
+    "Yes": {
+      "question": {
+        "Q": "Is the soreness limited to one area of your tongue?",
+        "Yes": {
+          "question": {
+            "Q": "See your doctor or dentist if your mouth still feels sore after 1 week. Your tongue may be rubbing against a jagged tooth or a poorly fitting denture, or you may have a CANKER SORE (p. 743). In rare cases, a sore tongue may be an early sign of cancer.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": [
+              "CANKER SORE",
+              "TUMORS Of THE MOUTH AND TONGUE",
+              "VISUAL AIDS TO DIAGNOSIS"
+            ]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Is your tongue red and painful all over?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You probably have glossitis (inflammation of the tongue).",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["GLOSSITIS AND GEOGRAPHIC TONGUE"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do you have any discolored areas inside your mouth or on your tongue?",
+                "Yes": {
+                  "question": {
+                    "Q": "Are the discolored areas whitish yellow, and can they be scraped off easi ly?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor or dentist. You may have an oral yeast infection, especially ifyou have been taking antibiotics or if you use an inhaler for corticosteroid medications to treat asthma. Wearing dentures, especially poorly fitting ones, can also contribute to the development of oral yeast infections.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["ORAL THRUSH", "DENTURE PROBLEMS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Are the discolored areas painful, pale yellow spots?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Do you feel sick, or is your temperature 1 or higher?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have a viral infection.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["COLD SORES", "VISUAL AIDS TO DIAGNOSIS"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor or dentist. You probably have CANKER SORES.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CANKER SORES", "VISUAL AIDS TO DIAGNOSIS"]
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Are your gums painful, red, and swollen?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Do you have bad breath, or do you have a bad taste in your mouth?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your dentist. You may have severe gingivitis (inflammation of the gums).",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["PERIODONTAL DISEASE"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have a COLD SORE.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": [
+                                      "COLD SORES",
+                                      "VISUAL AIDS TO DIAGNOSIS"
+                                    ]
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have sores on or around your lips?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Are the sores red, rough, or blistered?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You probably have COLD SORES.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                          "COLD SORES",
+                                          "VISUAL AIDS TO DIAGNOSIS"
+                                        ]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Do you have cracks at the corners of your mouth?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor or dentist. You may have an oral yeast infection, especially if you have been taking antibiotics or if you use an inhaler for corticosteroid medications to treat asthma. Wearing dentures, especially poorly fitting ones, can also increase the risk of oral yeast infections.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": [
+                                              "ORAL THRUSH",
+                                              "DENTURE PROBLEMS"
+                                            ]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Did you recently start using any new cosmetics or lotions on your lips?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "The soreness may be an allergic reaction to an ingredient in the cosmetic or lotion.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                  "DERMATITIS",
+                                                  "VISUAL AIDS TO DIAGNOSIS"
+                                                ]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {},
+    "diagnosis": []
+  }
+}

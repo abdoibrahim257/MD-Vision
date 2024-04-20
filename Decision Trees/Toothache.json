@@ -1,0 +1,78 @@
+{
+  "question": {
+    "Q": "Do you feel pain only when eating or just after eating?",
+    "Yes": {
+      "question": {
+        "Q": "Have you had one or more teeth filled within the past week?",
+        "Yes": {
+          "question": {
+            "Q": "Does the tooth hurt only when you bite down?",
+            "Yes": {
+              "question": {
+                "Q": "See your dentist. The filling should be checked and may need to be adjusted.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "See your dentist if the pain persists for more than a week. Twinges of pain are normal after having a tooth filled.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "See your dentist. You may have a cavity caused by TOOTH DECAY, or you may have gingivitis (inflammation of the gums).",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["TOOTH DECAY", "PERIODONTAL DISEASE"]
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Do you have repeated episodes of throbbing pain in the tooth?",
+        "Yes": {
+          "question": {
+            "Q": "See your dentist. The pulp in your tooth may be inflamed because of advanced TOOTH DECAY.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["TOOTH DECAY"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Is the pain in your tooth continuous, or is your temperature 100F or higher?",
+            "Yes": {
+              "question": {
+                "Q": "See a dentist immediately. You may have a TOOTH ABSCESS or severe TOOTH DECAY.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["TOOTH ABSCESS", "TOOTH DECAY"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "See your dentist if you are unable to make a diagnosis from this chat.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

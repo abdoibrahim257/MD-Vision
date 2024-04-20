@@ -1,29 +1,32 @@
 from treeDS import TreeNode
 from treeDS import TreeDS
 import json
+import os
+import re
 
 class treeWarehouse:
     def __init__(self):
-        self.trees = {}
+        self.treesDict = {}
 
     def addTree(self, tree):
-        self.trees[tree.get_symptom().lower()] = tree
+        symptom = tree.get_symptom().lower()
+        self.treesDict[symptom] = tree
 
     def getTree(self, symptom):
-        return self.trees.get(symptom.lower(), None)
+        return self.treesDict.get(symptom.lower(), None)
 
     def getTrees(self):
-        return self.trees
+        return self.treesDict
 
     def getTreeCount(self):
-        return len(self.trees)
+        return len(self.treesDict)
 
     def clearTrees(self):
-        self.trees = {}
+        self.treesDict = {}
 
 
 # function to traverse the tree according to user input (yes or no) and return the diagnosis
-def traverseTree(symptom, warehouse):
+def traverse_tree(symptom, warehouse):
     tree = warehouse.getTree(symptom.lower())
     current_node = tree.get_root()
     while current_node:
@@ -45,8 +48,7 @@ def traverseTree(symptom, warehouse):
             tree = warehouse.getTree(current_node.symptom.lower())
             print(f"Symptom: {current_node.symptom}")
             current_node = tree.get_root()
-            
-warehouse = treeWarehouse()            
+                        
 
 def add_tree_to_warehouse(file_path, symptom, warehouse):
     with open(file_path) as f:
@@ -55,21 +57,21 @@ def add_tree_to_warehouse(file_path, symptom, warehouse):
     tree.build_tree1(data)
     warehouse.addTree(tree)
 
+def load_warehouse(folder, warehouse):
+    for file in os.listdir(folder):
+        #check if file is a json file and call the function to add it to the warehouse
+        if file.endswith('.json'):
+            #get file name without extension
+            symptom = os.path.splitext(file)[0]
+            sypmtomWithSpaces = re.sub(r"(_)"," ",symptom) #replace underscore with space to get symptom name
+            if sypmtomWithSpaces not in warehouse.getTrees():
+                add_tree_to_warehouse(os.path.join(folder, file), sypmtomWithSpaces, warehouse)
+            
+warehouse = treeWarehouse()    
+#main folder for all trees    
+folder = 'D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/'
+
 #FILL THE WAREHOUSE WITH TREES
+load_warehouse(folder, warehouse)
 
-# unexplained weight loss tree construction
-add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/unexplained_weight_loss.json', "Unexpected Weight Loss", warehouse)
-
-# Abdominal pain tree construction
-add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/Abdominal_pain.json', "Abdominal Pain", warehouse)
-
-#abnormal looking stools tree construction
-add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/Abnormal_looking_stools.json', "Abnormal Looking Stools", warehouse)
-
-# sore throat tree construction
-add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/Sore_Throat.json', "Sore Throat", warehouse)
-
-# hoarseness tree construction
-add_tree_to_warehouse('D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/Hoarseness_or_Loss_of_Voice.json', "hoarseness or loss of voice", warehouse)
-
-traverseTree("sore throat", warehouse)
+traverse_tree("sore throat", warehouse)

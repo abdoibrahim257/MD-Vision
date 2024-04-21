@@ -16,11 +16,11 @@
 - [x] Impaired memory
 - [x] Difficulty speaking
 - [x] Disturbing thought or feelings
-- [ ] Unusual behavior
-- [ ] Depression
-- [ ] Anxiety
-- [ ] Hallucinations
-- [ ] Nightmares
+- [x] Unusual behavior
+- [x] Depression
+- [x] Anxiety
+- [x] Hallucinations
+- [x] Nightmares
 - [ ] Hair loss
 - [ ] General skin problems
 - [ ] Facial skin problems
@@ -34,7 +34,7 @@
 - [ ] Hearing loss
 - [ ] Runny nose
 
----
+---------------------------------------------------
 
 - [x] Sore throat
 - [x] Hoarseness or loss of voice

@@ -1,0 +1,159 @@
+{
+  "question": {
+    "Q": "Is the pain in the upper part of your abdomen?",
+    "Yes": {
+      "question": {
+        "Q": "Is it burning pain that worsens when you bend over?",
+        "Yes": {
+          "question": {
+            "Q": "See your doctor. You may have GASTROESOPHAGEAL REFLUX DISEASE.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["GASTROESOPHAGEAL REFLUX DISEASE"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Does the pain stop when you take an antacid?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have INDIGESTION or a PEPTIC ULCER.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["INDIGESTION", "PEPTIC ULCER"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Does the pain occur in waves, and is it mainly in the upper right side of your abdomen or around your ribs?",
+                "Yes": {
+                  "question": {
+                    "Q": "Is your temperature 100F or higher?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have an inflamed gallbladder or gallstones.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["CHOLECYSTITIS", "GALLSTONES"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor. You may have INDIGESTION or IRRITABLE BOWEL SYNDROME.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["INDIGESTION", "IRRITABLE BOWEL SYNDROME"]
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Have you lost your appetite, or have you lost a lot of weight (more than 10 pounds in 10 weeks) for no apparent reason?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See a doctor immediately. You may have CANCER OF THE STOMACH or COLON CANCER, especially if you are over age 40.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["CANCER OF THE STOMACH", "COLON CANCER"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Is the pain mainly in the lower part of your abdomen?",
+        "Yes": {
+          "question": {
+            "Q": "Do you have episodes of diarrhea?",
+            "Yes": {
+              "question": {
+                "Q": "Do you feel sick, or is your temperature 100F or higher?",
+                "Yes": {
+                  "question": {
+                    "Q": "Do you have traces of blood and pus or mucus in your stool?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have an INFLAMMATORY BOWEL such as Crohn's disease or ulcerative colitis.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["INFLAMMATORY BOWEL"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor. You may have an INFLAMMATORY BOWEL DISEASE such as Crohn's disease.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["INFLAMMATORY BOWEL DISEASE"]
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See a doctor immediately. You may have diverticular disease. See DIVERTICULOSIS AND DIVERTICULITIS. There is also a slight possibility that you have COLON CANCER.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["DIVERTICULOSIS AND DIVERTICULITIS", "COLON CANCER"]
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are you a woman of childbearing age?",
+                "Yes": {
+                  "tree": {
+                    "symptom": "PELVIC PAIN IN WOMEN"
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

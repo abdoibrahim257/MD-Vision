@@ -1,0 +1,92 @@
+{
+  "question": {
+    "Q": "Is the gas expelled by belching?",
+    "Yes": {
+      "question": {
+        "Q": "Can you taste a sour or bitter fluid when you belch, especially if you are bending over or lying down?",
+        "Yes": {
+          "question": {
+            "Q": "See your doctor. You may have GASTROESOPHAGEAL REFLUX DISEASE.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["GASTROESOPHAGEAL REFLUX DISEASE"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you often have a bloated, uncomfortable feeling after meals?",
+            "Yes": {
+              "question": {
+                "Q": "You may be unconsciously swallowing air while you eat and then regurgitating it to relieve your discomfort.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["INDIGESTION"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "See your doctor. You probably swallow large amounts of air without realizing it while eating or chewing gum or as a nervous habit.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["RELIEVING AND PREVENTING INDIGESTION"]
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Have you recently eaten large quantities of high-fiber foods such as beans, bran, or fruit?",
+        "Yes": {
+          "question": {
+            "Q": "Most high-fiber foods cause gas.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you have episodes of lower abdominal pain that are relieved by passing gas or having a bowel movement?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have IRRITABLE BOWEL SYNDROME.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["IRRITABLE BOWEL SYNDROME"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are your stools pale, greasy, and foul-smellin ?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have an intestinal disorder such as CELIAC DISEASE.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["CELIAC DISEASE"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

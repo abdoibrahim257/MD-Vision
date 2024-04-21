@@ -46,13 +46,13 @@
 - [x] Difficulty swallowing
 - [x] Sore mouth or tongue
 - [x] Bad breath
-- [ ] Vomiting
-- [ ] Recurring vomiting
+- [x] Vomiting
+- [x] Recurring vomiting
 - [x] Abdominal pain
-- [ ] Recurring abdominal pain
+- [x] Recurring abdominal pain
 - [x] Swollen abdomen
-- [ ] Gas and belching
-- [ ] Diarrhea
+- [x] Gas and belching
+- [x] Diarrhea
 - [ ] Constipation
 - [x] Abnormal-looking stools
 - [ ] Palpitations

@@ -1,0 +1,85 @@
+{
+    "question": {
+        "Q": "Did the depression follow a significant personal loss, such as a death in the family?",
+        "Yes": {
+            "question": {
+                "Q": "See a doctor immediately. Although such feelings are normal.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": [
+                    "Depression"
+                ]
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Did you recently recover from an infectious disease such as the flu, infectious mononucleosis, or hepatitis?",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor if the depression worsens or lasts longer than 2 weeks. Infectious diseases are sometimes followed by DEPRESSION.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                            "Depression"
+                        ]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Did you recently have a baby?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See a doctor immediately. Many women experience depression in the weeks after childbirth.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "POSTPARTUM DEPRESSION"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you regularly use alcohol or other drugs?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Talk to your doctor. Abuse of alcohol or other drugs can cause depression or may be a symptom of depression.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Difficulty sleeping \n\u2022 Difficulty getting out of bed \n\u2022 Loss of appetite \n\u2022 Lack of energy",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See a doctor immediately. You may have DEPRESSION. \n\nSuicide\nGet medical help immediately if you (or someone you know) has symptoms of devression. Depression is the No. 1 risk factor for suicide.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat. ",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

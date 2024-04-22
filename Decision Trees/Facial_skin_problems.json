@@ -1,0 +1,215 @@
+{
+    "question": {
+        "Q": "Do you have an itchy, red, flaky rash?",
+        "Yes": {
+            "question": {
+                "Q": "See your doctor. You may have contact dermatitis or seborrheic dermatitis.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have one or more of the following symptoms? \n\u2022 Blackheads \n\u2022 Raised spots on the skin with white or yellow centers \n\u2022 Painful red lumps under the skin",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor. You probably have ACNE.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                            "Acne"
+                        ]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Does your face become flushed when you're under stress or after you drink alcohol or eat spicy foods?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You may have ROSACEA.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "Rosacea"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have sore areas around your mouth that are red and rough or blistered?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Talk to your doctor. You probably have COLD SORES.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "Cold Sores"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "DO you have a blistering rash on one side of your face in an area that was painful over the past 2 to 4 days?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. You may have SHINGLES.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "Shingles"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have blisters that burst and form a crust that looks like brown sugar?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. You may have IMPETIGO.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "Impetigo"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Are you over 35?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Do you have rough red patches on your forehead or cheeks?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. You may have ACTINIC KERATOSES, which can form from repeated exposure to sunlight.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you have a dark lump or patch on your face, or has a mole changed in any way?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See a doctor immediately. If you are past puberty, there is a slight possibility that you have skin cancer. However, you probably have a harmless skin pigment disorder.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Have you had an open sore on your face or lip for more than 3 weeks?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See a doctor immediately. You may have a form Of skin cancer.\n\n Skin cancer\n See a doctor immediately if you notice any of the following, which can be signs of skin cancer. \n\u2022 An open sore that does not heal or sores that recur in the same place \n\u2022 A firm, slow-growing lump \n\u2022 A change in a mole \n\u2022 A new spot or patch",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Do you have a firm, slow-growing lump on your face?",
+                                                                                        "Yes": {
+                                                                                            "question": {
+                                                                                                "Q": "See a doctor immediately. You may have a form Of skin cancer.\n\n Skin cancer\n See a doctor immediately if you notice any of the following, which can be signs of skin cancer. \n\u2022 An open sore that does not heal or sores that recur in the same place \n\u2022 A firm, slow-growing lump \n\u2022 A change in a mole \n\u2022 A new spot or patch",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have a dark lump or patch on your face, or has a mole changed in any way?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See a doctor immediately. If you are past puberty, there is a slight possibility that you have skin cancer. However, you probably have a harmless skin pigment disorder.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Have you had an open sore on your face or lip for more than 3 weeks?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See a doctor immediately. You may have a form Of skin cancer.\n\n Skin cancer\n See a doctor immediately if you notice any of the following, which can be signs of skin cancer. \n\u2022 An open sore that does not heal or sores that recur in the same place \n\u2022 A firm, slow-growing lump \n\u2022 A change in a mole \n\u2022 A new spot or patch",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Do you have a firm, slow-growing lump on your face?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See a doctor immediately. You may have a form Of skin cancer.\n\n Skin cancer\n See a doctor immediately if you notice any of the following, which can be signs of skin cancer. \n\u2022 An open sore that does not heal or sores that recur in the same place \n\u2022 A firm, slow-growing lump \n\u2022 A change in a mole \n\u2022 A new spot or patch",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

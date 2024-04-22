@@ -1,0 +1,174 @@
+{
+    "question": {
+        "Q": "Is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+        "Yes": {
+            "tree": {
+                "symptom": "rash woth fever"
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have a red, flaky, or moist rash that fades into the surrounding skin?",
+                "Yes": {
+                    "question": {
+                        "Q": "Is the rash on a part of your body that has been in contact with a new cosmetic or a new item of clothing or jewelry?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You may have contact dermatitis.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["dermatitis"]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Is it possible that you touched a plant to which your skin may be sensitive, such as poison ivy, poison oak, or poison sumac?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor. You may have contact DERMATITIS.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["dermatitis"]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Is the rash on only one part of your body such as your hands or the back of your legs, and have you been using shampoos. detergents, soap, bubble bath, or other substances that could irritate or dry your skin?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. You may have irritant DERMATITIS.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["dermatitis"]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor. You may have a type of TO DERMATITIS.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["dermatitis"]
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do you have a smooth, raised, lighted rash with clearly defined edges?",
+                        "Yes": {
+                            "question": {
+                                "Q": "You may have HIVES.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["hives"]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Have you recently started taking any medication?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Talk to your doctor. Some drugs can cause an itchy rash.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you have one or more red, scaly patches that spread out in a ring?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. You may have a fungal infection called RINGWORMS.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["RINGWORMS"]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have a widespread red rash that itches a lot, particularly at night?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Do you have tiny gray lines or red, infected-looking spots between your fingers or on your wrists?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor. You may have a parasitic infestation called SUNBIES, especially if you have been in close physical contact with a person who has it.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have one or more raised red spots on a small area?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. You may have been bitten or stung by an insect.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have one or more raised red spots on a small area?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor. You may have been bitten or stung by an insect.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

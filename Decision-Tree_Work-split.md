@@ -21,12 +21,12 @@
 - [x] Anxiety
 - [x] Hallucinations
 - [x] Nightmares
-- [ ] Hair loss
-- [ ] General skin problems
-- [ ] Facial skin problems
-- [ ] Itchy spots and rashes
-- [ ] Rash with fever
-- [ ] Raised spots and lumps
+- [x] Hair loss
+- [x] General skin problems
+- [x] Facial skin problems
+- [x] Itchy spots and rashes
+- [x] Rash with fever
+- [x] Raised spots and lumps
 - [ ] Painful eye
 - [ ] Disturbed or impaired vision
 - [ ] Earache

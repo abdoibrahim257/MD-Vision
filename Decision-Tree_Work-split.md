@@ -34,7 +34,7 @@
 - [ ] Hearing loss
 - [ ] Runny nose
 
----------------------------------------------------
+---
 
 - [x] Sore throat
 - [x] Hoarseness or loss of voice
@@ -53,13 +53,13 @@
 - [x] Swollen abdomen
 - [x] Gas and belching
 - [x] Diarrhea
-- [ ] Constipation
+- [x] Constipation
 - [x] Abnormal-looking stools
-- [ ] Palpitations
-- [ ] Chest pain
-- [ ] Abnormally frequent urination
-- [ ] Abnormal-looking urine
-- [ ] Painful urination
+- [x] Palpitations
+- [x] Chest pain
+- [x] Abnormally frequent urination
+- [x] Abnormal-looking urine
+- [x] Painful urination
 - [ ] Lack of bladder control
 - [ ] Backache
 - [ ] Cramp

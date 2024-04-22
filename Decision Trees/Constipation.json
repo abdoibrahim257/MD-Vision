@@ -1,0 +1,151 @@
+{
+  "question": {
+    "Q": "Do you often have difficulty having a bowel movement?",
+    "Yes": {
+      "question": {
+        "Q": "Do you often resist the urge to have a bowel movement because you are too busy?",
+        "Yes": {
+          "question": {
+            "Q": "Putting off going to the bathroom can lead to a loss of normal muscle reflexes in the intestine and rectum. It can also result in a buildup and drying out of stool. Always respond to the urge to have a bowel movement.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Have you used laxatives regularly for a long time?",
+            "Yes": {
+              "question": {
+                "Q": "Talk to your doctor. Overuse of laxatives can eventually make the intestines underactive. Stop taking the laxatives; add high-fiber foods such as beans, bran, fruits, and vegetables to your diet; and drink plenty of water.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Your constipation is probably the result of a lack of fiber and fluids in your diet. Increase the amount of fiber and fluids you consume. You might also want to try a natural stool softener; several brands are available over the counter.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Are bowel movements painful?",
+        "Yes": {
+          "question": {
+            "Q": "See your doctor. Pain from an ANAL FISSURE, ANAL FISTULA, or HEMORRHOIDS may be causing your problem.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["ANAL FISSURE", "ANAL FISTULA", "HEMORRHOIDS"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Are you currently taking medication?",
+            "Yes": {
+              "question": {
+                "Q": "Talk to your doctor. Some drugs can cause constipation.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are you on a diet, or does your diet lack sufficient amounts of water and high-fiber foods such as fruit, vegetables, whole grains, and legumes?",
+                "Yes": {
+                  "question": {
+                    "Q": "You may not be eating enough or you may not be getting enough water or fiber in your diet to stimulate bowel movements.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["DIET AND HEALTH"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Are you pregnant?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Constipation is common during pregnancy. See CONSTIPATION AND HEMORRHOIDS (p. 518).",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you have two or more Of the following symptoms? \n\u2022 Frequently feeling cold \n\u2022 Dry skin or hair \u2022 Unexplained weight gain \n\u2022 unexplained fatigue",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have an underactive thyroid gland. See HYPOTHYROIDISM (p. 903).",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["HYPOTHYROIDISM"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have lower abdominal pain?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Have you had similar episodes of pain and constipation for many years?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You probably have IRRITABLE BOWEL SYNDROME.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["IRRITABLE BOWEL SYNDROME"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See a doctor immediately. You may have diverticular disease, or you could have COLON CANCER (p. 775).",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": [
+                                      "DIVERTICULOSIS AND DIVIRTICULITIS",
+                                      "COLON CANCER"
+                                    ]
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and the constipation persists for more than 2 weeks or you do not have any bowel movements for 3 days or more.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

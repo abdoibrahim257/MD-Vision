@@ -1,0 +1,312 @@
+{
+  "question": {
+    "Q": "Is urination painful?",
+    "Yes": {
+      "tree": {
+        "symptom": "PAINFUL URINATION"
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Do you seem to be urinating more than usual, or do you have to get up at night to urinate?",
+        "Yes": {
+          "question": {
+            "Q": "Have you noticed two or more of the following symptoms? \n\u2022 Increased thirst \n\u2022 Weight loss \n\u2022 Unexplained tiredness \n\u2022 Blurred vision",
+            "Yes": {
+              "question": {
+                "Q": "See a doctor immediately. Any Of these symptoms can result from DIABETES.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["DIABETES"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Have you been drinking more beverages that contain caffeine (such as coffee or colas) or more alcohol than usual?",
+                "Yes": {
+                  "question": {
+                    "Q": "Caffeine and alcohol act as diuretics and increase urine production. Reduce your intake of these substances and you should urinate less frequently.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Are you currently taking medication for heart disease or high blood pressure?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Talk to your doctor. Many medications prescribed for treating these conditions increase urine output.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Are you nervous or excited?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Excitement can trigger urination.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Are you a woman?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Could you be pregnant?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Increased frequency of urination is common throughout pregnancy, especially during the first 3 months and the last 3 months.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["URINARY PROBLEMS"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you sometimes have a strong urge to urinate followed by an uncontrollable leaking of urine?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You could have URGE INCONTINENCE or a BLADDER TUMOR.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                          "URGE INCONTINENCE",
+                                          "BLADDER TUMOR"
+                                        ]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Do you have difficulty controlling your bladder?",
+                                        "Yes": {
+                                          "tree": {
+                                            "symptom": "LACK OF BLADDER CONTROL"
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat and the urge to urinate wakes you at night or continues for more than 1 week.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Are you a man over 50?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Do you have two or more of the following symptoms? • Waking up at night to urinate \n\u2022 Difficulty starting to urinate \n\u2022 Weak stream of urine \n\u2022 Dribbling urine after urination",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have an enlarged prostate gland.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["BENIGN PROSTATIC HYPERPLASIA"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Do you have difficulty controlling your bladder?",
+                                        "Yes": {
+                                          "tree": {
+                                            "symptom": "LACK OF BLADDER CONTROL"
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat and the urge to urinate wakes you at night or continues for more than 1 week.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have difficulty controlling your bladder?",
+                                    "Yes": {
+                                      "tree": {
+                                        "symptom": "LACK OF BLADDER CONTROL"
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and the urge to urinate wakes you at night or continues for more than 1 week.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Are you nervous or excited?",
+            "Yes": {
+              "question": {
+                "Q": "Excitement can trigger urination.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are you a woman?",
+                "Yes": {
+                  "question": {
+                    "Q": "Could you be pregnant?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Increased frequency of urination is common throughout pregnancy, especially during the first 3 months and the last 3 months.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["URINARY PROBLEMS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you sometimes have a strong urge to urinate followed by an uncontrollable leaking of urine?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You could have URGE INCONTINENCE or a BLADDER TUMOR.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["URGE INCONTINENCE", "BLADDER TUMOR"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have difficulty controlling your bladder?",
+                            "Yes": {
+                              "tree": {
+                                "symptom": "LACK OF BLADDER CONTROL"
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and the urge to urinate wakes you at night or continues for more than 1 week.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Are you a man over 50?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Do you have two or more of the following symptoms? • Waking up at night to urinate \n\u2022 Difficulty starting to urinate \n\u2022 Weak stream of urine \n\u2022 Dribbling urine after urination",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have an enlarged prostate gland.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["BENIGN PROSTATIC HYPERPLASIA"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have difficulty controlling your bladder?",
+                            "Yes": {
+                              "tree": {
+                                "symptom": "LACK OF BLADDER CONTROL"
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and the urge to urinate wakes you at night or continues for more than 1 week.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you have difficulty controlling your bladder?",
+                        "Yes": {
+                          "tree": {
+                            "symptom": "LACK OF BLADDER CONTROL"
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "See your doctor if you are unable to make a diagnosis from this chat and the urge to urinate wakes you at night or continues for more than 1 week.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

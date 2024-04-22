@@ -27,7 +27,7 @@
 - [x] Itchy spots and rashes
 - [x] Rash with fever
 - [x] Raised spots and lumps
-- [ ] Painful eye
+- [x] Painful eye
 - [ ] Disturbed or impaired vision
 - [ ] Earache
 - [ ] Noises in the ear

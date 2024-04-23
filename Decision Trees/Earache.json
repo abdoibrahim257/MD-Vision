@@ -1,0 +1,125 @@
+{
+    "question": {
+        "Q": "Does the pain get worse when you pull down on your earlobe?",
+        "Yes": {
+            "question": {
+                "Q": "See your doctor. You probably have an INFECTION Of THE EAR CANAL.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": [
+                    "INFECTION Of THE EAR CANAL"
+                ]
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have a blocked-up feeling in your ear that cannot be cleared by swallowing?",
+                "Yes": {
+                    "question": {
+                        "Q": "Did the pain begin after an airplane flight?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See a doctor immediately. Changes in air pressure may have damaged your middle ear.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "BAROTRAUMA"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Has your hearing worsened in the past few weeks or months?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor. You could have an EARWAX BLOCKAGE.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "EARWAX BLOCKAGE"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor. You could have an ACUTE MIDDIE EAR INFECTION or a CHRONIC MIDDLE EAR INFECTION.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "ACUTE MIDDLE EAR INFECTION",
+                                            "CHRONIC MIDDLE EAR INFECTION"
+                                        ]
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Does the affected ear have a sticky yellow discharge?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You could have an INFECTION Of THE EAR or an ACUTE MIDDLE EAR INFECTION.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "INFECTION Of THE EAR",
+                                    "ACUTE MIDDLE EAR INFECTION"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have a cold?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor if the pain is severe; could have a MIDDLE EAR INFECTION. Earaches are a common symptom of colds that involve the upper respiratory tract, and usually subside when the cold clears up.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "MIDDLE EAR INFECTION"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you also have pain in your teeth, jaw, or neck?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor or dentist. Tooth and gum problems frequently cause pain in the ear. A STRAINED OR TORN MUSCLE in the neck can also cause pain in the ear.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "TOOTH DECAY",
+                                                    "TEMPOROMANDIBULAR DISORDER",
+                                                    "STRAINED OR TORN MUSCLE"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

@@ -28,11 +28,11 @@
 - [x] Rash with fever
 - [x] Raised spots and lumps
 - [x] Painful eye
-- [ ] Disturbed or impaired vision
-- [ ] Earache
-- [ ] Noises in the ear
-- [ ] Hearing loss
-- [ ] Runny nose
+- [x] Disturbed or impaired vision
+- [x] Earache
+- [x] Noises in the ear
+- [x] Hearing loss
+- [x] Runny nose
 
 ---
 

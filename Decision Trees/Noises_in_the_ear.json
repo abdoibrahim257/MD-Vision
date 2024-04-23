@@ -1,0 +1,64 @@
+{
+    "question": {
+        "Q": "Do you have any hearing loss?",
+        "Yes": {
+            "tree": {
+                "symptom": "Hearing Loss"
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Did you begin hearing the noises during or after an airplane flight?",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor. Changes in air pressure inside the plane may have damaged your middle ear.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                            "Barotrauma"
+                        ]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Are you taking or have you recently taken any prescription or over-the-counter medications?",
+                        "Yes": {
+                            "question": {
+                                "Q": "Talk to your doctor. Noises in the ear are a common side effect of some drugs, including aspirin.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have a tickling sensation in your ear?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor. An insect may be trapped in your outer ear canal.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this Chart.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

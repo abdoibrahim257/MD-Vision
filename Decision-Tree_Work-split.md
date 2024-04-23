@@ -60,9 +60,9 @@
 - [x] Abnormally frequent urination
 - [x] Abnormal-looking urine
 - [x] Painful urination
-- [ ] Lack of bladder control
-- [ ] Backache
-- [ ] Cramp
+- [x] Lack of bladder control
+- [x] Backache
+- [x] Cramp
 - [ ] Painful or stiff neck
 - [ ] Painful arm or hand
 - [ ] Painful leg

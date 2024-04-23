@@ -1,0 +1,114 @@
+{
+  "question": {
+    "Q": "Does the problem occur in a child?",
+    "Yes": {
+      "question": {
+        "Q": "Most children can control their bladder through the day and night by age 31/2. However, some children have problems with bladder control until they are much older.",
+        "Yes": {},
+        "No": {},
+        "diagnosis": ["BED-WETTING"]
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Do you have pain when you urinate?",
+        "Yes": {
+          "question": {
+            "Q": "You may have a urinary tract infection.Do you want to continue the diagnosis?",
+            "Yes": {
+              "tree": {
+                "symptom": "PAINFUL URINATION"
+              }
+            },
+            "No": {},
+            "diagnosis": ["CYSTITIS"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Are you a woman?",
+            "Yes": {
+              "question": {
+                "Q": "Do you leak urine when you cough, sneeze, lift, or run?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You probably have STRESS INCONTINENCE. However, you could have a BLADDER TUMOR.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["STRESS INCONTINENCE", "BLADDER TUMOR"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Does the involuntary passing of small amounts of urine follow an intense urge to empty the bladder?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You probably have URGE INCONTINENCE. However, you could have a BLADDER TUMOR.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["URGE INCONTINENCE", "BLADDER TUMOR"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are you over age 60?",
+                "Yes": {
+                  "question": {
+                    "Q": "Do you leak a small amount of urine after you have finished urinating?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have an enlarged prostate gland. Or you may have a URETHRAL STRICTURE or a BLADDER TUMOR.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                          "BENIGN PROSTATIC HYPERPLASIA",
+                          "URETHRAL STRICTURE",
+                          "BLADDER TUMOR"
+                        ]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

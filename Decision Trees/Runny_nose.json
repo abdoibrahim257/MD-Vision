@@ -1,0 +1,107 @@
+{
+    "question": {
+        "Q": "Do you have a clear, watery discharge from your nose?",
+        "Yes": {
+            "question": {
+                "Q": "Is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+                "Yes": {
+                    "question": {
+                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Headache \n\u2022 Cough \n\u2022 Aching joints or bones",
+                        "Yes": {
+                            "question": {
+                                "Q": "Call your doctor. You probably have a viral infection such as INFLUENZA.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["INFLUENZA"]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "You probably have a COLD.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["COLD"]
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do your eyes feel itchy, or have you been sneezing?",
+                        "Yes": {
+                            "question": {
+                                "Q": "Do you have a sore throat, or have you had a sore throat within the past 4 days?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "You probably have a COLD.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["COLD"]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor. You may have an allergy.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["ALLERGIES TO AIRBORNE SUBSTANCES","ALLERGIES TO FOOD"]
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Your runny nose may result from irritation, such as from smoke or fumes or from eating spicy foods.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have a thick, cloudy discharge from your nose?",
+                "Yes": {
+                    "question": {
+                        "Q": "Does your face feel painful or tender just above or below your eyes?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You probably have a viral infection of the SINUSES.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["SINUSES"]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "You probably have a COLD.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["COLD"]
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your symptoms persist for more than 10 days.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

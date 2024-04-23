@@ -1,0 +1,216 @@
+{
+    "question": {
+        "Q": "Do you have an earache?",
+        "Yes": {
+            "tree": {
+                "symptom": "earache"
+              }
+        },
+        "No": {
+            "question": {
+                "Q": "Does your ear have a sticky yellow discharge?",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor. Your hearing loss may be caused by an ear infection. Or you could have a RUPTURED OR PERFORATED EARDRUM or a disorder of the middle ear called CHOLESTEATOMA.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["MIDDLE EAR INFECTION", "RUPTURED OR PERFORATED EARDRUM", "CHOLESTEATOMA"]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Have you had a cold or a sore throat in the past week?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor if your hearing does not improve within 3 days. Your eustachian tube, which connects the middle ear and the back of the throat, may have become blocked as a result of a COLD.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["COLD"]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Can you hear low-pitched sounds (such as a knock on the door) better than you hear high-pitched sounds (such as a doorbell)?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Are you routinely exposed to very loud noises at work (such as loud machinery), or do you frequently go to noisy places (such as rock concerts or a firing range) ?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. Prolonged exposure to high noise levels can permanently damage hearing.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Are you taking or have you recently taken any nonprescription or prescription medications?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Talk to your doctor. Hearing loss is a possible side effect of some medications, including aspirin.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have occasional episodes of dizziness that make the room seem to spin?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor. You may have an inner ear disorder called MENIERE'S DISEASE.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": ["MENIERE'S DISEASE"]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Are you over 60?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Talk to your doctor. Hearing loss that Occurs as a natural part Of aging can often be treated.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Has your hearing worsened over a period Of several weeks or longer?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Have other members of your family had a gradual loss of hearing?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. You may have OTOSCLEROSIS, a disorder that affects the middle ear.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": ["OTOSCLEROSIS"]
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. An EARWAX BLOCKAGE may be causing your hearing loss.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": ["EARWAX BLOCKAGE"]
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you taking or have you recently taken any nonprescription or prescription medications?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Talk to your doctor. Hearing loss is a possible side effect of some medications, including aspirin.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have occasional episodes of dizziness that make the room seem to spin?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. You may have an inner ear disorder called MENIERE'S DISEASE.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["MENIERE'S DISEASE"]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Are you over 60?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Talk to your doctor. Hearing loss that Occurs as a natural part Of aging can often be treated.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Has your hearing worsened over a period Of several weeks or longer?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Have other members of your family had a gradual loss of hearing?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor. You may have OTOSCLEROSIS, a disorder that affects the middle ear.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": ["OTOSCLEROSIS"]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor. An EARWAX BLOCKAGE may be causing your hearing loss.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": ["EARWAX BLOCKAGE"]
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

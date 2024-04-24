@@ -1,0 +1,327 @@
+{
+    "question": {
+        "Q": "Could you be pregnant?",
+        "Yes": {
+            "question": {
+                "Q": "Could you be more than 3 months pregnant?",
+                "Yes": {
+                    "question": {
+                        "Q": "See a doctor immediately. Bleeding 3 months or more into a pregnancy may be a Sign Of an impending MISCARRIAGE.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                            "MISCARRIAGE"
+                        ]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do you have severe abdominal pain?",
+                        "Yes": {
+                            "question": {
+                                "Q": "EMERGENCY Get medical help now! Call 123 or your local enwrgency number or have sorneone take you to the nearest hospital department. A pregnancy may be developing outside the uterus.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "ECTOPIC PREGNANCY"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Has your pregnancy been confirmed?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See a doctor immediately. Some women have slight vaginal bleeding, or spotting. early in a pregnancy. However, you may be having a MISCARRIAGE.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "MISCARRIAGE"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Did you have your last period more than 6 months ago?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See a doctor immediately. You could be pregnant. However, vaginal bleeding can also be a sign of OF UTERUS or CANCER Of THE CERVIX, especially if you are over age 45.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "CANCER OF THE UTERUS",
+                                                    "CANCER OF THE CERVIX"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have a heavy, watery vaginal discharge, or does the bleeding occur immediately after intercourse?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See a doctor immediately. You may have CANCER Of THE CERVIX or CANCER Of THE UTERUS.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "CANCER OF THE UTERUS",
+                                                            "CANCER OF THE CERVIX"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have an intrauterine device (IUD)?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Do you have severe abdominal pain?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. A pregnancy may be developing outside the uterus.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "ECTOPIC PREGNANCY"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. An IUD sometimes causes vaginal bleeding.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "IUD"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Are you taking an oral contraceptive?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Talk to your doctor. You are probably having breakthrough bleeding. which is common in women taking ORAL CONTRACEPTIVES.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "ORAL CONTRACEPTIVES"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Was the bleeding like that of a period?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Have you started your periods within the past 3 years?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "Talk to your doctor. Irregular periods are common during the first 3 years of menstruation.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": [
+                                                                                            "IRREGULAR PERIODS"
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Are you in your 40s?",
+                                                                                        "Yes": {
+                                                                                            "question": {
+                                                                                                "Q": "Talk to your doctor. Irregular periods are common as women approach MENOPAUSE.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": [
+                                                                                                    "MENOPAUSE"
+                                                                                                ]
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Did you have your last period more than 6 months ago?",
+                "Yes": {
+                    "question": {
+                        "Q": "See a doctor immediately. You could be pregnant. However, vaginal bleeding can also be a sign of OF UTERUS or CANCER Of THE CERVIX, especially if you are over age 45.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                            "CANCER OF THE UTERUS",
+                            "CANCER OF THE CERVIX"
+                        ]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do you have a heavy, watery vaginal discharge, or does the bleeding occur immediately after intercourse?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See a doctor immediately. You may have CANCER Of THE CERVIX or CANCER Of THE UTERUS.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "CANCER OF THE UTERUS",
+                                    "CANCER OF THE CERVIX"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have an intrauterine device (IUD)?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Do you have severe abdominal pain?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. A pregnancy may be developing outside the uterus.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "ECTOPIC PREGNANCY"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor. An IUD sometimes causes vaginal bleeding.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "IUD"
+                                                ]
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you taking an oral contraceptive?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Talk to your doctor. You are probably having breakthrough bleeding. which is common in women taking ORAL CONTRACEPTIVES.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "ORAL CONTRACEPTIVES"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Was the bleeding like that of a period?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Have you started your periods within the past 3 years?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Talk to your doctor. Irregular periods are common during the first 3 years of menstruation.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                    "IRREGULAR PERIODS"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Are you in your 40s?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Talk to your doctor. Irregular periods are common as women approach MENOPAUSE.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "MENOPAUSE"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

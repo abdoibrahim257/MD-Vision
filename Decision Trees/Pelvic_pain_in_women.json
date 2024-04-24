@@ -1,0 +1,79 @@
+{
+    "question": {
+        "Q": "Do you have vaginal bleeding between periods?",
+        "Yes": {
+            "tree": {
+                "symptom": "IRREGULAR VAGINAL BLEEDING"
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have a vaginal discharge between periods that is unusually heavy or that has an unpleasant odor, or is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+                "Yes": {
+                    "question": {
+                        "Q": "See a doctor immediately. You may have an infection of the uterus, fallopian tubes, ovaries, or surrounding tissues.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                            "PELVIC INFLAMMATORY DISEASE"
+                        ]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Are you urinating more often than usual, or is urination painful?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. Your bladder may have become inflamed as a result of infection.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "CYSTITIS IN WOMEN"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Did the pain start just before or during a period?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "PAINFUL PERIODS"
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you constipated, or have you been passing more gas than usual?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor if the pain persists for more than 3 hours. Your intestines may have been affected by a recent change in your diet, or you may have an intestinal disorder such as IRRITABLE BOWEL SYNDROME.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "IRRITABLE BOWEL SYNDROME"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

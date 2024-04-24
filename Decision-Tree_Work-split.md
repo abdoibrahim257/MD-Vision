@@ -38,10 +38,10 @@
 
 ## Additional Symptoms for complete list
 
-- [ ] Pelvic pain in women
-- [ ] Irregular vaginal bleeding
-- [ ] Painful periods
-- [ ] Confusion in older people
+- [x] Pelvic pain in women
+- [x] Irregular vaginal bleeding
+- [x] Painful periods
+- [x] Confusion in older people
 
 ---
 

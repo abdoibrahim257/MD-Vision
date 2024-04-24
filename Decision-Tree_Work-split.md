@@ -38,9 +38,9 @@
 
 ## Additional Symptoms for complete list
 
-- [ ] pelvic pain in women
-- [ ] irregular vaginal bleeding
-- [ ] painful periods
+- [ ] Pelvic pain in women
+- [ ] Irregular vaginal bleeding
+- [ ] Painful periods
 - [ ] Confusion in older people
 
 ---

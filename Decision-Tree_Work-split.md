@@ -72,11 +72,11 @@
 - [x] Lack of bladder control
 - [x] Backache
 - [x] Cramp
-- [ ] Painful or stiff neck
-- [ ] Painful arm or hand
-- [ ] Painful leg
-- [ ] Painful knee
-- [ ] Painful shoulder
-- [ ] Painful ankles
-- [ ] Swollen ankles
+- [x] Painful or stiff neck
+- [x] Painful arm or hand
+- [x] Painful leg
+- [x] Painful knee
+- [x] Painful shoulder
+- [x] Painful ankles
+- [x] Swollen ankles
 - [ ] Foot problems

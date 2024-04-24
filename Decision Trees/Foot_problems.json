@@ -1,0 +1,666 @@
+{
+  "question": {
+    "Q": "Have you injured your foot within the past 24 hours?",
+    "Yes": {
+      "question": {
+        "Q": "See a doctor immediately. You may have broken a bone or strained a ligament.",
+        "Yes": {},
+        "No": {},
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Do both feet ache all over?",
+        "Yes": {
+          "question": {
+            "Q": "Have you been walking or standing for long periods of time?",
+            "Yes": {
+              "question": {
+                "Q": "Call your doctor if the pain persists. Your feet may simply be overtired, but the pain may also be caused by stretching or straining of the ligaments of your feet. You may have to wear arch supports and perform exercises to help strengthen the ligaments and muscles of your feet. If you are overweight, losing weight can ease some of the strain on the ligaments.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are you overweight according to the body mass index?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. Carrying extra weight puts a strain on your feet.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Did the pain start after walking or running?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have broken a small bone in your foot. Or you may have a swollen nerve that rubs between two bones when you walk or run. However, if you have pain in the foot when you walk that disappears promptly when you stop, you may have a circulatory disorder such as ATHEROSCLEROSIS.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["ATHEROSCLEROSIS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you have pain in one or more toe joints?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Is the pain accompanied by redness and swelling?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Is only one toe joint affected?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have GOUT OR PSEUDOGOUT.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["GOUT OR PSEUDOGOUT"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Did the pain begin suddenly?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Do you also have similar symptoms in your finger joints and other joints?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["RHEUMATOID ARTHRITIS"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor. You may have an infected toe.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have an infected toe.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Are you over age 50 and do you also have pain in your ankle, knee, or hip?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["OSTEOARTHRITIS"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have pain in the sole of your foot, heel pain, thick areas Of skin on your toes or on the bottoms Of your feet, or a swollen area at the base of your big toe?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Do you have a patch of skin on the sole of your foot that is painful when you walk, or thick areas of skin on the bottoms of your feet or on your toes?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "A small spot Of thick skin on the sole may be a plantar wart. Thick skin on the soles of the feet may be calluses, and thick skin on the toes may be corns.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["WARTS", "CORNS AND CALLUSES"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Is there an area of redness or swelling on the sole of your foot, heel pain, or a swollen area at the base of your big toe?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. If you have pain in the sole, you may have an infection resulting from a minor cut, or you may have torn the fibrous tissue at the bottom of your foot, which is a common cause of HEEL PAIN. A swollen area at the base of the big toe probably is a BUNION.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["HEEL PAIN", "BUNION"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do you have itching in one or both feet?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "Is the skin between your toes red, soft, and peeling?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have a fungal infection such as ATHLETE'S FOOT.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["ATHLETE'S FOOT"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Do you have itching in one or both feet?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Is the skin between your toes red, soft, and peeling?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have a fungal infection such as ATHLETE'S FOOT.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["ATHLETE'S FOOT"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have pain in the sole of your foot, heel pain, thick areas Of skin on your toes or on the bottoms Of your feet, or a swollen area at the base of your big toe?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Do you have a patch of skin on the sole of your foot that is painful when you walk, or thick areas of skin on the bottoms of your feet or on your toes?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "A small spot Of thick skin on the sole may be a plantar wart. Thick skin on the soles of the feet may be calluses, and thick skin on the toes may be corns.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["WARTS", "CORNS AND CALLUSES"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Is there an area of redness or swelling on the sole of your foot, heel pain, or a swollen area at the base of your big toe?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. If you have pain in the sole, you may have an infection resulting from a minor cut, or you may have torn the fibrous tissue at the bottom of your foot, which is a common cause of HEEL PAIN. A swollen area at the base of the big toe probably is a BUNION.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["HEEL PAIN", "BUNION"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Do you have itching in one or both feet?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Is the skin between your toes red, soft, and peeling?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have a fungal infection such as ATHLETE'S FOOT.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["ATHLETE'S FOOT"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have itching in one or both feet?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Is the skin between your toes red, soft, and peeling?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have a fungal infection such as ATHLETE'S FOOT.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["ATHLETE'S FOOT"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Are you overweight according to the body mass index?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. Carrying extra weight puts a strain on your feet.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Did the pain start after walking or running?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have broken a small bone in your foot. Or you may have a swollen nerve that rubs between two bones when you walk or run. However, if you have pain in the foot when you walk that disappears promptly when you stop, you may have a circulatory disorder such as ATHEROSCLEROSIS.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["ATHEROSCLEROSIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you have pain in one or more toe joints?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Is the pain accompanied by redness and swelling?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Is only one toe joint affected?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have GOUT OR PSEUDOGOUT.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["GOUT OR PSEUDOGOUT"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Did the pain begin suddenly?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Do you also have similar symptoms in your finger joints and other joints?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["RHEUMATOID ARTHRITIS"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have an infected toe.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have an infected toe.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Are you over age 50 and do you also have pain in your ankle, knee, or hip?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["OSTEOARTHRITIS"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have pain in the sole of your foot, heel pain, thick areas Of skin on your toes or on the bottoms Of your feet, or a swollen area at the base of your big toe?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Do you have a patch of skin on the sole of your foot that is painful when you walk, or thick areas of skin on the bottoms of your feet or on your toes?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "A small spot Of thick skin on the sole may be a plantar wart. Thick skin on the soles of the feet may be calluses, and thick skin on the toes may be corns.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["WARTS", "CORNS AND CALLUSES"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Is there an area of redness or swelling on the sole of your foot, heel pain, or a swollen area at the base of your big toe?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor. If you have pain in the sole, you may have an infection resulting from a minor cut, or you may have torn the fibrous tissue at the bottom of your foot, which is a common cause of HEEL PAIN. A swollen area at the base of the big toe probably is a BUNION.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["HEEL PAIN", "BUNION"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Do you have itching in one or both feet?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Is the skin between your toes red, soft, and peeling?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have a fungal infection such as ATHLETE'S FOOT.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["ATHLETE'S FOOT"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have itching in one or both feet?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Is the skin between your toes red, soft, and peeling?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor. You may have a fungal infection such as ATHLETE'S FOOT.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["ATHLETE'S FOOT"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you have pain in the sole of your foot, heel pain, thick areas Of skin on your toes or on the bottoms Of your feet, or a swollen area at the base of your big toe?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Do you have a patch of skin on the sole of your foot that is painful when you walk, or thick areas of skin on the bottoms of your feet or on your toes?",
+                            "Yes": {
+                              "question": {
+                                "Q": "A small spot Of thick skin on the sole may be a plantar wart. Thick skin on the soles of the feet may be calluses, and thick skin on the toes may be corns.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["WARTS", "CORNS AND CALLUSES"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Is there an area of redness or swelling on the sole of your foot, heel pain, or a swollen area at the base of your big toe?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. If you have pain in the sole, you may have an infection resulting from a minor cut, or you may have torn the fibrous tissue at the bottom of your foot, which is a common cause of HEEL PAIN. A swollen area at the base of the big toe probably is a BUNION.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["HEEL PAIN", "BUNION"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have itching in one or both feet?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Is the skin between your toes red, soft, and peeling?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor. You may have a fungal infection such as ATHLETE'S FOOT.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["ATHLETE'S FOOT"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have itching in one or both feet?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Is the skin between your toes red, soft, and peeling?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have a fungal infection such as ATHLETE'S FOOT.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["ATHLETE'S FOOT"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chart.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

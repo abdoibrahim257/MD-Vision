@@ -36,6 +36,15 @@
 
 ---
 
+## Additional Symptoms for complete list
+
+- [ ] pelvic pain in women
+- [ ] irregular vaginal bleeding
+- [ ] painful periods
+- [ ] Confusion in older people
+
+---
+
 - [x] Sore throat
 - [x] Hoarseness or loss of voice
 - [x] Coughing

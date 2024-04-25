@@ -79,4 +79,4 @@
 - [x] Painful shoulder
 - [x] Painful ankles
 - [x] Swollen ankles
-- [ ] Foot problems
+- [x] Foot problems

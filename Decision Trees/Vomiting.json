@@ -14,10 +14,7 @@
             "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You probably have a serious abdominal condition such as PERITONITIS or an INTESTINAL OBSTRUCTION.",
             "Yes": {},
             "No": {},
-            "diagnosis": [
-              "PERITONITIS",
-              "INTESTINAL OBSTRUCTION"
-            ]
+            "diagnosis": ["PERITONITIS", "INTESTINAL OBSTRUCTION"]
           }
         },
         "No": {
@@ -28,9 +25,7 @@
                 "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You probably have internal bleeding, possibly from a PEPTIC ULCER or another condition in the digestive tract.",
                 "Yes": {},
                 "No": {},
-                "diagnosis": [
-                  "PEPTIC ULCER"
-                ]
+                "diagnosis": ["PEPTIC ULCER"]
               }
             },
             "No": {
@@ -41,9 +36,7 @@
                     "Q": "See your doctor. You may have an infection of the digestive tract.",
                     "Yes": {},
                     "No": {},
-                    "diagnosis": [
-                      "GASTROENTERITIS"
-                    ]
+                    "diagnosis": ["GASTROENTERITIS"]
                   }
                 },
                 "No": {
@@ -54,9 +47,7 @@
                         "Q": "You probably have INDIGESTION.",
                         "Yes": {},
                         "No": {},
-                        "diagnosis": [
-                          "INDIGESTION"
-                        ]
+                        "diagnosis": ["INDIGESTION"]
                       }
                     },
                     "No": {
@@ -67,9 +58,7 @@
                             "Q": "See your doctor. You may have FOOD POISONING, especially if someone who ate the same food has the same symptoms.",
                             "Yes": {},
                             "No": {},
-                            "diagnosis": [
-                              "FOOD POISONING"
-                            ]
+                            "diagnosis": ["FOOD POISONING"]
                           }
                         },
                         "No": {
@@ -91,9 +80,7 @@
                                     "Q": "See an eye doctor immediately. You could have acute GLAUCOMA.",
                                     "Yes": {},
                                     "No": {},
-                                    "diagnosis": [
-                                      "GLAUCOMA"
-                                    ]
+                                    "diagnosis": ["GLAUCOMA"]
                                   }
                                 },
                                 "No": {
@@ -107,14 +94,12 @@
                                             "Q": "EMERGENCY Get medical help now! Call 123 or your local ernergency number or have someone take you to the nearest hospital ernergency department. You may have a BRAIN INJURY.",
                                             "Yes": {},
                                             "No": {},
-                                            "diagnosis": [
-                                              "BRAIN INJURY"
-                                            ]
+                                            "diagnosis": ["BRAIN INJURY"]
                                           }
                                         },
                                         "No": {
                                           "question": {
-                                            "Q": "Do you have one or more of the following symptoms? \u2022 Pain when you bend your head forward \u2022 Sensitivity of eyes to bright light \u2022 Drowsiness or confusion",
+                                            "Q": "Do you have one or more of the following symptoms? \n\u2022 Pain when you bend your head forward \n\u2022 Sensitivity of eyes to bright light \n\u2022 Drowsiness or confusion",
                                             "Yes": {
                                               "question": {
                                                 "Q": "EMERGENCY Get help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS or a SUB-ARACHNOID HEMORRHAGE.",
@@ -159,10 +144,7 @@
                                                 "Q": "See your doctor. You may have a disorder of the liver or gallbladder. See HEPATITIS and GALLSTONES.",
                                                 "Yes": {},
                                                 "No": {},
-                                                "diagnosis": [
-                                                  "HEPATITIS",
-                                                  "GALLSTONES"
-                                                ]
+                                                "diagnosis": ["HEPATITIS", "GALLSTONES"]
                                               }
                                             },
                                             "No": {

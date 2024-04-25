@@ -25,7 +25,7 @@
             "Q": "Do you have burning pain in your chest or upper abdomen when you bend over or lie down?",
             "Yes": {
               "question": {
-                "Q": "See your doctor. You may have GASTROESOPHAGEAL REFLUX DISEASE (p. 750).",
+                "Q": "See your doctor. You may have GASTROESOPHAGEAL REFLUX DISEASE.",
                 "Yes": {},
                 "No": {},
                 "diagnosis": ["GASTROESOPHAGEAL REFLUX DISEASE"]
@@ -53,7 +53,7 @@
                             "Q": "Is your temperature 100F or higher?",
                             "Yes": {
                               "question": {
-                                "Q": "See your doctor. You may have an inflamed gallbladder. See CHOLECYSTITIS.",
+                                "Q": "See your doctor. You may have an inflamed gallbladder.",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis": ["CHOLECYSTITIS"]
@@ -61,7 +61,7 @@
                             },
                             "No": {
                               "question": {
-                                "Q": "See your doctor. You could have GALLSTONES, INDIGESTION, or IRRITABLE BOWEL SYNDROME (p. 765).",
+                                "Q": "See your doctor. You could have GALLSTONES, INDIGESTION, or IRRITABLE BOWEL SYNDROME.",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis": [
@@ -134,7 +134,7 @@
                                         "Q": "Do you vomit suddenly (without feeling nauseous first), and do your headaches occur mainly in the morning?",
                                         "Yes": {
                                           "question": {
-                                            "Q": "See a doctor immediately. You could have a subdural hemorrhage. See SUBDURAL HEMORRHAGE AND HEMATOMA. Or you may have a BRAIN TUMOR.",
+                                            "Q": "See a doctor immediately. You could have a subdural hemorrhage. Or you may have a BRAIN TUMOR.",
                                             "Yes": {},
                                             "No": {},
                                             "diagnosis": [

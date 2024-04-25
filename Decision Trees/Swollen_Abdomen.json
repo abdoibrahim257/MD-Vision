@@ -1,580 +1,580 @@
 {
-    "question": {
-        "Q": "Did the swelling develop suddenly within the past 24 hours?",
+  "question": {
+    "Q": "Did the swelling develop suddenly within the past 24 hours?",
+    "Yes": {
+      "question": {
+        "Q": "Do you have severe abdominal pain?",
         "Yes": {
-            "question": {
-                "Q": "Do you have severe abdominal pain?",
-                "Yes": {
-                    "question": {
-                        "Q": "Do you have one or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Diarrhea \n\u2022 Temperature over 1OO\u2109 \n\u2022 NO bowel movements for the past few days",
-                        "Yes": {
-                            "question": {
-                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have a dangerous abdominal condition such as an INTESTINAL OBSTRUCTION",
-                                "Yes": {},
-                                "No": {},
-                                "diagnosis": ["INTESTINAL OBSTRUCTION"]
-                            }
-                        },
-                        "No": {
-                            "tree": {
-                                "symptom": "ABDOMINAL PAIN"
-                            }
-                        },
-                        "diagnosis": []
-                    }
-                },
-                "No": {
-                    "question": {
-                        "Q": "Are your ankles puffy, or do dents form when you press your ankles with your fingers?",
-                        "Yes": {
-                            "question": {
-                                "Q": "Are you short of breath, particularly at night?",
-                                "Yes": {
-                                    "question": {
-                                        "Q": "See a doctor immediately. You may have fluid retention resulting from CONGESTIVE HEART FAILURE.",
-                                        "Yes": {},
-                                        "No": {},
-                                        "diagnosis": ["CONGESTIVE HEART FAILURE"]
-                                    }
-                                },
-                                "No": {
-                                    "question": {
-                                        "Q": "Are you urinating less than usual?",
-                                        "Yes": {
-                                            "question": {
-                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have ACUTE KIDNEY FAILURE or a chronic kidney disease such as GLOMERULONEPHRITIS.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": ["ACUTE KIDNEY FAILURE", "GLOMERULONEPHRITIS"]
-                                            }
-                                        },
-                                        "No": {
-                                            "question": {
-                                                "Q": "Do the whites of your eyes and your skin look yellow?",
-                                                "Yes": {
-                                                    "question": {
-                                                        "Q": "See your doctor. Yellowish skin or eyes, called JAUNDICE, suggests a liver disorder such as CIRRHOSIS OF THE LIVER.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": ["JAUNDICE", "CIRRHOSIS OF THE LIVER"]
-                                                    }
-                                                },
-                                                "No": {
-                                                    "question": {
-                                                        "Q": "Are you a woman of childbearing age?",
-                                                        "Yes": {
-                                                            "question": {
-                                                                "Q": "Could you be pregnant?",
-                                                                "Yes": {
-                                                                    "question": {
-                                                                        "Q": "See your doctor. He or she will determine if you are pregnant.",
-                                                                        "Yes": {},
-                                                                        "No": {},
-                                                                        "diagnosis": ["CONFIRMING A PREGNANCY"]
-                                                                    }
-                                                                },
-                                                                "No": {
-                                                                    "question": {
-                                                                        "Q": "Did the swelling develop just before or during your period?",
-                                                                        "Yes": {
-                                                                            "question": {
-                                                                                "Q": "Many women have a swollen abdomen around the time Of their period.",
-                                                                                "Yes": {},
-                                                                                "No": {},
-                                                                                "diagnosis": ["PREMENSTRUAL SYNDROME"]
-                                                                            }
-                                                                        },
-                                                                        "No": {
-                                                                            "question": {
-                                                                                "Q": "Do you have persistent constipation?",
-                                                                                "Yes": {
-                                                                                    "question": {
-                                                                                        "Q": "Constipation sometimes causes swelling in the abdomen.",
-                                                                                        "Yes": {},
-                                                                                        "No": {},
-                                                                                        "diagnosis": ["CONSTIPATION AND DIARRHEA"]
-                                                                                    }
-                                                                                },
-                                                                                "No": {
-                                                                                    "question": {
-                                                                                        "Q": "Are you overweight according to the body mass index chart?",
-                                                                                        "Yes": {
-                                                                                            "question": {
-                                                                                                "Q": "Talk to your doctor bout losing weight.",
-                                                                                                "Yes": {},
-                                                                                                "No": {},
-                                                                                                "diagnosis": ["LOSING WEIGHT SENSIBLY"]
-                                                                                            }
-                                                                                        },
-                                                                                        "No": {
-                                                                                            "question": {
-                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
-                                                                                                "Yes": {},
-                                                                                                "No": {},
-                                                                                                "diagnosis": []
-                                                                                            }
-                                                                                        },
-                                                                                        "diagnosis": []
-                                                                                    }
-                                                                                },
-                                                                                "diagnosis": []
-                                                                            }
-                                                                        },
-                                                                        "diagnosis": []
-                                                                    }
-                                                                },
-                                                                "diagnosis": []
-                                                            }
-                                                        },
-                                                        "No": {
-                                                            "question": {
-                                                                "Q": "Do you have persistent constipation?",
-                                                                "Yes": {
-                                                                    "question": {
-                                                                        "Q": "Constipation sometimes causes swelling in the abdomen.",
-                                                                        "Yes": {},
-                                                                        "No": {},
-                                                                        "diagnosis": ["CONSTIPATION AND DIARRHEA"]
-                                                                    }
-                                                                },
-                                                                "No": {
-                                                                    "question": {
-                                                                        "Q": "Are you overweight according to the body mass index chart?",
-                                                                        "Yes": {
-                                                                            "question": {
-                                                                                "Q": "Talk to your doctor bout losing weight.",
-                                                                                "Yes": {},
-                                                                                "No": {},
-                                                                                "diagnosis": ["LOSING WEIGHT SENSIBLY"]
-                                                                            }
-                                                                        },
-                                                                        "No": {
-                                                                            "question": {
-                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
-                                                                                "Yes": {},
-                                                                                "No": {},
-                                                                                "diagnosis": []
-                                                                            }
-                                                                        },
-                                                                        "diagnosis": []
-                                                                    }
-                                                                },
-                                                                "diagnosis": []
-                                                            }
-                                                        },
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "diagnosis": []
-                                    }
-                                },
-                                "diagnosis": []
-                            }
-                        },
-                        "No": {
-                            "question": {
-                                "Q": "Do the whites of your eyes and your skin look yellow?",
-                                "Yes": {
-                                    "question": {
-                                        "Q": "See your doctor. Yellowish skin or eyes, called JAUNDICE, suggests a liver disorder such as CIRRHOSIS OF THE LIVER.",
-                                        "Yes": {},
-                                        "No": {},
-                                        "diagnosis": ["JAUNDICE", "CIRRHOSIS OF THE LIVER"]
-                                    }
-                                },
-                                "No": {
-                                    "question": {
-                                        "Q": "Are you a woman of childbearing age?",
-                                        "Yes": {
-                                            "question": {
-                                                "Q": "Could you be pregnant?",
-                                                "Yes": {
-                                                    "question": {
-                                                        "Q": "See your doctor. He or she will determine if you are pregnant.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": ["CONFIRMING A PREGNANCY"]
-                                                    }
-                                                },
-                                                "No": {
-                                                    "question": {
-                                                        "Q": "Did the swelling develop just before or during your period?",
-                                                        "Yes": {
-                                                            "question": {
-                                                                "Q": "Many women have a swollen abdomen around the time Of their period.",
-                                                                "Yes": {},
-                                                                "No": {},
-                                                                "diagnosis": ["PREMENSTRUAL SYNDROME"]
-                                                            }
-                                                        },
-                                                        "No": {
-                                                            "question": {
-                                                                "Q": "Do you have persistent constipation?",
-                                                                "Yes": {
-                                                                    "question": {
-                                                                        "Q": "Constipation sometimes causes swelling in the abdomen.",
-                                                                        "Yes": {},
-                                                                        "No": {},
-                                                                        "diagnosis": ["CONSTIPATION AND DIARRHEA"]
-                                                                    }
-                                                                },
-                                                                "No": {
-                                                                    "question": {
-                                                                        "Q": "Are you overweight according to the body mass index chart?",
-                                                                        "Yes": {
-                                                                            "question": {
-                                                                                "Q": "Talk to your doctor bout losing weight.",
-                                                                                "Yes": {},
-                                                                                "No": {},
-                                                                                "diagnosis": ["LOSING WEIGHT SENSIBLY"]
-                                                                            }
-                                                                        },
-                                                                        "No": {
-                                                                            "question": {
-                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
-                                                                                "Yes": {},
-                                                                                "No": {},
-                                                                                "diagnosis": []
-                                                                            }
-                                                                        },
-                                                                        "diagnosis": []
-                                                                    }
-                                                                },
-                                                                "diagnosis": []
-                                                            }
-                                                        },
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "No": {
-                                            "question": {
-                                                "Q": "Do you have persistent constipation?",
-                                                "Yes": {
-                                                    "question": {
-                                                        "Q": "Constipation sometimes causes swelling in the abdomen.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": ["CONSTIPATION AND DIARRHEA"]
-                                                    }
-                                                },
-                                                "No": {
-                                                    "question": {
-                                                        "Q": "Are you overweight according to the body mass index chart?",
-                                                        "Yes": {
-                                                            "question": {
-                                                                "Q": "Talk to your doctor bout losing weight.",
-                                                                "Yes": {},
-                                                                "No": {},
-                                                                "diagnosis": ["LOSING WEIGHT SENSIBLY"]
-                                                            }
-                                                        },
-                                                        "No": {
-                                                            "question": {
-                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
-                                                                "Yes": {},
-                                                                "No": {},
-                                                                "diagnosis": []
-                                                            }
-                                                        },
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "diagnosis": []
-                                    }
-                                },
-                                "diagnosis": []
-                            }
-                        },
-                        "diagnosis": []
-                    }
-                },
-                "diagnosis": []
-            }
+          "question": {
+            "Q": "Do you have one or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Diarrhea \n\u2022 Temperature over 1OO\u2109(37.8 \u2103 ) \n\u2022 NO bowel movements for the past few days",
+            "Yes": {
+              "question": {
+                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have a dangerous abdominal condition such as an INTESTINAL OBSTRUCTION",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["INTESTINAL OBSTRUCTION"]
+              }
+            },
+            "No": {
+              "tree": {
+                "symptom": "ABDOMINAL PAIN"
+              }
+            },
+            "diagnosis": []
+          }
         },
         "No": {
-            "question": {
-                "Q": "Are your ankles puffy, or do dents form when you press your ankles with your fingers?",
+          "question": {
+            "Q": "Are your ankles puffy, or do dents form when you press your ankles with your fingers?",
+            "Yes": {
+              "question": {
+                "Q": "Are you short of breath, particularly at night?",
                 "Yes": {
-                    "question": {
-                        "Q": "Are you short of breath, particularly at night?",
-                        "Yes": {
-                            "question": {
-                                "Q": "See a doctor immediately. You may have fluid retention resulting from CONGESTIVE HEART FAILURE.",
-                                "Yes": {},
-                                "No": {},
-                                "diagnosis": ["CONGESTIVE HEART FAILURE"]
-                            }
-                        },
-                        "No": {
-                            "question": {
-                                "Q": "Are you urinating less than usual?",
-                                "Yes": {
-                                    "question": {
-                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have ACUTE KIDNEY FAILURE or a chronic kidney disease such as GLOMERULONEPHRITIS.",
-                                        "Yes": {},
-                                        "No": {},
-                                        "diagnosis": ["ACUTE KIDNEY FAILURE", "GLOMERULONEPHRITIS"]
-                                    }
-                                },
-                                "No": {
-                                    "question": {
-                                        "Q": "Do the whites of your eyes and your skin look yellow?",
-                                        "Yes": {
-                                            "question": {
-                                                "Q": "See your doctor. Yellowish skin or eyes, called JAUNDICE, suggests a liver disorder such as CIRRHOSIS OF THE LIVER.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": ["JAUNDICE", "CIRRHOSIS OF THE LIVER"]
-                                            }
-                                        },
-                                        "No": {
-                                            "question": {
-                                                "Q": "Are you a woman of childbearing age?",
-                                                "Yes": {
-                                                    "question": {
-                                                        "Q": "Could you be pregnant?",
-                                                        "Yes": {
-                                                            "question": {
-                                                                "Q": "See your doctor. He or she will determine if you are pregnant.",
-                                                                "Yes": {},
-                                                                "No": {},
-                                                                "diagnosis": ["CONFIRMING A PREGNANCY"]
-                                                            }
-                                                        },
-                                                        "No": {
-                                                            "question": {
-                                                                "Q": "Did the swelling develop just before or during your period?",
-                                                                "Yes": {
-                                                                    "question": {
-                                                                        "Q": "Many women have a swollen abdomen around the time Of their period.",
-                                                                        "Yes": {},
-                                                                        "No": {},
-                                                                        "diagnosis": ["PREMENSTRUAL SYNDROME"]
-                                                                    }
-                                                                },
-                                                                "No": {
-                                                                    "question": {
-                                                                        "Q": "Do you have persistent constipation?",
-                                                                        "Yes": {
-                                                                            "question": {
-                                                                                "Q": "Constipation sometimes causes swelling in the abdomen.",
-                                                                                "Yes": {},
-                                                                                "No": {},
-                                                                                "diagnosis": ["CONSTIPATION AND DIARRHEA"]
-                                                                            }
-                                                                        },
-                                                                        "No": {
-                                                                            "question": {
-                                                                                "Q": "Are you overweight according to the body mass index chart?",
-                                                                                "Yes": {
-                                                                                    "question": {
-                                                                                        "Q": "Talk to your doctor bout losing weight.",
-                                                                                        "Yes": {},
-                                                                                        "No": {},
-                                                                                        "diagnosis": ["LOSING WEIGHT SENSIBLY"]
-                                                                                    }
-                                                                                },
-                                                                                "No": {
-                                                                                    "question": {
-                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
-                                                                                        "Yes": {},
-                                                                                        "No": {},
-                                                                                        "diagnosis": []
-                                                                                    }
-                                                                                },
-                                                                                "diagnosis": []
-                                                                            }
-                                                                        },
-                                                                        "diagnosis": []
-                                                                    }
-                                                                },
-                                                                "diagnosis": []
-                                                            }
-                                                        },
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "No": {
-                                                    "question": {
-                                                        "Q": "Do you have persistent constipation?",
-                                                        "Yes": {
-                                                            "question": {
-                                                                "Q": "Constipation sometimes causes swelling in the abdomen.",
-                                                                "Yes": {},
-                                                                "No": {},
-                                                                "diagnosis": ["CONSTIPATION AND DIARRHEA"]
-                                                            }
-                                                        },
-                                                        "No": {
-                                                            "question": {
-                                                                "Q": "Are you overweight according to the body mass index chart?",
-                                                                "Yes": {
-                                                                    "question": {
-                                                                        "Q": "Talk to your doctor bout losing weight.",
-                                                                        "Yes": {},
-                                                                        "No": {},
-                                                                        "diagnosis": ["LOSING WEIGHT SENSIBLY"]
-                                                                    }
-                                                                },
-                                                                "No": {
-                                                                    "question": {
-                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
-                                                                        "Yes": {},
-                                                                        "No": {},
-                                                                        "diagnosis": []
-                                                                    }
-                                                                },
-                                                                "diagnosis": []
-                                                            }
-                                                        },
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "diagnosis": []
-                                    }
-                                },
-                                "diagnosis": []
-                            }
-                        },
-                        "diagnosis": []
-                    }
+                  "question": {
+                    "Q": "See a doctor immediately. You may have fluid retention resulting from CONGESTIVE HEART FAILURE.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["CONGESTIVE HEART FAILURE"]
+                  }
                 },
                 "No": {
-                    "question": {
+                  "question": {
+                    "Q": "Are you urinating less than usual?",
+                    "Yes": {
+                      "question": {
+                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have ACUTE KIDNEY FAILURE or a chronic kidney disease such as GLOMERULONEPHRITIS.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["ACUTE KIDNEY FAILURE", "GLOMERULONEPHRITIS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
                         "Q": "Do the whites of your eyes and your skin look yellow?",
                         "Yes": {
-                            "question": {
-                                "Q": "See your doctor. Yellowish skin or eyes, called JAUNDICE, suggests a liver disorder such as CIRRHOSIS OF THE LIVER.",
-                                "Yes": {},
-                                "No": {},
-                                "diagnosis": ["JAUNDICE", "CIRRHOSIS OF THE LIVER"]
-                            }
+                          "question": {
+                            "Q": "See your doctor. Yellowish skin or eyes, called JAUNDICE, suggests a liver disorder such as CIRRHOSIS OF THE LIVER.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["JAUNDICE", "CIRRHOSIS OF THE LIVER"]
+                          }
                         },
                         "No": {
-                            "question": {
-                                "Q": "Are you a woman of childbearing age?",
+                          "question": {
+                            "Q": "Are you a woman of childbearing age?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Could you be pregnant?",
                                 "Yes": {
-                                    "question": {
-                                        "Q": "Could you be pregnant?",
-                                        "Yes": {
-                                            "question": {
-                                                "Q": "See your doctor. He or she will determine if you are pregnant.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": ["CONFIRMING A PREGNANCY"]
-                                            }
-                                        },
-                                        "No": {
-                                            "question": {
-                                                "Q": "Did the swelling develop just before or during your period?",
-                                                "Yes": {
-                                                    "question": {
-                                                        "Q": "Many women have a swollen abdomen around the time Of their period.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": ["PREMENSTRUAL SYNDROME"]
-                                                    }
-                                                },
-                                                "No": {
-                                                    "question": {
-                                                        "Q": "Do you have persistent constipation?",
-                                                        "Yes": {
-                                                            "question": {
-                                                                "Q": "Constipation sometimes causes swelling in the abdomen.",
-                                                                "Yes": {},
-                                                                "No": {},
-                                                                "diagnosis": ["CONSTIPATION AND DIARRHEA"]
-                                                            }
-                                                        },
-                                                        "No": {
-                                                            "question": {
-                                                                "Q": "Are you overweight according to the body mass index chart?",
-                                                                "Yes": {
-                                                                    "question": {
-                                                                        "Q": "Talk to your doctor bout losing weight.",
-                                                                        "Yes": {},
-                                                                        "No": {},
-                                                                        "diagnosis": ["LOSING WEIGHT SENSIBLY"]
-                                                                    }
-                                                                },
-                                                                "No": {
-                                                                    "question": {
-                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
-                                                                        "Yes": {},
-                                                                        "No": {},
-                                                                        "diagnosis": []
-                                                                    }
-                                                                },
-                                                                "diagnosis": []
-                                                            }
-                                                        },
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "diagnosis": []
-                                    }
+                                  "question": {
+                                    "Q": "See your doctor. He or she will determine if you are pregnant.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["CONFIRMING A PREGNANCY"]
+                                  }
                                 },
                                 "No": {
-                                    "question": {
+                                  "question": {
+                                    "Q": "Did the swelling develop just before or during your period?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Many women have a swollen abdomen around the time Of their period.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["PREMENSTRUAL SYNDROME"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
                                         "Q": "Do you have persistent constipation?",
                                         "Yes": {
-                                            "question": {
-                                                "Q": "Constipation sometimes causes swelling in the abdomen.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": ["CONSTIPATION AND DIARRHEA"]
-                                            }
+                                          "question": {
+                                            "Q": "Constipation sometimes causes swelling in the abdomen.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+                                          }
                                         },
                                         "No": {
-                                            "question": {
-                                                "Q": "Are you overweight according to the body mass index chart?",
-                                                "Yes": {
-                                                    "question": {
-                                                        "Q": "Talk to your doctor bout losing weight.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": ["LOSING WEIGHT SENSIBLY"]
-                                                    }
-                                                },
-                                                "No": {
-                                                    "question": {
-                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": []
-                                                    }
-                                                },
+                                          "question": {
+                                            "Q": "Are you overweight according to the body mass index chart?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Talk to your doctor bout losing weight.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["LOSING WEIGHT SENSIBLY"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
+                                                "Yes": {},
+                                                "No": {},
                                                 "diagnosis": []
-                                            }
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
                                         },
                                         "diagnosis": []
-                                    }
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
                                 },
                                 "diagnosis": []
-                            }
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have persistent constipation?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Constipation sometimes causes swelling in the abdomen.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Are you overweight according to the body mass index chart?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Talk to your doctor bout losing weight.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["LOSING WEIGHT SENSIBLY"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
                         },
                         "diagnosis": []
-                    }
+                      }
+                    },
+                    "diagnosis": []
+                  }
                 },
                 "diagnosis": []
-            }
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do the whites of your eyes and your skin look yellow?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. Yellowish skin or eyes, called JAUNDICE, suggests a liver disorder such as CIRRHOSIS OF THE LIVER.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["JAUNDICE", "CIRRHOSIS OF THE LIVER"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Are you a woman of childbearing age?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Could you be pregnant?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. He or she will determine if you are pregnant.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["CONFIRMING A PREGNANCY"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Did the swelling develop just before or during your period?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Many women have a swollen abdomen around the time Of their period.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["PREMENSTRUAL SYNDROME"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have persistent constipation?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Constipation sometimes causes swelling in the abdomen.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Are you overweight according to the body mass index chart?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Talk to your doctor bout losing weight.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["LOSING WEIGHT SENSIBLY"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you have persistent constipation?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Constipation sometimes causes swelling in the abdomen.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Are you overweight according to the body mass index chart?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Talk to your doctor bout losing weight.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["LOSING WEIGHT SENSIBLY"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
         },
         "diagnosis": []
+      }
     },
-    "age-group": ""
+    "No": {
+      "question": {
+        "Q": "Are your ankles puffy, or do dents form when you press your ankles with your fingers?",
+        "Yes": {
+          "question": {
+            "Q": "Are you short of breath, particularly at night?",
+            "Yes": {
+              "question": {
+                "Q": "See a doctor immediately. You may have fluid retention resulting from CONGESTIVE HEART FAILURE.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["CONGESTIVE HEART FAILURE"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are you urinating less than usual?",
+                "Yes": {
+                  "question": {
+                    "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have ACUTE KIDNEY FAILURE or a chronic kidney disease such as GLOMERULONEPHRITIS.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["ACUTE KIDNEY FAILURE", "GLOMERULONEPHRITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do the whites of your eyes and your skin look yellow?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. Yellowish skin or eyes, called JAUNDICE, suggests a liver disorder such as CIRRHOSIS OF THE LIVER.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["JAUNDICE", "CIRRHOSIS OF THE LIVER"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Are you a woman of childbearing age?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Could you be pregnant?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. He or she will determine if you are pregnant.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CONFIRMING A PREGNANCY"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Did the swelling develop just before or during your period?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Many women have a swollen abdomen around the time Of their period.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["PREMENSTRUAL SYNDROME"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have persistent constipation?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Constipation sometimes causes swelling in the abdomen.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Are you overweight according to the body mass index chart?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Talk to your doctor bout losing weight.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["LOSING WEIGHT SENSIBLY"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have persistent constipation?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Constipation sometimes causes swelling in the abdomen.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Are you overweight according to the body mass index chart?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Talk to your doctor bout losing weight.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["LOSING WEIGHT SENSIBLY"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do the whites of your eyes and your skin look yellow?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. Yellowish skin or eyes, called JAUNDICE, suggests a liver disorder such as CIRRHOSIS OF THE LIVER.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["JAUNDICE", "CIRRHOSIS OF THE LIVER"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are you a woman of childbearing age?",
+                "Yes": {
+                  "question": {
+                    "Q": "Could you be pregnant?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. He or she will determine if you are pregnant.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["CONFIRMING A PREGNANCY"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Did the swelling develop just before or during your period?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Many women have a swollen abdomen around the time Of their period.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["PREMENSTRUAL SYNDROME"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have persistent constipation?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Constipation sometimes causes swelling in the abdomen.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Are you overweight according to the body mass index chart?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Talk to your doctor bout losing weight.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["LOSING WEIGHT SENSIBLY"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you have persistent constipation?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Constipation sometimes causes swelling in the abdomen.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["CONSTIPATION AND DIARRHEA"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Are you overweight according to the body mass index chart?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Talk to your doctor bout losing weight.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["LOSING WEIGHT SENSIBLY"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "See your doctor if you are unable to make a diagnosis from this chat and your abdomen stays swollen for more than 24 hours.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  },
+  "age-group": ""
 }

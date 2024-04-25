@@ -149,7 +149,88 @@
                         "diagnosis": []
                       }
                     },
-                    "No": {},
+                    "No": {
+                      "question": {
+                        "Q": "Have you had garlic, onions, or other strong- smelling foods, or alcohol within the past 24 hours?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Some foods and beverages contain strong-smelling substances that are absorbed into the bloodstream and released into the lungs, where they are exhaled, causing temporary bad breath. Your breath should return to normal within 24 hours of consuming these substances.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you smoke?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Smoking causes bad breath, and inflammation caused by the smoke increases the risk of nasal and sinus infections.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["COLDS", "SINUSITIS", "HOW TO QUIT SMOKING"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Is your temperature 100F or higher, or do you have frequent sore throats?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. Bad breath sometimes occurs with a fever. Some people have tiny pockets in their tonsils that trap bacteria, resulting in chronic TONSILLITIS. Do you want to continue the diagnosis?",
+                                    "Yes": {
+                                      "tree": {
+                                        "symptom": "FEVER"
+                                      }
+                                    },
+                                    "No": {},
+                                    "diagnosis": ["TONSILLITIS"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have a persistent cough that produces foul-smelling mucus?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have BRONCHIECTASIS.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["BRONCHIECTASIS"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Do you breathe through your mouth?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Talk to your doctor or dentist. Constantly breathing through the mouth dries up saliva, which creates an environment in which bacteria that cause bad breath can multiply.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor or dentist if your bad breath persists.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
                     "diagnosis": []
                   }
                 },

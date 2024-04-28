@@ -141,7 +141,7 @@
                                             "Q": "Do the whites of your eyes and your skin look yellow?",
                                             "Yes": {
                                               "question": {
-                                                "Q": "See your doctor. You may have a disorder of the liver or gallbladder. See HEPATITIS and GALLSTONES.",
+                                                "Q": "See your doctor. You may have a disorder of the liver or gallbladder.",
                                                 "Yes": {},
                                                 "No": {},
                                                 "diagnosis": ["HEPATITIS", "GALLSTONES"]

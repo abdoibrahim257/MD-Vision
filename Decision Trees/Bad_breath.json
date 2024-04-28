@@ -88,7 +88,7 @@
                                 },
                                 "No": {
                                   "question": {
-                                    "Q": "Is your temperature 100F or higher, or do you have frequent sore throats?",
+                                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or do you have frequent sore throats?",
                                     "Yes": {
                                       "question": {
                                         "Q": "See your doctor. Bad breath sometimes occurs with a fever. Some people have tiny pockets in their tonsils that trap bacteria, resulting in chronic TONSILLITIS. Do you want to continue the diagnosis?",
@@ -173,7 +173,7 @@
                             },
                             "No": {
                               "question": {
-                                "Q": "Is your temperature 100F or higher, or do you have frequent sore throats?",
+                                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or do you have frequent sore throats?",
                                 "Yes": {
                                   "question": {
                                     "Q": "See your doctor. Bad breath sometimes occurs with a fever. Some people have tiny pockets in their tonsils that trap bacteria, resulting in chronic TONSILLITIS. Do you want to continue the diagnosis?",

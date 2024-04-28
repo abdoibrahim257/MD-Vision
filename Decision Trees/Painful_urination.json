@@ -39,7 +39,7 @@
                     "Q": "Are you urinating more frequently than usual?",
                     "Yes": {
                       "question": {
-                        "Q": "See your doctor. You may have inflammation of the bladder. See CYSTITIS.",
+                        "Q": "See your doctor. You may have inflammation of the bladder.",
                         "Yes": {},
                         "No": {},
                         "diagnosis": ["CYSTITIS"]
@@ -78,7 +78,7 @@
                 "Q": "Are you urinating more frequently than usual?",
                 "Yes": {
                   "question": {
-                    "Q": "See your doctor. You may have inflammation of the bladder. See CYSTITIS.",
+                    "Q": "See your doctor. You may have inflammation of the bladder.",
                     "Yes": {},
                     "No": {},
                     "diagnosis": ["CYSTITIS"]

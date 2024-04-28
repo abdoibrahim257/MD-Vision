@@ -43,7 +43,7 @@
                                 },
                                 "No": {
                                     "question": {
-                                        "Q": "See your doctor if you are unable to make a diagnosis from this Chart.",
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this Chat.",
                                         "Yes": {},
                                         "No": {},
                                         "diagnosis": []

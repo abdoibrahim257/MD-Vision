@@ -28,7 +28,7 @@
                 "Q": "Does the pain occur in waves, and is it mainly in the upper right side of your abdomen or around your ribs?",
                 "Yes": {
                   "question": {
-                    "Q": "Is your temperature 100F or higher?",
+                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                     "Yes": {
                       "question": {
                         "Q": "See your doctor. You may have an inflamed gallbladder or gallstones.",
@@ -87,7 +87,7 @@
             "Q": "Do you have episodes of diarrhea?",
             "Yes": {
               "question": {
-                "Q": "Do you feel sick, or is your temperature 100F or higher?",
+                "Q": "Do you feel sick, or is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                 "Yes": {
                   "question": {
                     "Q": "Do you have traces of blood and pus or mucus in your stool?",
@@ -112,7 +112,7 @@
                 },
                 "No": {
                   "question": {
-                    "Q": "See a doctor immediately. You may have diverticular disease. See DIVERTICULOSIS AND DIVERTICULITIS. There is also a slight possibility that you have COLON CANCER.",
+                    "Q": "See a doctor immediately. You may have diverticular disease. There is also a slight possibility that you have COLON CANCER.",
                     "Yes": {},
                     "No": {},
                     "diagnosis": ["DIVERTICULOSIS AND DIVERTICULITIS", "COLON CANCER"]

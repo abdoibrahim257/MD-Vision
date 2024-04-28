@@ -53,7 +53,7 @@
             },
             "No": {
               "question": {
-                "Q": "Are you coughing and is your temperature 100F or higher?",
+                "Q": "Are you coughing and is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                 "Yes": {
                   "question": {
                     "Q": "See a doctor immediately. You may have ACUTE BRONCHITIS or PNEUMONIA.",

@@ -6,7 +6,7 @@
         "Q": "Do the attacks occur when you are under stress?",
         "Yes": {
           "question": {
-            "Q": "See your doctor. Stress can often cause diarrhea. See the chapter REDUCING STRESS. If you have episodes of cramping abdominal pain with alternating episodes of constipation and diarrhea, you may have IRRITABLE BOWEL SYNDROME.",
+            "Q": "See your doctor. Stress can often cause diarrhea. If you have episodes of cramping abdominal pain with alternating episodes of constipation and diarrhea, you may have IRRITABLE BOWEL SYNDROME.",
             "Yes": {},
             "No": {},
             "diagnosis": ["IRRITABLE BOWEL SYNDROME"]

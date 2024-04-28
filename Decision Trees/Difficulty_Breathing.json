@@ -46,7 +46,7 @@
         },
         "No": {
           "question": {
-            "Q": "Is your temperature 100F or above, or are you coughing up greenish yellow or rust-colored phlegm?",
+            "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or above, or are you coughing up greenish yellow or rust-colored phlegm?",
             "Yes": {
               "question": {
                 "Q": "See a doctor immediately. You could have PNEUMONIA or ACUTE BRONCHITIS.",

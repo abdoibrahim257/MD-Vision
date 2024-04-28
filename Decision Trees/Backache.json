@@ -137,7 +137,7 @@
     },
     "No": {
       "question": {
-        "Q": "Is your temperature 100F or higher?",
+        "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
         "Yes": {
           "question": {
             "Q": "See a doctor immediately. You may have a serious kidney infection such as ACUTE PYELONEPHRITIS or you may have an EPIDURAL ABSCESS.",

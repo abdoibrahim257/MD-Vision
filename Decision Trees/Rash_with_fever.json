@@ -61,7 +61,7 @@
                                                         "Q": "Do you have two or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Headache \n\u2022 Sensitivity of eyes to bright light \n\u2022 Pain when you bend your head forward",
                                                         "Yes": {
                                                             "question": {
-                                                                "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS.",
+                                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS.",
                                                                 "Yes": {},
                                                                 "No": {},
                                                                 "diagnosis": [
@@ -139,7 +139,7 @@
                                         "Q": "Do you have two or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Headache \n\u2022 Sensitivity of eyes to bright light \n\u2022 Pain when you bend your head forward",
                                         "Yes": {
                                             "question": {
-                                                "Q": "EMERGENCY Get medical help now! Call 911 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS.",
+                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS.",
                                                 "Yes": {},
                                                 "No": {},
                                                 "diagnosis": [

@@ -89,7 +89,7 @@
                         "Q": "Did your cough begin recently?",
                         "Yes": {
                           "question": {
-                            "Q": "Is your temperature 100F or higher?",
+                            "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                             "Yes": {
                               "question": {
                                 "Q": "Are you short of breath?",
@@ -289,7 +289,7 @@
         "Q": "Did your cough begin recently?",
         "Yes": {
           "question": {
-            "Q": "Is your temperature 100F or higher?",
+            "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
             "Yes": {
               "question": {
                 "Q": "Are you short of breath?",

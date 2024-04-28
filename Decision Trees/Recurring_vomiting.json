@@ -193,7 +193,7 @@
                                 "Q": "Do you vomit suddenly (without feeling nauseous first), and do your headaches occur mainly in the morning?",
                                 "Yes": {
                                   "question": {
-                                    "Q": "See a doctor immediately. You could have a subdural hemorrhage. See SUBDURAL HEMORRHAGE AND HEMATOMA. Or you may have a BRAIN TUMOR.",
+                                    "Q": "See a doctor immediately. You could have a subdural hemorrhage. Or you may have a BRAIN TUMOR.",
                                     "Yes": {},
                                     "No": {},
                                     "diagnosis": [

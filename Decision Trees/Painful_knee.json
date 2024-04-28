@@ -31,7 +31,7 @@
             "Q": "Are both knees or other joints (such as the joints of the fingers) affected?",
             "Yes": {
               "question": {
-                "Q": "Is your temperature 100F or higher, or have you recently started to feel ill?",
+                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently started to feel ill?",
                 "Yes": {
                   "question": {
                     "Q": "See a doctor immediately. You may have RHEUMATOID ARTHRITIS but you could also have a joint infection.",
@@ -53,7 +53,7 @@
             },
             "No": {
               "question": {
-                "Q": "Is your temperature 100F or higher, or have you recently started to feel ill?",
+                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently started to feel ill?",
                 "Yes": {
                   "question": {
                     "Q": "See a doctor immediately. You may have a joint infection. Or you may have a bone infection that is more common in children.",

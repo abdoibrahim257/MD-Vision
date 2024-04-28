@@ -14,7 +14,7 @@
         "Q": "Are you under stress?",
         "Yes": {
           "question": {
-            "Q": "Palpitations are a common symptom of ANXIETY. See the chapter REDUCINC STRESS.",
+            "Q": "Palpitations are a common symptom of ANXIETY.",
             "Yes": {},
             "No": {},
             "diagnosis": ["ANXIETY", "REDUCINC STRESS"]

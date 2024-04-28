@@ -47,7 +47,7 @@
                 "Q": "Do you have persistent pain in one area of your leg?",
                 "Yes": {
                   "question": {
-                    "Q": "Is your temperature 100F or higher, or do you have chills and feel generally ill?",
+                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or do you have chills and feel generally ill?",
                     "Yes": {
                       "question": {
                         "Q": "See a doctor immediately. You may have OSTEOMYTUTIS, a bone infection that is most common in children.",
@@ -130,7 +130,7 @@
                                                     },
                                                     "No": {
                                                       "question": {
-                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chart and the pain persists for more than 48 hours or gets worse.",
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
                                                         "Yes": {},
                                                         "No": {},
                                                         "diagnosis": []
@@ -161,7 +161,7 @@
                                         },
                                         "No": {
                                           "question": {
-                                            "Q": "See your doctor if you are unable to make a diagnosis from this chart and the pain persists for more than 48 hours or gets worse.",
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
                                             "Yes": {},
                                             "No": {},
                                             "diagnosis": []
@@ -239,7 +239,7 @@
                                                 },
                                                 "No": {
                                                   "question": {
-                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chart and the pain persists for more than 48 hours or gets worse.",
+                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
                                                     "Yes": {},
                                                     "No": {},
                                                     "diagnosis": []
@@ -270,7 +270,7 @@
                                     },
                                     "No": {
                                       "question": {
-                                        "Q": "See your doctor if you are unable to make a diagnosis from this chart and the pain persists for more than 48 hours or gets worse.",
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
                                         "Yes": {},
                                         "No": {},
                                         "diagnosis": []
@@ -365,7 +365,7 @@
                                                 },
                                                 "No": {
                                                   "question": {
-                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chart and the pain persists for more than 48 hours or gets worse.",
+                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
                                                     "Yes": {},
                                                     "No": {},
                                                     "diagnosis": []
@@ -396,7 +396,7 @@
                                     },
                                     "No": {
                                       "question": {
-                                        "Q": "See your doctor if you are unable to make a diagnosis from this chart and the pain persists for more than 48 hours or gets worse.",
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
                                         "Yes": {},
                                         "No": {},
                                         "diagnosis": []
@@ -474,7 +474,7 @@
                                             },
                                             "No": {
                                               "question": {
-                                                "Q": "See your doctor if you are unable to make a diagnosis from this chart and the pain persists for more than 48 hours or gets worse.",
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
                                                 "Yes": {},
                                                 "No": {},
                                                 "diagnosis": []
@@ -505,7 +505,7 @@
                                 },
                                 "No": {
                                   "question": {
-                                    "Q": "See your doctor if you are unable to make a diagnosis from this chart and the pain persists for more than 48 hours or gets worse.",
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
                                     "Yes": {},
                                     "No": {},
                                     "diagnosis": []

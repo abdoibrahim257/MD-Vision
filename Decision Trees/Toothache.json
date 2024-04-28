@@ -50,7 +50,7 @@
         },
         "No": {
           "question": {
-            "Q": "Is the pain in your tooth continuous, or is your temperature 100F or higher?",
+            "Q": "Is the pain in your tooth continuous, or is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
             "Yes": {
               "question": {
                 "Q": "See a dentist immediately. You may have a TOOTH ABSCESS or severe TOOTH DECAY.",

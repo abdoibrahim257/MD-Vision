@@ -28,7 +28,7 @@
         "Q": "Did the pain begin suddenly?",
         "Yes": {
           "question": {
-            "Q": "Is your temperature 100F or higher, or have you recently started to feel ill?",
+            "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently started to feel ill?",
             "Yes": {
               "question": {
                 "Q": "See a doctor immediately. You may have RHEUMATIC FEVER, which is especially common in children. Or you could have TENDINITIS.",

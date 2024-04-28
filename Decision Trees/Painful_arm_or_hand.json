@@ -114,7 +114,7 @@
                                                     "Q": "Is only one joint affected?",
                                                     "Yes": {
                                                       "question": {
-                                                        "Q": "Is your temperature 100F or higher, or have you recently begun to feel ill?",
+                                                        "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
                                                         "Yes": {
                                                           "question": {
                                                             "Q": "See a doctor immediately. You may have a joint infection.",
@@ -370,7 +370,7 @@
                                                 "Q": "Is only one joint affected?",
                                                 "Yes": {
                                                   "question": {
-                                                    "Q": "Is your temperature 100F or higher, or have you recently begun to feel ill?",
+                                                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
                                                     "Yes": {
                                                       "question": {
                                                         "Q": "See a doctor immediately. You may have a joint infection.",
@@ -651,7 +651,7 @@
                                                 "Q": "Is only one joint affected?",
                                                 "Yes": {
                                                   "question": {
-                                                    "Q": "Is your temperature 100F or higher, or have you recently begun to feel ill?",
+                                                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
                                                     "Yes": {
                                                       "question": {
                                                         "Q": "See a doctor immediately. You may have a joint infection.",
@@ -899,7 +899,7 @@
                                             "Q": "Is only one joint affected?",
                                             "Yes": {
                                               "question": {
-                                                "Q": "Is your temperature 100F or higher, or have you recently begun to feel ill?",
+                                                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
                                                 "Yes": {
                                                   "question": {
                                                     "Q": "See a doctor immediately. You may have a joint infection.",
@@ -1193,7 +1193,7 @@
                                                 "Q": "Is only one joint affected?",
                                                 "Yes": {
                                                   "question": {
-                                                    "Q": "Is your temperature 100F or higher, or have you recently begun to feel ill?",
+                                                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
                                                     "Yes": {
                                                       "question": {
                                                         "Q": "See a doctor immediately. You may have a joint infection.",
@@ -1441,7 +1441,7 @@
                                             "Q": "Is only one joint affected?",
                                             "Yes": {
                                               "question": {
-                                                "Q": "Is your temperature 100F or higher, or have you recently begun to feel ill?",
+                                                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
                                                 "Yes": {
                                                   "question": {
                                                     "Q": "See a doctor immediately. You may have a joint infection.",
@@ -1716,7 +1716,7 @@
                                             "Q": "Is only one joint affected?",
                                             "Yes": {
                                               "question": {
-                                                "Q": "Is your temperature 100F or higher, or have you recently begun to feel ill?",
+                                                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
                                                 "Yes": {
                                                   "question": {
                                                     "Q": "See a doctor immediately. You may have a joint infection.",
@@ -1960,7 +1960,7 @@
                                         "Q": "Is only one joint affected?",
                                         "Yes": {
                                           "question": {
-                                            "Q": "Is your temperature 100F or higher, or have you recently begun to feel ill?",
+                                            "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
                                             "Yes": {
                                               "question": {
                                                 "Q": "See a doctor immediately. You may have a joint infection.",

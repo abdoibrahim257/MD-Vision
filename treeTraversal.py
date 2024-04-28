@@ -54,7 +54,7 @@ def add_tree_to_warehouse(file_path, symptom, warehouse):
     with open(file_path) as f:
         data = json.load(f)
     tree = TreeDS(data['question'].get('Q'), symptom)
-    tree.build_tree1(data)
+    tree.build_tree2(tree.get_root(),data)
     warehouse.addTree(tree)
 
 def load_warehouse(folder, warehouse):
@@ -69,11 +69,12 @@ def load_warehouse(folder, warehouse):
             
 warehouse = treeWarehouse()    
 #main folder for all trees    
-folder = 'D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/'
-
+folder= 'D:/Uni/Senior 2/Semester 2/GP/decision tree test/GP-Chatbot/Decision Trees'
+##D:\Uni\Senior 2\Semester 2\GP\decision tree test\GP-Chatbot\Decision Trees
+# D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/
 #FILL THE WAREHOUSE WITH TREES
 # load_warehouse(folder, warehouse)
 
-add_tree_to_warehouse(os.path.join(folder, 'Foot_problems.json'), "Disturbing thoughts or feelings", warehouse)
+add_tree_to_warehouse(os.path.join(folder, 'Painful_arm_or_hand.json'), "Painful arm or hand", warehouse)
 
-traverse_tree("Foot problems", warehouse)
+traverse_tree("Painful arm or hand", warehouse)

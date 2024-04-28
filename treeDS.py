@@ -114,3 +114,30 @@ class TreeDS:
                     return
             else:
                 return
+            
+    def build_tree2(self,parent,Json):
+
+        yesJson = Json['question'].get('Yes')
+        noJson = Json['question'].get('No')
+        if yesJson:
+            if yesJson.get('question', None):
+                yesNode = TreeNode(yesJson['question'].get('Q'))
+                parent.add_child(yesNode, 'Yes')
+                self.build_tree2(yesNode, yesJson)
+            else:
+                yesNode = anotherTreeNode(yesJson['tree'].get('symptom'))
+                parent.add_child(yesNode, 'Yes')
+        else: 
+            return
+        
+        if noJson:
+            if noJson.get('question', None):
+                noNode = TreeNode(noJson['question'].get('Q'))
+                parent.add_child(noNode, 'No')
+                self.build_tree2(noNode, noJson)
+            else:
+                noNode = anotherTreeNode(noJson['tree'].get('symptom'))
+                parent.add_child(noNode, 'No')
+        else:
+            return
+

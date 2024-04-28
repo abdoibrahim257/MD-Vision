@@ -68,54 +68,54 @@ class TreeDS:
     def get_symptom(self):
         return self.symptom
     
-    def _find_node(self, question):
-        # search BFS since solution is sparse and tree is not deep
-        queue = [self.root]
-        #lazem ne check lw el node el maskenha de another tree node wla node question
-        # w dymn 3ndna el question node how el parent ely bndawra 3aleh
-        while queue:
-            node = queue.pop(0)
-            if node.question_string == question:
-                return node
-            for child in node.children.values():
-                if isinstance(child, TreeNode):
-                    queue.append(child)
+    # def _find_node(self, question):
+    #     # search BFS since solution is sparse and tree is not deep
+    #     queue = [self.root]
+    #     #lazem ne check lw el node el maskenha de another tree node wla node question
+    #     # w dymn 3ndna el question node how el parent ely bndawra 3aleh
+    #     while queue:
+    #         node = queue.pop(0)
+    #         if node.question_string == question:
+    #             return node
+    #         for child in node.children.values():
+    #             if isinstance(child, TreeNode):
+    #                 queue.append(child)
                 
                 
-    def build_tree1(self, jsonObject):
-        """
-        Recursively build a decision tree from a JSON object.
-        """
-        if isinstance(jsonObject, dict):
-            nodeDetails = jsonObject.get('question', None)
-            if nodeDetails:
-                parentQ = nodeDetails.get('Q')
-                yesNode = nodeDetails.get('Yes')
-                noNode = nodeDetails.get('No')
-                #mmkn ba3d ma n5las build lel trees n3ml el diagnosis w el care 3lashan el chat yb2a more lively
-                if yesNode:
-                    #get tyoe of next node a question ot a tree
-                    if yesNode.get('question', None):
-                        self.add_node(parentQ, yesNode['question'].get('Q'), "Yes")
-                        self.build_tree1(yesNode)
-                    else:
-                        self.add_tree(parentQ, yesNode['tree'].get('symptom'), "Yes")
-                        # return
-                else:
-                    return
-                if noNode:
-                    if noNode.get('question', None):
-                        self.add_node(parentQ, noNode['question'].get('Q'), "No")
-                        self.build_tree1(noNode)
-                    else:
-                        self.add_tree(parentQ, noNode['tree'].get('symptom'), "No")
-                        # return
-                else:
-                    return
-            else:
-                return
+    # def build_tree1(self, jsonObject):
+    #     """
+    #     Recursively build a decision tree from a JSON object.
+    #     """
+    #     if isinstance(jsonObject, dict):
+    #         nodeDetails = jsonObject.get('question', None)
+    #         if nodeDetails:
+    #             parentQ = nodeDetails.get('Q')
+    #             yesNode = nodeDetails.get('Yes')
+    #             noNode = nodeDetails.get('No')
+    #             #mmkn ba3d ma n5las build lel trees n3ml el diagnosis w el care 3lashan el chat yb2a more lively
+    #             if yesNode:
+    #                 #get tyoe of next node a question ot a tree
+    #                 if yesNode.get('question', None):
+    #                     self.add_node(parentQ, yesNode['question'].get('Q'), "Yes")
+    #                     self.build_tree1(yesNode)
+    #                 else:
+    #                     self.add_tree(parentQ, yesNode['tree'].get('symptom'), "Yes")
+    #                     # return
+    #             else:
+    #                 return
+    #             if noNode:
+    #                 if noNode.get('question', None):
+    #                     self.add_node(parentQ, noNode['question'].get('Q'), "No")
+    #                     self.build_tree1(noNode)
+    #                 else:
+    #                     self.add_tree(parentQ, noNode['tree'].get('symptom'), "No")
+    #                     # return
+    #             else:
+    #                 return
+    #         else:
+    #             return
             
-    def build_tree2(self,parent,Json):
+    def build_tree(self,parent,Json):
 
         yesJson = Json['question'].get('Yes')
         noJson = Json['question'].get('No')

@@ -127,13 +127,12 @@
                                                         },
                                                         "No": {
                                                           "question": {
-                                                            "Q": "See your doctor. You may have BURSITIS (p. 1002) or GOUT OR PSEUDOGOUT (p. 1004). See also ELBOW BURSITIS (p. 979).",
+                                                            "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
                                                             "Yes": {},
                                                             "No": {},
                                                             "diagnosis": [
                                                               "BURSITIS",
-                                                              "GOUT OR PSEUDOGOUT",
-                                                              "ELBOW BURSITIS"
+                                                              "GOUT OR PSEUDOGOUT"
                                                             ]
                                                           }
                                                         },
@@ -382,13 +381,12 @@
                                                     },
                                                     "No": {
                                                       "question": {
-                                                        "Q": "See your doctor. You may have BURSITIS (p. 1002) or GOUT OR PSEUDOGOUT (p. 1004). See also ELBOW BURSITIS (p. 979).",
+                                                        "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
                                                         "Yes": {},
                                                         "No": {},
                                                         "diagnosis": [
                                                           "BURSITIS",
-                                                          "GOUT OR PSEUDOGOUT",
-                                                          "ELBOW BURSITIS"
+                                                          "GOUT OR PSEUDOGOUT"
                                                         ]
                                                       }
                                                     },
@@ -664,13 +662,12 @@
                                                     },
                                                     "No": {
                                                       "question": {
-                                                        "Q": "See your doctor. You may have BURSITIS (p. 1002) or GOUT OR PSEUDOGOUT (p. 1004). See also ELBOW BURSITIS (p. 979).",
+                                                        "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
                                                         "Yes": {},
                                                         "No": {},
                                                         "diagnosis": [
                                                           "BURSITIS",
-                                                          "GOUT OR PSEUDOGOUT",
-                                                          "ELBOW BURSITIS"
+                                                          "GOUT OR PSEUDOGOUT"
                                                         ]
                                                       }
                                                     },
@@ -913,13 +910,12 @@
                                                 },
                                                 "No": {
                                                   "question": {
-                                                    "Q": "See your doctor. You may have BURSITIS (p. 1002) or GOUT OR PSEUDOGOUT (p. 1004). See also ELBOW BURSITIS (p. 979).",
+                                                    "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
                                                     "Yes": {},
                                                     "No": {},
                                                     "diagnosis": [
                                                       "BURSITIS",
-                                                      "GOUT OR PSEUDOGOUT",
-                                                      "ELBOW BURSITIS"
+                                                      "GOUT OR PSEUDOGOUT"
                                                     ]
                                                   }
                                                 },
@@ -1208,13 +1204,12 @@
                                                     },
                                                     "No": {
                                                       "question": {
-                                                        "Q": "See your doctor. You may have BURSITIS (p. 1002) or GOUT OR PSEUDOGOUT (p. 1004). See also ELBOW BURSITIS (p. 979).",
+                                                        "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
                                                         "Yes": {},
                                                         "No": {},
                                                         "diagnosis": [
                                                           "BURSITIS",
-                                                          "GOUT OR PSEUDOGOUT",
-                                                          "ELBOW BURSITIS"
+                                                          "GOUT OR PSEUDOGOUT"
                                                         ]
                                                       }
                                                     },
@@ -1457,13 +1452,12 @@
                                                 },
                                                 "No": {
                                                   "question": {
-                                                    "Q": "See your doctor. You may have BURSITIS (p. 1002) or GOUT OR PSEUDOGOUT (p. 1004). See also ELBOW BURSITIS (p. 979).",
+                                                    "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
                                                     "Yes": {},
                                                     "No": {},
                                                     "diagnosis": [
                                                       "BURSITIS",
-                                                      "GOUT OR PSEUDOGOUT",
-                                                      "ELBOW BURSITIS"
+                                                      "GOUT OR PSEUDOGOUT"
                                                     ]
                                                   }
                                                 },
@@ -1733,13 +1727,12 @@
                                                 },
                                                 "No": {
                                                   "question": {
-                                                    "Q": "See your doctor. You may have BURSITIS (p. 1002) or GOUT OR PSEUDOGOUT (p. 1004). See also ELBOW BURSITIS (p. 979).",
+                                                    "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
                                                     "Yes": {},
                                                     "No": {},
                                                     "diagnosis": [
                                                       "BURSITIS",
-                                                      "GOUT OR PSEUDOGOUT",
-                                                      "ELBOW BURSITIS"
+                                                      "GOUT OR PSEUDOGOUT"
                                                     ]
                                                   }
                                                 },
@@ -1978,13 +1971,12 @@
                                             },
                                             "No": {
                                               "question": {
-                                                "Q": "See your doctor. You may have BURSITIS (p. 1002) or GOUT OR PSEUDOGOUT (p. 1004). See also ELBOW BURSITIS (p. 979).",
+                                                "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
                                                 "Yes": {},
                                                 "No": {},
                                                 "diagnosis": [
                                                   "BURSITIS",
-                                                  "GOUT OR PSEUDOGOUT",
-                                                  "ELBOW BURSITIS"
+                                                  "GOUT OR PSEUDOGOUT"
                                                 ]
                                               }
                                             },

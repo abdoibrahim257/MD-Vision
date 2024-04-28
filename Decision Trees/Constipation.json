@@ -75,10 +75,10 @@
                     "Q": "Are you pregnant?",
                     "Yes": {
                       "question": {
-                        "Q": "Constipation is common during pregnancy. See CONSTIPATION AND HEMORRHOIDS (p. 518).",
+                        "Q": "Constipation is common during pregnancy.",
                         "Yes": {},
                         "No": {},
-                        "diagnosis": []
+                        "diagnosis": ["CONSTIPATION AND HEMORRHOIDS"]
                       }
                     },
                     "No": {
@@ -86,7 +86,7 @@
                         "Q": "Do you have two or more Of the following symptoms? \n\u2022 Frequently feeling cold \n\u2022 Dry skin or hair \u2022 Unexplained weight gain \n\u2022 unexplained fatigue",
                         "Yes": {
                           "question": {
-                            "Q": "See your doctor. You may have an underactive thyroid gland. See HYPOTHYROIDISM (p. 903).",
+                            "Q": "See your doctor. You may have an underactive thyroid gland.",
                             "Yes": {},
                             "No": {},
                             "diagnosis": ["HYPOTHYROIDISM"]
@@ -108,7 +108,7 @@
                                 },
                                 "No": {
                                   "question": {
-                                    "Q": "See a doctor immediately. You may have diverticular disease, or you could have COLON CANCER (p. 775).",
+                                    "Q": "See a doctor immediately. You may have diverticular disease, or you could have COLON CANCER.",
                                     "Yes": {},
                                     "No": {},
                                     "diagnosis": [

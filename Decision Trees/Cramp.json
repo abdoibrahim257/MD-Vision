@@ -25,7 +25,7 @@
             "Q": "Did the cramp occur during or shortly after vigorous exercise?",
             "Yes": {
               "question": {
-                "Q": "The cramp was probably caused by overexertion of the muscles. See CRAMP (p. 982). However, if you repeatedly have a cramp in your legs when you walk, you may have a circulatory disorder such as ATHEROSCLEROSIS.",
+                "Q": "The cramp was probably caused by overexertion of the muscles. However, if you repeatedly have a cramp in your legs when you walk, you may have a circulatory disorder such as ATHEROSCLEROSIS.",
                 "Yes": {},
                 "No": {},
                 "diagnosis": ["ATHEROSCLEROSIS"]

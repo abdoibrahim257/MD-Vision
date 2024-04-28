@@ -20,7 +20,7 @@
                 "Q": "Is the pain worse when you inhale?",
                 "Yes": {
                   "question": {
-                    "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a blood clot in a lung, a collapsed lung. or pleurisy. See PULMONARY IMBOLISM, PNEUMOTHORAX, and OTHER LUNG PROBLEMS.",
+                    "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a blood clot in a lung, a collapsed lung. or pleurisy",
                     "Yes": {},
                     "No": {},
                     "diagnosis": [

@@ -1,6 +1,6 @@
 {
     "question": {
-        "Q": "Is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+        "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
         "Yes": {
             "tree": {
                 "symptom": "rash woth fever"

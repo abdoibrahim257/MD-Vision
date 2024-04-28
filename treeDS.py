@@ -108,7 +108,7 @@ class TreeDS:
                         self.add_node(parentQ, noNode['question'].get('Q'), "No")
                         self.build_tree1(noNode)
                     else:
-                        self.add_tree(parentQ, noNode['tree'].get('Q'), noNode['tree'].get('symptom'), "No")
+                        self.add_tree(parentQ, noNode['tree'].get('symptom'), "No")
                         # return
                 else:
                     return

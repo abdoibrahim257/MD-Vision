@@ -72,6 +72,8 @@ warehouse = treeWarehouse()
 folder = 'D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/Decision Trees/'
 
 #FILL THE WAREHOUSE WITH TREES
-load_warehouse(folder, warehouse)
+# load_warehouse(folder, warehouse)
 
-traverse_tree("sore throat", warehouse)
+add_tree_to_warehouse(os.path.join(folder, 'Foot_problems.json'), "Disturbing thoughts or feelings", warehouse)
+
+traverse_tree("Foot problems", warehouse)

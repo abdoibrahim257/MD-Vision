@@ -14,7 +14,7 @@
                 "Q": "Do you have any lumps or swellings in any of the lymph nodes in your neck, armpit, or groin?",
                 "Yes": {
                     "question": {
-                        "Q": "Is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+                        "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                         "Yes": {
                             "question": {
                                 "Q": "See your doctor. You could have an infection such as INFECTIOUS MONONUCLEOSIS.",
@@ -106,7 +106,7 @@
                                 "Q": "Do you have swelling on both sides of the back of your neck?",
                                 "Yes": {
                                     "question": {
-                                        "Q": "Do you have a pink rash, or is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+                                        "Q": "Do you have a pink rash, or is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                                         "Yes": {
                                             "question": {
                                                 "Q": "See your doctor. You could have RUBELLA or INFECTIOUS MONONUCLEOSIS.",

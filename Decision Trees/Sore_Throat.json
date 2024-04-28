@@ -1,6 +1,6 @@
 {
   "question": {
-    "Q": "Is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?", 
+    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?", 
     "Yes": {
       "question": {
         "Q": "Do you have two or more Of the following symptoms? \n\u2022 Headache \n\u2022 Cough \n\u2022 Aching joints or bones",

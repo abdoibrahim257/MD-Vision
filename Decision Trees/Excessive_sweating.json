@@ -43,7 +43,7 @@
                                         },
                                         "No": {
                                             "question": {
-                                                "Q": "Is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+                                                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                                                 "Yes": {
                                                     "question": {
                                                         "Q": "Sweating is the normal response to fever. Would you like to review symptoms commonly associated with Fever? ",
@@ -254,7 +254,7 @@
                                 },
                                 "No": {
                                     "question": {
-                                        "Q": "Is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+                                        "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                                         "Yes": {
                                             "question": {
                                                 "Q": "Sweating is the normal response to fever. Would you like to review symptoms commonly associated with Fever? ",
@@ -471,7 +471,7 @@
         },
         "No": {
             "question": {
-                "Q": "Is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                 "Yes": {
                     "question": {
                         "Q": "Sweating is the normal response to fever. Would you like to review symptoms commonly associated with Fever? ",

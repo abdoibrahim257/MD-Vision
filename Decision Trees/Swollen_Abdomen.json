@@ -97,7 +97,7 @@
                                         },
                                         "No": {
                                           "question": {
-                                            "Q": "Are you overweight according to the body mass index chart?",
+                                            "Q": "Are you overweight according to the body mass index chat?",
                                             "Yes": {
                                               "question": {
                                                 "Q": "Talk to your doctor bout losing weight.",
@@ -139,7 +139,7 @@
                                 },
                                 "No": {
                                   "question": {
-                                    "Q": "Are you overweight according to the body mass index chart?",
+                                    "Q": "Are you overweight according to the body mass index chat?",
                                     "Yes": {
                                       "question": {
                                         "Q": "Talk to your doctor bout losing weight.",
@@ -223,7 +223,7 @@
                                 },
                                 "No": {
                                   "question": {
-                                    "Q": "Are you overweight according to the body mass index chart?",
+                                    "Q": "Are you overweight according to the body mass index chat?",
                                     "Yes": {
                                       "question": {
                                         "Q": "Talk to your doctor bout losing weight.",
@@ -265,7 +265,7 @@
                         },
                         "No": {
                           "question": {
-                            "Q": "Are you overweight according to the body mass index chart?",
+                            "Q": "Are you overweight according to the body mass index chat?",
                             "Yes": {
                               "question": {
                                 "Q": "Talk to your doctor bout losing weight.",
@@ -374,7 +374,7 @@
                                     },
                                     "No": {
                                       "question": {
-                                        "Q": "Are you overweight according to the body mass index chart?",
+                                        "Q": "Are you overweight according to the body mass index chat?",
                                         "Yes": {
                                           "question": {
                                             "Q": "Talk to your doctor bout losing weight.",
@@ -416,7 +416,7 @@
                             },
                             "No": {
                               "question": {
-                                "Q": "Are you overweight according to the body mass index chart?",
+                                "Q": "Are you overweight according to the body mass index chat?",
                                 "Yes": {
                                   "question": {
                                     "Q": "Talk to your doctor bout losing weight.",
@@ -500,7 +500,7 @@
                             },
                             "No": {
                               "question": {
-                                "Q": "Are you overweight according to the body mass index chart?",
+                                "Q": "Are you overweight according to the body mass index chat?",
                                 "Yes": {
                                   "question": {
                                     "Q": "Talk to your doctor bout losing weight.",
@@ -542,7 +542,7 @@
                     },
                     "No": {
                       "question": {
-                        "Q": "Are you overweight according to the body mass index chart?",
+                        "Q": "Are you overweight according to the body mass index chat?",
                         "Yes": {
                           "question": {
                             "Q": "Talk to your doctor bout losing weight.",

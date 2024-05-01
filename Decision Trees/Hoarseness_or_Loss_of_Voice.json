@@ -58,7 +58,7 @@
                         },
                         "No": {
                           "question": {
-                            "Q": "Do you have two or more of the following symptoms? • Sensitivity to cold weather • Dry skin or dry hair • Unexplained weight gain • Unexplained fatigue",
+                            "Q": "Do you have two or more of the following symptoms? \n\u2022 Sensitivity to cold weather \n\u2022 Dry skin or dry hair \n\u2022 Unexplained weight gain \n\u2022 Unexplained fatigue",
                             "Yes": {
                               "question": {
                                 "Q": "See your doctor. You may have an underactive thyroid gland.",
@@ -123,7 +123,7 @@
     },
     "No": {
       "question": {
-        "Q": "Does your job require you to talk a lot—for example, are you a teacher or a lawyer?",
+        "Q": "Does your job require you to talk a lot-for example, are you a teacher or a lawyer?",
         "Yes": {
           "question": {
             "Q": "See your doctor. You may have persistent inflammation of the vocal cords or a growth on a vocal cord.",
@@ -156,7 +156,7 @@
                 },
                 "No": {
                   "question": {
-                    "Q": "Do you have two or more of the following symptoms? • Sensitivity to cold weather • Dry skin or dry hair • Unexplained weight gain • Unexplained fatigue",
+                    "Q": "Do you have two or more of the following symptoms? \n\u2022 Sensitivity to cold weather \n\u2022 Dry skin or dry hair \n\u2022 Unexplained weight gain \n\u2022 Unexplained fatigue",
                     "Yes": {
                       "question": {
                         "Q": "See your doctor. You may have an underactive thyroid gland.",

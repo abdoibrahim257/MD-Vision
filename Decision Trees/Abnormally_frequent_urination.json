@@ -111,7 +111,7 @@
                                 "Q": "Are you a man over 50?",
                                 "Yes": {
                                   "question": {
-                                    "Q": "Do you have two or more of the following symptoms? • Waking up at night to urinate \n\u2022 Difficulty starting to urinate \n\u2022 Weak stream of urine \n\u2022 Dribbling urine after urination",
+                                    "Q": "Do you have two or more of the following symptoms? \n\u2022 Waking up at night to urinate \n\u2022 Difficulty starting to urinate \n\u2022 Weak stream of urine \n\u2022 Dribbling urine after urination",
                                     "Yes": {
                                       "question": {
                                         "Q": "See your doctor. You may have an enlarged prostate gland.",
@@ -245,7 +245,7 @@
                     "Q": "Are you a man over 50?",
                     "Yes": {
                       "question": {
-                        "Q": "Do you have two or more of the following symptoms? • Waking up at night to urinate \n\u2022 Difficulty starting to urinate \n\u2022 Weak stream of urine \n\u2022 Dribbling urine after urination",
+                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Waking up at night to urinate \n\u2022 Difficulty starting to urinate \n\u2022 Weak stream of urine \n\u2022 Dribbling urine after urination",
                         "Yes": {
                           "question": {
                             "Q": "See your doctor. You may have an enlarged prostate gland.",

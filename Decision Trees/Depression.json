@@ -53,7 +53,7 @@
                                         "Q": "Do you have two or more of the following symptoms? \n\u2022 Difficulty sleeping \n\u2022 Difficulty getting out of bed \n\u2022 Loss of appetite \n\u2022 Lack of energy",
                                         "Yes": {
                                             "question": {
-                                                "Q": "See a doctor immediately. You may have DEPRESSION. \n\nSuicide\nGet medical help immediately if you (or someone you know) has symptoms of devression. Depression is the No. 1 risk factor for suicide.",
+                                                "Q": "See a doctor immediately. You may have DEPRESSION. \n\nSuicide\nGet medical help immediately if you (or someone you know) has symptoms of depression. Depression is the No. 1 risk factor for suicide.",
                                                 "Yes": {},
                                                 "No": {},
                                                 "diagnosis": []

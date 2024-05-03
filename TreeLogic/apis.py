@@ -42,8 +42,14 @@ def test2(symptom:int):
 @app.post("/chatbot",response_model=input)
 
 async def traverse(request:input):
+    
     warehouse = treeWarehouse()
-    folder = 'D:/Uni/Senior 2/Semester 2/GP/decision tree test/GP-Chatbot/TreeLogic/Decision Trees'
+    
+    current_file_path = os.path.abspath(__file__)
+    current_directory = os.path.dirname(current_file_path)
+    folder = current_directory + '\\Decision Trees'
+    folder = folder.replace('\\', '/')
+    
     load_warehouse(folder , warehouse)
     try:
         question = request.text

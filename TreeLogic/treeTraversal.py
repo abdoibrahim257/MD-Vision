@@ -67,12 +67,14 @@ def load_warehouse(folder, warehouse):
             if sypmtomWithSpaces not in warehouse.getTrees():
                 add_tree_to_warehouse(os.path.join(folder, file), sypmtomWithSpaces, warehouse)
             
-warehouse = treeWarehouse()    
-#main folder for all trees    
-folder= 'D:/Uni/Senior 2/Semester 2/GP/decision tree test/GP-Chatbot/TreeLogic/Decision Trees'
-# folder= 'D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/TreeLogic/Decision Trees/'
+warehouse = treeWarehouse() 
 
-# #FILL THE WAREHOUSE WITH TREES
-# load_warehouse(folder, warehouse)
+current_file_path = os.path.abspath(__file__)
+current_directory = os.path.dirname(current_file_path)
+folder = current_directory + '\\Decision Trees'
+folder = folder.replace('\\', '/')
+
+# # #FILL THE WAREHOUSE WITH TREES
+load_warehouse(folder, warehouse)
 
 # traverse_tree("Coughing", warehouse)

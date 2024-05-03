@@ -1,5 +1,8 @@
-body {
-  margin: 32px 11vw 0px 11vw;
+#root {
   font-family: "Open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 20px;
+}
+
+.content {
+  margin: 0px 11vw;
 }

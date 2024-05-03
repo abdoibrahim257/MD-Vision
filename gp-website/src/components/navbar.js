@@ -1,10 +1,10 @@
 import LOGO from '../assets/LOGO.svg';
-import '../styles/navStyle.css';
+// import '../styles/topSection.css';
 
 
 function NavBar() {
     return (
-        <div className='navContainer'>
+        <div className='navContainer content'>
             <img id= 'logo' src={LOGO} alt='MDvision logo'/>
             <div className='btnContainer'>
                 {/* here is going to bee the rest of the buttons*/}

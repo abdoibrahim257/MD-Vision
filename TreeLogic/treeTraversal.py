@@ -69,10 +69,10 @@ def load_warehouse(folder, warehouse):
             
 warehouse = treeWarehouse()    
 #main folder for all trees    
-# folder= 'D:/Uni/Senior 2/Semester 2/GP/decision tree test/GP-Chatbot/TreeLogic/Decision Trees'
-folder= 'D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/TreeLogic/Decision Trees/'
+folder= 'D:/Uni/Senior 2/Semester 2/GP/decision tree test/GP-Chatbot/TreeLogic/Decision Trees'
+# folder= 'D:/GAM3A/5-Senior02/GP/1-ChatBot/GP-Chatbot/TreeLogic/Decision Trees/'
 
-#FILL THE WAREHOUSE WITH TREES
-load_warehouse(folder, warehouse)
+# #FILL THE WAREHOUSE WITH TREES
+# load_warehouse(folder, warehouse)
 
-traverse_tree("Coughing", warehouse)
+# traverse_tree("Coughing", warehouse)

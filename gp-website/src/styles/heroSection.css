@@ -1,0 +1,229 @@
+
+#logo{
+    width: 15vw;
+    height: auto;
+}
+
+.navContainer {
+    margin-top: 32px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.sideBar{
+    padding-top: 16px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #bcd7f3;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.3);
+    opacity: 0.93;
+    animation: show-right 1s;
+}
+
+.sideBarHidden{
+    display: none;
+    animation: hide-right 1s;
+}
+
+@keyframes show-right {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+}
+
+@keyframes hide-right {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -100%;
+    }
+}   
+
+
+
+.sideBar a{
+    margin-bottom: 8px;
+}
+
+.sideBar > img {
+    margin-bottom: 16px;
+}
+
+.navBtns {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.navBtns:hover {
+    border-bottom: 2px solid currentColor;
+}
+
+.navBtns:visited{
+    color: black;
+}
+
+
+.fixNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    padding: 0px 16px;
+    transition: all 0.5s ease-in;
+}
+ 
+div.btnContainer > div{
+    display: flex;
+    align-items: center;
+}
+
+
+.background {
+    height: auto;
+    width: 100vw;
+    background-image: radial-gradient(farthest-corner at -90% -10%,white,white,white,#267FD9);
+}
+
+.catchphrase{
+    width: 50%;
+    margin-top: 109px;
+}
+
+.catchphrase p{
+    margin: 0;
+    padding: 0;
+}
+
+
+p.slogan{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+
+.pageFront {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.pageFront img{
+    mix-blend-mode:darken;
+    margin-top: 38px;
+    width: 35vw;
+    height: auto;
+}
+
+.mobileShow{
+    display: none;
+}
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1050px) {
+    .catchphrase{
+        margin-top: 50px;
+        margin-bottom: 16px;
+    }
+    .catchphrase p.slogan{
+        font-size: 1.5em;
+    }
+
+    .catchphrase p.goal{
+        font-size: 0.8rem;
+    }
+
+    .navBtns{
+        font-size: 0.95rem;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .catchphrase p.slogan{
+        font-size: 1em;
+    }
+
+    .catchphrase p.goal{
+        font-size: 0.7rem;
+    }
+
+    .mobileShow{
+        display: block;
+    }
+
+    .hideOnMobile{
+        display: none;
+    }
+
+    .pageFront img{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .catchphrase{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .catchphrase p.slogan{
+        font-size: 0.8em;
+    }
+
+    .catchphrase p.goal{
+        font-size: 0.6rem;
+    }
+
+    .navBtns{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .catchphrase p.slogan{
+        font-size: 0.7em;
+    }
+
+    .catchphrase p.goal{
+        font-size: 0.5rem;
+    }
+
+    .navBtns{
+        font-size: 0.7rem;
+    }
+
+    .sideBar{
+        width: 100%;
+    }
+}
+

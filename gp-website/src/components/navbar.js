@@ -1,21 +1,57 @@
 import LOGO from '../assets/LOGO.svg';
+import humburger from '../assets/humburger.svg';
+import close from '../assets/close.svg';
+import { useState } from 'react';
+import {NavLink} from 'react-router-dom'; 
 // import '../styles/topSection.css';
 
 
+
 function NavBar() {
+    const [fixed, setFixed] = useState(false);
+    const [sideToggle, setSideToggle] = useState(false);
+
+    window.onscroll = () => {
+        if(window.scrollY > 100){
+            setFixed(true);
+        }else{
+            setFixed(false);
+        }
+    }
+
+    const toggleSideBar = () => {
+        // if(!sideToggle){
+        //     //play animation
+        //     //check 
+        //     document.querySelector('.sideBar').style.animation = 'hide-right 1s';
+        // }
+        setSideToggle(!sideToggle);
+
+    }
+
     return (
-        <div className='navContainer content'>
-            <img id= 'logo' src={LOGO} alt='MDvision logo'/>
+        <div className={fixed ? "navContainer content fixNav" : "navContainer content"}>
+            <NavLink to="/">
+                <img id= 'logo' src={LOGO} alt='MDvision logo'/>
+            </NavLink>
             <div className='btnContainer'>
                 {/* here is going to bee the rest of the buttons*/}
-                <button className='navBtns'>Upload a Scan</button>
-                <button className='navBtns'>Meet Maven</button>
-                <button className='navBtns'>About us</button>
-                <div>
-                    <button className='navBtns' style={{color: '#1F59A2',  fontWeight: '500'}}>Login</button>|
-                    <button className='navBtns' style={{color: '#d13f4e',  fontWeight: '500'}}>Signup</button>
-                </div>
+                <NavLink className = "navBtns hideOnMobile" to="/upload">Upload a Scan</NavLink>
+                <NavLink className = "navBtns hideOnMobile" to="/maven">Meet Maven</NavLink>
+                <NavLink className = "navBtns hideOnMobile" to="/about">About us</NavLink>
+                <NavLink className = "navBtns hideOnMobile" style={{color: '#d13f4e',  fontWeight: '600'}} to="/login">Login</NavLink>
+                <img className = 'mobileShow' onClick={toggleSideBar} src={humburger} alt = 'menu button for mobile view'/>
             </div>
+
+            <div className={sideToggle ? "sideBar" : "sideBarHidden"}>
+                {/* here is going to bee the rest of the buttons*/}
+                <img onClick ={toggleSideBar} src={close} alt = 'close button for mobile view'/>
+                <NavLink className = "navBtns" to="/upload">Upload a Scan</NavLink>
+                <NavLink className = "navBtns" to="/maven">Meet Maven</NavLink>
+                <NavLink className = "navBtns" to="/about">About us</NavLink>
+                <NavLink className = "navBtns" style={{color: '#d13f4e',  fontWeight: '600'}} to="/login">Login</NavLink>
+            </div>
+
         </div>
     );
 }

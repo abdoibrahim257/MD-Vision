@@ -1,9 +1,10 @@
 import NavBar from "./navbar";
-import '../styles/topSection.css';
+import '../styles/heroSection.css';
 
 import robot from '../assets/image1.png';
 
-function TopSection() {
+
+function HeroSection() {
   return (
     <div className="background">
         <NavBar />
@@ -24,4 +25,4 @@ function TopSection() {
   );
 }
 
-export default TopSection;
+export default HeroSection;

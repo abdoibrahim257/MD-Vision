@@ -49,6 +49,34 @@ def traverse_tree(symptom, warehouse):
             tree = warehouse.getTree(current_node.symptom.lower())
             print(f"Symptom: {current_node.symptom}")
             current_node = tree.get_root()
+
+# function to traverse the tree according to user input (yes or no) and return the diagnosis
+def traverse_tree2(symptom, warehouse,answerList):
+    tree = warehouse.getTree(symptom.lower())
+    current_node = tree.get_root()
+    QuestionToReturn = ""
+    while current_node:
+        #check type of current node class to determine if it is a tree node or another tree node
+        if isinstance(current_node, TreeNode):
+            if not current_node.get_yes():
+                return("Diagnosis: "+current_node.get_question())
+                # break
+            QuestionToReturn=current_node.get_question()
+            if not len(answerList)==0:
+                answer = answerList.pop(0)
+                if answer.lower() == 'yes':
+                    current_node = current_node.get_yes()
+                elif answer.lower() == 'no':
+                    current_node = current_node.get_no()
+                else:
+                    return("Invalid input. Please enter Yes or No.")
+            else:
+                return(QuestionToReturn)
+        else:
+            #get this tree from the warehouse
+            tree = warehouse.getTree(current_node.symptom.lower())
+            current_node = tree.get_root()
+            return("Symptom:"+ current_node.symptom)
                         
 
 def add_tree_to_warehouse(file_path, symptom, warehouse):
@@ -78,4 +106,4 @@ folder = folder.replace('\\', '/')
 # # #FILL THE WAREHOUSE WITH TREES
 load_warehouse(folder, warehouse)
 
-# traverse_tree("Coughing", warehouse)
+# traverse_tree("depression", warehouse)

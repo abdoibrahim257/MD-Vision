@@ -24,6 +24,7 @@ class treeWarehouse:
     def clearTrees(self):
         self.treesDict = {}
 
+answerList = []
 
 # function to traverse the tree according to user input (yes or no) and return the diagnosis
 def traverse_tree(symptom, warehouse):

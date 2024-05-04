@@ -20,13 +20,7 @@ function NavBar() {
     }
 
     const toggleSideBar = () => {
-        // if(!sideToggle){
-        //     //play animation
-        //     //check 
-        //     document.querySelector('.sideBar').style.animation = 'hide-right 1s';
-        // }
         setSideToggle(!sideToggle);
-
     }
 
     return (

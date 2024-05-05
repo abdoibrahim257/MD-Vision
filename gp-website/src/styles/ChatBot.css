@@ -1,0 +1,57 @@
+p{
+    margin: 0 0 16px 0;
+    padding: 0;
+    text-align: justify;
+    text-align: center;
+}
+
+.welcome{
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* gap: 12px; */
+    align-items: flex-start;
+}
+
+
+.help{
+    font-size: 0.8em;
+}
+
+.textContainer{
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.textContainer img{
+    width: 55px;
+    height: auto;
+    animation: bounce 1s;
+}
+
+.bot:hover{
+    animation: bounce2 1s;
+}
+
+
+@keyframes bounce {
+    0% { transform: rotate(-5deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+@keyframes bounce2 {
+    0% { transform: rotate(-5deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+

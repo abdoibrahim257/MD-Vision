@@ -6,7 +6,6 @@ import {NavLink} from 'react-router-dom';
 // import '../styles/topSection.css';
 
 
-
 function NavBar() {
     const [fixed, setFixed] = useState(false);
     const [sideToggle, setSideToggle] = useState(false);
@@ -25,17 +24,8 @@ function NavBar() {
 
     return (
         <div className={fixed ? "navContainer content fixNav" : "navContainer content"}>
-            <NavLink to="/">
-                <img id= 'logo' src={LOGO} alt='MDvision logo'/>
-            </NavLink>
-            <div className='btnContainer'>
-                {/* here is going to bee the rest of the buttons*/}
-                <NavLink className = "navBtns hideOnMobile" to="/upload">Upload a Scan</NavLink>
-                <NavLink className = "navBtns hideOnMobile" to="/maven">Meet Maven</NavLink>
-                <NavLink className = "navBtns hideOnMobile" to="/about">About us</NavLink>
-                {/* <NavLink className = "navBtns hideOnMobile" style={{color: '#d13f4e',  fontWeight: '600'}} to="/login">Login</NavLink> */}
-                <img className = 'mobileShow' onClick={toggleSideBar} src={humburger} alt = 'menu button for mobile view'/>
-            </div>
+            <NavLink to="/"><img id= 'logo' src={LOGO} alt='MDvision logo'/></NavLink>
+            <img  onClick={toggleSideBar} src={humburger} alt = 'menu button for mobile view'/>
 
             <div className={sideToggle ? "sideBar" : "sideBarHidden"}>
                 {/* here is going to bee the rest of the buttons*/}
@@ -43,7 +33,7 @@ function NavBar() {
                 <NavLink className = "navBtns" to="/upload">Upload a Scan</NavLink>
                 <NavLink className = "navBtns" to="/maven">Meet Maven</NavLink>
                 <NavLink className = "navBtns" to="/about">About us</NavLink>
-                {/* <NavLink className = "navBtns" style={{color: '#d13f4e',  fontWeight: '600'}} to="/login">Login</NavLink> */}
+                <NavLink className = "navBtns" style={{color: '#d13f4e',  fontWeight: '600'}} to="/login">Login</NavLink>
             </div>
 
         </div>

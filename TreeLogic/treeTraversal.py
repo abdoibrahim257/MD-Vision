@@ -102,6 +102,8 @@ def get_tree_names():
     for file in os.listdir(folder):
         if file.endswith('.json'):
             symptom = os.path.splitext(file)[0]
+            #remove underscore and add space to get symptom name
+            symptom = re.sub(r"(_)"," ",symptom)
             tree_names.append(symptom)
     return tree_names
             

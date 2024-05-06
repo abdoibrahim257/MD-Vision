@@ -37,7 +37,7 @@ def getQ(symptom:str,answer:Answer):
             "answerList": answerList
             }
 
-@app.get("/chatbot/files",response_model=response)
+@app.get("/maven")
 def getFiles():
     files = get_tree_names()
     return {"fileList": files}

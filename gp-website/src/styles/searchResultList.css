@@ -8,11 +8,13 @@
     margin-top: 4px;
     max-height: 200px;
     overflow-y: auto;
+    margin-bottom: 16px;
 }
 
 
 .search-result {
     padding : 10px 20px;
+    font-size: 0.8em;
 }
 
 .search-result:hover {

@@ -1,0 +1,45 @@
+.symptom-list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.symptomName {
+    text-decoration: none;
+    color: black;
+}
+
+.symptomName > p{
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.3s ease-in-out;
+}
+
+.symptomName > p:hover {
+    text-decoration-color: black;
+    /* text-decoration: underline solid currentColor; */
+}
+
+.card-wrapper > h2 {
+    text-decoration: underline;
+    text-decoration-color: #d13f4e;
+    color: #1f59a2;
+    text-decoration-thickness: 5px;
+    font-family: sans-serif;
+}
+
+.background {
+    height: 80vh;
+}
+
+.hr-line {
+    border-top: 1px solid #f5f5f5 ;
+    width: 40%;
+    position: absolute;
+}
+    

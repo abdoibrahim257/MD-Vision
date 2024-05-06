@@ -24,7 +24,7 @@ class treeWarehouse:
     def clearTrees(self):
         self.treesDict = {}
 
-answerList = []
+# answerList = []
 
 # function to traverse the tree according to user input (yes or no) and return the diagnosis
 def traverse_tree(symptom, warehouse):
@@ -75,8 +75,9 @@ def traverse_tree2(symptom, warehouse,answerList):
         else:
             #get this tree from the warehouse
             tree = warehouse.getTree(current_node.symptom.lower())
+            # symptom = current_node.symptom
             current_node = tree.get_root()
-            return("Symptom:"+ current_node.symptom)
+            # return("Symptom:"+ symptom)
                         
 
 def add_tree_to_warehouse(file_path, symptom, warehouse):
@@ -95,6 +96,14 @@ def load_warehouse(folder, warehouse):
             sypmtomWithSpaces = re.sub(r"(_)"," ",symptom) #replace underscore with space to get symptom name
             if sypmtomWithSpaces not in warehouse.getTrees():
                 add_tree_to_warehouse(os.path.join(folder, file), sypmtomWithSpaces, warehouse)
+
+def get_tree_names():
+    tree_names = []
+    for file in os.listdir(folder):
+        if file.endswith('.json'):
+            symptom = os.path.splitext(file)[0]
+            tree_names.append(symptom)
+    return tree_names
             
 warehouse = treeWarehouse() 
 
@@ -103,7 +112,11 @@ current_directory = os.path.dirname(current_file_path)
 folder = current_directory + '\\Decision Trees'
 folder = folder.replace('\\', '/')
 
+
+
 # # #FILL THE WAREHOUSE WITH TREES
 load_warehouse(folder, warehouse)
 
 # traverse_tree("depression", warehouse)
+
+# print(get_tree_names())

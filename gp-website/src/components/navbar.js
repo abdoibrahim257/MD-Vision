@@ -1,21 +1,28 @@
 import LOGO from '../assets/LOGO.svg';
 import humburger from '../assets/humburger.svg';
 import close from '../assets/close.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {NavLink} from 'react-router-dom'; 
 // import '../styles/topSection.css';
 
 
 
-function NavBar() {
+function NavBar({sticky = 0}) {
+
+    const stickyBool = sticky === 1 ? true : false;
+
     const [fixed, setFixed] = useState(false);
     const [sideToggle, setSideToggle] = useState(false);
 
-    window.onscroll = () => {
-        if(window.scrollY > 100){
-            setFixed(true);
-        }else{
-            setFixed(false);
+
+    if(!stickyBool){
+        console.log('sticky');
+        window.onscroll = () => {
+            if(window.scrollY > 100){
+                setFixed(true);
+            }else{
+                setFixed(false);
+            }
         }
     }
 

@@ -1,7 +1,6 @@
-import NavBar from "./navbar";
 import '../styles/heroSection.css';
-
 import robot from '../assets/image1.png';
+import NavBar from './navbar';
 
 
 function HeroSection() {

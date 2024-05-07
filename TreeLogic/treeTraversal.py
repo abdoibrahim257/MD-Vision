@@ -121,6 +121,6 @@ folder = folder.replace('\\', '/')
 # # #FILL THE WAREHOUSE WITH TREES
 load_warehouse(folder, warehouse)
 
-# traverse_tree("depression", warehouse)
+# traverse_tree2("Abnormal looking urine", warehouse,['yes','no','yes','no'])
 
 # print(get_tree_names())

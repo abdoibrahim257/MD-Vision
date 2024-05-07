@@ -34,6 +34,7 @@ p >span{
     background-color: transparent;
     width: 50%;
     height: auto;
+    margin-top: 24px;
 }
 
 .message-wrapper {
@@ -95,10 +96,18 @@ p >span{
     justify-content: flex-end;
 }
 
+.Hidden{
+    display: none;
+}
+
 .answer-message{
     width: 100%;
     text-align: end;
     color: #707070;
     font-size: 0.9em;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
+
+
 

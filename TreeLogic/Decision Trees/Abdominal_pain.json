@@ -3,7 +3,7 @@
         "Q": "Have you had similar episodes of pain that come and go?",
         "Yes": {
             "tree": {
-                "symptom": "RECURRINT ABDOMINAL PAIN"
+                "symptom": "RECURRING ABDOMINAL PAIN"
             }
         },
         "No": {

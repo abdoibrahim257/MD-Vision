@@ -1,5 +1,6 @@
 from treeDS import TreeNode
 from treeDS import TreeDS
+from treeDS import anotherTreeNode
 import json
 import os
 import re
@@ -46,7 +47,10 @@ def traverse_tree(symptom, warehouse):
                 print("Invalid input. Please enter Yes or No.")
         else:
             #get this tree from the warehouse
-            tree = warehouse.getTree(current_node.symptom.lower())
+            if isinstance(current_node, anotherTreeNode):
+                print(f"Symptom: {current_node.symptom}")
+                break
+            tree = warehouse.getTree(current_node.symptom)
             print(f"Symptom: {current_node.symptom}")
             current_node = tree.get_root()
 
@@ -74,10 +78,8 @@ def traverse_tree2(symptom, warehouse,answerList):
                 return(QuestionToReturn)
         else:
             #get this tree from the warehouse
-            tree = warehouse.getTree(current_node.symptom.lower())
-            # symptom = current_node.symptom
-            current_node = tree.get_root()
-            # return("Symptom:"+ symptom)
+            tree = warehouse.getTree(current_node.symptom)
+            current_node = tree.root
                         
 
 def add_tree_to_warehouse(file_path, symptom, warehouse):

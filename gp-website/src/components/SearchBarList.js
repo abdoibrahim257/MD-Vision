@@ -7,7 +7,7 @@ const SearchBarList = ({results}) => {
         {results.map((result, id) => {
             return (
                 <div className='search-result' key={id}>
-                    {result.name}
+                    {result}
                 </div>
             );
         })}

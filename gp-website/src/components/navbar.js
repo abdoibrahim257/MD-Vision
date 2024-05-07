@@ -16,7 +16,7 @@ function NavBar({sticky = 0}) {
 
 
     if(!stickyBool){
-        console.log('sticky');
+        // console.log('sticky');
         window.onscroll = () => {
             if(window.scrollY > 100){
                 setFixed(true);

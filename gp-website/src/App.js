@@ -11,13 +11,13 @@ function App() {
   return (
     <>
       {/* here we will handle all routes AKA the biggest component */}
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<LandingPage />} />
 
         <Route path="/maven" element={<SymptomPage />} />
 
-      </Routes> */}
-      <ChatPage />
+      </Routes>
+      {/* <ChatPage /> */}
     </>
   );
 }

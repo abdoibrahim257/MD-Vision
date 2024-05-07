@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import NavBar from "./navbar";
 import '../styles/heroSection.css';
 import SearchBar from "./SearchBar.js";
@@ -9,39 +9,52 @@ import SymptomLetterCard from "./SymptomLetterCard.js";
 const SymptomPage = () => {
     const [symptom, setSymptom] = React.useState('')
     const [results, setResults] = React.useState([])
+    const [sympList, setSympList] = React.useState([]) //list of symptoms starting with the letter [A, B, C, ...
     
-    /* first get symptom names from the backend  */
-    const sympNames = [ //examples
-        "Abdominal pain",
-        "Anxiety",
-        "Back pain",
-        "Bleeding",
-        "Chest pain",
-        "Cough",
-        "Diarrhea",
-        "Dizziness",
-        "Fatigue",
-        "Fever",
-        "Headache",
-        "Heartburn",
-        "Joint pain",
-        "Nausea",
-        "Rash",
-        "Shortness of breath",
-        "Sore throat",
-        "Vomiting"
-    ]
 
-    // const Letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-    
+    /* first get symptom names from the backend  */
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch("http://localhost:8000/maven");
+            const data = await response.json();
+            // console.log(data)
+            const symptomsList = data.fileList;
+            setSympList(symptomsList);
+        }
+        fetchData();
+    }, [])
+
+
+    // const sympNames = [ //examples
+    //     "Abdominal pain",
+    //     "Anxiety",
+    //     "Back pain",
+    //     "Bleeding",
+    //     "Chest pain",
+    //     "Cough",
+    //     "Diarrhea",
+    //     "Dizziness",
+    //     "Fatigue",
+    //     "Fever",
+    //     "Headache",
+    //     "Heartburn",
+    //     "Joint pain",
+    //     "Nausea",
+    //     "Rash",
+    //     "Shortness of breath",
+    //     "Sore throat",
+    //     "Vomiting"
+    // ]
+
+
     const createSymDict = () => {
         let symDict = {};
 
         // Letters.forEach(letter => {
         //     symDict[letter] = []
         // })
-            
-        sympNames.forEach(sym => {
+        
+        sympList.forEach(sym => {
             let firstLetter = sym[0].toUpperCase()
             if (!symDict[firstLetter]) {
                 symDict[firstLetter] = []
@@ -51,6 +64,7 @@ const SymptomPage = () => {
 
         return symDict;
     }
+    // const dict = {}
     
     const dict = createSymDict()
 

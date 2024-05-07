@@ -16,8 +16,9 @@ function App() {
 
         <Route path="/maven" element={<SymptomPage />} />
 
+        <Route path="/maven/:symptom" element={<ChatPage />} />
+        {/* <ChatPage /> */}
       </Routes>
-      {/* <ChatPage /> */}
     </>
   );
 }

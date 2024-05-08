@@ -14,9 +14,16 @@ p{
     align-items: flex-start;
 }
 
+.welcome-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
 
 .help{
     font-size: 0.8em;
+    text-align: left;
 }
 
 .textContainer{

@@ -135,6 +135,7 @@ div.btnContainer > div{
 .catchphrase p{
     margin: 0;
     padding: 0;
+    text-align: left;
 }
 
 
@@ -142,6 +143,7 @@ p.slogan{
     font-size: 2em;
     font-weight: 600;
     margin-bottom: 24px;
+    text-align: left;
 }
 
 

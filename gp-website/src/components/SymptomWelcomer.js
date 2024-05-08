@@ -7,7 +7,7 @@ const SymptomWelcomer = () => {
     return (
         <div className="textContainer">
             <img className="bot" src={robot} alt="Maven bot" />
-            <div>
+            <div className='welcome-wrapper'>
                 <div className="welcome">
                     <p>👋 Hello there! I'm Maven, your friendly health assistant here to lend a helping hand!</p>
                 </div>

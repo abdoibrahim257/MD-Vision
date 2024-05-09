@@ -67,7 +67,7 @@
                         },
                         "No": {
                             "question": {
-                                "Q": "See a doctor immediately. You may have INFLAMNWORY BOWEL DISEASE or COLON CANCER.",
+                                "Q": "See a doctor immediately. You may have INFLAMMATORY BOWEL DISEASE or COLON CANCER.",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis":["INFLAMMATORY BOWEL DISEASE","COLON CANCER"]
@@ -81,7 +81,7 @@
                         "Q" : "Have your bowel habits changed, or is there blood in your stools?",
                         "Yes": {
                             "question": {
-                                "Q": "See a doctor immediately. You may have INFLAMNWORY BOWEL DISEASE or COLON CANCER.",
+                                "Q": "See a doctor immediately. You may have INFLAMMATORY BOWEL DISEASE or COLON CANCER.",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis":["INFLAMMATORY BOWEL DISEASE","COLON CANCER"]

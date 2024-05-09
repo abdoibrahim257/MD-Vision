@@ -6,7 +6,7 @@
                 "Q": "Have you noticed one or more of the following symptoms? \n\u2022 Weakness in your arms or legs \n\u2022 Numbness or tingling in any part of your body \n\u2022 Blurred vision \n\u2022 Difficulty speaking",
                 "Yes": {
                     "question": {
-                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE or a TZANSIENT ISCHEMIC ATTACK.",
+                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE or a TRANSIENT ISCHEMIC ATTACK.",
                         "Yes": {},
                         "No": {},
                         "diagnosis": ["STROKE", "TRANSIENT ISCHEMIC ATTACK"]
@@ -53,7 +53,7 @@
                                                         },
                                                         "No": {
                                                             "question": {
-                                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital ernergency department. You could have increased fluid pressure inside your brain, which is life-threatening. However, you may be having MIGRAINE HEADACHES.",
+                                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have increased fluid pressure inside your brain, which is life-threatening. However, you may be having MIGRAINE HEADACHES.",
                                                                 "Yes": {},
                                                                 "No": {},
                                                                 "diagnosis": ["MIGRAINE HEADACHES"]
@@ -92,7 +92,7 @@
                                                 },
                                                 "No": {
                                                     "question": {
-                                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital ernergency department. You could have increased fluid pressure inside your brain, which is life-threatening. However, you may be having MIGRAINE HEADACHES.",
+                                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have increased fluid pressure inside your brain, which is life-threatening. However, you may be having MIGRAINE HEADACHES.",
                                                         "Yes": {},
                                                         "No": {},
                                                         "diagnosis": ["MIGRAINE HEADACHES"]

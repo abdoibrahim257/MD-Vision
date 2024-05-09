@@ -61,7 +61,7 @@
             },
             "No": {
               "question": {
-                "Q": "Are your stools pale, greasy, and foul-smellin ?",
+                "Q": "Are your stools pale, greasy, and foul-smelling?",
                 "Yes": {
                   "question": {
                     "Q": "See your doctor. You may have an intestinal disorder such as CELIAC DISEASE.",

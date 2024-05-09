@@ -6,10 +6,10 @@
         "Q": "Did the pain follow a fall or other injury to your back?",
         "Yes": {
           "question": {
-            "Q": "Have you noticed one or more of the following symptoms? \n\u2022 Loss of bladder or bowel control \n\u2022 Difficulty moving a limb \n\u2022 Numbness or tingling in a limb",
+            "Q": "Have you noticed one or more of the following symptoms?\n\u2022 Loss of bladder or bowel control\n\u2022 Difficulty moving a limb\n\u2022 Numbness or tingling in a limb",
             "Yes": {
               "question": {
-                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have damaged your spinal cord.",
+                "Q": "EMERGENCY: Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have damaged your spinal cord.",
                 "Yes": {},
                 "No": {},
                 "diagnosis": ["SPINAL CORD INJURY"]
@@ -45,7 +45,7 @@
                     "Q": "Is the pain mainly in the small of your back?",
                     "Yes": {
                       "question": {
-                        "Q": "You probably have low back pain from strain. you could have OSTEOARTHRITIS.",
+                        "Q": "You probably have low back pain from strain. You could have OSTEOARTHRITIS.",
                         "Yes": {},
                         "No": {},
                         "diagnosis": ["OSTEOARTHRITIS"]
@@ -187,7 +187,7 @@
                             "Q": "Are you over age 50, and is the pain worse after a period of inactivity (such as after getting up in the morning)?",
                             "Yes": {
                               "question": {
-                                "Q": "Do you have pain in Other joints, including the hip, knee, or ankle?",
+                                "Q": "Do you have pain in other joints, including the hip, knee, or ankle?",
                                 "Yes": {
                                   "question": {
                                     "Q": "You may have OSTEOARTHRITIS (p. 996), or you may be doing something that hurts your back.",
@@ -260,7 +260,7 @@
                 "Q": "Are you over age 50, and is the pain worse after a period of inactivity (such as after getting up in the morning)?",
                 "Yes": {
                   "question": {
-                    "Q": "Do you have pain in Other joints, including the hip, knee, or ankle?",
+                    "Q": "Do you have pain in other joints, including the hip, knee, or ankle?",
                     "Yes": {
                       "question": {
                         "Q": "You may have OSTEOARTHRITIS (p. 996), or you may be doing something that hurts your back.",

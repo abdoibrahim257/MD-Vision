@@ -3,10 +3,10 @@
         "Q": "Is the lump or swelling painful, red, and warm?",
         "Yes": {
             "question": {
-                "Q": "See your doctor. You may have a skin infection such as a BOII. If you recently injured the area, you could have a hematoma, an accumulation of blood caused by bleeding from an injured blood vessel.",
+                "Q": "See your doctor. You may have a skin infection such as a BOIL. If you recently injured the area, you could have a hematoma, an accumulation of blood caused by bleeding from an injured blood vessel.",
                 "Yes": {},
                 "No": {},
-                "diagnosis": ["BOII"]
+                "diagnosis": ["BOIL"]
             }
         },
         "No": {
@@ -123,7 +123,7 @@
                                                         "Q": "See a doctor immediately. You may have a throat infection such as STREP THROAT, TONSILLITIS, or PHARYNGITIS. Or you could have a more generalized infection such as INFECTIOUS MONONUCLEOSIS or possibly HIV.",
                                                         "Yes": {},
                                                         "No": {},
-                                                        "diagnosis": ["STREP THROAT", "TONSILLITIS", "PHARYNGITIS", "INFECTIOUS MONONUCLEOSIS", "HIV INFECTTION AND AIDS"]
+                                                        "diagnosis": ["STREP THROAT", "TONSILLITIS", "PHARYNGITIS", "INFECTIOUS MONONUCLEOSIS", "HIV INFECTION AND AIDS"]
                                                     }
                                                 },
                                                 "No": {
@@ -151,7 +151,7 @@
                                                         "Q": "See a doctor immediately. You may have a throat infection such as STREP THROAT, TONSILLITIS, or PHARYNGITIS. Or you could have a more generalized infection such as INFECTIOUS MONONUCLEOSIS or possibly HIV.",
                                                         "Yes": {},
                                                         "No": {},
-                                                        "diagnosis": ["STREP THROAT", "TONSILLITIS", "PHARYNGITIS", "INFECTIOUS MONONUCLEOSIS", "HIV INFECTTION AND AIDS"]
+                                                        "diagnosis": ["STREP THROAT", "TONSILLITIS", "PHARYNGITIS", "INFECTIOUS MONONUCLEOSIS", "HIV INFECTION AND AIDS"]
                                                     }
                                                 },
                                                 "No": {

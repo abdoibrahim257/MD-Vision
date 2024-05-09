@@ -126,7 +126,7 @@
         "Q": "Did one or more bald patches develop suddenly?",
         "Yes": {
           "question": {
-            "Q": "See your doctor. In adults, this type of hair loss can result from a skin condition such as LICHEN PLANUS or from a disease called alopecia areata. In children, it can result from a fungal infection such as RINGWORM.",
+            "Q": "See your doctor. In adults, this type of hair loss can result from a skin condition such as LICHEN PLANUS or from a disease called ALOPECIA AREATA. In children, it can result from a fungal infection such as RINGWORM.",
             "Yes": {},
             "No": {},
             "diagnosis": [

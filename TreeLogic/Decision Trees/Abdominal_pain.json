@@ -39,7 +39,7 @@
                                                 "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                                                 "Yes": {
                                                     "question": {
-                                                        "Q": "ee your doctor. You may have a kidney infection.",
+                                                        "Q": "See your doctor. You may have a kidney infection.",
                                                         "Yes": {},
                                                         "No": {},
                                                         "diagnosis": ["ACUTE PYELONEPHRITIS"]
@@ -173,7 +173,7 @@
                                         "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                                         "Yes": {
                                             "question": {
-                                                "Q": "ee your doctor. You may have a kidney infection.",
+                                                "Q": "See your doctor. You may have a kidney infection.",
                                                 "Yes": {},
                                                 "No": {},
                                                 "diagnosis": ["ACUTE PYELONEPHRITIS"]

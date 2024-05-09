@@ -59,7 +59,7 @@
                     "Q": "See your doctor. You may have a lung disease such as CHRONIC BRONCHITIS or EMPHYSEMA.",
                     "Yes": {},
                     "No": {},
-                    "diagnosis": ["CRONIC BRONCHITIS", "EMPHYSEMA"]
+                    "diagnosis": ["CHRONIC BRONCHITIS", "EMPHYSEMA"]
                   }
                 },
                 "No": {

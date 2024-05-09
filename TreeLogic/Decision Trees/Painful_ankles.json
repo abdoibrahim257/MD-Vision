@@ -78,7 +78,7 @@
                 },
                 "No": {
                   "question": {
-                    "Q": "See your doctor. You may have COUT OR PSEUDOGOUT.",
+                    "Q": "See your doctor. You may have GOUT OR PSEUDOGOUT.",
                     "Yes": {},
                     "No": {},
                     "diagnosis": ["GOUT OR PSEUDOGOUT"]

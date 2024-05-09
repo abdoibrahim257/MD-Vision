@@ -19,7 +19,7 @@
                         "Q": "Do you have severe abdominal pain?",
                         "Yes": {
                             "question": {
-                                "Q": "EMERGENCY Get medical help now! Call 123 or your local enwrgency number or have sorneone take you to the nearest hospital department. A pregnancy may be developing outside the uterus.",
+                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital department. A pregnancy may be developing outside the uterus.",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis": [

@@ -100,7 +100,7 @@
                     "Q": "Is the pain on one side only?",
                     "Yes": {
                       "question": {
-                        "Q": "Have you recently had chest surgery or a chest injury, or have you been coughi ng severely?",
+                        "Q": "Have you recently had chest surgery or a chest injury, or have you been coughing severely?",
                         "Yes": {
                           "question": {
                             "Q": "See your doctor. You may have a Strained muscle or a broken rib.",

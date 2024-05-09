@@ -1,0 +1,204 @@
+{
+    "question": {
+        "Q": "Does the discharge look normal in color and consistency but is heavier than usual?",
+        "Yes": {
+            "question": {
+                "Q": "Do you have itching or soreness in the vaginal area?",
+                "Yes": {
+                    "tree": {
+                        "symptom": "vaginal irritation"
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Are you taking oral contraceptives, or could you be pregnant?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. Both ORAL CONTRACEPTIVES and PREGNANCY cause hormonal changes that can increase vaginal discharge.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Is the discharge particularly heavy about halfway between periods?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Increased vaginal discharge is normal in the middle of the menstrual cycle, when ovulation occurs.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Is the discharge white and lumpy?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. You may have a VAGINAL YEAST INFECTION.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Is the discharge greenish yellow with an unpleasant odor?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Do you have pain in your lower abdomen?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See a doctor immediately. The discharge may result from an acute infection of the uterus, fallopian tubes, ovaries, or surrounding tissues.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                    "pelvic inflammatory disease"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Is it possible you forgot to remove a tampon or contraceptive device (such as a diaphragm)?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See a doctor immediately after you remove the object, especially if you feel ill or have developed a rash or fever. The object may have caused an infection.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. You may have a vaginal infection.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "TRICHOMONIASIS"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Is the discharge red or brown, or do you have occasional spotting between periods?",
+                                                        "Yes": {
+                                                            "tree": {
+                                                                "symptom": "irregular vaginal bleeding"
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Is the discharge white and lumpy?",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor. You may have a VAGINAL YEAST INFECTION.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Is the discharge greenish yellow with an unpleasant odor?",
+                        "Yes": {
+                            "question": {
+                                "Q": "Do you have pain in your lower abdomen?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See a doctor immediately. The discharge may result from an acute infection of the uterus, fallopian tubes, ovaries, or surrounding tissues.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "pelvic inflammatory disease"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Is it possible you forgot to remove a tampon or contraceptive device (such as a diaphragm)?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See a doctor immediately after you remove the object, especially if you feel ill or have developed a rash or fever. The object may have caused an infection.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor. You may have a vaginal infection.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "TRICHOMONIASIS"
+                                                ]
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Is the discharge red or brown, or do you have occasional spotting between periods?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "irregular vaginal bleeding"
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

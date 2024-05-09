@@ -3,7 +3,7 @@
         "Q": "Are you unable to recall a specific period of time?",
         "Yes": {
             "question": {
-                "Q": "Are you unable to recall the period of time immediately before or after a head iniury?",
+                "Q": "Are you unable to recall the period of time immediately before or after a head injury?",
                 "Yes": {
                     "question": {
                         "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. Your injury needs to be evaluated by a doctor to determine the severity and to check for any bleeding inside your skull.",

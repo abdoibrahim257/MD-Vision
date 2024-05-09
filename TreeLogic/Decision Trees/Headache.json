@@ -110,7 +110,7 @@
                                                 "Q": "Was the pain preceded by visual disturbances, and does bright light hurt your eyes?",
                                                 "Yes": {
                                                     "question": {
-                                                        "Q": "See your doctor. You may have a MICRAINE, particularly if you also feel nauseous or are vomiting.",
+                                                        "Q": "See your doctor. You may have a MIGRAINE, particularly if you also feel nauseous or are vomiting.",
                                                         "Yes": {},
                                                         "No": {},
                                                         "diagnosis": [
@@ -241,7 +241,7 @@
                                                                                                 },
                                                                                                 "No": {
                                                                                                     "question": {
-                                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms. \n\n If you have worsening headaches\nSee a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly ii you also have vomiting without musea.",
+                                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms.\n\nIf you have worsening headaches\nsee a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly if you also have vomiting without nausea",
                                                                                                         "Yes": {},
                                                                                                         "No": {},
                                                                                                         "diagnosis": []
@@ -367,7 +367,7 @@
                                                                 },
                                                                 "No": {
                                                                     "question": {
-                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms. \n\n If you have worsening headaches\nSee a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly ii you also have vomiting without musea.",
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms.\n\nIf you have worsening headaches\nsee a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly if you also have vomiting without nausea",
                                                                         "Yes": {},
                                                                         "No": {},
                                                                         "diagnosis": []

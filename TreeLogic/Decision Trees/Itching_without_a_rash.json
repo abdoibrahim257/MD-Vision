@@ -17,7 +17,7 @@
                         "Q": "Have you had any bleeding from the anus, or are bowel movements painful?",
                         "Yes": {
                             "question": {
-                                "Q": "See your doctor. You could have HEMORRHOIDS or an ANAL flSSURE, but there is also a Slight possibility Of COLON CANCER.",
+                                "Q": "See your doctor. You could have HEMORRHOIDS or an ANAL FISSURE, but there is also a Slight possibility Of COLON CANCER.",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis": [
@@ -43,7 +43,7 @@
                                         "Q": "Are you a woman, and is the itching confined to the genital area?",
                                         "Yes": {
                                             "tree": {
-                                                "symptom": "VAGINAL IRRIATION"
+                                                "symptom": "VAGINAL IRRITATION"
                                             }
                                         },
                                         "No": {
@@ -115,7 +115,7 @@
                 "Q": "Are you a woman, and is the itching confined to the genital area?",
                 "Yes": {
                     "tree": {
-                        "symptom": "VAGINAL IRRIATION"
+                        "symptom": "VAGINAL IRRITATION"
                     }
                 },
                 "No": {

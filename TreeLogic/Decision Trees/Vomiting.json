@@ -1,6 +1,6 @@
 {
   "question": {
-    "Q": "Have you been having episodes of vomiti ng for a week or longer?",
+    "Q": "Have you been having episodes of vomiting for a week or longer?",
     "Yes": {
       "tree": {
         "symptom": "RECURRING VOMITING"
@@ -91,7 +91,7 @@
                                         "Q": "Did you injure your head within the past 24 hours?",
                                         "Yes": {
                                           "question": {
-                                            "Q": "EMERGENCY Get medical help now! Call 123 or your local ernergency number or have someone take you to the nearest hospital ernergency department. You may have a BRAIN INJURY.",
+                                            "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a BRAIN INJURY.",
                                             "Yes": {},
                                             "No": {},
                                             "diagnosis": ["BRAIN INJURY"]
@@ -127,12 +127,12 @@
                                         "Q": "Before vomiting, did you feel so dizzy that the room seemed to be spinning?",
                                         "Yes": {
                                           "question": {
-                                            "Q": "See your doctor. You may have a disorder of the inner ear such as LABYRINTHITIS (p. 1014) or MÉNIÈRE'S DISEASE (p. 1013).",
+                                            "Q": "See your doctor. You may have a disorder of the inner ear such as LABYRINTHITIS (p. 1014) or MÉNIÉRE'S DISEASE (p. 1013).",
                                             "Yes": {},
                                             "No": {},
                                             "diagnosis": [
                                               "LABYRINTHITIS",
-                                              "MÉNIÈRE'S DISEASE"
+                                              "MÉNIÉRE'S DISEASE"
                                             ]
                                           }
                                         },

@@ -14,7 +14,7 @@
                 "Q": "Do you have a slow-growing, dark-colored lump, or have you noticed a change in a mole?",
                 "Yes": {
                     "question": {
-                        "Q": "See a doctor irnmediately. You may have skin cancer.",
+                        "Q": "See a doctor immediately. You may have skin cancer.",
                         "Yes": {},
                         "No": {},
                         "diagnosis": []

@@ -31,7 +31,7 @@
                         "Q": "Weight gain after quitting smoking averages about 5 to 10 pounds and usually results from a combination of changes in metabolism and overeating to compensate for not smoking.",
                         "Yes": {},
                         "No": {},
-                        "diagnosis": ["LOSING WEGIGHT SENISBLY"]
+                        "diagnosis": ["LOSING WEIGHT SENSIBLY"]
                     }
                 },
                 "No": {
@@ -45,7 +45,7 @@
                                         "Q": "Many women gain too much weight during pregnancy and have difficulty losing it afterward.",
                                         "Yes": {},
                                         "No": {},
-                                        "diagnosis": ["LOSING WEGIGHT SENISBLY"]
+                                        "diagnosis": ["LOSING WEIGHT SENSIBLY"]
                                     }
                                 },
                                 "No": {
@@ -68,10 +68,10 @@
                                                 "Q": "Did you gain weight after changing from a physically strenuous job to a job in which you are less active?",
                                                 "Yes": {
                                                     "question": {
-                                                        "Q": "You probably burned more calories in your Frevious job than you do now. Make an effort to eat less and exercise more.",
+                                                        "Q": "You probably burned more calories in your Previous job than you do now. Make an effort to eat less and exercise more.",
                                                         "Yes": {},
                                                         "No": {},
-                                                        "diagnosis": ["LOSING WEGIGHT SENISBLY", "HEALTH BENEFITS OF PHYSICAL ACTIVITY"]
+                                                        "diagnosis": ["LOSING WEIGHT SENSIBLY", "HEALTH BENEFITS OF PHYSICAL ACTIVITY"]
                                                     }
                                                 },
                                                 "No": {
@@ -153,10 +153,10 @@
                                         "Q": "Did you gain weight after changing from a physically strenuous job to a job in which you are less active?",
                                         "Yes": {
                                             "question": {
-                                                "Q": "You probably burned more calories in your Frevious job than you do now. Make an effort to eat less and exercise more.",
+                                                "Q": "You probably burned more calories in your Previous job than you do now. Make an effort to eat less and exercise more.",
                                                 "Yes": {},
                                                 "No": {},
-                                                "diagnosis": ["LOSING WEGIGHT SENISBLY", "HEALTH BENEFITS OF PHYSICAL ACTIVITY"]
+                                                "diagnosis": ["LOSING WEIGHT SENSIBLY", "HEALTH BENEFITS OF PHYSICAL ACTIVITY"]
                                             }
                                         },
                                         "No": {

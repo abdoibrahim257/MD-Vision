@@ -25,7 +25,7 @@
                         },
                         "No": {
                             "question": {
-                                "Q": "EMERGENCY Get medical help now! Call 123 or your local ernergency number or have someone take you to the nearest hospital emergency department. Even if the loss of vision was only temporary, you may have a serious eye disorder such as RETINAL ARTERY OCCLUSION.",
+                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. Even if the loss of vision was only temporary, you may have a serious eye disorder such as RETINAL ARTERY OCCLUSION.",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis": ["RETINAL ARTERY OCCLUSION"]

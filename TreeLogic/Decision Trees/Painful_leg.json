@@ -50,10 +50,10 @@
                     "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or do you have chills and feel generally ill?",
                     "Yes": {
                       "question": {
-                        "Q": "See a doctor immediately. You may have OSTEOMYTUTIS, a bone infection that is most common in children.",
+                        "Q": "See a doctor immediately. You may have OSTEOMYELITIS, a bone infection that is most common in children.",
                         "Yes": {},
                         "No": {},
-                        "diagnosis": ["OSTEOMYTUTIS"]
+                        "diagnosis": ["OSTEOMYELITIS"]
                       }
                     },
                     "No": {

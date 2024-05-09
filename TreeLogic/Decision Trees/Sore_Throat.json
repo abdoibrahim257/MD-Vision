@@ -50,7 +50,7 @@
                 },
                 "No": {
                   "question": {
-                    "Q": "Do you smoke or drinka lot of alcohol, or were you in a smoky place (such as a bar) just before your throat got sore?",
+                    "Q": "Do you smoke or drink a lot of alcohol, or were you in a smoky place (such as a bar) just before your throat got sore?",
                     "Yes": {
                       "question": {
                         "Q": "Call your doctor. Smoking. inhaling secondhand smoke, and drinking alcohol can all cause throat inflammation.",
@@ -128,7 +128,7 @@
             },
             "No": {
               "question": {
-                "Q": "Do you smoke or drinka lot of alcohol, or were you in a smoky place (such as a bar) just before your throat got sore?",
+                "Q": "Do you smoke or drink a lot of alcohol, or were you in a smoky place (such as a bar) just before your throat got sore?",
                 "Yes": {
                   "question": {
                     "Q": "Call your doctor. Smoking. inhaling secondhand smoke, and drinking alcohol can all cause throat inflammation.",

@@ -43,6 +43,9 @@
 - [x] Painful periods
 - [x] Confusion in older people
 
+- [x] abnormal vaginal discharge
+- [x] vaginal irritation
+- [x] heavy period
 ---
 
 - [x] Sore throat

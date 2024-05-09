@@ -42,7 +42,7 @@
                                 },
                                 "No": {
                                     "question": {
-                                        "Q": "See your doctor. You could have an ACUTE MIDDIE EAR INFECTION or a CHRONIC MIDDLE EAR INFECTION.",
+                                        "Q": "See your doctor. You could have an ACUTE MIDDLE EAR INFECTION or a CHRONIC MIDDLE EAR INFECTION.",
                                         "Yes": {},
                                         "No": {},
                                         "diagnosis": [

@@ -42,7 +42,7 @@
                 "Q": "Is your vision blurred, or does light hurt your eyes?",
                 "Yes": {
                     "question": {
-                        "Q": "See a doctor immediately. You could have acute GIAUCOMA or UVEITIS.",
+                        "Q": "See a doctor immediately. You could have acute GLAUCOMA or UVEITIS.",
                         "Yes": {},
                         "No": {},
                         "diagnosis": ["glaucoma", "uveitis"]

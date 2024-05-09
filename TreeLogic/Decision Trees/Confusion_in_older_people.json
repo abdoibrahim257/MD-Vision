@@ -28,7 +28,7 @@
                 "Q": "Have you noticed two or Of the following symptoms? \n\u2022 Change in personality \n\u2022 Decline in personal appearance or cleanliness \n\u2022 Impaired ability to remember recent events",
                 "Yes": {
                   "question": {
-                    "Q": "See a doctor immediately. These symptoms may indicate the onset of ALZHELMER'S DISEASE. You may have had several minor strokes. Or you may have a BRAIN TUMOR.",
+                    "Q": "See a doctor immediately. These symptoms may indicate the onset of ALZHEIMER'S DISEASE. You may have had several minor strokes. Or you may have a BRAIN TUMOR.",
                     "Yes": {},
                     "No": {},
                     "diagnosis": ["ALZHEIMER'S DISEASE", "BRAIN TUMOR"]

@@ -83,7 +83,7 @@
                                                                 "Q": "Do your hands tremble?",
                                                                 "Yes": {
                                                                     "question": {
-                                                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local ernergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE. Or you could have a nervous system disorder such as PARKINSON'S DISEASE.",
+                                                                        "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE. Or you could have a nervous system disorder such as PARKINSON'S DISEASE.",
                                                                         "Yes": {},
                                                                         "No": {},
                                                                         "diagnosis": ["Stroke", "Parkinson's disease"]

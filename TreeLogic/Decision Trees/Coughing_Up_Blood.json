@@ -50,7 +50,7 @@
                         "Q": "Have you had a cough for many weeks or months?",
                         "Yes": {
                           "question": {
-                            "Q": "See a doctor immediately. You could have LUNC CANCER or TUBERCULOSIS.",
+                            "Q": "See a doctor immediately. You could have LUNG CANCER or TUBERCULOSIS.",
                             "Yes": {},
                             "No": {},
                             "diagnosis": ["TUBERCULOSIS", "LUNG CANCER"]
@@ -103,7 +103,7 @@
                     "Q": "Have you had a cough for many weeks or months?",
                     "Yes": {
                       "question": {
-                        "Q": "See a doctor immediately. You could have LUNC CANCER or TUBERCULOSIS.",
+                        "Q": "See a doctor immediately. You could have LUNG CANCER or TUBERCULOSIS.",
                         "Yes": {},
                         "No": {},
                         "diagnosis": ["TUBERCULOSIS", "LUNG CANCER"]

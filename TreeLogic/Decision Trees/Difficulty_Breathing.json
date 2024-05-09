@@ -9,7 +9,7 @@
             "Q": "Is the pain crushing, or does it radiate from the breastbone or upper abdomen to your jaw, neck, or arms?",
             "Yes": {
               "question": {
-                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have sorneone take you to the nearest hospital emergency department. You could be having a HEART ATTACK.",
+                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could be having a HEART ATTACK.",
                 "Yes": {},
                 "No": {},
                 "diagnosis": ["HEART ATTACK"]
@@ -24,7 +24,7 @@
                     "Yes": {},
                     "No": {},
                     "diagnosis": [
-                      "PULMONARY IMBOLISM",
+                      "PULMONARY EMBOLISM",
                       "PNEUMOTHORAX",
                       "OTHER LUNG PROBLEMS"
                     ]

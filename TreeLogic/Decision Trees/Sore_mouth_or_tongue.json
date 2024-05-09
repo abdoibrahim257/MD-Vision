@@ -32,10 +32,10 @@
                 "Q": "Do you have any discolored areas inside your mouth or on your tongue?",
                 "Yes": {
                   "question": {
-                    "Q": "Are the discolored areas whitish yellow, and can they be scraped off easi ly?",
+                    "Q": "Are the discolored areas whitish yellow, and can they be scraped off easily?",
                     "Yes": {
                       "question": {
-                        "Q": "See your doctor or dentist. You may have an oral yeast infection, especially ifyou have been taking antibiotics or if you use an inhaler for corticosteroid medications to treat asthma. Wearing dentures, especially poorly fitting ones, can also contribute to the development of oral yeast infections.",
+                        "Q": "See your doctor or dentist. You may have an oral yeast infection, especially if you have been taking antibiotics or if you use an inhaler for corticosteroid medications to treat asthma. Wearing dentures, especially poorly fitting ones, can also contribute to the development of oral yeast infections.",
                         "Yes": {},
                         "No": {},
                         "diagnosis": ["ORAL THRUSH", "DENTURE PROBLEMS"]

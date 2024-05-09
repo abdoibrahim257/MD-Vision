@@ -1,0 +1,9 @@
+.Symptom-background{
+    height: 80vh;
+    width: 100vw;
+    background-image: radial-gradient(farthest-corner at -90% -10%,white,white,white,#267FD9);
+}
+
+.maintain-content {
+    padding-top: 85px;
+}

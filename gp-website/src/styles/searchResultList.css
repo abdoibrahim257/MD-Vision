@@ -13,8 +13,10 @@
 
 
 .search-result {
-    padding : 10px 20px;
+    padding: 10px 20px;
     font-size: 0.8em;
+    text-decoration: none;
+    color: inherit;
 }
 
 .search-result:hover {

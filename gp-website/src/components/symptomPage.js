@@ -1,13 +1,14 @@
 import React, {useEffect} from "react";
 import NavBar from "./navbar";
 import '../styles/heroSection.css';
+import '../styles/SymptomPage.css';
 import SearchBar from "./SearchBar.js";
 import SearchBarList from "./SearchBarList.js";
 import SymptomWelcomer from "./SymptomWelcomer.js";
 import SymptomLetterCard from "./SymptomLetterCard.js";
 
 const SymptomPage = () => {
-    const [symptom, setSymptom] = React.useState('')
+    const [padded, setPadded] = React.useState(false)
     const [results, setResults] = React.useState([])
     const [sympList, setSympList] = React.useState([]) //list of symptoms starting with the letter [A, B, C, ...
     
@@ -73,10 +74,10 @@ const SymptomPage = () => {
     return (
         <div>
             {/* an nave bar will be here */}
-            <div className="background">
-                <NavBar sticky />
+            <div className="Symptom-background">
+                <NavBar setPadding={setPadded}/>
                 <div className="content">
-                    <div>
+                    <div className={padded ? "maintain-content" : null}>
                         <SymptomWelcomer />
                         <SearchBar setResults  =  {setResults}/>
                         <SearchBarList results = {results} />

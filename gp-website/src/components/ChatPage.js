@@ -1,9 +1,7 @@
-import React, { useEffect, useReducer } from 'react'
+import React, { useEffect, useReducer , useRef} from 'react'
 import '../styles/Chat.css'
 import NavBar from './navbar.js'
 import robot from '../assets/loveBot.svg'
-
-import { WindupChildren } from "windups";
 
 import {
   MainContainer,
@@ -11,7 +9,6 @@ import {
   MessageList,
   Message
 } from "@chatscope/chat-ui-kit-react";
-import { redirect } from 'react-router-dom';
 
 const initialState = { index: 0 };
 
@@ -31,9 +28,6 @@ const ChatPage = () => {
     dispatch({ type: 'increment' });
   };
 
-  // const idx = useRef(0);
-  const [handleBtn, setHandleBtn] = React.useState(false)
-  // const [idx, setIdx] = React.useState(0)
   
   // const [messages, setMessages] = React.useState([])
   const [messages, setMessages] = React.useState({})
@@ -42,23 +36,14 @@ const ChatPage = () => {
   //   sender: 'Maven'
   
   const [diagnosed, setDiagnosed] = React.useState(false)
-  // const [typing, setTyping] = React.useState(false)
 
   const currentLink = window.location.href
 
-  // const typeWritter = (index, msg, msgIndex) => {
-  //   setTimeout(() => {
-  //     //get index of the message 
-  //     var newMessages = messages;
-  //     newMessages[index] = {message: msg.substr(0,msgIndex), sender: 'Maven'} 
-  //     // setMessages([...newMessages])
-  //     setMessages(newMessages)
-  //     if ( msgIndex < msg.length) {
-  //       typeWritter(index, msg, msgIndex+1)
-  //     }
-  //   }, 23)
-  // }
-  const typeWritter = (key, msg, msgIndex) => {
+  const bottomRef = useRef();
+
+
+
+  const typeWriter = (key, msg, msgIndex) => {
     setTimeout(() => {
       // Update the state
       setMessages((oldMessages) => {
@@ -70,7 +55,7 @@ const ChatPage = () => {
       });
       // If there are more characters in the message, call typeWritter again
       if (msgIndex < msg.length) {
-        typeWritter(key, msg, msgIndex + 1);
+        typeWriter(key, msg, msgIndex + 1);
       }
     }, 23);
   };
@@ -80,9 +65,6 @@ const ChatPage = () => {
     const response = await fetch('http://127.0.0.1:8000/maven/'+symptom)
     const data = await response.json()
     
-    // console.log(data)
-    
-    // setTyping(true);
 
     const message = {
       // message: data.Question,
@@ -90,13 +72,6 @@ const ChatPage = () => {
       sender: 'Maven'
     }
 
-    // const newMessages = [...messages, message]
-
-    // setMessages((oldmessages) => {
-    //   let newMsgs = [...oldmessages]
-    //   newMsgs.push(message)
-    //   return newMsgs;
-    // })
     setMessages((oldMessages = {}) => {
       var newMessages = {...oldMessages};
       let newKey = state.index; // get the next key
@@ -105,17 +80,14 @@ const ChatPage = () => {
       return newMessages;
     });
     
-
-    typeWritter(state.index, data.Question, 0);
+    typeWriter(state.index, data.Question, 0);
     incrementIndex();
-    // console.log("BEFORREE"+idx);
-    // setIdx(idx+1);
-    // console.log("AFTERRR"+idx);
-    console.log("IDXXX AFTER FIRSTQ"+state.index)
 
   }
+
   useEffect(() => {
     fetchFirstMessage()
+    // eslint-disable-next-line
   }, [])
   
 
@@ -143,138 +115,68 @@ const ChatPage = () => {
         message: "",
         sender: 'Maven'
       }
-      
-      // setIdx(indx)
-      // console.log(indx)
-      // console.log(idx)
-      // const newM = [...updateMsgs, m];
-      // setMessages(newM)
-      // setMessages((oldmessages) => {
-      //   let newMsgs = [...oldmessages]
-      //   newMsgs.push(m)
-      //   return newMsgs;
-      // })
 
       setMessages((oldMessages = {}) => {
         var newMessages = {...oldMessages};
-        let newKey = state.index // get the next key
-        // console.log(newKey)
-        // console.log(newMessages)
+        let newKey = state.index 
         newMessages[newKey] = m;
         return newMessages;
       });
-      
-      //get index of last message 
-      // console.log(Q)
-      // console.log(idx)
-      console.log(messages)
-      typeWritter(state.index, Q,0)
+
+      // console.log(messages)
+      typeWriter(state.index, Q,0)
       incrementIndex();
-      // idx.current+=1;
-      // const nID = indx + 1;
-      // setIdx(nID)
-      // console.log("INDDXXXX="+inx)
-      // console.log("IDXXX AFTER NEXTQ"+idx)
     })
-    //get data from promise 
   }
 
   const handleYes = async () => {
-    setHandleBtn(true);
-
     const newMessage = {
       message: "Yes",
       sender: 'user',
       direction: "outgoing"
     }
     
-    //before adding the answer I want to set the previous question to be answered
-    // const lastQ = messages[messages.length - 1]
-    // const updatedLastQ = {
-    //   ...lastQ,
-    //   status: 'answered'
-    // }
-
-    // const newMessages = messages.slice(0, messages.length - 1)
-    // const update = [...newMessages, updatedLastQ, newMessage]
     setMessages((oldMessages = {}) => {
       var newMessages = {...oldMessages};
-      // let newKey = Object.keys(newMessages).length; // get the next key
-      let newKey = state.index; // get the next key MABYT8RSHHHH
+      let newKey = state.index;
       console.log(newKey)
       newMessages[newKey-2] = {...newMessages[newKey-2], status: "answered"};
       newMessages[newKey-1] = newMessage;
       console.log(newMessages)
-      // console.log("BEFORE YES"+idx);
-      // setIdx(newKey)
+
       return newMessages;
     })
-    // console.log("IDX AFTER YES: " + idx)
-    // console.log("AFTER YES"+idx);
-    // console.log(messages)
+
     incrementIndex();
     fetchNextQuestion('yes')
 
-
-    // setMessages((oldmessages) => {
-    //   let newMsgs = [...oldmessages]
-    //   // newMsgs.slice(0, messages.length - 1)
-    //   // newMsgs.push(updatedLastQ)
-    //   // console.log(idx-1)
-    //   if (newMsgs[idx - 1]) {
-    //     newMsgs[idx - 1] ={...newMsgs[idx - 1], status: "answered"}
-    //   }
-    //   newMsgs.push(newMessage)
-    //   // setIdx((idx) => idx+1);
-    //   console.log(newMsgs)
-    //   return newMsgs;
-    // })
-
-    // )
-    
-    // setIdx(idx+1)
-    
-    // setMessages(update);
-    
-    // because the function will update the messages state with the new message 
+    bottomRef.current.scrollIntoView({ behavior: "smooth" });
     
   }
 
   const handleNo = async () => {
-    setHandleBtn(true);
 
     const newMessage = {
       message: "No",
       sender: 'user',
       direction: "outgoing"
     }
-    
-    //before adding the answer I want to set the previous question to be answered
-    // const lastQ = messages[messages.length - 1]
-    // const updatedLastQ = {
-    //   ...lastQ,
-    //   status: 'answered'
-    // }
-
-    // const newMessages = messages.slice(0, messages.length - 1)
-    // const update = [...newMessages, updatedLastQ, newMessage]
+  
     setMessages((oldMessages = {}) => {
       var newMessages = {...oldMessages};
-      // let newKey = Object.keys(newMessages).length; // get the next key
-      let newKey = state.index; // get the next key MABYT8RSHHHH
+      let newKey = state.index; 
       console.log(newKey)
       newMessages[newKey-2] = {...newMessages[newKey-2], status: "answered"};
       newMessages[newKey-1] = newMessage;
       console.log(newMessages)
-      // console.log("BEFORE YES"+idx);
-      // setIdx(newKey)
+
       return newMessages;
     })
-    // console.log("IDX AFTER YES: " + idx)
-    // console.log("AFTER YES"+idx);
-    // console.log(messages)
+
     incrementIndex();
     fetchNextQuestion('no')
+
+    bottomRef.current.scrollIntoView({ behavior: "smooth" });
   }
  
 
@@ -285,17 +187,14 @@ const ChatPage = () => {
           <div className='warning-message chat-content'>
             <p> <span>Warning: </span> This tool is not a substitute for professional medical advice, diagnosis, or treatment. If you are experiencing a life-threatening emergency that requires immediate attention please call 123 or the number for your local emergency service.</p>
           </div>
-          <div className='interactice-section'> 
-          </div>
-
-          <div className='interactice-section'>
+          <div className='interactive-section'>
             <MainContainer>
               <ChatContainer>
                 <MessageList>
                     {
                       Object.keys(messages).map((key) => {
                       const message = messages[key];
-                      {/* console.log(message.status) */}
+      
                       if (message.sender === 'Maven' && !message.status) {
                         return (
                           <div key={key}>
@@ -307,11 +206,11 @@ const ChatPage = () => {
                               <button className='btn yes' onClick={handleYes}>Yes</button>
                               <button className='btn no' onClick={handleNo}>No</button>
                             </div>
+                            
                           </div>
                         );
                       }
                       else if (message.status && message.status === "answered" && message.sender === 'Maven') {
-                        {/* console.log("YOOOOOOOOOOOOOOOOOOOOOOOOOO") */}
                         return (
                             <div key={key} className='message-wrapper'>
                               <img src={robot} alt='robot' className='robot'/>
@@ -321,7 +220,9 @@ const ChatPage = () => {
                       }
                       else {
                         return (
-                          <Message className = "answer-message" key={key} model={message}/>
+                          <div>
+                            <Message className = "answer-message" key={key} model={message}/>
+                          </div>
                         );
                       }
                     })
@@ -330,7 +231,7 @@ const ChatPage = () => {
               </ChatContainer>
             </MainContainer>
           </div>
-
+          <div ref={bottomRef}></div>
 
         </div>
   

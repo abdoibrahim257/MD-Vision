@@ -4,8 +4,12 @@
     height: auto;
 }
 
+.maintain-content {
+    padding-top: 85px;
+}
+
 .navContainer {
-    margin-top: 32px;
+    margin-top: 16px;
     display: flex;
     justify-content:space-between;
     align-items: center;

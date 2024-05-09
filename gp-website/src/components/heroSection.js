@@ -1,13 +1,15 @@
+import React from 'react';
 import '../styles/heroSection.css';
 import robot from '../assets/image1.png';
 import NavBar from './navbar';
 
 
 function HeroSection() {
+    const [padded, setPadded] = React.useState(false)
   return (
     <div className="background">
-        <NavBar />
-        <div className="content pageFront">
+        <NavBar setPadding={setPadded}/>
+        <div className={padded ? "content pageFront maintain-content": "content pageFront" }>
             <div className="catchphrase">
                 <p className="slogan">
                     Increasing Access.<br/>

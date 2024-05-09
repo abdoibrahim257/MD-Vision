@@ -30,7 +30,7 @@ p >span{
     color: red;
 }
 
-.interactice-section{
+.interactive-section{
     background-color: transparent;
     width: 50%;
     height: auto;
@@ -109,5 +109,7 @@ p >span{
     margin-bottom: 16px;
 }
 
-
+.scrollbar-container{
+    max-height: 35vh;
+}
 

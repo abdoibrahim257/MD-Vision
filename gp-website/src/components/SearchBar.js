@@ -1,11 +1,9 @@
-import React, {useRef} from 'react'
+import React from 'react'
 import { FaSearch } from 'react-icons/fa'
 import '../styles/SearchBar.css'
-import { json } from 'react-router-dom'
 
 const SearchBar = ( { setResults } ) => {
     const [input, setInput] = React.useState('')
-    // const wrapperRef = useRef(null)
 
     const fetchData = (data) => {
         // fetch("https://jsonplaceholder.typicode.com/users")
@@ -33,14 +31,9 @@ const SearchBar = ( { setResults } ) => {
         fetchData(data)
     }
 
-    // const handleFocus = () => {
-    //     if (wrapperRef.current) {
-    //         wrapperRef.current.focus();
-    //     }
-    // }
     
     return (
-        <div className='input-wrapper' tabindex="-1">
+        <div className='input-wrapper' tabIndex="-1">
             <FaSearch id="search-icon" />
             <input type="text" id="search" placeholder="Search for your symptoms"
                 value={input} onChange={(e) => handleSearch(e.target.value)} />

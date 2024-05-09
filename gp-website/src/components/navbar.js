@@ -1,13 +1,13 @@
 import LOGO from '../assets/LOGO.svg';
 import humburger from '../assets/humburger.svg';
 import close from '../assets/close.svg';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {NavLink} from 'react-router-dom'; 
 // import '../styles/topSection.css';
 
 
 
-function NavBar({sticky = 0}) {
+function NavBar({sticky = 0, setPadding}) {
 
     const stickyBool = sticky === 1 ? true : false;
 
@@ -19,8 +19,10 @@ function NavBar({sticky = 0}) {
         // console.log('sticky');
         window.onscroll = () => {
             if(window.scrollY > 100){
+                setPadding(true);
                 setFixed(true);
             }else{
+                setPadding(false);
                 setFixed(false);
             }
         }

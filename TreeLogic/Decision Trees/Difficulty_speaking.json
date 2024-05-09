@@ -39,7 +39,7 @@
                         "Q": "Is it difficult to speak because of pain inside your mouth or in your tongue?",
                         "Yes": {
                             "tree": {
-                                "symptom": "SORE MOUTH OT TONGUE"
+                                "symptom": "SORE MOUTH OR TONGUE"
                               }
                         },
                         "No": {

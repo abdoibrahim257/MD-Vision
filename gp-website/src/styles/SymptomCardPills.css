@@ -1,0 +1,78 @@
+.card-wrapper {
+    height: 100%;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    gap: 1.5rem;
+    justify-content: space-around;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 1) 12%, rgba(250, 253, 254, 1) 59%,rgb(68 145 222) 100%);
+}
+
+.symptomName {
+    text-decoration: none;
+}
+
+
+
+
+.card-wrapper > h2 {
+    /* padding-top: 0.75em; */
+    padding-left: 0.75em;
+    text-decoration: underline;
+    text-decoration-color: #d13f4e;
+    color: #1f59a2;
+    text-decoration-thickness: 5px;
+    font-family: sans-serif;
+    margin: 0;
+    
+}
+
+ul{
+    padding:0.5em;
+}
+
+.symptomName > p{
+    text-align: left;
+    margin: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: 0.5em;
+    font-weight: 600;
+    /* background: #0255a7;
+    color: white; */
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    /* color: #1f59a2; */
+    color: #0073a1;
+    background-color: white;
+}
+
+.symptomName:hover > p{
+    color: white;
+    /* background-color: rgb(55, 131, 137); */
+    background-color: #0245A3;
+}
+
+.symptomName:active > p {
+    color: white;
+    /* background-color: rgb(134, 80, 80); */
+    background-color:#012e6b;
+}
+
+
+.symptom-list {
+    display:flex;
+    flex-flow: row wrap;
+    gap: 0.6rem;
+}
+
+.symptom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 1.5rem;
+}

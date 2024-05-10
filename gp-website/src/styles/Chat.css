@@ -7,6 +7,10 @@
     /* padding-left: 11vw; */
 }
 
+.maintain-content {
+    padding-top: 85px;
+}
+
 .warning-wrapper {
     display: flex;
     gap: 1rem;
@@ -21,7 +25,7 @@
     height: 40vh;
     align-self: flex-start;
     margin-left: 4%;
-    margin-block: 32px 24px;
+    margin-block: 0px 24px;
     /* margin-top: 32px;
     margin-bottom: 24px; */
 }

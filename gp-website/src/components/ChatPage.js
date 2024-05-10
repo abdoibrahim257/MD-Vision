@@ -27,6 +27,7 @@ function reducer(state, action) {
 }
 
 const ChatPage = () => {
+  const [padded, setPadded] = React.useState(false)
   const [state, dispatch] = useReducer(reducer, initialState);
   const incrementIndex = () => {
     dispatch({ type: 'increment' });
@@ -185,7 +186,7 @@ const ChatPage = () => {
 
   return (
     <div>
-        <NavBar sticky={1}/>
+        <NavBar sticky={1} />
         <div className='chat-section content'>
           <div  className='chat-content'>
             <lottie-player

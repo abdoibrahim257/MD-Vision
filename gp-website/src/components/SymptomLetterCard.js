@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink} from 'react-router-dom'
-import '../styles/SymptomCard.css'
+// import '../styles/SymptomCard.css'
+import '../styles/SymptomCardPills.css'
 
 const SymptomLetterCard = ({ sympDict }) => {
 
@@ -22,7 +23,7 @@ const SymptomLetterCard = ({ sympDict }) => {
                                     }
                                 </ul>
                             </div>
-                            {letter !== Object.keys(sympDict)[Object.keys(sympDict).length -1] ? <hr className='hr-line'/> : null}
+                            {/* {letter !== Object.keys(sympDict)[Object.keys(sympDict).length -1] ? <hr className='hr-line'/> : null} */}
                         </div>
                     
                     )

@@ -1,7 +1,11 @@
 import React, { useEffect, useReducer , useRef} from 'react'
 import '../styles/Chat.css'
+import '../styles/heroSection.css'
 import NavBar from './navbar.js'
 import robot from '../assets/loveBot.svg'
+import warning from '../assets/WARNING.png'
+
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 
 import {
   MainContainer,
@@ -178,15 +182,28 @@ const ChatPage = () => {
 
     bottomRef.current.scrollIntoView({ behavior: "smooth" });
   }
- 
 
   return (
     <div>
         <NavBar sticky={1}/>
-        <div className='chat-section'>
-          <div className='warning-message chat-content'>
-            <p> <span>Warning: </span> This tool is not a substitute for professional medical advice, diagnosis, or treatment. If you are experiencing a life-threatening emergency that requires immediate attention please call 123 or the number for your local emergency service.</p>
+        <div className='chat-section content'>
+          <div  className='chat-content'>
+            <lottie-player
+              autoplay
+              loop
+              mode="normal"
+              // src="https://lottie.host/d73b52cc-4991-44cf-b125-45e96577b4bc/or62hvWNOo.json"
+              src="https://lottie.host/3ad60a0d-fcbc-444f-9431-e861fe6a2368/zYg28wXoYO.json"
+            ></lottie-player>
+
+            <div className='warning-wrapper'>
+              <img width="40px" height="40px" src={warning} alt='Warning logo' />
+              <div className='warning-message'>
+                <p> This tool is not a substitute for professional medical advice, diagnosis, or treatment. If you are experiencing a life-threatening emergency that requires immediate attention please call 123 or the number for your local emergency service.</p>
+              </div>
+            </div>
           </div>
+
           <div className='interactive-section'>
             <MainContainer>
               <ChatContainer>
@@ -232,7 +249,6 @@ const ChatPage = () => {
             </MainContainer>
           </div>
           <div ref={bottomRef}></div>
-
         </div>
   
     </div>

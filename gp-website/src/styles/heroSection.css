@@ -9,6 +9,7 @@
 }
 
 .navContainer {
+    width: 82%;
     margin-top: 16px;
     display: flex;
     justify-content:space-between;

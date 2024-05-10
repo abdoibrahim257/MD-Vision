@@ -9,6 +9,7 @@
     max-height: 200px;
     overflow-y: auto;
     margin-bottom: 16px;
+    position: relative;
 }
 
 

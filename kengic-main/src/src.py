@@ -581,9 +581,10 @@ class KGCap():
         #print(ngrams_from)
         
         # by7seb en el history geh abl el klma de kam mara w y7ot el probability
+        # beye7seb en this parent came before this keyword, 3shan el keyword heya elly sabta hena
         ngrams_from['from_prob'] = ngrams_from['count']/float(ngrams_from['count'].sum())
         
-        if spread == ':': #eh el far2????????
+        if spread == ':': #eh el far2???????? #==> Spread is the number of parents to return
             ngrams_from = ngrams_from.sort_values(['from_prob'], ascending=False)
         else:
             ngrams_from = ngrams_from.sort_values(['from_prob'], ascending=False)[0:spread]
@@ -674,7 +675,7 @@ class KGCap():
                     hop = hop + 1
 
             elif from_node not in self.stopwords:
-                current_neighbourhood = neighbourhood#round(neighbourhood/math.exp(hop))
+                current_neighbourhood = neighbourhood #round(neighbourhood/math.exp(hop))
 
                 if current_neighbourhood != previous_neighbourhood:
                     self.log('pid:' + str(pid) + ' - setting neighbourhood to: ' + str(current_neighbourhood) + ' for hop:' + str(hop))
@@ -1227,10 +1228,11 @@ class KGCap():
             
             keywords_ = []
 
+######################## This for loop is unnecessary in our case because all keywords are single words ############################
             for keyword in keywords:
                 keyword_split = keyword.split()
                 if len(keyword_split) > 1: #bycheck el keyword lw feh space aw 3ando klmeten 
-                    num_img_ids = len(self.get_imgids_with_phrase(keyword)) #hena hyloop 3la kol el data 
+                    num_img_ids = len(self.get_imgids_with_phrase(keyword)) #hena hyloop 3la kol el data  
                                     #w yshof lw feh keyword bta3to fe el caption then brag3 kol el img ids ely feh el keyword da
                     if num_img_ids != 0:
                         keywords_ += [keyword]
@@ -1240,6 +1242,7 @@ class KGCap():
                     keywords_ += [keyword]
 
             keywords = keywords_
+
             self.log('pid:' + str(pid) + ' - Updated keywords:' + str(keywords_))
             
             keywords = nlp.get_filtered_keywords(keywords, self.keywords_type) #malhash lazma 5ales
@@ -1248,7 +1251,7 @@ class KGCap():
             self.log('pid:' + str(pid) + ' - Removing stopwords')
             # keywords = self.remove_stopwords(keywords)
             # keywords = list(set(keywords))
-            
+#####################################################################################################################################       
             
             g, e, min_conns = self.get_graph(keywords, n=n, neighbourhood=parents, hops=hops, split=False, pid=pid)
             self.log('pid:' + str(pid) + ' - Graph generated in: ' + str(round((time.time()-t1)/float(60),2)) + ' minutes')

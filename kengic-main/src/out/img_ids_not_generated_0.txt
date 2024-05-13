@@ -1,1 +1,0 @@
-20078- local variable 'captions_df' referenced before assignment

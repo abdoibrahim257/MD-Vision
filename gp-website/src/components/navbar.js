@@ -19,10 +19,14 @@ function NavBar({sticky = 0, setPadding}) {
         // console.log('sticky');
         window.onscroll = () => {
             if(window.scrollY > 100){
-                setPadding(true);
+                if (setPadding != null){
+                    setPadding(true);
+                }
                 setFixed(true);
             }else{
-                setPadding(false);
+                if (setPadding != null){
+                    setPadding(false);
+                }
                 setFixed(false);
             }
         }

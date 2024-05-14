@@ -1,0 +1,52 @@
+.scan-background{
+    width: 100vw;
+    height: auto;
+    background-image: radial-gradient(farthest-corner at 5% 90%, white, white, white, #4BD482);
+}
+
+.maintain-content {
+    padding-top: 85px;
+}
+
+
+
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    gap: 3rem;
+}
+
+.page-quote {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    /* padding-left: 2em; */
+    padding-bottom: 6rem;
+}
+
+.page-quote > p {
+    text-align: left;
+    font-size: 2em;
+}
+
+#upload {
+    color: red;
+    font-weight: bold;
+}
+
+#ease {
+    color: limegreen;
+    font-weight: bold;
+}
+
+#free {
+    color: blue;
+    font-weight: bold;
+}
+
+.lottie {
+    height: 60vh;
+}

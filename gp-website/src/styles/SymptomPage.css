@@ -1,6 +1,4 @@
 .Symptom-background{
-    height: 80vh;
-    width: 100vw;
     height: 60vh;
     width: 100vw;
     background-image: radial-gradient(farthest-corner at 5% 90%, white, white, white, #267FD9);

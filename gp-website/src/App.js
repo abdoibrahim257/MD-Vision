@@ -2,9 +2,9 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css'; //here this css is the global css file for the whole website (the temoplate)
 
 import LandingPage from './components/landingPage';
-import NavBar from './components/navbar';
 import SymptomPage from './components/symptomPage';
 import ChatPage from './components/ChatPage';
+import ScanPage from './components/ScanPage';
 
 
 function App() {
@@ -18,6 +18,8 @@ function App() {
 
         <Route path="/maven/:symptom" element={<ChatPage />} />
         {/* <ChatPage /> */}
+
+        <Route path="/upload" element={<ScanPage/>}/>
       </Routes>
     </>
   );

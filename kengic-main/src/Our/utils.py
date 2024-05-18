@@ -16,15 +16,17 @@ from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.translate.bleu_score import sentence_bleu
 
-def convert_ngram_dict_to_df(ngrams,n):
-
-    columns = [i for i in range(1,n+1)]
-    ngrams_df = pd.DataFrame(ngrams, columns=columns)
-    ngrams_df['count'] = 0
-    ngrams_df = ngrams_df.groupby(columns).count()
-    ngrams_df = ngrams_df.sort_values(['count'], ascending=False).reset_index()
-    ngrams_df['probability'] = ngrams_df['count']/ngrams_df['count'].sum()
-    return ngrams_df
+def convert_ngram_dict_to_df(ngrams):
+    ngram_dfs={}
+    for j in range(2,6):
+        columns = [i for i in range(1,j+1)]
+        ngrams_df = pd.DataFrame(ngrams[j], columns=columns)
+        ngrams_df['count'] = 0
+        ngrams_df = ngrams_df.groupby(columns).count()
+        ngrams_df = ngrams_df.sort_values(['count'], ascending=False).reset_index()
+        ngrams_df['probability'] = ngrams_df['count']/ngrams_df['count'].sum()
+        ngram_dfs[j] = ngrams_df
+    return ngram_dfs
 
 def ngrams(x, n): #Algorithm 1
     ngrams = []
@@ -33,23 +35,26 @@ def ngrams(x, n): #Algorithm 1
         ngrams += [gram]
     return ngrams
 
-def create_ngrams(data,n=3):
-    ngrams_list= []
+def create_ngrams(data):
+    unigram_list = []
+    bigram_list = []
+    trigram_list = []
+    fourgram_list = []
+    fivegram_list = []
+    
     for idx,row in data.iterrows():
         row = eval(row["captions"]) # eval converts this "[alo]" to ["alo"] 
         for caption in row:
-            if (n==2):
-                ngrams_list += ngrams(['<t>'] + caption + ['</t>'], 2)
-            elif (n==3):
-                ngrams_list += ngrams(['<t>', '<t>'] + caption + ['</t>'], 3)
-            elif (n==4):
-                ngrams_list += ngrams(['<t>', '<t>', '<t>'] + caption + ['</t>'], 4)
-            elif (n==5):
-                ngrams_list += ngrams(['<t>', '<t>', '<t>', '<t>'] + caption + ['</t>'], 5)
+            unigram_list += ngrams(['<t>'] + caption + ['</t>'], 1)
+            bigram_list += ngrams(['<t>'] + caption + ['</t>'], 2)
+            trigram_list += ngrams(['<t>', '<t>'] + caption + ['</t>'], 3)
+            fourgram_list += ngrams(['<t>', '<t>', '<t>'] + caption + ['</t>'], 4)
+            fivegram_list += ngrams(['<t>', '<t>', '<t>', '<t>'] + caption + ['</t>'], 5)
+    
+    ngrams_dict = {1:unigram_list,2:bigram_list, 3:trigram_list, 4:fourgram_list, 5:fivegram_list}
+    return ngrams_dict
 
-    return ngrams_list
-
-def load_data(img_id,n=3):
+def load_data(img_id):
         data = pd.read_csv('./indiana_reports_cleaned2.csv')
         references = data[data['imgID'] == img_id].values[0]
         try:
@@ -59,18 +64,17 @@ def load_data(img_id,n=3):
         except:
             print('Failed to Load ngrams_dic.pkl...')
 
-            ngrams_dic= create_ngrams(data,n) #bet return kol el tokens w ngrams_dic
+            ngrams_dic= create_ngrams(data) #bet return kol el tokens w ngrams_dic
             #save ngrams_dic bta3 kaza no3 ngram mn 1-9
         
             print('saving ngrams_dic.pkl...')
             with open('ngrams_dic.pkl', 'wb') as f:
                 pickle.dump(ngrams_dic, f)  
-        ngrams_df = convert_ngram_dict_to_df(ngrams_dic,n)
-        return data,ngrams_df,references
+        ngrams_dfs = convert_ngram_dict_to_df(ngrams_dic) #convert ngrams_dic to dictionary of dataframes
+        return ngrams_dfs,references
 
-def get_parents(n,ngram_df,graph_node,parents_no=5):
-
-    ngram_data =ngram_df
+def get_parents(n,ngram_data,graph_node,parents_no=5): #DOESNT REMOVE THE KEYWORD FROM THE PARENTS
+ 
     graph_node = graph_node.split()[0] #we get the first word of the graph node to increase the probability of finding the parent
     parents_data = ngram_data[ngram_data[n] == graph_node]
     parents_data['from_prob'] = parents_data['count']/float(parents_data['count'].sum()) #probability of phrase of being a parent to this graph node
@@ -87,11 +91,11 @@ def create_graph(ngram_df,keywords,n,parents,hops):
     while hop < hops and len(queue) > 0:
         current_parent = queue[0].split()
         
-        # This is done to get parents of parents in case of hops >0
+        # This is done to get parents of parents in case of hops > 0 (gn0 in paper)
         if len(current_parent) == 1:
             current_node = current_parent[0]
         else:
-            current_node = ' '.join(current_parent[0:-1])
+            current_node = ' '.join(current_parent[0:-1]) 
         
         graph_node = queue[0]
         queue = queue[1:]
@@ -102,8 +106,7 @@ def create_graph(ngram_df,keywords,n,parents,hops):
             continue
 
         parents_data = get_parents(n,ngram_df,graph_node, parents) #gab 23la 5 probabilities were en el kelma fe 25r el ngram   
-        captions = parents_data[columns].apply(lambda x: ' '.join(x), axis=1).values #joining the n-gram into one sentence
-
+        captions = parents_data[columns].apply(lambda x: ' '.join(x), axis=1).values #joining the n-gram into one sentence 
         if current_node not in graph.keys():
             graph[current_node] = []
 
@@ -111,12 +114,145 @@ def create_graph(ngram_df,keywords,n,parents,hops):
             parent_node = ' '.join(cap.split()[0:-1])
             from_prob = parents_data[cap_idx:cap_idx+1]['from_prob'].values[0]
             edges[parent_node + ':' + current_node] = from_prob
-
             graph[parent_node] = [current_node]
 
         queue += [str(hop+1)] + list(captions)
     
     return graph, edges
+
+def check_connection(sentence,ngrams_dfs):
+    #clean sentence from any <t> </t> tokens
+    sentence = sentence.replace('<t>','').replace('</t>','')
+    # ngrams_dfs = self.ngram_dfs
+    sentence_tokens = sentence.split()
+    
+    n = len(sentence_tokens)
+
+    #apply filtering process for extracting this exact sentence from the corpus
+    if n == 1:
+        ngrams = ngrams_dfs[1]
+        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
+    elif n == 2:
+        ngrams = ngrams_dfs[2]
+        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
+        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
+    elif n == 3:
+        ngrams = ngrams_dfs[3]
+        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
+        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
+        ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
+    elif n == 4:
+        ngrams = ngrams_dfs[4]
+        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
+        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
+        ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
+        ngrams = ngrams[ngrams[4] == sentence_tokens[3]]
+    elif n == 5:
+        ngrams = ngrams_dfs[5]
+        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
+        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
+        ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
+        ngrams = ngrams[ngrams[4] == sentence_tokens[3]]
+        ngrams = ngrams[ngrams[5] == sentence_tokens[4]]
+    
+    if len(ngrams) > 0:
+        count = ngrams['count'].values[0] #get the count of the sentence in the corpus if the 
+                                        #sentence is valid and exists in the corpus
+    else:
+        count = 0
+
+    return count 
+
+def top_down_traversal(graph, keywords, e_f=2):
+    print('Top down traversal for graph (size:' + str(len(graph.keys())) + ') keywords:' + str(keywords))
+    for first_node in graph.keys():
+        for second_node in graph.keys():
+            # check if they are not the same node nor the second sentence is a start sentence
+            if first_node != second_node and second_node.split()[0] != '<t>':
+                sentence = first_node + ' ' + second_node
+                connections = check_connection(sentence)
+
+                if connections >= e_f and second_node not in graph[first_node]:
+                    graph[first_node].append(second_node)
+    return graph
+
+def get_conditional_prob(padded_path,n2,ngram_dfs):
+    prob =0
+    ngram = ngram_dfs[n2]
+    for i in range(len(padded_path)-n2+1):
+        curr = padded_path[i:i+n2]
+        for j in range(1,n2+1):
+            ngram = ngram[ngram[j] == curr[j-1]]
+            if j == n2-1:
+                history = ngram
+        ngram['conditional_prob'] = ngram['count']/history['count']
+        prob += np.log(ngram['conditional_prob'].values[0])
+    return prob
+
+def get_extra_nouns(caption_tokens, keywords):
+    tagged_words = pos_tag(caption_tokens)
+    nouns = [word for word, pos in tagged_words if pos.startswith('N')]
+    extra_nouns = [noun for noun in nouns if noun not in keywords]
+    return extra_nouns
+
+def get_cost(path,keywords,n2,cost_func,ngram_dfs):
+    cost =0
+    M = len([word for word in path if word in keywords])
+    if len(path) < n2:
+        padded_path = ['<t>']*(n2-len(path)) + path
+    else:
+        padded_path = path
+    cost = get_conditional_prob(padded_path,n2)
+    if cost_func ==1:
+        return cost
+    elif cost_func ==2:
+        return cost/M
+    elif cost_func ==3:
+        return cost/(M*len(path))
+    elif cost_func ==4:
+        N = get_extra_nouns(padded_path,keywords)
+        return cost*(len(N))/(M*len(path))
+
+
+def rank(Q,keywords,top_n,n2,Cost_func,ngram_dfs):
+    curr_captions = {}
+    for i, q in enumerate(Q):
+        cost = get_cost(q,keywords,n2,Cost_func,ngram_dfs)
+        curr_captions[q] = cost
+    sorted_captions = sorted(curr_captions.items(), key=lambda x: x[1], reverse=True)[0:top_n]
+    return sorted_captions
+    
+
+def traverse(graph, max_iters, keywords, n2, optimiser,ngram_dfs):
+    S = set()
+    Q = [[keyword] for keyword in keywords]
+    qi=0
+    while len(Q) > 0 and qi < max_iters:
+        curr_captions = rank(Q,keywords,5,n2,optimiser,ngram_dfs)
+        
+        q = next(iter(curr_captions))
+        t = q[-1]
+        children = graph[t]
+        children_in_q = len([child for child in children if child in q])
+        if children_in_q != len(children):
+            for child in children:
+                if child not in q:
+                    if len([word for word in q if word in keywords]) == len(keywords):
+                        caption = ' '.join(q)
+                        if caption not in S:
+                            S.add(caption)
+                    else:
+                        Q.append(q + [child])
+        Q.remove(q)
+     
+
+            
+
+
+
+# Now first_key and first_value hold the key and value of the first item in the dictionary
+
+
 
 class kengic ():
     def __init__(self, configs, out_folder,input_csv_file_path,top_n_captions=5):
@@ -133,63 +269,6 @@ class kengic ():
     
 
 
-    def check_connection(self, sentence):
-        #clean sentence from any <t> </t> tokens
-        sentence = sentence.replace('<t>','').replace('</t>','')
-        ngrams_dfs = self.ngram_dfs
-        sentence_tokens = sentence.split()
-        
-        n = len(sentence_tokens)
-
-        #apply filtering process for extracting this exact sentence from the corpus
-        if n == 1:
-            ngrams = ngrams_dfs[1][ngrams_dfs[1][1] == sentence_tokens[0]]
-        elif n == 2:
-            ngrams = ngrams_dfs[2]
-            ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-            ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-        elif n == 3:
-            ngrams = ngrams_dfs[3]
-            ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-            ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-            ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
-        elif n == 4:
-            ngrams = ngrams_dfs[4]
-            ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-            ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-            ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
-            ngrams = ngrams[ngrams[4] == sentence_tokens[3]]
-        elif n == 5:
-            ngrams = ngrams_dfs[5]
-            ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-            ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-            ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
-            ngrams = ngrams[ngrams[4] == sentence_tokens[3]]
-            ngrams = ngrams[ngrams[5] == sentence_tokens[4]]
-        
-        if len(ngrams) > 0:
-            count = ngrams['count'].values[0] #get the count of the sentence in the corpus if the 
-                                            #sentence is valid and exists in the corpus
-        else:
-            count = 0
-
-        return count 
-    
-
-
-    def top_down_traversal(self, graph, keywords, e_f=2):
-        print('Top down traversal for graph (size:' + str(len(graph.keys())) + ') keywords:' + str(keywords))
-
-        for first_node in graph.keys():
-            for second_node in graph.keys():
-                # check if they are not the same node nor the second sentence is a start sentence
-                if first_node != second_node and second_node.split()[0] != '<t>':
-                    sentence = first_node + ' ' + second_node
-                    connections = self.check_connection(sentence)
-
-                    if connections >= e_f and second_node not in graph[first_node]:
-                        graph[first_node].append(second_node)
-        return graph
     
     def path_init(self, keywords):
         path = []
@@ -216,7 +295,7 @@ class kengic ():
         
         if history is not None:
             ngrams['count_history'] = history['count'].sum()
-            ngrams['conditional_prob'] = ngrams['count']/history['count'].sum()
+            ngrams['conditional_prob'] = ngrams['count']/history['count'].sum() 
         
         return ngrams
     
@@ -225,7 +304,9 @@ class kengic ():
         
         #ask amr about this the dude pads again what to do?
 
-        ##extract every ngram from the path formed till now
+        ##extract every ngram from the path formed till now (if padded path is bigger than nlogP then we need to extract every nlogP ngram from the path) 
+        #Example of above case: path = ["dog","riding","a","skateboard"] nlogP = 3 ==> ngrams = ["dog","riding","a"] , ["riding","a","skateboard"]
+         
         for i,_ in enumerate(padded_path[0:len(padded_path)-nlogP+1]):
             curr = padded_path[i:i+nlogP]
             conditional_prob = self.get_gram(curr)['conditional_prob'].values
@@ -248,7 +329,7 @@ class kengic ():
     
     def get_log_prob(self, padded_path_tokens, nlogP, keywords, optimser):
         #get total conditional probabilities for current path
-        conditional_prob = self.get_conditional_prob(padded_path_tokens, nlogP) #first part 
+        total = self.get_conditional_prob(padded_path_tokens, nlogP) #first part 
                                     #of the cost function log(ngram)
         
         #calulcate the cost function
@@ -271,7 +352,7 @@ class kengic ():
             elif optimser == 3: #logP_HL
                 total /= float(H*L)
             elif optimser == 4: #logP_HL_N
-                total = (total * (1 + len(N)))/float(H*L)
+                total = (total * (len(N)))/float(H*L)
             
             if L == 0:
                 total = -np.inf
@@ -289,11 +370,12 @@ class kengic ():
         tops_log_probs = np.ones(top_n)*-np.inf
         min_inf = 0
         
-        for path_idx, path in enumerate(paths):
+        for path_idx, path in enumerate(paths):#["a","b","c"]
             if len(path) < nlogP:
                 padded_path = ['<t>']*(nlogP - len(path)) + path
-            
-            #get conditional probabilty of the path now 
+            else:
+                padded_path=path
+            #get cost of padded path 
             log_prob = self.get_log_prob(padded_path, nlogP, keywords, optimiser)
             
             if log_prob == -np.inf:
@@ -380,7 +462,7 @@ class kengic ():
             else:
                 break
             
-            q = paths[0]
+            q = paths[0]  # [["a","b","c"],["a","b","d"],["a","b","e"]] / 
             t = q[-1]
             children = graph[t]
             

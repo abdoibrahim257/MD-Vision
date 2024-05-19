@@ -18,7 +18,7 @@ from nltk.translate.bleu_score import sentence_bleu
 
 def convert_ngram_dict_to_df(ngrams):
     ngram_dfs={}
-    for j in range(2,6):
+    for j in range(1,6):
         columns = [i for i in range(1,j+1)]
         ngrams_df = pd.DataFrame(ngrams[j], columns=columns)
         ngrams_df['count'] = 0
@@ -77,7 +77,7 @@ def get_parents(n,ngram_data,graph_node,parents_no=5): #DOESNT REMOVE THE KEYWOR
  
     graph_node = graph_node.split()[0] #we get the first word of the graph node to increase the probability of finding the parent
     parents_data = ngram_data[ngram_data[n] == graph_node]
-    parents_data['from_prob'] = parents_data['count']/float(parents_data['count'].sum()) #probability of phrase of being a parent to this graph node
+    parents_data.loc[:, 'from_prob'] = parents_data['count']/float(parents_data['count'].sum()) #probability of phrase of being a parent to this graph node
     parents_data = parents_data.sort_values('from_prob', ascending=False)[0:parents_no]
     return parents_data
 
@@ -127,7 +127,7 @@ def check_connection(sentence,ngrams_dfs):
     sentence_tokens = sentence.split()
     
     n = len(sentence_tokens)
-
+    ngrams = []
     #apply filtering process for extracting this exact sentence from the corpus
     if n == 1:
         ngrams = ngrams_dfs[1]
@@ -163,30 +163,58 @@ def check_connection(sentence,ngrams_dfs):
 
     return count 
 
-def top_down_traversal(graph, keywords, e_f=2):
+def top_down_traversal(graph, keywords, ngram_dfs,e_f=2):
     print('Top down traversal for graph (size:' + str(len(graph.keys())) + ') keywords:' + str(keywords))
     for first_node in graph.keys():
         for second_node in graph.keys():
             # check if they are not the same node nor the second sentence is a start sentence
             if first_node != second_node and second_node.split()[0] != '<t>':
                 sentence = first_node + ' ' + second_node
-                connections = check_connection(sentence)
+                connections = check_connection(sentence, ngram_dfs)
 
                 if connections >= e_f and second_node not in graph[first_node]:
-                    graph[first_node].append(second_node)
+                    graph[first_node] += [second_node]
     return graph
 
-def get_conditional_prob(padded_path,n2,ngram_dfs):
+def all_start_tokens(ngrams):
+    for ng in ngrams:
+        if ng != '<t>':
+            return False
+    
+    return True
+
+def calc_Conditional(padded_path, ngram_dfs):
+    n = len(padded_path)
+    ngram = ngram_dfs[n]
+    history = None
+    for j,word in enumerate(padded_path):
+        ngram = ngram[ngram[j+1] == word]
+        if j+1 == n-1:
+            history = ngram
+            
+    if history is not None:
+        ngram.loc[:, 'conditional_prob'] = ngram['count'] / (history['count'].sum())
+    return ngram
+
+def get_conditional_prob(path,n2,ngram_dfs):
     prob =0
     ngram = ngram_dfs[n2]
+    
+    padded_path = path
+    if len(path) < n2:
+        padded_path = ['<t>']*(n2-len(path)) + path
     for i in range(len(padded_path)-n2+1):
         curr = padded_path[i:i+n2]
-        for j in range(1,n2+1):
-            ngram = ngram[ngram[j] == curr[j-1]]
-            if j == n2-1:
-                history = ngram
-        ngram['conditional_prob'] = ngram['count']/history['count']
-        prob += np.log(ngram['conditional_prob'].values[0])
+        
+        logProb =  np.log(calc_Conditional(curr, ngram_dfs)['conditional_prob']).values
+        
+        if len(logProb) > 0:
+            prob += logProb[0]
+        elif (all_start_tokens(curr)):
+            prob += 1
+        else:
+            prob += -1*np.inf
+  
     return prob
 
 def get_extra_nouns(caption_tokens, keywords):
@@ -198,57 +226,92 @@ def get_extra_nouns(caption_tokens, keywords):
 def get_cost(path,keywords,n2,cost_func,ngram_dfs):
     cost =0
     M = len([word for word in path if word in keywords])
-    if len(path) < n2:
-        padded_path = ['<t>']*(n2-len(path)) + path
-    else:
-        padded_path = path
-    cost = get_conditional_prob(padded_path,n2)
+    
+    # splitted_path = ' '.join(path).split()
+    cost = get_conditional_prob(path,n2, ngram_dfs)
+
+    
     if cost_func ==1:
         return cost
     elif cost_func ==2:
-        return cost/M
+        return cost/float(M)
     elif cost_func ==3:
-        return cost/(M*len(path))
+        return cost/float((M*len(path)))
     elif cost_func ==4:
-        N = get_extra_nouns(padded_path,keywords)
-        return cost*(len(N))/(M*len(path))
+        N = get_extra_nouns(splitted_path,keywords)
+        return cost*(len(N))/float((M*len(path)))
 
 
 def rank(Q,keywords,top_n,n2,Cost_func,ngram_dfs):
-    curr_captions = {}
+    top_n = len(Q) if len(Q) < top_n else top_n
+    best_captions = ['']*top_n
+    best_costs = np.ones(top_n)*(-1*np.inf)
+    
     for i, q in enumerate(Q):
-        cost = get_cost(q,keywords,n2,Cost_func,ngram_dfs)
-        curr_captions[q] = cost
-    sorted_captions = sorted(curr_captions.items(), key=lambda x: x[1], reverse=True)[0:top_n]
-    return sorted_captions
+        padded_path = q
+        if len(q) < n2:
+            padded_path = ['<t>']*(n2-len(q)) + q
+        
+        splitted_path = ' '.join(padded_path).split()
+        cost = get_cost(splitted_path,keywords,n2,Cost_func,ngram_dfs)
+        
+        min_highest_index = np.argmin(best_costs)
+        if cost > best_costs[min_highest_index]:
+            best_costs[min_highest_index] = cost
+            best_captions[min_highest_index] = q
+
+    
+    order = np.argsort(best_costs*-1)
+    best_captions = np.array(best_captions, dtype=list)[order].tolist()
+    best_costs = best_costs[order].tolist()
+
+    if '' in best_captions:
+        empty_caps_idx = [i for i, j in enumerate(best_captions) if j != '']
+        best_captions = np.array(best_captions, dtype=list)[empty_caps_idx].tolist()
+        best_costs = np.array(best_costs, dtype=list)[empty_caps_idx].tolist()
+        
+    
+    return best_captions,best_costs
+
     
 
 def traverse(graph, max_iters, keywords, n2, optimiser,ngram_dfs):
     S = set()
     Q = [[keyword] for keyword in keywords]
     qi=0
+    top_n = 5
     while len(Q) > 0 and qi < max_iters:
-        curr_captions = rank(Q,keywords,5,n2,optimiser,ngram_dfs)
+        topCaptions,topCosts = rank(Q,keywords,top_n,n2,optimiser,ngram_dfs)
         
-        q = next(iter(curr_captions))
+        if len(topCaptions) > 0:
+                Q = topCaptions
+        else:
+            break
+        
+        q = topCaptions[0]
         t = q[-1]
         children = graph[t]
         children_in_q = len([child for child in children if child in q])
         if children_in_q != len(children):
             for child in children:
                 if child not in q:
-                    if len([word for word in q if word in keywords]) == len(keywords):
+                    if len([word for word in q if word in keywords]) < len(keywords):
+                        Q.append(q + [child])
+                    else:
                         caption = ' '.join(q)
                         if caption not in S:
                             S.add(caption)
-                    else:
-                        Q.append(q + [child])
         Q.remove(q)
-     
+        qi+=1
+    
+    #rank the captions in S
+    print("Ranking the captions in S")
+    S_splitted = [caption.split() for caption in S]
+    top_S, top_S_cost = rank(S_splitted,keywords,top_n,n2,optimiser,ngram_dfs)
+    
+    tops_S = [' '.join(caption) for caption in top_S]
 
-            
-
-
+    return tops_S,top_S_cost, len(graph.keys()), qi
 
 # Now first_key and first_value hold the key and value of the first item in the dictionary
 

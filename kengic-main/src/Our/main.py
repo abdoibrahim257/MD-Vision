@@ -1,15 +1,14 @@
-from utils import *
+from kengic import *
 
 n = 3 #ngrams default = 3
 parents = 5 #parents default = 5
 hops = 1
 nlogP = n #n used in loss function
-optimiser = 2 #which cost fucntion to use
+optimiser = 3 #which cost fucntion to use
 max_iters = 150 #max iterations default = 150
 out_folder = 'output_captions'  
 
 def main():
-    print('AMERICA YA, HALOOO')
     ngram_dfs, keywords, references= initialize()
     
     #graph generation bottom up
@@ -21,8 +20,10 @@ def main():
     #graph traversal 
     top_captions, top_costs, V, iterations = traverse(graph, max_iters, keywords, nlogP, optimiser, ngram_dfs)
     
+    bleuScores = get_metrics(top_captions, eval(references[1]))
+    
     for i in range(len(top_captions)):
-        print('Caption:', top_captions[i], 'Cost:', top_costs[i],'\n')
+        print('\n', 'Caption:', top_captions[i], 'Cost:', top_costs[i], "bleuScores: ", bleuScores[i])
 
 def initialize():
     # configs = [n, parents, hops, nlogP, optimiser, max_iters]

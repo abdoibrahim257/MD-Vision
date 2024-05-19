@@ -26,16 +26,11 @@ def main():
         print('\n', 'Caption:', top_captions[i], 'Cost:', top_costs[i], "bleuScores: ", bleuScores[i])
 
 def initialize():
-    # configs = [n, parents, hops, nlogP, optimiser, max_iters]
-    # start_end_tokens = ['<t>', '</t>']
     input = pd.read_csv('./input.csv') #CNN output will be here
     img_id = input['img_id'].values[0]
     ngram_dfs,references = load_data(img_id)
     keywords = eval(input['keywords'].values[0])
-
     return ngram_dfs,keywords,references
-    # caption_gen = kengic(configs, out_folder)
-    # return caption_gen
 
 main()
     

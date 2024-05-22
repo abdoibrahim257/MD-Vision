@@ -1,2 +1,0 @@
-img_id,img_path,actual_classes,pred_classes,num_actual_classes,num_pred_classes,pred_scores
-20078,images/COCO_val2014_000000002890.jpg,"['people', 'ski', 'snow', 'street']","['pneumothorax','pleural', 'effusion']",4,7,[0.766  0.841  0.876  0.974  0.7837 0.8623 0.7954]

@@ -51,3 +51,5 @@ def getQ(symptom:str,answer:Answer):
 def getFiles():
     files = get_tree_names()
     return {"fileList": files}
+
+#pip install --upgrade typing-extensions always run this (ABOD ONLY)

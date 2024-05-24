@@ -166,3 +166,4 @@ cython_debug/
 Dataset/
 # images_*.tar.gz
 # images/
+*.pickle

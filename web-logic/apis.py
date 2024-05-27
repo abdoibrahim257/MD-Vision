@@ -31,13 +31,6 @@ def GetfirstQ(symptom: str):
     answerList.clear()
     return {"Question": Q}
 
-# @app.get("/maven/{symptom}/{answer}")
-# def getQ(symptom:str,answer:str):
-#     answerList.append(answer)
-#     answerList_cpy = answerList.copy()
-#     return {"Question": traverse_tree2(symptom,warehouse,answerList_cpy),
-#             "answerList": answerList
-#             }
 
 @app.post("/maven/{symptom}")
 def getQ(symptom:str,answer:Answer):

@@ -1,0 +1,117 @@
+{
+    "question": {
+        "Q": "Do you have a vaginal discharge that is different than usual in color or consistency?",
+        "Yes": {
+            "tree": {
+                "symptom": "abnormal vaginal discharge"
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you use a vaginal douche or spray or a spermicidal cream or jelly?",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor if a spermicide seems to be causing the problem or if the irritation persists. You should not use vaginal douches or sprays because they can eliminate helpful bacteria from the vagina and can cause irritation.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Does the skin around your vagina look abnormal?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. The irritation may result from a skin disorder.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Does any other part of your body itch?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "itching without a rash"
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you seem to be producing more urine than usual, or do you get up at night to urinate?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Have you noticed one or more of the following symptoms? \n\u2022 Increased thirst \n\u2022 Loss of weight \n\u2022 Unexplained fatigue",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. You may have DIABETES.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "diabetes"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Are you over age 45?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Talk to your doctor. The irritation is probably the result of hormonal changes brought on by MENOPAUSE.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Are you over age 45?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Talk to your doctor. The irritation is probably the result of hormonal changes brought on by MENOPAUSE.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

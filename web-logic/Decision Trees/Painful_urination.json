@@ -1,0 +1,106 @@
+{
+  "question": {
+    "Q": "Do you have pain in your side (toward the back and just above the waist), along with fever and chills?",
+    "Yes": {
+      "question": {
+        "Q": "See your doctor. You may have a kidney infection.",
+        "Yes": {},
+        "No": {},
+        "diagnosis": ["ACUTE PYELONEPHRITIS"]
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Are you a man?",
+        "Yes": {
+          "question": {
+            "Q": "Do you have a discharge from your penis?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have a sexually transmitted disease such as CHLAMYDIA, NONGONOCOCCAL URETHRITIS or GONORRHEA.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["CHLAMYDIA", "NONGONOCOCCAL URETHRITIS", "GONORRHEA"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do you have a dull, heavy ache in your groin, or is your temperature 100F or higher?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have an infection of the prostate gland.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["PROSTATITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Are you urinating more frequently than usual?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have inflammation of the bladder.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["CYSTITIS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you have a greenish yellow or white discharge from your vagina or itching around the genital area?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have a VAGINAL YEAST INFECTION or TRICHOMONIASIS.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["VAGINAL YEAST INFECTION", "TRICHOMONIASIS"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are you urinating more frequently than usual?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have inflammation of the bladder.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["CYSTITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

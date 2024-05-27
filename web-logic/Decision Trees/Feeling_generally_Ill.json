@@ -1,0 +1,176 @@
+{
+    "question": {
+        "Q": "Is your temperature 1OO\u2109 or higher?",
+        "Yes": {
+            "tree": {
+                "symptom": "FEVER"
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you suddenly feel unusually tired, and do you have any discomfort in your chest or arms when you move around?",
+                "Yes": {
+                    "question": {
+                        "Q": "See a doctor immediately. Sudden onset of such symptoms may indicate that you have HEART DISEASE and are at risk of having a heart attack.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis":["HEART DISEASE"]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do you feel nervous or anxious?",
+                        "Yes": {
+                            "tree": {
+                                "symptom": "ANXIETY"
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Have you been feeling tired for some time?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Have you been working hard without a break for several weeks?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "You may be feeling the effects of STRESS.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis":["REDUCING STRESS"]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Have you recently recovered from a viral infection such as the flu or infectious mononucleosis?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor if your symptoms last longer than 3 weeks. It can take a few weeks to recover from some viral infections. In the meantime, take it easy, get enough sleep, and get the proper nutrition.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis":[]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have one or more of the following symptoms? \n\u2022 Difficulty sleeping \n\u2022 Inability to concentrate or make decisions \n\u2022 Lack of interest in sex \n\u2022 Recurring headaches \n\u2022 Frequently feeling sad",
+                                                        "Yes": {
+                                                            "tree": {
+                                                                "symptom": "DEPRESSION"
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Are you overweight according to the body mass index (BMI) chart?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. Being overweight puts a strain on your body. Losing weight may help you feel better.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis":["RISK OF BEING OVERWEIGHT", "LOSING WEIGHT SENSIBLY"]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you exercise regularly?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Are you taking any medication?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "Talk to your doctor. Some drugs can make you feel tired or sick.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis":[]
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Have you lost a lot of weight (10 or more pounds in 10 weeks or less) without trying?",
+                                                                                        "Yes": {
+                                                                                            "tree": {
+                                                                                                "symptom": "UNEXPLAINED WEIGHT LOSS"
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis":[]
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis":[]
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis":[]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Regular exercise keeps you fit both physically and mentally.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis":["HEALTH BENEFITS OF PHYSICAL ACTIVITY"]
+                                                                            }
+                                                                        },
+                                                                        "diagnosis":[]
+                                                                    }
+                                                                },
+                                                                "diagnosis":[]
+                                                            }
+                                                        },
+                                                        "diagnosis":[]
+                                                    }
+                                                },
+                                                "diagnosis":[]
+                                            }
+                                        },
+                                        "diagnosis":[]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you taking any medication?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Talk to your doctor. Some drugs can make you feel tired or sick.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis":[]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Have you lost a lot of weight (10 or more pounds in 10 weeks or less) without trying?",
+                                                "Yes": {
+                                                    "tree": {
+                                                        "symptom": "UNEXPLAINED WEIGHT LOSS"
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis":[]
+                                                    }
+                                                },
+                                                "diagnosis":[]
+                                            }
+                                        },
+                                        "diagnosis":[]
+                                    }
+                                },
+                                "diagnosis":[]
+                            }
+                        },
+                        "diagnosis":[]
+                    }
+                },
+                "diagnosis":[]
+            }
+        },
+        "diagnosis":[]
+    },
+    "age-group": ""
+}

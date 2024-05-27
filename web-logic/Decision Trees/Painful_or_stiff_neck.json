@@ -1,0 +1,166 @@
+{
+  "question": {
+    "Q": "Did the pain start within the past 24 hours?",
+    "Yes": {
+      "question": {
+        "Q": "Do you have one or more of the following symptoms? \n\u2022 Severe headache \n\u2022 Nausea or vomiting \n\u2022 Sensitivity of the eyes to bright light \n\u2022 Drowsiness or confusion \n\u2022 Fever ",
+        "Yes": {
+          "question": {
+            "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS (p. 692). Or you may have bleeding in the brain.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["MENINGITIS", "SUBARACHNOID HEMORRHAGE"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Has your neck had a sudden jolt within the past day or two?",
+            "Yes": {
+              "question": {
+                "Q": "Have you had a problem controlling an arm or leg since then?",
+                "Yes": {
+                  "question": {
+                    "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have damaged your spinal cord.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Is the pain severe, or do you have shooting pain in your shoulders or arms when you move your head?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. A disk in your spine may have moved out of its normal position.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["PROLAPSED DISK"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor. You may have pulled a muscle.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["STRAINED OR TORN MUSCLE"]
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Can you feel any swelling or bumps in the sides or back of your neck?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have swollen lymph glands.Do you want to continue the diagnosis?",
+                    "Yes": {
+                      "tree": {
+                        "symptom": "SWELLING UNDER THE SKIN"
+                      }
+                    },
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Did you wake up with a stiff neck, although your neck felt fine when you went to bed?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor if your neck still hurts after 24 hours. You probably slept in an awkward position or in a draft, causing a painful, severe muscle spasm.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["CRAMP"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Has the pain or stiffness been getting worse for several months?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Do you have numbness or tingling in your arm or hand, or are you over age 50?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have a disorder Of the joints in the neck. Or you may have a nerve disorder such as CARPAL TUNNEL SYNDROME.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CARPAL TUNNEL SYNDROME"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and the problem persists for more than 24 hours.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "See your doctor if you are unable to make a diagnosis from this chat and the problem persists for more than 24 hours.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Has the pain or stiffness been getting worse for several months?",
+        "Yes": {
+          "question": {
+            "Q": "Do you have numbness or tingling in your arm or hand, or are you over age 50?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have a disorder Of the joints in the neck. Or you may have a nerve disorder such as CARPAL TUNNEL SYNDROME.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["CARPAL TUNNEL SYNDROME"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "See your doctor if you are unable to make a diagnosis from this chat and the problem persists for more than 24 hours.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "See your doctor if you are unable to make a diagnosis from this chat and the problem persists for more than 24 hours.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

@@ -1,0 +1,402 @@
+{
+    "question": {
+        "Q": "Is your urine dark yellow or orange?",
+        "Yes": {
+            "question": {
+                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, is the weather very hot, or have you been exercising?",
+                "Yes": {
+                    "question": {
+                        "Q": "Losing fluid through perspiration concentrates the urine, making it darker than usual. Drink more fluids, especially water. Would you like to review symptoms commonly associated with FEVER?",
+                        "Yes": {
+                            "tree": {
+                                "symptom": "FEVER"
+                            }
+                        },
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Have you been vomiting?",
+                        "Yes": {
+                            "question": {
+                                "Q": "Loss of fluid through vomiting can concentrate the urine, making it darker. Drink more fluids, especially water or a rehydration solution or sports drink. Would you like to review symptoms commonly associated with VOMITING?.",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "VOMITING"
+                                    }
+                                },
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Have you had diarrhea?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Loss of fluid through diarrhea can concentrate the urine, making it darker. Drink more fluids, especially water or a rehydration solution or sports drink. Would you like to review symptoms commonly associated with DIARRHEA?.",
+                                        "Yes": {
+                                            "tree": {
+                                                "symptom": "DIARRHEA"
+                                            }
+                                        },
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Is your urine dark brown but clear?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Are your stools pale, or do the whites of your eyes and your skin look yellow?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. You may have JAUNDICE caused by a liver disorder.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["JAUNDICE"]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Is urination painful?",
+                                                        "Yes": {
+                                                            "tree": {
+                                                                "symptom": "PAINFUL URINATION"
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Is your urine pink, red, or smoky brown?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Are you taking a laxative that contains senna, or have you started to take any new medications or vitamins within the past 24 hours?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Senna contains substances that can darken the urine temporarily, and some drugs (including some vitamins) can darken urine.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Have you eaten any foods within the past 24 hours that contain red or dark artificial dyes (such as brightly colored candies) or that are dark in color (such as rhubarb, beets, or blackberries)?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "Many artificial food dyes and the natural coloring Of some foods can discolor urine.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "See a doctor immediately. You may have blood in your urine or a urinary tract infection such as CYSTITIS. There is also a slight chance that you may have a KIDNEY TUMOR, BLADDER TUMOR, or TUBERCULOSIS, If you are a man, you may have an enlarged prostate gland.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": ["CYSTITIS", "KIDNEY TUMOR", "BLADDER TUMOR", "TUBERCULOSIS"]
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Is your urine green or blue?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Green or blue urine is almost always the result of artificial coloring in food or medication.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Is urination painful?",
+                                                "Yes": {
+                                                    "tree": {
+                                                        "symptom": "PAINFUL URINATION"
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Is your urine pink, red, or smoky brown?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Are you taking a laxative that contains senna, or have you started to take any new medications or vitamins within the past 24 hours?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Senna contains substances that can darken the urine temporarily, and some drugs (including some vitamins) can darken urine.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Have you eaten any foods within the past 24 hours that contain red or dark artificial dyes (such as brightly colored candies) or that are dark in color (such as rhubarb, beets, or blackberries)?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "Many artificial food dyes and the natural coloring Of some foods can discolor urine.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See a doctor immediately. You may have blood in your urine or a urinary tract infection such as CYSTITIS. There is also a slight chance that you may have a KIDNEY TUMOR, BLADDER TUMOR, or TUBERCULOSIS, If you are a man, you may have an enlarged prostate gland.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": ["CYSTITIS", "KIDNEY TUMOR", "BLADDER TUMOR", "TUBERCULOSIS"]
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Is your urine green or blue?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "Green or blue urine is almost always the result of artificial coloring in food or medication.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Is your urine dark brown but clear?",
+                "Yes": {
+                    "question": {
+                        "Q": "Are your stools pale, or do the whites of your eyes and your skin look yellow?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You may have JAUNDICE caused by a liver disorder.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["JAUNDICE"]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Is urination painful?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "PAINFUL URINATION"
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Is your urine pink, red, or smoky brown?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Are you taking a laxative that contains senna, or have you started to take any new medications or vitamins within the past 24 hours?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Senna contains substances that can darken the urine temporarily, and some drugs (including some vitamins) can darken urine.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Have you eaten any foods within the past 24 hours that contain red or dark artificial dyes (such as brightly colored candies) or that are dark in color (such as rhubarb, beets, or blackberries)?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Many artificial food dyes and the natural coloring Of some foods can discolor urine.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See a doctor immediately. You may have blood in your urine or a urinary tract infection such as CYSTITIS. There is also a slight chance that you may have a KIDNEY TUMOR, BLADDER TUMOR, or TUBERCULOSIS, If you are a man, you may have an enlarged prostate gland.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": ["CYSTITIS", "KIDNEY TUMOR", "BLADDER TUMOR", "TUBERCULOSIS"]
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Is your urine green or blue?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Green or blue urine is almost always the result of artificial coloring in food or medication.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Is urination painful?",
+                        "Yes": {
+                            "tree": {
+                                "symptom": "PAINFUL URINATION"
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Is your urine pink, red, or smoky brown?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Are you taking a laxative that contains senna, or have you started to take any new medications or vitamins within the past 24 hours?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Senna contains substances that can darken the urine temporarily, and some drugs (including some vitamins) can darken urine.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Have you eaten any foods within the past 24 hours that contain red or dark artificial dyes (such as brightly colored candies) or that are dark in color (such as rhubarb, beets, or blackberries)?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Many artificial food dyes and the natural coloring Of some foods can discolor urine.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "See a doctor immediately. You may have blood in your urine or a urinary tract infection such as CYSTITIS. There is also a slight chance that you may have a KIDNEY TUMOR, BLADDER TUMOR, or TUBERCULOSIS, If you are a man, you may have an enlarged prostate gland.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["CYSTITIS", "KIDNEY TUMOR", "BLADDER TUMOR", "TUBERCULOSIS"]
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Is your urine green or blue?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "Green or blue urine is almost always the result of artificial coloring in food or medication.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    
+    "age-group": ""
+}

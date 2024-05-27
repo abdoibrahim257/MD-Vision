@@ -1,0 +1,98 @@
+{
+    "question": {
+        "Q": "Do you have a vaginal discharge between periods that is unusually heavy or that has an unpleasant odor, or is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
+        "Yes": {
+            "question": {
+                "Q": "See your doctor. You may have an infection of the uterus, fallopian tubes, ovaries, or surrounding tissues.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": [
+                    "Pelvic inflammatory disease",
+                    "painful periods"
+                ]
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Does the pain get worse as your period continues?",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor. You may have ENDOMETRIOSIS.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                            "ENDOMETRIOSIS"
+                        ]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Have you started menstruating within the past 3 months?",
+                        "Yes": {
+                            "question": {
+                                "Q": "Talk to your doctor. The pain is unlikely to be caused by an underlying disorder.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Have you had painful periods for most of your adult life, and is the pain the same as usual?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Talk to your doctor. The pain is unlikely to be caused by an underlying disorder.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Have your periods become more painful since you had an intrauterine device (IUD) inserted?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. An increase in menstrual pain is sometimes associated with insertion of an IUD.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Have you recently stopped taking oral contraceptives?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Talk to your doctor. ORAL CONTRACEPTIVES often reduce menstrual pain, so some women notice an increase in menstrual pain when they stop taking them.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

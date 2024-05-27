@@ -1,0 +1,140 @@
+{
+    "question": {
+        "Q": "Did you become confused suddenly during the past few hours?",
+        "Yes": {
+            "question": {
+                "Q": "Did you injure your head recently (within the past few days)?",
+                "Yes": {
+                    "question": {
+                        "Q": "See a doctor immediately. Some degree of confusion after an injury is not unusual, but anyone with a head injury must be examined by a doctor to determine the extent of the injury and check for any bleeding inside the skull.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Is your temperature 104 \u2109 (40 \u2103 ) or higher?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See a doctor immediately. A high fever often causes some degree of confusion. Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department if your confusion is severe. You could have MENINGITIS or ENCEPHALITIS. Would you like to review symptoms commonly associated with fever?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "Fever"
+                                    }
+                                },
+                                "No": {},
+                                "diagnosis": [
+                                    "Meningitis",
+                                    "Encephalitis"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have a heart or lung disease or diabetes?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See a doctor immediately. Confusion associated with any of these disorders can indicate a serious health problem.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Have you had any of the following symptoms since the confusion started? \n\u2022 Dizziness \n\u2022 Weakness in your arms or legs \n\u2022 Numbness or tingling in any part of your body \n\u2022 Blurred vision \n\u2022 Difficulty speaking \n\u2022 Abnormal movements of the body or face",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE or a TRANSIENT ISCHEMIC ATTACK. Or you may have EPILEPSY.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "Stroke",
+                                                    "Transient Ischemic Attack",
+                                                    "Epilepsy"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Were you drinking alcohol or taking other drugs before you became confused?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Talk to your doctor. Alcohol and other drugs can sometimes cause confusion.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Are you over 65?",
+                                                        "Yes": {
+                                                            "tree": {
+                                                                "symptom": "CONFUSION IN OLDER PEOPLE"
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Were you drinking alcohol or taking other drugs before you became confused?",
+                "Yes": {
+                    "question": {
+                        "Q": "Talk to your doctor. Alcohol and other drugs can sometimes cause confusion.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Are you over 65?",
+                        "Yes": {
+                            "tree": {
+                                "symptom": "CONFUSION IN OLDER PEOPLE"
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

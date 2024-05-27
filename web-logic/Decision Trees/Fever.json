@@ -1,0 +1,284 @@
+{
+    "question": {
+        "Q": "Do you have a cough?",
+        "Yes": {
+            "question": {
+                "Q": "Are you short of breath even when resting, have you been coughing up rust-colored or grayish yellow mucus, or have you been wheezing?",
+                "Yes": {
+                    "question": {
+                        "Q": "See a doctor immediately. You may have a lung infection such as PNEUMONIA or BRONCHITIS",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["PNEUMONIA", "BRONCHITIS"]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do you have a headache, or do your bones and joints ache?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor if your symptoms last longer than 2 or 3 days. You probably have a viral infection.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have a headache?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Do you have one or more of the following symptoms? \n\u2022 pain when bending your head forward \n\u2022 Nausea or vomiting \n\u2022 Sensitivity of eyes to bright light \n\u2022 Drowsiness or confusion",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a potentially life-threatening infection of the brain.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["MENINGITIS"]
+                                            }
+                                        },
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Have you vomited or had diarrhea?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. You may have an infection of the digestive tract.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "DO you have aching joints or bones?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor if your symptoms last longer than 2 or 3 days. You probably have a viral infection such as INFLUENZA. Rest, and drink plenty of fluids.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["INFLUENZA"]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have a rash?",
+                                                        "Yes": {
+                                                            "tree": {
+                                                                "symptom": "RASH WITH FEVER"
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have a sore throat?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. You could have a throat infection.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you have pain in your back (on one or both sides just above the waist) and chills?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See a doctor immediately. You could have a kidney infection, which can be serious.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Do you have pain when you urinate, or are you urinating more frequently than usual?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. You may have a urinary tract infection.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Have you spent most Of the day in strong sunlight or in very hot conditions?",
+                                                                                        "Yes": {
+                                                                                            "question": {
+                                                                                                "Q": "EMERGENCY Get medical help now! call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have heat exhaustion or heatstroke.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": ["Heat exhaustion", "Heatstroke"]
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat, if your temperature has not returned to normal within 24 hours, or if it is very high or rises again. \n If you have a very high fever\n call your doctor immediately. A temperature of 104\u2109(40\u2103) or higher is potentially dangerous. Wiping your head and body with lukewarm (not cold) water may give you some relief. Replace lost fluids by drinking lots of fluids, particularly water and a rehydration solution or sports drink. Talk to your doctor before taking aspirin or an aspirin substitute to help bring down a fever.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have a headache?",
+                "Yes": {
+                    "question": {
+                        "Q": "Do you have one or more of the following symptoms? \n\u2022 pain when bending your head forward \n\u2022 Nausea or vomiting \n\u2022 Sensitivity of eyes to bright light \n\u2022 Drowsiness or confusion",
+                        "Yes": {
+                            "question": {
+                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a potentially life-threatening infection of the brain.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["MENINGITIS"]
+                            }
+                        },
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Have you vomited or had diarrhea?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You may have an infection of the digestive tract.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "DO you have aching joints or bones?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor if your symptoms last longer than 2 or 3 days. You probably have a viral infection such as INFLUENZA. Rest, and drink plenty of fluids.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["INFLUENZA"]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you have a rash?",
+                                        "Yes": {
+                                            "tree": {
+                                                "symptom": "RASH WITH FEVER"
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have a sore throat?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. You could have a throat infection.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have pain in your back (on one or both sides just above the waist) and chills?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See a doctor immediately. You could have a kidney infection, which can be serious.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have pain when you urinate, or are you urinating more frequently than usual?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. You may have a urinary tract infection.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Have you spent most Of the day in strong sunlight or in very hot conditions?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "EMERGENCY Get medical help now! call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have heat exhaustion or heatstroke.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": ["Heat exhaustion", "Heatstroke"]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat, if your temperature has not returned to normal within 24 hours, or if it is very high or rises again. \n If you have a very high fever\n call your doctor immediately. A temperature of 104\u2109(40\u2103) or higher is potentially dangerous. Wiping your head and body with lukewarm (not cold) water may give you some relief. Replace lost fluids by drinking lots of fluids, particularly water and a rehydration solution or sports drink. Talk to your doctor before taking aspirin or an aspirin substitute to help bring down a fever.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    
+    "age-group": ""
+}

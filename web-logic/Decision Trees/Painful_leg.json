@@ -1,0 +1,537 @@
+{
+  "question": {
+    "Q": "Did the muscles in your leg suddenly tighten painfully for a few minutes and then return to normal?",
+    "Yes": {
+      "tree": {
+        "symptom": "CRAMP"
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Did the pain immediately follow a fall or other injury?",
+        "Yes": {
+          "question": {
+            "Q": "Can you walk on the affected leg?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have pulled a muscle, ligament, or tendon.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "See a doctor immediately. You may have broken your leg or severely torn a muscle or tendon.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Does the pain shoot down the back of your leg, especially when you cough or strain?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You probably have sciatica (pressure on the sciatic nerve) caused by a PROLAPSED DISK.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["PROLAPSED DISK"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do you have persistent pain in one area of your leg?",
+                "Yes": {
+                  "question": {
+                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or do you have chills and feel generally ill?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See a doctor immediately. You may have OSTEOMYELITIS, a bone infection that is most common in children.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["OSTEOMYELITIS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do both of your legs ache and do your ankles swell sometimes, particularly after you stand for long periods?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Are the veins in your legs twisted, swollen, and unusually prominent?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You probably have VARICOSE VEINS.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["VARICOSE VEINS"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Is your hip painful or stiff on the same side as the affected leg?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["OSTEOARTHRITIS"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Is the pain mainly in your calf?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Is your calf swollen, and does it hurt when you walk?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See a doctor immediately. You may have a blood clot in your leg.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["DEEP VEIN THROMBOSIS"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Is just one of your veins red and inflamed?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See a doctor immediately. You may have THROMBOPHLEBITIS (p. 604).",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["THROMBOPHLEBITIS"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Does your leg hurt when you walk but not when you are resting?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. Pain in the calf during exercise that disappears promptly when you stop may be a sign Of a circulatory problem such as ATHEROSCLEROSIS (p. 557). It could also be a pulled muscle, ligament, or tendon.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Did your leg become painful following unusually strenuous exercise?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have pulled a muscle, ligament, or tendon.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Did your leg become painful following unusually strenuous exercise?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor. You may have pulled a muscle, ligament, or tendon.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Is your hip painful or stiff on the same side as the affected leg?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["OSTEOARTHRITIS"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Is the pain mainly in your calf?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Is your calf swollen, and does it hurt when you walk?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See a doctor immediately. You may have a blood clot in your leg.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["DEEP VEIN THROMBOSIS"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Is just one of your veins red and inflamed?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See a doctor immediately. You may have THROMBOPHLEBITIS (p. 604).",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["THROMBOPHLEBITIS"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Does your leg hurt when you walk but not when you are resting?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. Pain in the calf during exercise that disappears promptly when you stop may be a sign Of a circulatory problem such as ATHEROSCLEROSIS (p. 557). It could also be a pulled muscle, ligament, or tendon.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Did your leg become painful following unusually strenuous exercise?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have pulled a muscle, ligament, or tendon.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Did your leg become painful following unusually strenuous exercise?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have pulled a muscle, ligament, or tendon.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do both of your legs ache and do your ankles swell sometimes, particularly after you stand for long periods?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Are the veins in your legs twisted, swollen, and unusually prominent?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You probably have VARICOSE VEINS.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["VARICOSE VEINS"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Is your hip painful or stiff on the same side as the affected leg?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["OSTEOARTHRITIS"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Is the pain mainly in your calf?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Is your calf swollen, and does it hurt when you walk?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See a doctor immediately. You may have a blood clot in your leg.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["DEEP VEIN THROMBOSIS"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Is just one of your veins red and inflamed?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See a doctor immediately. You may have THROMBOPHLEBITIS (p. 604).",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["THROMBOPHLEBITIS"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Does your leg hurt when you walk but not when you are resting?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. Pain in the calf during exercise that disappears promptly when you stop may be a sign Of a circulatory problem such as ATHEROSCLEROSIS (p. 557). It could also be a pulled muscle, ligament, or tendon.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Did your leg become painful following unusually strenuous exercise?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have pulled a muscle, ligament, or tendon.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Did your leg become painful following unusually strenuous exercise?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have pulled a muscle, ligament, or tendon.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Is your hip painful or stiff on the same side as the affected leg?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["OSTEOARTHRITIS"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Is the pain mainly in your calf?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Is your calf swollen, and does it hurt when you walk?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See a doctor immediately. You may have a blood clot in your leg.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["DEEP VEIN THROMBOSIS"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Is just one of your veins red and inflamed?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See a doctor immediately. You may have THROMBOPHLEBITIS (p. 604).",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["THROMBOPHLEBITIS"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Does your leg hurt when you walk but not when you are resting?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor. Pain in the calf during exercise that disappears promptly when you stop may be a sign Of a circulatory problem such as ATHEROSCLEROSIS (p. 557). It could also be a pulled muscle, ligament, or tendon.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Did your leg become painful following unusually strenuous exercise?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have pulled a muscle, ligament, or tendon.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Did your leg become painful following unusually strenuous exercise?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have pulled a muscle, ligament, or tendon.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat and the pain persists for more than 48 hours or gets worse.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

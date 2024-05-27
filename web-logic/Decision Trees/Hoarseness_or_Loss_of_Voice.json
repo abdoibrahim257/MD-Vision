@@ -1,0 +1,220 @@
+{
+  "question": {
+    "Q": "Did the hoarseness begin within the past 3 days?",
+    "Yes": {
+      "question": {
+        "Q": "Do you (or did you recently) have a cold, cough, or sore throat?",
+        "Yes": {
+          "question": {
+            "Q": "You probably have inflammation of the vocal cords.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["LARYNGITIS"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Were you talking more than usual just before the hoarseness developed or before you lost your voice?",
+            "Yes": {
+              "question": {
+                "Q": "Talking too much can cause inflammation of the vocal cords.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["LARYNGITIS"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Have you recently been feeling tense, nervous, or anxious?",
+                "Yes": {
+                  "question": {
+                    "Q": "Anxiety can cause a sudden loss Of voice.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["ANXIETY"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Have you been drinking a lot of alcohol?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Excessive drinking can lead to inflammation Of the vocal cords.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["LARYNGITIS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you smoke, or have you been in a smoky place (such as a bar)?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. Smoking can lead to inflammation of the vocal cords.However, it can also cause cancer.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["LARYNGITIS", " TUMORS OF THE LARYNX"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have two or more of the following symptoms? \n\u2022 Sensitivity to cold weather \n\u2022 Dry skin or dry hair \n\u2022 Unexplained weight gain \n\u2022 Unexplained fatigue",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have an underactive thyroid gland.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["HYPOTHYROIDISM"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Has the hoarseness or loss of voice lasted longer than a week?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See a doctor immediately. You could have a polyp on a vocal cord or cancer of the larynx.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["TUMORS Of THE LARYNX"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Have you had several episodes of hoarseness or voice loss in the past 6 months?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See a doctor immediately. You could have a polyp on a vocal cord or cancer of the larynx.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["TUMORS Of THE LARYNX"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your hoarseness persists for more than a week.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Does your job require you to talk a lot-for example, are you a teacher or a lawyer?",
+        "Yes": {
+          "question": {
+            "Q": "See your doctor. You may have persistent inflammation of the vocal cords or a growth on a vocal cord.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["LARYNGITIS", "TUMORS Of THE LARYNX"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Have you been drinking a lot of alcohol?",
+            "Yes": {
+              "question": {
+                "Q": "Excessive drinking can lead to inflammation Of the vocal cords.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["LARYNGITIS"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do you smoke, or have you been in a smoky place (such as a bar)?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. Smoking can lead to inflammation of the vocal cords.However, it can also cause cancer.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["LARYNGITIS", " TUMORS OF THE LARYNX"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you have two or more of the following symptoms? \n\u2022 Sensitivity to cold weather \n\u2022 Dry skin or dry hair \n\u2022 Unexplained weight gain \n\u2022 Unexplained fatigue",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have an underactive thyroid gland.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["HYPOTHYROIDISM"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Has the hoarseness or loss of voice lasted longer than a week?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See a doctor immediately. You could have a polyp on a vocal cord or cancer of the larynx.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["TUMORS Of THE LARYNX"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Have you had several episodes of hoarseness or voice loss in the past 6 months?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See a doctor immediately. You could have a polyp on a vocal cord or cancer of the larynx.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["TUMORS Of THE LARYNX"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your hoarseness persists for more than a week.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  },
+
+  "age-group": ""
+}

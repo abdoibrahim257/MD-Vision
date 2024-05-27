@@ -1,0 +1,190 @@
+{
+  "question": {
+    "Q": "Have you been having episodes of vomiting for a week or longer?",
+    "Yes": {
+      "tree": {
+        "symptom": "RECURRING VOMITING"
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Do you have severe abdominal pain that has lasted at least I hour and has not been relieved by vomiting?",
+        "Yes": {
+          "question": {
+            "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You probably have a serious abdominal condition such as PERITONITIS or an INTESTINAL OBSTRUCTION.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["PERITONITIS", "INTESTINAL OBSTRUCTION"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Have you vomited blood, or black or dark brown matter that looks like coffee grounds (partially digested blood)?",
+            "Yes": {
+              "question": {
+                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You probably have internal bleeding, possibly from a PEPTIC ULCER or another condition in the digestive tract.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["PEPTIC ULCER"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do you have diarrhea?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have an infection of the digestive tract.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["GASTROENTERITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Did you eat a lot of rich food in the past few hours or drink a lot Of alcohol?",
+                    "Yes": {
+                      "question": {
+                        "Q": "You probably have INDIGESTION.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["INDIGESTION"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Have you eaten food that may have spoiled?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have FOOD POISONING, especially if someone who ate the same food has the same symptoms.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["FOOD POISONING"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Are you currently taking any medication?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Talk to your doctor. Some drugs can cause vomiting.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have severe pain in or around one eye, and is your vision blurred?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See an eye doctor immediately. You could have acute GLAUCOMA.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["GLAUCOMA"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have a headache?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Did you injure your head within the past 24 hours?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a BRAIN INJURY.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["BRAIN INJURY"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Do you have one or more of the following symptoms? \n\u2022 Pain when you bend your head forward \n\u2022 Sensitivity of eyes to bright light \n\u2022 Drowsiness or confusion",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "EMERGENCY Get help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS or a SUB-ARACHNOID HEMORRHAGE.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                  "MENINGITIS",
+                                                  "SUB-ARACHNOID HEMORRHAGE"
+                                                ]
+                                              }
+                                            },
+                                            "No": {
+                                              "tree": {
+                                                "symptom": "HEADACHE"
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Before vomiting, did you feel so dizzy that the room seemed to be spinning?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor. You may have a disorder of the inner ear such as LABYRINTHITIS (p. 1014) or MÉNIÉRE'S DISEASE (p. 1013).",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": [
+                                              "LABYRINTHITIS",
+                                              "MÉNIÉRE'S DISEASE"
+                                            ]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Do the whites of your eyes and your skin look yellow?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have a disorder of the liver or gallbladder.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["HEPATITIS", "GALLSTONES"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your vomiting persists for more than 24 hours.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "question": {
+    "Q": "Did you injure your shoulder within the past 24 hours?",
+    "Yes": {
+      "question": {
+        "Q": "Is it impossible or very painful to move your shoulder, or does your shoulder seem misshapen?",
+        "Yes": {
+          "question": {
+            "Q": "See a doctor immediately. You may have broken or dislocated your shoulder.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "See your doctor. You may have pulled or torn a muscle or ligament.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Did the pain begin suddenly?",
+        "Yes": {
+          "question": {
+            "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently started to feel ill?",
+            "Yes": {
+              "question": {
+                "Q": "See a doctor immediately. You may have RHEUMATIC FEVER, which is especially common in children. Or you could have TENDINITIS.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["RHEUMATIC FEVER", "TENDINITIS"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "See your doctor. You may have BURSITIS or TENDINITIS.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["BURSITIS", "TENDINITIS"]
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you have pain, swelling, or redness in other joints, such as your finger joints?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["RHEUMATOID ARTHRITIS"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Does the pain occur only when you move your arm?",
+                "Yes": {
+                  "question": {
+                    "Q": "Has your shoulder become increasingly painful and stiff over several weeks, and are you barely able to move your arm?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have inflammation and thickening of the lining of the joint capsule.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["FROZEN SHOULDER"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor. You may have BURSITIS",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["BURSITIS"]
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Does the pain occur when you exert yourself or exercise the shoulder, and subside when you stop?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See a doctor immediately. Your shoulder pain may be angina.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["HEART DISEASE"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

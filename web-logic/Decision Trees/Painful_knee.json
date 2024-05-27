@@ -1,0 +1,134 @@
+{
+  "question": {
+    "Q": "Have you injured your knee within the past 24 hours?",
+    "Yes": {
+      "question": {
+        "Q": "Is the knee misshapen, or are you unable to move it?",
+        "Yes": {
+          "question": {
+            "Q": "See a doctor immediately. You may have broken your leg or dislocated your knee.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "See your doctor. You may have bruised or sprained your knee. Or you may have torn the cartilage or ligament in your knee, especially if your knee seems to catch or give way.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Is the knee red, swollen, and hot?",
+        "Yes": {
+          "question": {
+            "Q": "Are both knees or other joints (such as the joints of the fingers) affected?",
+            "Yes": {
+              "question": {
+                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently started to feel ill?",
+                "Yes": {
+                  "question": {
+                    "Q": "See a doctor immediately. You may have RHEUMATOID ARTHRITIS but you could also have a joint infection.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["RHEUMATOID ARTHRITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["RHEUMATOID ARTHRITIS"]
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently started to feel ill?",
+                "Yes": {
+                  "question": {
+                    "Q": "See a doctor immediately. You may have a joint infection. Or you may have a bone infection that is more common in children.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["SEPTIC ARTHRITIS", "OSTEOMYELITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "You may have BURSITIS or GOUT OR PSEUDOGOUT.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["BURSITIS", "GOUT OR PSEUDOGOUT"]
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Does the knee seem to catch or give way?",
+            "Yes": {
+              "question": {
+                "Q": "Is the knee painful most of the time?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["OSTEOARTHRITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See your doctor. The cartilage in your knee may be damaged.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["TORN KNEE CARTILAGE AND TORN KNEE LIGAMENT"]
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Has the knee been painful for some time?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["OSTEOARTHRITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

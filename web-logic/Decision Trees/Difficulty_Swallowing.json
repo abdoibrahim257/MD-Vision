@@ -1,0 +1,108 @@
+{
+  "question": {
+    "Q": "Do you have a sore throat?",
+    "Yes": {
+      "question": {
+        "Q": "Could you have swallowed something (such as a fish bone)?",
+        "Yes": {
+          "question": {
+            "Q": "See a doctor immediately. Something may be lodged in your throat.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "tree": {
+            "symptom": "SORE THROAT"
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Does food seem to stick high up in your chest after you swallow it?",
+        "Yes": {
+          "question": {
+            "Q": "Do you sometimes experience pain in your chest, particularly when you squat, bend, or lie down?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. Your esophagus may be scarred as a result of acid reflux.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["GASTROESOPHAGEAL REFLUX DISEASE"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Are you having difficulty swallowing, do you regurgitate food you swallow, and have you lost a lot of weight in a short time (more than 10 pounds in 10 weeks)?",
+                "Yes": {
+                  "question": {
+                    "Q": "See a doctor immediately. You may have a disorder of the esophagus such as ACHALASIA or a PHARYNGEAL POUCH, or you may have a scarred esophagus from chronic acid reflux. There is also a possibility that you have CANCER THE ESOPHAGUS, especially if you are over 40.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": [
+                      "ACHALASIA",
+                      "PHARYNGEAL POUCH",
+                      "GASTROESOPHAGEAL REFLUX DISEASE",
+                      "CANCER OF THE ESOPHAGUS"
+                    ]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you swallow normally but feel a lump in your throat when you swallow or feel that the food will not go down?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. Your swallowing problem may be a symptom of ANXIETY. Or it may be a symptom of GASTROESOPHAGEAL REFLUX DISEASE.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["ANXIETY", "GASTROESOPHAGEAL REFLUX DISEASE"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you swallow normally but feel a lump in your throat when you swallow or feel that the food will not go down?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. Your swallowing problem may be a symptom of ANXIETY. Or it may be a symptom of GASTROESOPHAGEAL REFLUX DISEASE.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["ANXIETY", "GASTROESOPHAGEAL REFLUX DISEASE"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

@@ -1,0 +1,107 @@
+{
+    "question": {
+        "Q": "Have you been feeling unusually tense or worried?",
+        "Yes": {
+            "question": {
+                "Q": "See your doctor if the nightmares persist. Your nightmares are probably caused by ANXIETY.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["ANXIETY"]
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have nightmares only occasionally?",
+                "Yes": {
+                    "question": {
+                        "Q": "Most people have occasional Nightmares.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Did the nightmares begin after a traumatic event (such as a traffic accident or a death in your family)?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor if the nightmares persist. Nightmares often follow such experiences and usually stop within a few weeks.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have a physical illness such as a viral infection?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Vivid dreams are common during illness, especially when a person has a fever.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Have you recently stopped taking sleep medication?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor about stopping your medication gradually and safely. Stopping sleep medication too quickly is a common cause of nightmares. Your dreams should return to normal in a few days.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Have you recently been drinking more alcohol than usual, or have you recently stopped drinking?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. Drinking large quantities of alcohol or suddenly stopping drinking after drinking for a long time can disturb sleep patterns and cause nightmares.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Are you currently taking any medication?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "Talk to your doctor. Some drugs can cause nightmares.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat and your nightmares persist.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

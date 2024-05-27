@@ -1,0 +1,177 @@
+{
+  "question": {
+    "Q": "Have you been feeling confused only recently?",
+    "Yes": {
+      "question": {
+        "Q": "Have you recently started taking a new medication or changed the dose of one you have been taking?",
+        "Yes": {
+          "question": {
+            "Q": "Talk to your doctor. He or she may change the dosage or prescribe a different medication or tell you to stop taking the medication.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Did the confusion begin in the days or weeks after a fall or head injury?",
+            "Yes": {
+              "question": {
+                "Q": "See a doctor immediately. These symptoms suggest the possibility of bleeding inside the skull.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["SUBDURAL HEMORRHAGE AND HEMATOMA"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Have you noticed two or Of the following symptoms? \n\u2022 Change in personality \n\u2022 Decline in personal appearance or cleanliness \n\u2022 Impaired ability to remember recent events",
+                "Yes": {
+                  "question": {
+                    "Q": "See a doctor immediately. These symptoms may indicate the onset of ALZHEIMER'S DISEASE. You may have had several minor strokes. Or you may have a BRAIN TUMOR.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["ALZHEIMER'S DISEASE", "BRAIN TUMOR"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Is the confusion accompanied by signs of illness such as a fever, coughing. or lack of bladder control?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See a doctor immediately. Many physical illnesses can cause these symptoms along with confusion in older people.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you feel very cold or chilled, or does your abdomen feel unusually cold?",
+                        "Yes": {
+                          "question": {
+                            "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. Feeling cold along with being confused can indicate a dangerous drop in body temperature.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you feel hot, is the weather very hot and humid, or have you been out in the sun?",
+                            "Yes": {
+                              "question": {
+                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. Your confusion may be the result Of exposure to very hot conditions.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Have you gone without eating for some time?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Have something to eat or drink, especially if you have a condition such as diabetes. See your doctor if the confusion persists.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Is the confusion accompanied by signs of illness such as a fever, coughing. or lack of bladder control?",
+        "Yes": {
+          "question": {
+            "Q": "See a doctor immediately. Many physical illnesses can cause these symptoms along with confusion in older people.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you feel very cold or chilled, or does your abdomen feel unusually cold?",
+            "Yes": {
+              "question": {
+                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. Feeling cold along with being confused can indicate a dangerous drop in body temperature.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do you feel hot, is the weather very hot and humid, or have you been out in the sun?",
+                "Yes": {
+                  "question": {
+                    "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. Your confusion may be the result Of exposure to very hot conditions.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Have you gone without eating for some time?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Have something to eat or drink, especially if you have a condition such as diabetes. See your doctor if the confusion persists.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  },
+  "age-group": ""
+}

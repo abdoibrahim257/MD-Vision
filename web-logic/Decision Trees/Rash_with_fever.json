@@ -1,0 +1,183 @@
+{
+    "question": {
+        "Q": "Do you have red spots or blotches on your skin?",
+        "Yes": {
+            "question": {
+                "Q": "Do you have two or more of the following symptoms? \n\u2022 Runny nose \n\u2022 Sore, red eyes \n\u2022 Dry cough",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor. You may have MEASLES or a similar viral infection, especially if the rash is mainly on your face or trunk.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                            "Measles"
+                        ]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "DO you have swelling down the sides of the back of your neck or at the base of your skull?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You may have RUBELLA.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "Rubella"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have raised, red, itchy spots that turn into blisters?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "See your doctor. You may have CHICKENPOX.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "Chickenpox"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Do you have one or more reddish brown spots that have become bigger and developed a whitish center?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. You may have LYME DISEASE, a viral infection that is spread by ticks.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "Lyme Disease"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have a rash of purple spots?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Headache \n\u2022 Sensitivity of eyes to bright light \n\u2022 Pain when you bend your head forward",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                    "Meningitis"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See a doctor immediately. You may have a serious blood disorder called ALLERGIC PURPURA.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                    "Allergic Purpura"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have raised, red, itchy spots that turn into blisters?",
+                "Yes": {
+                    "question": {
+                        "Q": "See your doctor. You may have CHICKENPOX.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": [
+                            "Chickenpox"
+                        ]
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Do you have one or more reddish brown spots that have become bigger and developed a whitish center?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See your doctor. You may have LYME DISEASE, a viral infection that is spread by ticks.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "Lyme Disease"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have a rash of purple spots?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Headache \n\u2022 Sensitivity of eyes to bright light \n\u2022 Pain when you bend your head forward",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "Meningitis"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See a doctor immediately. You may have a serious blood disorder called ALLERGIC PURPURA.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "Allergic Purpura"
+                                                ]
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

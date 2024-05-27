@@ -1,0 +1,85 @@
+{
+    "question": {
+        "Q": "Do you have a painful, raised red spot with a pale center?",
+        "Yes": {
+            "question": {
+                "Q": "You may have an infected hair follicle.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have a slow-growing, dark-colored lump, or have you noticed a change in a mole?",
+                "Yes": {
+                    "question": {
+                        "Q": "See a doctor immediately. You may have skin cancer.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Dp you have a single lump that has been growing?",
+                        "Yes": {
+                            "question": {
+                                "Q": "See a doctor immediately. You could have a form of skin cancer. especially if the lump has an ulcerated center. However, you probably have a harmless WART.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                    "WART"
+                                ]
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have one or more patches of thickened skin on your toes?",
+                                "Yes": {
+                                    "question": {
+                                        "Q": "You probably have corns",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                            "CORNs AND CALLUSES"
+                                        ]
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "DO you have several rough-surfaced, hard lumps on your hands or feet?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "You probably have warts.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                    "WART"
+                                                ]
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

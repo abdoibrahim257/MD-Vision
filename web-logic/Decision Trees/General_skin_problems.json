@@ -1,0 +1,303 @@
+{
+    "question": {
+        "Q": "Does the skin problem mainly affect the skin on your face?",
+        "Yes": {
+            "tree": {
+                "symptom": "facial skin problems"
+            }
+        },
+        "No": {
+            "question": {
+                "Q": "Do you have a red rash?",
+                "Yes": {
+                    "question": {
+                        "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
+                        "Yes": {
+                            "tree": {
+                                "symptom": "rash with fever"
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Does the rash itch?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "itchy spots and rashes"
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Are you currently taking any medication?",
+                                        "Yes": {
+                                            "question": {
+                                                "Q": "See your doctor. Some drugs can cause rashes in susceptible people. Your doctor may need to adjust the dosage of your medication or prescribe a different drug.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Do you have one or more red patches covered with white or silvery scales?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "See your doctor. You may have PSORIASIS.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                            "psoriasis"
+                                                        ]
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do you have a blistering rash on one side of your body in an area that was painful over the past 2 to 4 days?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor. You could have SHINGLES.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                    "shingles"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have several oval, red, flaky patches on your chest, back, or abdomen?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. You may have a rash called PITYRIASIS ROSEA.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "pityriasis rosea"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "No": {
+                    "question": {
+                        "Q": "Does the problem affect only the skin on your feet?",
+                        "Yes": {
+                            "tree": {
+                                "symptom": "foot problems"
+                            }
+                        },
+                        "No": {
+                            "question": {
+                                "Q": "Do you have one or more raised spots or lumps on your skin?",
+                                "Yes": {
+                                    "tree": {
+                                        "symptom": "raised spots and lumps"
+                                    }
+                                },
+                                "No": {
+                                    "question": {
+                                        "Q": "Does your skin itch but look normal?",
+                                        "Yes": {
+                                            "tree": {
+                                                "symptom": "itching without a rash"
+                                            }
+                                        },
+                                        "No": {
+                                            "question": {
+                                                "Q": "Are you over age 12?",
+                                                "Yes": {
+                                                    "question": {
+                                                        "Q": "Do you have a new mole, or has an existing mole changed in appearance?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See a doctor immediately. You could have skin cancer.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do some areas of your skin look much paler or darker than usual?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. You could have a skin pigment disorder.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you have one or more red patches covered with white or silvery scales?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor. You may have PSORIASIS.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": [
+                                                                                    "psoriasis"
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Do you have a blistering rash on one side of your body in an area that was painful over the past 2 to 4 days?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. You could have SHINGLES.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": [
+                                                                                            "shingles"
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "Do you have several oval, red, flaky patches on your chest, back, or abdomen?",
+                                                                                        "Yes": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor. You may have a rash called PITYRIASIS ROSEA.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": [
+                                                                                                    "pityriasis rosea"
+                                                                                                ]
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Do some areas of your skin look much paler or darker than usual?",
+                                                        "Yes": {
+                                                            "question": {
+                                                                "Q": "See your doctor. You could have a skin pigment disorder.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "Do you have one or more red patches covered with white or silvery scales?",
+                                                                "Yes": {
+                                                                    "question": {
+                                                                        "Q": "See your doctor. You may have PSORIASIS.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                            "psoriasis"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": {
+                                                                        "Q": "Do you have a blistering rash on one side of your body in an area that was painful over the past 2 to 4 days?",
+                                                                        "Yes": {
+                                                                            "question": {
+                                                                                "Q": "See your doctor. You could have SHINGLES.",
+                                                                                "Yes": {},
+                                                                                "No": {},
+                                                                                "diagnosis": [
+                                                                                    "shingles"
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": {
+                                                                                "Q": "Do you have several oval, red, flaky patches on your chest, back, or abdomen?",
+                                                                                "Yes": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor. You may have a rash called PITYRIASIS ROSEA.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": [
+                                                                                            "pityriasis rosea"
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": {
+                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                                        "Yes": {},
+                                                                                        "No": {},
+                                                                                        "diagnosis": []
+                                                                                    }
+                                                                                },
+                                                                                "diagnosis": []
+                                                                            }
+                                                                        },
+                                                                        "diagnosis": []
+                                                                    }
+                                                                },
+                                                                "diagnosis": []
+                                                            }
+                                                        },
+                                                        "diagnosis": []
+                                                    }
+                                                },
+                                                "diagnosis": []
+                                            }
+                                        },
+                                        "diagnosis": []
+                                    }
+                                },
+                                "diagnosis": []
+                            }
+                        },
+                        "diagnosis": []
+                    }
+                },
+                "diagnosis": []
+            }
+        },
+        "diagnosis": []
+    },
+    "age-group": ""
+}

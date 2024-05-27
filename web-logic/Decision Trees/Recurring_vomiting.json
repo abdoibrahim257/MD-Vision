@@ -1,0 +1,244 @@
+{
+  "question": {
+    "Q": "Are you a woman Of childbearing age, and do you vomit at about the same time on most days?",
+    "Yes": {
+      "question": {
+        "Q": "See your doctor. You may be pregnant; this type of vomiting is common early in pregnancy.",
+        "Yes": {},
+        "No": {},
+        "diagnosis": ["NAUSEA"]
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Do you usually vomit within a few hours after drinking alcohol?",
+        "Yes": {
+          "question": {
+            "Q": "See your doctor. Alcohol can cause inflammation of the stomach lining, especially if you drink a lot of alcohol.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["INDIGESTION", "ALCOHOL ABUSE AND ALCOHOL DEPENDENCE"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you have burning pain in your chest or upper abdomen when you bend over or lie down?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have GASTROESOPHAGEAL REFLUX DISEASE.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["GASTROESOPHAGEAL REFLUX DISEASE"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Do you have abdominal pain or tenderness an hour or two after meals?",
+                "Yes": {
+                  "question": {
+                    "Q": "Is the pain or tenderness in the center of your upper abdomen, and is the pain relieved by vomiting?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have a PEPTIC ULCER.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["PEPTIC ULCER"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Is the pain mainly in the upper right part of your abdomen?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Is your temperature 100F or higher?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have an inflamed gallbladder.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CHOLECYSTITIS"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor. You could have GALLSTONES, INDIGESTION, or IRRITABLE BOWEL SYNDROME.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": [
+                                  "GALLSTONES",
+                                  "INDIGESTION",
+                                  "IRRITABLE BOWEL SYNDROME"
+                                ]
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "tree": {
+                            "symptom": "ABDOMINAL PAIN"
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Have you lost your appetite?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Do the whites of your eyes and your( skin look yellow?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have a disorder of the liver or gall bladder.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": [
+                              "JAUNDICE",
+                              "HEPATITIS",
+                              "CIRRHOSIS OF THE LIVER",
+                              "GALLSTONES"
+                            ]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have abdominal pain that is sometimes relieved by vomiting?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See a doctor immediately. You could have a PEPTIC ULCER or CANCER OF THE STOMACH.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["PEPTIC ULCER", "CANCER OF THE STOMACH"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Are you currently taking any medication?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Talk to your doctor. Some drugs can cause vomiting.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have frequent headaches?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Do you vomit suddenly (without feeling nauseous first), and do your headaches occur mainly in the morning?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See a doctor immediately. You could have a subdural hemorrhage. Or you may have a BRAIN TUMOR.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": [
+                                              "SUBDURAL HEMORRHAGE AND HEMATOMA",
+                                              "BRAIN TUMOR"
+                                            ]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Are you currently taking any medication?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Talk to your doctor. Some drugs can cause vomiting.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have frequent headaches?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Do you vomit suddenly (without feeling nauseous first), and do your headaches occur mainly in the morning?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See a doctor immediately. You could have a subdural hemorrhage. Or you may have a BRAIN TUMOR.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": [
+                                      "SUBDURAL HEMORRHAGE AND HEMATOMA",
+                                      "BRAIN TUMOR"
+                                    ]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

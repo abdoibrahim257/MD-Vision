@@ -1,0 +1,468 @@
+{
+  "question": {
+    "Q": "Is the cough dry?",
+    "Yes": {
+      "question": {
+        "Q": "Are you hoarse, or have you lost your voice?",
+        "Yes": {
+          "tree": {
+            "symptom": "HOARSENESS OR LOSS Of VOICE"
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Could you have inhaled a small object or piece of food (such as a peanut)?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor if coughing fails to clear your lungs or continues for more than an hour.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Have you inhaled the fumes of an irritating chemical such as a cleaning fluid that contains ammonia?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. The fumes have probably irritated your lungs and caused the coughing.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["OCCUPATIONAL LUNG DISEASES"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you have a dry cough with no other symptoms?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Is your cough deep, raspy, and persistent?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have a form of ASTHMA.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["ASTHMA"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Are you currently taking any medication?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Talk to your doctor. A dry cough is a side effect Of some drugs.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Is your cough often worse when you are lying down or when you wake up in the morning?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See a doctor immediately. You could have GASTROESOPHAGEAL REFLUX DISEASE.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["GASTROESOPHAGEAL REFLUX DISEASE"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See a doctor immediately. A dry cough may be a symptom of a tumor.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["LUNG CANCER"]
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Did your cough begin recently?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Are you short of breath?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See a doctor immediately. You may have PNEUMONIA, ACUTE BRONCHITIS, or INFLUENZA. Would you like to continue with the diagnosis?",
+                                    "Yes": {
+                                      "tree": {
+                                        "symptom": "DIFFICULTY BREATHING"
+                                      }
+                                    },
+                                    "No": {},
+                                    "diagnosis": [
+                                      "PNEUMONIA",
+                                      "ACUTE BRONCHITIS",
+                                      "INFLUENZA"
+                                    ]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have a mild form of viral PNEUMONIA.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["PNEUMONIA"]
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Does your cough sound like wheezing?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have ASTHMA. Would you like to continue with the diagnosis?",
+                                    "Yes": {
+                                      "tree": {
+                                        "symptom": "WHEEZING"
+                                      }
+                                    },
+                                    "No": {},
+                                    "diagnosis": ["ASTHMA"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have a runny nose or a sore throat?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "You probably have a COLD.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["COLD"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Are you short of breath, even when you're relaxing?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See a doctor immediately. You could have CONGESTIVE HEART FAILURE. Would you like to continue with the diagnosis?",
+                                            "Yes": {
+                                              "tree": {
+                                                "symptom": "DIFFICULTY BREATHING"
+                                              }
+                                            },
+                                            "No": {},
+                                            "diagnosis": ["CONGESTIVE HEART FAILURE"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Did your cough begin after you had the flu, or have you had similar episodes of persistent coughing in the past?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have CHRONIC BRONCHITIS or a persistent, mild form of bronchitis that sometimes lingers after INFLUENZA.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                  "CHRONIC BRONCHITIS",
+                                                  "INFLUENZA"
+                                                ]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Have you had the cough for several weeks or months, and is it getting worse?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See a doctor immediately. You could have TUBERCULOSIS or LUNG CANCER.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": [
+                                                      "TUBERCULOSIS",
+                                                      "LUNG CANCER"
+                                                    ]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Are you short of breath, even when you're relaxing?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See a doctor immediately. You could have CONGESTIVE HEART FAILURE. Would you like to continue with the diagnosis?",
+                                "Yes": {
+                                  "tree": {
+                                    "symptom": "DIFFICULTY BREATHING"
+                                  }
+                                },
+                                "No": {},
+                                "diagnosis": ["CONGESTIVE HEART FAILURE"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Did your cough begin after you had the flu, or have you had similar episodes of persistent coughing in the past?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have CHRONIC BRONCHITIS or a persistent, mild form of bronchitis that sometimes lingers after INFLUENZA.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["CHRONIC BRONCHITIS", "INFLUENZA"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Have you had the cough for several weeks or months, and is it getting worse?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See a doctor immediately. You could have TUBERCULOSIS or LUNG CANCER.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": ["TUBERCULOSIS", "LUNG CANCER"]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Did your cough begin recently?",
+        "Yes": {
+          "question": {
+            "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
+            "Yes": {
+              "question": {
+                "Q": "Are you short of breath?",
+                "Yes": {
+                  "question": {
+                    "Q": "See a doctor immediately. You may have PNEUMONIA, ACUTE BRONCHITIS, or INFLUENZA. Would you like to continue with the diagnosis?",
+                    "Yes": {
+                      "tree": {
+                        "symptom": "DIFFICULTY BREATHING"
+                      }
+                    },
+                    "No": {},
+                    "diagnosis": ["PNEUMONIA", "ACUTE BRONCHITIS", "INFLUENZA"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "See your doctor. You may have a mild form of viral PNEUMONIA.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["PNEUMONIA"]
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Does your cough sound like wheezing?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have ASTHMA. Would you like to continue with the diagnosis?",
+                    "Yes": {
+                      "tree": {
+                        "symptom": "WHEEZING"
+                      }
+                    },
+                    "No": {},
+                    "diagnosis": ["ASTHMA"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you have a runny nose or a sore throat?",
+                    "Yes": {
+                      "question": {
+                        "Q": "You probably have a COLD.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["COLD"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Are you short of breath, even when you're relaxing?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See a doctor immediately. You could have CONGESTIVE HEART FAILURE. Would you like to continue with the diagnosis?",
+                            "Yes": {
+                              "tree": {
+                                "symptom": "DIFFICULTY BREATHING"
+                              }
+                            },
+                            "No": {},
+                            "diagnosis": ["CONGESTIVE HEART FAILURE"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Did your cough begin after you had the flu, or have you had similar episodes of persistent coughing in the past?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have CHRONIC BRONCHITIS or a persistent, mild form of bronchitis that sometimes lingers after INFLUENZA.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CHRONIC BRONCHITIS", "INFLUENZA"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Have you had the cough for several weeks or months, and is it getting worse?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See a doctor immediately. You could have TUBERCULOSIS or LUNG CANCER.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["TUBERCULOSIS", "LUNG CANCER"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Are you short of breath, even when you're relaxing?",
+            "Yes": {
+              "question": {
+                "Q": "See a doctor immediately. You could have CONGESTIVE HEART FAILURE. Would you like to continue with the diagnosis?",
+                "Yes": {
+                  "tree": {
+                    "symptom": "DIFFICULTY BREATHING"
+                  }
+                },
+                "No": {},
+                "diagnosis": ["CONGESTIVE HEART FAILURE"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Did your cough begin after you had the flu, or have you had similar episodes of persistent coughing in the past?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have CHRONIC BRONCHITIS or a persistent, mild form of bronchitis that sometimes lingers after INFLUENZA.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["CHRONIC BRONCHITIS", "INFLUENZA"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Have you had the cough for several weeks or months, and is it getting worse?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See a doctor immediately. You could have TUBERCULOSIS or LUNG CANCER.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["TUBERCULOSIS", "LUNG CANCER"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  },
+  "age-group": ""
+}

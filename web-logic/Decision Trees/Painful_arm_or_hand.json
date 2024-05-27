@@ -1,0 +1,2181 @@
+{
+  "question": {
+    "Q": "Did the pain immediately follow an injury?",
+    "Yes": {
+      "question": {
+        "Q": "Is the pain severe?",
+        "Yes": {
+          "question": {
+            "Q": "See a doctor immediately. You may have broken a bone or dislocated a joint (especially if the area looks misshapen) or severely strained or torn a muscle or tendon.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "See your doctor (to rule out a fracture). You may have pulled a muscle, ligament, or tendon.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["SPRAINS AND STRAINS"]
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Does the pain extend down the upper arm toward the wrist?",
+        "Yes": {
+          "question": {
+            "Q": "Did the pain begin during exercise and disappear within a few minutes of stopping?",
+            "Yes": {
+              "question": {
+                "Q": "See a doctor immediately, especially if you also have chest pain. Your pain could be angina.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["HEART DISEASE"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Does the pain get worse with use and better with rest?",
+                "Yes": {
+                  "question": {
+                    "Q": "Do the joints nearest your fingernails look swollen?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["OSTEOARTHRITIS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Does a warm bath or shower relieve the pain somewhat?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have OSTEOARTHRITIS or RHEUMATOID ARTHRITIS.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["OSTEOARTHRITIS", "RHEUMATOID ARTHRITIS"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Are the joints near your knuckles swollen?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["RHEUMATOID ARTHRITIS"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have numbness or tingling in your hands and fingers only?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have CARPAL TUNNEL SYNDROME. Or you may have a nerve disorder related to DIABETES.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                          "CARPAL TUNNEL SYNDROME",
+                                          "DIABETES"
+                                        ]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Do you have numbness or tingling in your arm or hand?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor. You may have a disorder that affects the joints in the neck, especially if you have a stiff neck.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": [
+                                              "SYMPTOMS Of CERVICAL OSTEOARTHRITIS"
+                                            ]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Is the pain in the elbow, wrist, or finger joints?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Is the pain accompanied by redness and swelling?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "Is only one joint affected?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See a doctor immediately. You may have a joint infection.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": [
+                                                              "SEPTIC ARTHRITIS"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": [
+                                                              "BURSITIS",
+                                                              "GOUT OR PSEUDOGOUT"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": [
+                                                              "RAYNAUD'S DISEASE"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "Are the joints near your knuckles swollen?",
+                                                                "Yes": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": [
+                                                                      "RHEUMATOID ARTHRITIS"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "No": {
+                                                                  "question": {
+                                                                    "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                                    "Yes": {
+                                                                      "question": {
+                                                                        "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": [
+                                                                          "TENDINITIS"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "No": {
+                                                                      "question": {
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                        "Yes": {},
+                                                                        "No": {},
+                                                                        "diagnosis": []
+                                                                      }
+                                                                    },
+                                                                    "diagnosis": []
+                                                                  }
+                                                                },
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                                "Yes": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": [
+                                                                      "TENDINITIS"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "No": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": []
+                                                                  }
+                                                                },
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "Are the joints near your knuckles swollen?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "RHEUMATOID ARTHRITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                                "Yes": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": [
+                                                                      "TENDINITIS"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "No": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": []
+                                                                  }
+                                                                },
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have numbness or tingling in your hands and fingers only?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have CARPAL TUNNEL SYNDROME. Or you may have a nerve disorder related to DIABETES.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["CARPAL TUNNEL SYNDROME", "DIABETES"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have numbness or tingling in your arm or hand?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have a disorder that affects the joints in the neck, especially if you have a stiff neck.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                          "SYMPTOMS Of CERVICAL OSTEOARTHRITIS"
+                                        ]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Is the pain in the elbow, wrist, or finger joints?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Is the pain accompanied by redness and swelling?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Is only one joint affected?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See a doctor immediately. You may have a joint infection.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["SEPTIC ARTHRITIS"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                          "BURSITIS",
+                                                          "GOUT OR PSEUDOGOUT"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "Are the joints near your knuckles swollen?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "RHEUMATOID ARTHRITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                                "Yes": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": [
+                                                                      "TENDINITIS"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "No": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": []
+                                                                  }
+                                                                },
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "Are the joints near your knuckles swollen?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": [
+                                                              "RHEUMATOID ARTHRITIS"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Does a warm bath or shower relieve the pain somewhat?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have OSTEOARTHRITIS or RHEUMATOID ARTHRITIS.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["OSTEOARTHRITIS", "RHEUMATOID ARTHRITIS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Are the joints near your knuckles swollen?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["RHEUMATOID ARTHRITIS"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have numbness or tingling in your hands and fingers only?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have CARPAL TUNNEL SYNDROME. Or you may have a nerve disorder related to DIABETES.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["CARPAL TUNNEL SYNDROME", "DIABETES"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have numbness or tingling in your arm or hand?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have a disorder that affects the joints in the neck, especially if you have a stiff neck.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                          "SYMPTOMS Of CERVICAL OSTEOARTHRITIS"
+                                        ]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Is the pain in the elbow, wrist, or finger joints?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Is the pain accompanied by redness and swelling?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Is only one joint affected?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See a doctor immediately. You may have a joint infection.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["SEPTIC ARTHRITIS"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                          "BURSITIS",
+                                                          "GOUT OR PSEUDOGOUT"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "Are the joints near your knuckles swollen?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "RHEUMATOID ARTHRITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                                "Yes": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": [
+                                                                      "TENDINITIS"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "No": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": []
+                                                                  }
+                                                                },
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "Are the joints near your knuckles swollen?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": [
+                                                              "RHEUMATOID ARTHRITIS"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have numbness or tingling in your hands and fingers only?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have CARPAL TUNNEL SYNDROME. Or you may have a nerve disorder related to DIABETES.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CARPAL TUNNEL SYNDROME", "DIABETES"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have numbness or tingling in your arm or hand?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have a disorder that affects the joints in the neck, especially if you have a stiff neck.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["SYMPTOMS Of CERVICAL OSTEOARTHRITIS"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Is the pain in the elbow, wrist, or finger joints?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Is the pain accompanied by redness and swelling?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Is only one joint affected?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See a doctor immediately. You may have a joint infection.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["SEPTIC ARTHRITIS"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": [
+                                                      "BURSITIS",
+                                                      "GOUT OR PSEUDOGOUT"
+                                                    ]
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "Are the joints near your knuckles swollen?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": [
+                                                              "RHEUMATOID ARTHRITIS"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["RAYNAUD'S DISEASE"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "Are the joints near your knuckles swollen?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                          "RHEUMATOID ARTHRITIS"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["TENDINITIS"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Does the pain get worse with use and better with rest?",
+            "Yes": {
+              "question": {
+                "Q": "Do the joints nearest your fingernails look swollen?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have OSTEOARTHRITIS.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["OSTEOARTHRITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Does a warm bath or shower relieve the pain somewhat?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have OSTEOARTHRITIS or RHEUMATOID ARTHRITIS.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["OSTEOARTHRITIS", "RHEUMATOID ARTHRITIS"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Are the joints near your knuckles swollen?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["RHEUMATOID ARTHRITIS"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have numbness or tingling in your hands and fingers only?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have CARPAL TUNNEL SYNDROME. Or you may have a nerve disorder related to DIABETES.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["CARPAL TUNNEL SYNDROME", "DIABETES"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Do you have numbness or tingling in your arm or hand?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "See your doctor. You may have a disorder that affects the joints in the neck, especially if you have a stiff neck.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": [
+                                          "SYMPTOMS Of CERVICAL OSTEOARTHRITIS"
+                                        ]
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Is the pain in the elbow, wrist, or finger joints?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Is the pain accompanied by redness and swelling?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Is only one joint affected?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See a doctor immediately. You may have a joint infection.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["SEPTIC ARTHRITIS"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                          "BURSITIS",
+                                                          "GOUT OR PSEUDOGOUT"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "Are the joints near your knuckles swollen?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "RHEUMATOID ARTHRITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                                "Yes": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": [
+                                                                      "TENDINITIS"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "No": {
+                                                                  "question": {
+                                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                    "Yes": {},
+                                                                    "No": {},
+                                                                    "diagnosis": []
+                                                                  }
+                                                                },
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "Are the joints near your knuckles swollen?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": [
+                                                              "RHEUMATOID ARTHRITIS"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have numbness or tingling in your hands and fingers only?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have CARPAL TUNNEL SYNDROME. Or you may have a nerve disorder related to DIABETES.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CARPAL TUNNEL SYNDROME", "DIABETES"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have numbness or tingling in your arm or hand?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have a disorder that affects the joints in the neck, especially if you have a stiff neck.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["SYMPTOMS Of CERVICAL OSTEOARTHRITIS"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Is the pain in the elbow, wrist, or finger joints?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Is the pain accompanied by redness and swelling?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Is only one joint affected?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See a doctor immediately. You may have a joint infection.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["SEPTIC ARTHRITIS"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": [
+                                                      "BURSITIS",
+                                                      "GOUT OR PSEUDOGOUT"
+                                                    ]
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "Are the joints near your knuckles swollen?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": [
+                                                              "RHEUMATOID ARTHRITIS"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["RAYNAUD'S DISEASE"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "Are the joints near your knuckles swollen?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                          "RHEUMATOID ARTHRITIS"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["TENDINITIS"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Does a warm bath or shower relieve the pain somewhat?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. You may have OSTEOARTHRITIS or RHEUMATOID ARTHRITIS.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["OSTEOARTHRITIS", "RHEUMATOID ARTHRITIS"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                    "Yes": {
+                      "question": {
+                        "Q": "Are the joints near your knuckles swollen?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["RHEUMATOID ARTHRITIS"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have numbness or tingling in your hands and fingers only?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have CARPAL TUNNEL SYNDROME. Or you may have a nerve disorder related to DIABETES.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["CARPAL TUNNEL SYNDROME", "DIABETES"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Do you have numbness or tingling in your arm or hand?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "See your doctor. You may have a disorder that affects the joints in the neck, especially if you have a stiff neck.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": ["SYMPTOMS Of CERVICAL OSTEOARTHRITIS"]
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "Is the pain in the elbow, wrist, or finger joints?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Is the pain accompanied by redness and swelling?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Is only one joint affected?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See a doctor immediately. You may have a joint infection.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["SEPTIC ARTHRITIS"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": [
+                                                      "BURSITIS",
+                                                      "GOUT OR PSEUDOGOUT"
+                                                    ]
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["RAYNAUD'S DISEASE"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "Are the joints near your knuckles swollen?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": [
+                                                              "RHEUMATOID ARTHRITIS"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                            "Yes": {
+                                                              "question": {
+                                                                "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": [
+                                                                  "TENDINITIS"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "No": {
+                                                              "question": {
+                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                              }
+                                                            },
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["RAYNAUD'S DISEASE"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "Are the joints near your knuckles swollen?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                          "RHEUMATOID ARTHRITIS"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["TENDINITIS"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you have numbness or tingling in your hands and fingers only?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have CARPAL TUNNEL SYNDROME. Or you may have a nerve disorder related to DIABETES.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["CARPAL TUNNEL SYNDROME", "DIABETES"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Do you have numbness or tingling in your arm or hand?",
+                            "Yes": {
+                              "question": {
+                                "Q": "See your doctor. You may have a disorder that affects the joints in the neck, especially if you have a stiff neck.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": ["SYMPTOMS Of CERVICAL OSTEOARTHRITIS"]
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "Is the pain in the elbow, wrist, or finger joints?",
+                                "Yes": {
+                                  "question": {
+                                    "Q": "Is the pain accompanied by redness and swelling?",
+                                    "Yes": {
+                                      "question": {
+                                        "Q": "Is only one joint affected?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher, or have you recently begun to feel ill?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See a doctor immediately. You may have a joint infection.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["SEPTIC ARTHRITIS"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have BURSITIS or GOUT OR PSEUDOGOUT.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": [
+                                                  "BURSITIS",
+                                                  "GOUT OR PSEUDOGOUT"
+                                                ]
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": ["RAYNAUD'S DISEASE"]
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "Are the joints near your knuckles swollen?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": [
+                                                          "RHEUMATOID ARTHRITIS"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                        "Yes": {
+                                                          "question": {
+                                                            "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": ["TENDINITIS"]
+                                                          }
+                                                        },
+                                                        "No": {
+                                                          "question": {
+                                                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                            "Yes": {},
+                                                            "No": {},
+                                                            "diagnosis": []
+                                                          }
+                                                        },
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["TENDINITIS"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "No": {
+                                      "question": {
+                                        "Q": "Do your hands or fingers turn white, then blue, then red, especially in the cold?",
+                                        "Yes": {
+                                          "question": {
+                                            "Q": "See your doctor. You may have RAYNAUD'S DISEASE.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": ["RAYNAUD'S DISEASE"]
+                                          }
+                                        },
+                                        "No": {
+                                          "question": {
+                                            "Q": "Do you have stiffness in the morning that lasts longer than an hour?",
+                                            "Yes": {
+                                              "question": {
+                                                "Q": "Are the joints near your knuckles swollen?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have RHEUMATOID ARTHRITIS.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["RHEUMATOID ARTHRITIS"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                    "Yes": {
+                                                      "question": {
+                                                        "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": ["TENDINITIS"]
+                                                      }
+                                                    },
+                                                    "No": {
+                                                      "question": {
+                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                      }
+                                                    },
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "No": {
+                                              "question": {
+                                                "Q": "Does the pain occur only when you bend your arm or hand or use it in a certain way, or only during certain activities such as using a computer?",
+                                                "Yes": {
+                                                  "question": {
+                                                    "Q": "See your doctor. You may have inflammation of the tendons.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": ["TENDINITIS"]
+                                                  }
+                                                },
+                                                "No": {
+                                                  "question": {
+                                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                                    "Yes": {},
+                                                    "No": {},
+                                                    "diagnosis": []
+                                                  }
+                                                },
+                                                "diagnosis": []
+                                              }
+                                            },
+                                            "diagnosis": []
+                                          }
+                                        },
+                                        "diagnosis": []
+                                      }
+                                    },
+                                    "diagnosis": []
+                                  }
+                                },
+                                "No": {
+                                  "question": {
+                                    "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
+                                "diagnosis": []
+                              }
+                            },
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

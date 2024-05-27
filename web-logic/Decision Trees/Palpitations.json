@@ -1,0 +1,82 @@
+{
+  "question": {
+    "Q": "Have you been drinking caffeine-containing beverages such as coffee or cola, or have you been smoking more than usual?",
+    "Yes": {
+      "question": {
+        "Q": "Caffeine and nicotine are stimulants and can increase your heart rate. Cut down on your caffeine and nicotine intake, and the palpitations should subside in a few hours.",
+        "Yes": {},
+        "No": {},
+        "diagnosis": ["HOW TO QUIT SMOKING", "ECTOPIC HEARTBEATS"]
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Are you under stress?",
+        "Yes": {
+          "question": {
+            "Q": "Palpitations are a common symptom of ANXIETY.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["ANXIETY", "REDUCING STRESS"]
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Have you recently lost weight even though you are eating no less than usual?",
+            "Yes": {
+              "question": {
+                "Q": "See your doctor. You may have an overactive thyroid gland.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["HYPERTHYROIDISM"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Is your temperature 100F or higher?",
+                "Yes": {
+                  "question": {
+                    "Q": "A fever can cause palpitations. Do you want to continue with the symptom check?",
+                    "Yes": {
+                      "tree": {
+                        "symptom": "FEVER"
+                      }
+                    },
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you feel ill, do you have any chest discomfort, or have you had irregular heartbeats or other heart problems?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See a doctor immediately. You may have a disorder of heart rate or rhythm.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["ATRIAL FIBRILLATION AND FLUTTER"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

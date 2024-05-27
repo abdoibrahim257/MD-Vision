@@ -1,0 +1,134 @@
+{
+  "question": {
+    "Q": "Is your temperature 102F or higher?",
+    "Yes": {
+      "question": {
+        "Q": "See a doctor immediately. You may have PNEUMONIA or ACUTE BRONCHITIS especially if you are coughing up mucus that is rusty brown or streaked with red.",
+        "Yes": {},
+        "No": {},
+        "diagnosis": ["PNEUMONIA", "ACUTE BRONCHITIS"]
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Are you short of breath and unable to lie flat on your back, even though you have not been exercising?",
+        "Yes": {
+          "question": {
+            "Q": "Are you coughing up mucus that is pink and frothy?",
+            "Yes": {
+              "question": {
+                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have CONGESTIVE HEART.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["CONGESTIVE HEART"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Have you recently had surgery, been confined to bed, or sat for prolonged periods during a trip?",
+                "Yes": {
+                  "question": {
+                    "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a blood clot in your lung. Would you like to continue diagnosis?",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": ["PULMONARY EMBOLISM"]
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Have you had a cold or the flu within the past month that has left you with a persistent cough?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. Coughing may have ruptured a small blood vessel in your airway.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Have you had a cough for many weeks or months?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See a doctor immediately. You could have LUNG CANCER or TUBERCULOSIS.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["TUBERCULOSIS", "LUNG CANCER"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "See a doctor immediately if you are unable to make a diagnosis from this chat.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Have you recently had surgery, been confined to bed, or sat for prolonged periods during a trip?",
+            "Yes": {
+              "question": {
+                "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have a blood clot in your lung. Would you like to continue diagnosis?",
+                "Yes": {},
+                "No": {},
+                "diagnosis": ["PULMONARY EMBOLISM"]
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Have you had a cold or the flu within the past month that has left you with a persistent cough?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. Coughing may have ruptured a small blood vessel in your airway.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Have you had a cough for many weeks or months?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See a doctor immediately. You could have LUNG CANCER or TUBERCULOSIS.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["TUBERCULOSIS", "LUNG CANCER"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See a doctor immediately if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "diagnosis": []
+  }
+}

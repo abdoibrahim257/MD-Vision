@@ -51,6 +51,7 @@ def improve_punctuation(text, nlp):
     punctuated_text = ' '.join(sentences)
     return punctuated_text
 
+
 def predict (image) :
     """
     Function to predict the caption for the image provided.
@@ -67,6 +68,7 @@ def predict (image) :
         transforms.Resize(256),  # Resize the image to the specified size
         transforms.CenterCrop(224),  # Perform a center crop of the specified size
         transforms.ToTensor(), #Convert the image to a PyTorch tensor
+        transforms.Lambda(lambda x: x[:3, :, :]),
         transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))]) # Normalize the image
     
     # Define the maximum number of sentences and words

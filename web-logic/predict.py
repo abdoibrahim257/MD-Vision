@@ -35,7 +35,7 @@ def initialize_models () :
     word_lstm.eval()
     
     # Load the vocab
-    vocab = joblib.load('./Data/vocab.pkl')
+    vocab = joblib.load('./Data/vocab1.pkl')
     
     return mlc, visual_extractor, sentence_lstm, word_lstm , vocab
 
@@ -125,9 +125,10 @@ def predict (image) :
     return pred_caption
 
 
+# image = 'Data/Images/CXR2_IM-0652-1001.png'
+# image = Image.open(image)
+# captions = predict(image)
+# print(captions)
 
-if __name__ == '__main__' :
-    image = 'Data/Images/CXR2_IM-0652-1001.png'
-    image = Image.open(image)
-    captions = predict(image)
-    print(captions)
+# if __name__ == '__main__' :
+#     print(captions)

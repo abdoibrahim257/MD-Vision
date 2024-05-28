@@ -66,10 +66,12 @@ def main(caption_path, vocab_path, threshold):
     print("Total vocabulary size: {}".format(len(vocab)))
     print("Saved the vocabulary wrapper to '{}'".format(vocab_path))
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--caption_path', type=str, default='Data/captions.json', help='path for train annotation file')
-    parser.add_argument('--vocab_path', type=str, default='./Data/vocab.pkl', help='path for saving vocabulary wrapper')
-    parser.add_argument('--threshold', type=int, default= 1, help='minimum word count threshold')
-    args = parser.parse_args()
-    main(args.caption_path, args.vocab_path, args.threshold)      
+# if __name__ == '__main__':
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument('--caption_path', type=str, default='Data/captions.json', help='path for train annotation file')
+#     parser.add_argument('--vocab_path', type=str, default='./Data/vocab.pkl', help='path for saving vocabulary wrapper')
+#     parser.add_argument('--threshold', type=int, default= 1, help='minimum word count threshold')
+#     args = parser.parse_args()
+#     main(args.caption_path, args.vocab_path, args.threshold)  
+
+# main('Data/captions.json', 'Data/vocab1.pkl', 1)

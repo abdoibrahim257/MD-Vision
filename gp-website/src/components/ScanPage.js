@@ -18,7 +18,7 @@ const ScanPage = () => {
         var f = e.target.files[0]
         // console.log(f.type)
         
-        if (!f || f.type !== 'image/png'){
+        if (!f ){
             setIsUploaded(false)
             return
         }
@@ -33,8 +33,7 @@ const ScanPage = () => {
             method: 'POST',
             body: formData
         }
-
-        fetch('http://localhost:5000/upload', requestOptions)
+        fetch('http://localhost:8000/upload', requestOptions)
             .then(response => {
                 if (response.ok) {
                     setIsUploaded(true)
@@ -54,11 +53,22 @@ const ScanPage = () => {
         //call the back and get predictions but for now
         setPredicting(true)
         
-        //play loading screen
-        //send get request to backend to
-
-        setPredictions(["No acute cardiopulmonary abnormality. The heart is normal in size. The mediasti is unremarkable. The lungs are clear."] )
-        
+        //send get request to backend to get predictions
+        fetch('http://localhost:8000/upload').then(response => {
+            if (response.ok) {
+                //convert response to json and set predictions
+                response.json().then(data => {
+                    console.log(data.message)
+                    //add data to list of predictions
+                    setPredictions([data.message])
+                    // setPredictions(...predictions, data.message)
+                    setPredicting(false)
+                })
+            } else {
+                setPredicting(false)
+            }}).catch(error => {
+                console.error('There was an error!', error);
+            });
     }
 
     return (

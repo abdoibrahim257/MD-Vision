@@ -75,4 +75,3 @@ def startPrediction():
     captions = predict(image)
     
     return JSONResponse(status_code=200, content={"message": captions})
-        

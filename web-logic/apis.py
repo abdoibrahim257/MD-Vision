@@ -70,7 +70,7 @@ async def upload_file(file: UploadFile = File(...)):
 
 @app.get("/upload")
 def startPrediction():
-    image_path = "Data\Images\CXR2_IM-0652-1001.png"
+    image_path = "upload/user_image.png"
     image = Image.open(image_path)
     captions = predict(image)
     

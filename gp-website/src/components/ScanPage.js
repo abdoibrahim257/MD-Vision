@@ -7,18 +7,20 @@ import '../styles/ScanPage.css'
 
 import uploadIcon from "../assets/upload.svg"
 import bono from "../assets/bono.svg"
+import reload from "../assets/reload.svg"
 
 
 const ScanPage = () => {
     const [predictions, setPredictions] = useState([])
     const [predicting, setPredicting] = useState(false)
     const [uploaded, setIsUploaded] = useState(false)
+    const [uploadedImage, setUploadedImage] = useState('')
 
     const handleFileChange = (e) => {
         var f = e.target.files[0]
         // console.log(f.type)
-        
-        if (!f ){
+
+        if (!f || f.type !== 'image/png') {
             setIsUploaded(false)
             return
         }
@@ -37,6 +39,9 @@ const ScanPage = () => {
             .then(response => {
                 if (response.ok) {
                     setIsUploaded(true)
+                    // show the image we uploaded here
+                    setUploadedImage(URL.createObjectURL(formData.get('file')))
+
                 } else {
                     setIsUploaded(false)
                 }
@@ -52,7 +57,7 @@ const ScanPage = () => {
 
         //call the back and get predictions but for now
         setPredicting(true)
-        
+
         //send get request to backend to get predictions
         fetch('http://localhost:8000/upload').then(response => {
             if (response.ok) {
@@ -66,17 +71,18 @@ const ScanPage = () => {
                 })
             } else {
                 setPredicting(false)
-            }}).catch(error => {
-                console.error('There was an error!', error);
-            });
+            }
+        }).catch(error => {
+            console.error('There was an error!', error);
+        });
     }
 
     return (
         <div>
-            { predicting ? <LoadingComponent/> : null}
+            {predicting ? <LoadingComponent /> : null}
             <div className='test'>
                 <div class="scan-background">
-                    <NavBar/>
+                    <NavBar />
                     <div class="content">
                         <div className='hero-wrapper'>
                             <div className='page-quote'>
@@ -88,7 +94,7 @@ const ScanPage = () => {
                                 <lottie-player
                                     autoplay
                                     mode="normal"
-                                    speed = "1.8"
+                                    speed="1.8"
                                     src="https://lottie.host/b911b2fd-06fd-4d06-86f7-beb19feb7a6b/oLUWaaFmk1.json"
                                 ></lottie-player>
                             </div>
@@ -99,25 +105,40 @@ const ScanPage = () => {
                     <div class="scan-wrapper">
                         <p className='objective'>Use AI to Diagnose for your scan.</p>
                         <div class="scan">
-                            <p className='instructions'>1. Upload .png file of your scan</p>
-                            <input type="file" id="fileInput" onChange={handleFileChange} accept="image/*" style={{ display: 'none' }} />
-                            <button className='upload' onClick={() => document.getElementById('fileInput').click()}>
-                                <img className='upIcon' src = {uploadIcon} alt='upload button'/>
-                                Click to upload
-                            </button>
-                            <span className={uploaded ? "success" : "successHidden"}><img src={bono}/>Uploaded Successfully</span>
+                            <div className='nashat'>
+                                <p className='instructions'>1. Upload .png file of your scan</p>
+                                {uploaded && 
+                                    <img className='reupload' onClick={() => document.getElementById('fileInput').click()} src={reload} alt='reupload' />
+                                }
+                            </div>
+                            <input type="file" id="fileInput" onChange={handleFileChange} accept="image/png" style={{ display: 'none' }} />
+                            {
+                                uploaded ?
+                                    <div className='divUploaded'>
+                                        <img className='uploaded-image' src={uploadedImage} alt='uploaded' />
+                                    </div>
+                                    :
+                                    <button className='upload' onClick={() => document.getElementById('fileInput').click()} disabled={uploaded}>
+                                        <div>
+                                            <img className='upIcon' src={uploadIcon} alt='upload button' />
+                                            Click to upload
+                                        </div>
+                                    </button>
+
+                            }
+                            <span className={uploaded ? "success" : "successHidden"}><img src={bono} />Uploaded Successfully</span>
                         </div>
-                        <div className='start-scan'>
+                        <div className={uploaded? 'start-uploaded' : 'start-scan'}>
                             <p className='instructions'>2. Know your diagnosis</p>
-                            <button onClick={handlePredict} className='start'>Start Diagnosing</button>
+                            <button onClick={handlePredict} className='start' disabled={!uploaded}>Start Diagnosing</button>
                         </div>
-                        { predictions.length > 0 ? <CaptionGen preds = {predictions}/> : null}
+                        {predictions.length > 0 ? <CaptionGen preds={predictions} /> : null}
                     </div>
                 </div>
             </div>
-             
+
         </div>
-  )
+    )
 }
 
 export default ScanPage

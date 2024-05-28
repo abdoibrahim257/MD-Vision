@@ -3,7 +3,7 @@
     "Q": "Did the pain start within the past 24 hours?",
     "Yes": {
       "question": {
-        "Q": "Do you have one or more of the following symptoms? \n\u2022 Severe headache \n\u2022 Nausea or vomiting \n\u2022 Sensitivity of the eyes to bright light \n\u2022 Drowsiness or confusion \n\u2022 Fever ",
+        "Q": "Do you have one or more of the following symptoms? <br/>\u2022 Severe headache <br/>\u2022 Nausea or vomiting <br/>\u2022 Sensitivity of the eyes to bright light <br/>\u2022 Drowsiness or confusion <br/>\u2022 Fever ",
         "Yes": {
           "question": {
             "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS (p. 692). Or you may have bleeding in the brain.",

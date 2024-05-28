@@ -6,7 +6,7 @@
         "Q": "Do you have severe abdominal pain?",
         "Yes": {
           "question": {
-            "Q": "Do you have one or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Diarrhea \n\u2022 Temperature over 1OO\u2109(37.8 \u2103 ) \n\u2022 NO bowel movements for the past few days",
+            "Q": "Do you have one or more of the following symptoms? <br/>\u2022 Vomiting <br/>\u2022 Diarrhea <br/>\u2022 Temperature over 1OO\u2109(37.8 \u2103 ) <br/>\u2022 NO bowel movements for the past few days",
             "Yes": {
               "question": {
                 "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have a dangerous abdominal condition such as an INTESTINAL OBSTRUCTION",

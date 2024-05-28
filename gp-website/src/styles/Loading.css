@@ -1,8 +1,5 @@
-/* body {
-    background: #27272B;
-} */
-  
-  .loading {
+ 
+.loading {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -14,31 +11,31 @@
     align-items: center;
     z-index: 9999;
     transform: translate(-50%,-50%) scale(3.5);
-  }
+}
   
-  .loading svg polyline {
+.loading svg polyline {
     fill: none;
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
-  }
-  
-  .loading svg polyline#back {
+}
+
+.loading svg polyline#back {
     stroke: rgba(209, 63, 78,0.3);
-  }
-  
-  .loading svg polyline#front {
+}
+
+.loading svg polyline#front {
     stroke: rgb(209, 63, 78);
     stroke-dasharray: 12, 36; /* Dash 12 & Gap 36 */
     stroke-dashoffset: 48;
     animation: dash 1s linear infinite;
-  }
-  
-  @keyframes dash {
+}
+
+@keyframes dash {
     62.5% {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
     }
-  }
+}

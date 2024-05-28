@@ -58,7 +58,7 @@
                         },
                         "No": {
                           "question": {
-                            "Q": "Do you have two or more of the following symptoms? \n\u2022 Sensitivity to cold weather \n\u2022 Dry skin or dry hair \n\u2022 Unexplained weight gain \n\u2022 Unexplained fatigue",
+                            "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Sensitivity to cold weather <br/>\u2022 Dry skin or dry hair <br/>\u2022 Unexplained weight gain <br/>\u2022 Unexplained fatigue",
                             "Yes": {
                               "question": {
                                 "Q": "See your doctor. You may have an underactive thyroid gland.",
@@ -156,7 +156,7 @@
                 },
                 "No": {
                   "question": {
-                    "Q": "Do you have two or more of the following symptoms? \n\u2022 Sensitivity to cold weather \n\u2022 Dry skin or dry hair \n\u2022 Unexplained weight gain \n\u2022 Unexplained fatigue",
+                    "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Sensitivity to cold weather <br/>\u2022 Dry skin or dry hair <br/>\u2022 Unexplained weight gain <br/>\u2022 Unexplained fatigue",
                     "Yes": {
                       "question": {
                         "Q": "See your doctor. You may have an underactive thyroid gland.",

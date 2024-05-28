@@ -3,7 +3,7 @@
         "Q": "Do you have red spots or blotches on your skin?",
         "Yes": {
             "question": {
-                "Q": "Do you have two or more of the following symptoms? \n\u2022 Runny nose \n\u2022 Sore, red eyes \n\u2022 Dry cough",
+                "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Runny nose <br/>\u2022 Sore, red eyes <br/>\u2022 Dry cough",
                 "Yes": {
                     "question": {
                         "Q": "See your doctor. You may have MEASLES or a similar viral infection, especially if the rash is mainly on your face or trunk.",
@@ -58,7 +58,7 @@
                                                 "Q": "Do you have a rash of purple spots?",
                                                 "Yes": {
                                                     "question": {
-                                                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Headache \n\u2022 Sensitivity of eyes to bright light \n\u2022 Pain when you bend your head forward",
+                                                        "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Vomiting <br/>\u2022 Headache <br/>\u2022 Sensitivity of eyes to bright light <br/>\u2022 Pain when you bend your head forward",
                                                         "Yes": {
                                                             "question": {
                                                                 "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS.",
@@ -136,7 +136,7 @@
                                 "Q": "Do you have a rash of purple spots?",
                                 "Yes": {
                                     "question": {
-                                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Headache \n\u2022 Sensitivity of eyes to bright light \n\u2022 Pain when you bend your head forward",
+                                        "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Vomiting <br/>\u2022 Headache <br/>\u2022 Sensitivity of eyes to bright light <br/>\u2022 Pain when you bend your head forward",
                                         "Yes": {
                                             "question": {
                                                 "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have MENINGITIS.",

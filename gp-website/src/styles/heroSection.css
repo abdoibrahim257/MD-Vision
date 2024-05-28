@@ -15,7 +15,7 @@
     justify-content:space-between;
     align-items: center;
     transition: all 0.5s ease-out;
-    font-weight: 450;
+    font-weight: 500;
 }
 
 .btnContainer{
@@ -128,7 +128,7 @@ div.btnContainer > div{
 
 
 .background {
-    height: auto;
+    height: 100vh;
     width: 100vw;
     background-image: radial-gradient(farthest-corner at -90% -10%,white,white,white,#267FD9);
 }
@@ -141,12 +141,12 @@ div.btnContainer > div{
 .catchphrase p{
     margin: 0;
     padding: 0;
-    text-align: left;
+    text-align: justify;
 }
 
 
 p.slogan{
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 24px;
     text-align: left;
@@ -226,6 +226,7 @@ p.slogan{
 
     .catchphrase p.goal{
         font-size: 0.6rem;
+        
     }
 
     .navBtns{

@@ -1,6 +1,6 @@
 {
     "question": {
-        "Q": "Have you had one or more of the following symptoms? \n\u2022 Dizziness \n\u2022 Headache \n\u2022 Weakness in your arms or legs \n\u2022 Numbness or tingling in any part of your body \n\u2022 Blurred vision \n\u2022 Difficulty swallowing",
+        "Q": "Have you had one or more of the following symptoms? <br/>\u2022 Dizziness <br/>\u2022 Headache <br/>\u2022 Weakness in your arms or legs <br/>\u2022 Numbness or tingling in any part of your body <br/>\u2022 Blurred vision <br/>\u2022 Difficulty swallowing",
         "Yes": {
             "question": {
                 "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE or a TRANSIENT ISCHEMIC ATTACK.",
@@ -14,7 +14,7 @@
                 "Q": "Do you think that you are pronouncing words correctly but what you say does not seem to make sense to others?",
                 "Yes": {
                     "question": {
-                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Decreased ability to deal with everyday activities such as cooking, driving, paying bills, and balancing a checkbook \n\u2022 Decline in personal appearance or cleanliness \n\u2022 Difficulty following complex conversations and instructions",
+                        "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Decreased ability to deal with everyday activities such as cooking, driving, paying bills, and balancing a checkbook <br/>\u2022 Decline in personal appearance or cleanliness <br/>\u2022 Difficulty following complex conversations and instructions",
                         "Yes": {
                             "question": {
                                 "Q": "See your doctor. This combination of symptoms may indicate the onset of ALZHEIMER'S DISEASE. In rare cases, these symptoms can result from a BRAIN TUMOR or STROKE.",

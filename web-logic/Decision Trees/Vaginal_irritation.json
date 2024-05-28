@@ -41,7 +41,7 @@
                                         "Q": "Do you seem to be producing more urine than usual, or do you get up at night to urinate?",
                                         "Yes": {
                                             "question": {
-                                                "Q": "Have you noticed one or more of the following symptoms? \n\u2022 Increased thirst \n\u2022 Loss of weight \n\u2022 Unexplained fatigue",
+                                                "Q": "Have you noticed one or more of the following symptoms? <br/>\u2022 Increased thirst <br/>\u2022 Loss of weight <br/>\u2022 Unexplained fatigue",
                                                 "Yes": {
                                                     "question": {
                                                         "Q": "See your doctor. You may have DIABETES.",

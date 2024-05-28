@@ -1,6 +1,6 @@
 {
     "question": {
-        "Q": "Do you have one or more of the following symptoms? \n\u2022 General confusion about time, places, or events \n\u2022 Agitated behavior \n\u2022 Signs of physical illness",
+        "Q": "Do you have one or more of the following symptoms? <br/>\u2022 General confusion about time, places, or events <br/>\u2022 Agitated behavior <br/>\u2022 Signs of physical illness",
         "Yes": {
             "question": {
                 "Q": "See a doctor immediately. You could be experiencing delirium. Would you like to review symptoms commonly associated with confusion?.",

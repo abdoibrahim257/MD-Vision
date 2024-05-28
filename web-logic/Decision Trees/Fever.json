@@ -28,7 +28,7 @@
                                 "Q": "Do you have a headache?",
                                 "Yes": {
                                     "question": {
-                                        "Q": "Do you have one or more of the following symptoms? \n\u2022 pain when bending your head forward \n\u2022 Nausea or vomiting \n\u2022 Sensitivity of eyes to bright light \n\u2022 Drowsiness or confusion",
+                                        "Q": "Do you have one or more of the following symptoms? <br/>\u2022 pain when bending your head forward <br/>\u2022 Nausea or vomiting <br/>\u2022 Sensitivity of eyes to bright light <br/>\u2022 Drowsiness or confusion",
                                         "Yes": {
                                             "question": {
                                                 "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a potentially life-threatening infection of the brain.",
@@ -117,7 +117,7 @@
                                                                                         },
                                                                                         "No": {
                                                                                             "question": {
-                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat, if your temperature has not returned to normal within 24 hours, or if it is very high or rises again. \n If you have a very high fever\n call your doctor immediately. A temperature of 104\u2109(40\u2103) or higher is potentially dangerous. Wiping your head and body with lukewarm (not cold) water may give you some relief. Replace lost fluids by drinking lots of fluids, particularly water and a rehydration solution or sports drink. Talk to your doctor before taking aspirin or an aspirin substitute to help bring down a fever.",
+                                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat, if your temperature has not returned to normal within 24 hours, or if it is very high or rises again. <br/> If you have a very high fever<br/> call your doctor immediately. A temperature of 104\u2109(40\u2103) or higher is potentially dangerous. Wiping your head and body with lukewarm (not cold) water may give you some relief. Replace lost fluids by drinking lots of fluids, particularly water and a rehydration solution or sports drink. Talk to your doctor before taking aspirin or an aspirin substitute to help bring down a fever.",
                                                                                                 "Yes": {},
                                                                                                 "No": {},
                                                                                                 "diagnosis": []
@@ -158,7 +158,7 @@
                 "Q": "Do you have a headache?",
                 "Yes": {
                     "question": {
-                        "Q": "Do you have one or more of the following symptoms? \n\u2022 pain when bending your head forward \n\u2022 Nausea or vomiting \n\u2022 Sensitivity of eyes to bright light \n\u2022 Drowsiness or confusion",
+                        "Q": "Do you have one or more of the following symptoms? <br/>\u2022 pain when bending your head forward <br/>\u2022 Nausea or vomiting <br/>\u2022 Sensitivity of eyes to bright light <br/>\u2022 Drowsiness or confusion",
                         "Yes": {
                             "question": {
                                 "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a potentially life-threatening infection of the brain.",
@@ -247,7 +247,7 @@
                                                                         },
                                                                         "No": {
                                                                             "question": {
-                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat, if your temperature has not returned to normal within 24 hours, or if it is very high or rises again. \n If you have a very high fever\n call your doctor immediately. A temperature of 104\u2109(40\u2103) or higher is potentially dangerous. Wiping your head and body with lukewarm (not cold) water may give you some relief. Replace lost fluids by drinking lots of fluids, particularly water and a rehydration solution or sports drink. Talk to your doctor before taking aspirin or an aspirin substitute to help bring down a fever.",
+                                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat, if your temperature has not returned to normal within 24 hours, or if it is very high or rises again. <br/> If you have a very high fever<br/> call your doctor immediately. A temperature of 104\u2109(40\u2103) or higher is potentially dangerous. Wiping your head and body with lukewarm (not cold) water may give you some relief. Replace lost fluids by drinking lots of fluids, particularly water and a rehydration solution or sports drink. Talk to your doctor before taking aspirin or an aspirin substitute to help bring down a fever.",
                                                                                 "Yes": {},
                                                                                 "No": {},
                                                                                 "diagnosis": []

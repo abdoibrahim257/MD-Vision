@@ -11,7 +11,7 @@
                 "Q": "Is the pain severe?",
                 "Yes": {
                     "question": {
-                        "Q": "Do you have one or more of the following symptoms? \n\u2022 Vomiting \n\u2022 Swollen or tender abdomen \n\u2022 Temperature over 100 \u2109 (37.8 \u2103 ) ",
+                        "Q": "Do you have one or more of the following symptoms? <br/>\u2022 Vomiting <br/>\u2022 Swollen or tender abdomen <br/>\u2022 Temperature over 100 \u2109 (37.8 \u2103 ) ",
                         "Yes": {
                             "question": {
                                 "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You could have a life-threatening condition such as an INTESTINAL OBSTRUCTION or APPENDICITIS",

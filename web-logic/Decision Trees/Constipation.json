@@ -83,7 +83,7 @@
                     },
                     "No": {
                       "question": {
-                        "Q": "Do you have two or more Of the following symptoms? \n\u2022 Frequently feeling cold \n\u2022 Dry skin or hair \u2022 Unexplained weight gain \n\u2022 unexplained fatigue",
+                        "Q": "Do you have two or more Of the following symptoms? <br/>\u2022 Frequently feeling cold <br/>\u2022 Dry skin or hair \u2022 Unexplained weight gain <br/>\u2022 unexplained fatigue",
                         "Yes": {
                           "question": {
                             "Q": "See your doctor. You may have an underactive thyroid gland.",

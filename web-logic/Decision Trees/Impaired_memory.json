@@ -25,7 +25,7 @@
                         },
                         "No": {
                             "question": {
-                                "Q": "Have you forgotten events surrounding any of the following? \n\u2022 A severe illness with a fever, such as pneumonia \n\u2022 Surgery \n\u2022 An epileptic seizure or diabetic coma",
+                                "Q": "Have you forgotten events surrounding any of the following? <br/>\u2022 A severe illness with a fever, such as pneumonia <br/>\u2022 Surgery <br/>\u2022 An epileptic seizure or diabetic coma",
                                 "Yes": {
                                     "question": {
                                         "Q": "See your doctor to find out if you are recovering normally. Memory loss frequently occurs in such situations and is usually not a cause for concern.",
@@ -65,7 +65,7 @@
                                                                 "Q": "Do you recall things that happened long ago more easily than recent events?",
                                                                 "Yes": {
                                                                     "question": {
-                                                                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Decreased ability to deal with everyday activities such as cooking, driving, paying bills, and balancing a checkbook \n\u2022 Personality changes \n\u2022 Decline in personal appearance and cleanliness \n\u2022 Difficulty following conversations or instructions",
+                                                                        "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Decreased ability to deal with everyday activities such as cooking, driving, paying bills, and balancing a checkbook <br/>\u2022 Personality changes <br/>\u2022 Decline in personal appearance and cleanliness <br/>\u2022 Difficulty following conversations or instructions",
                                                                         "Yes": {
                                                                             "question": {
                                                                                 "Q": "See your doctor. This combination of symptoms may indicate the onset of ALZHEIMER'S DISEASE.",
@@ -271,7 +271,7 @@
                                         "Q": "Do you recall things that happened long ago more easily than recent events?",
                                         "Yes": {
                                             "question": {
-                                                "Q": "Do you have two or more of the following symptoms? \n\u2022 Decreased ability to deal with everyday activities such as cooking, driving, paying bills, and balancing a checkbook \n\u2022 Personality changes \n\u2022 Decline in personal appearance and cleanliness \n\u2022 Difficulty following conversations or instructions",
+                                                "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Decreased ability to deal with everyday activities such as cooking, driving, paying bills, and balancing a checkbook <br/>\u2022 Personality changes <br/>\u2022 Decline in personal appearance and cleanliness <br/>\u2022 Difficulty following conversations or instructions",
                                                 "Yes": {
                                                     "question": {
                                                         "Q": "See your doctor. This combination of symptoms may indicate the onset of ALZHEIMER'S DISEASE.",

@@ -11,7 +11,7 @@
         },
         "No": {
             "question": {
-                "Q": "Do you have one or more of the following symptoms? \n\u2022 Blackheads \n\u2022 Raised spots on the skin with white or yellow centers \n\u2022 Painful red lumps under the skin",
+                "Q": "Do you have one or more of the following symptoms? <br/>\u2022 Blackheads <br/>\u2022 Raised spots on the skin with white or yellow centers <br/>\u2022 Painful red lumps under the skin",
                 "Yes": {
                     "question": {
                         "Q": "See your doctor. You probably have ACNE.",
@@ -104,7 +104,7 @@
                                                                                 "Q": "Have you had an open sore on your face or lip for more than 3 weeks?",
                                                                                 "Yes": {
                                                                                     "question": {
-                                                                                        "Q": "See a doctor immediately. You may have a form Of skin cancer.\n\n Skin cancer\n See a doctor immediately if you notice any of the following, which can be signs of skin cancer. \n\u2022 An open sore that does not heal or sores that recur in the same place \n\u2022 A firm, slow-growing lump \n\u2022 A change in a mole \n\u2022 A new spot or patch",
+                                                                                        "Q": "See a doctor immediately. You may have a form Of skin cancer.<br/><br/> Skin cancer<br/> See a doctor immediately if you notice any of the following, which can be signs of skin cancer. <br/>\u2022 An open sore that does not heal or sores that recur in the same place <br/>\u2022 A firm, slow-growing lump <br/>\u2022 A change in a mole <br/>\u2022 A new spot or patch",
                                                                                         "Yes": {},
                                                                                         "No": {},
                                                                                         "diagnosis": []
@@ -115,7 +115,7 @@
                                                                                         "Q": "Do you have a firm, slow-growing lump on your face?",
                                                                                         "Yes": {
                                                                                             "question": {
-                                                                                                "Q": "See a doctor immediately. You may have a form Of skin cancer.\n\n Skin cancer\n See a doctor immediately if you notice any of the following, which can be signs of skin cancer. \n\u2022 An open sore that does not heal or sores that recur in the same place \n\u2022 A firm, slow-growing lump \n\u2022 A change in a mole \n\u2022 A new spot or patch",
+                                                                                                "Q": "See a doctor immediately. You may have a form Of skin cancer.<br/><br/> Skin cancer<br/> See a doctor immediately if you notice any of the following, which can be signs of skin cancer. <br/>\u2022 An open sore that does not heal or sores that recur in the same place <br/>\u2022 A firm, slow-growing lump <br/>\u2022 A change in a mole <br/>\u2022 A new spot or patch",
                                                                                                 "Yes": {},
                                                                                                 "No": {},
                                                                                                 "diagnosis": []
@@ -157,7 +157,7 @@
                                                                         "Q": "Have you had an open sore on your face or lip for more than 3 weeks?",
                                                                         "Yes": {
                                                                             "question": {
-                                                                                "Q": "See a doctor immediately. You may have a form Of skin cancer.\n\n Skin cancer\n See a doctor immediately if you notice any of the following, which can be signs of skin cancer. \n\u2022 An open sore that does not heal or sores that recur in the same place \n\u2022 A firm, slow-growing lump \n\u2022 A change in a mole \n\u2022 A new spot or patch",
+                                                                                "Q": "See a doctor immediately. You may have a form Of skin cancer.<br/><br/> Skin cancer<br/> See a doctor immediately if you notice any of the following, which can be signs of skin cancer. <br/>\u2022 An open sore that does not heal or sores that recur in the same place <br/>\u2022 A firm, slow-growing lump <br/>\u2022 A change in a mole <br/>\u2022 A new spot or patch",
                                                                                 "Yes": {},
                                                                                 "No": {},
                                                                                 "diagnosis": []
@@ -168,7 +168,7 @@
                                                                                 "Q": "Do you have a firm, slow-growing lump on your face?",
                                                                                 "Yes": {
                                                                                     "question": {
-                                                                                        "Q": "See a doctor immediately. You may have a form Of skin cancer.\n\n Skin cancer\n See a doctor immediately if you notice any of the following, which can be signs of skin cancer. \n\u2022 An open sore that does not heal or sores that recur in the same place \n\u2022 A firm, slow-growing lump \n\u2022 A change in a mole \n\u2022 A new spot or patch",
+                                                                                        "Q": "See a doctor immediately. You may have a form Of skin cancer.<br/><br/> Skin cancer<br/> See a doctor immediately if you notice any of the following, which can be signs of skin cancer. <br/>\u2022 An open sore that does not heal or sores that recur in the same place <br/>\u2022 A firm, slow-growing lump <br/>\u2022 A change in a mole <br/>\u2022 A new spot or patch",
                                                                                         "Yes": {},
                                                                                         "No": {},
                                                                                         "diagnosis": []

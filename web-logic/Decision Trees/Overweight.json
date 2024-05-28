@@ -76,7 +76,7 @@
                                                 },
                                                 "No": {
                                                     "question": {
-                                                        "Q": "Have you had any of the following symptoms since you began to gain weight? \n\u2022 Frequently feeling cold \n\u2022 Thinning or brittle hair \n\u2022 Dry Skin",
+                                                        "Q": "Have you had any of the following symptoms since you began to gain weight? <br/>\u2022 Frequently feeling cold <br/>\u2022 Thinning or brittle hair <br/>\u2022 Dry Skin",
                                                         "Yes": {
                                                             "question": {
                                                                 "Q": "See your doctor. You may have an underactive thyroid gland.",
@@ -161,7 +161,7 @@
                                         },
                                         "No": {
                                             "question": {
-                                                "Q": "Have you had any of the following symptoms since you began to gain weight? \n\u2022 Frequently feeling cold \n\u2022 Thinning or brittle hair \n\u2022 Dry Skin",
+                                                "Q": "Have you had any of the following symptoms since you began to gain weight? <br/>\u2022 Frequently feeling cold <br/>\u2022 Thinning or brittle hair <br/>\u2022 Dry Skin",
                                                 "Yes": {
                                                     "question": {
                                                         "Q": "See your doctor. You may have an underactive thyroid gland.",

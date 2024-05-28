@@ -60,7 +60,7 @@
                                                 },
                                                 "No": {
                                                     "question": {
-                                                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Excessive sweating \n\u2022 Unexplained fatigue \n\u2022 Bulging eyes \n\u2022 unexplained weight loss",
+                                                        "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Excessive sweating <br/>\u2022 Unexplained fatigue <br/>\u2022 Bulging eyes <br/>\u2022 unexplained weight loss",
                                                         "Yes": {
                                                             "question": {
                                                                 "Q": "See your doctor. You may have an overactive thyroid gland.",

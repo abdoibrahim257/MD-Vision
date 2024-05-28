@@ -83,7 +83,7 @@
                                                                         },
                                                                         "No": {
                                                                             "question": {
-                                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? <br/>\u2022 Touching your face <br/>\u2022 Chewing <br/>\u2022 Breathing cold air <br/>\u2022 Drinking cold liquid",
                                                                                 "Yes": {
                                                                                     "question": {
                                                                                         "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
@@ -110,7 +110,7 @@
                                                                 },
                                                                 "No": {
                                                                     "question": {
-                                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? <br/>\u2022 Touching your face <br/>\u2022 Chewing <br/>\u2022 Breathing cold air <br/>\u2022 Drinking cold liquid",
                                                                         "Yes": {
                                                                             "question": {
                                                                                 "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
@@ -154,7 +154,7 @@
                                                                 },
                                                                 "No": {
                                                                     "question": {
-                                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? <br/>\u2022 Touching your face <br/>\u2022 Chewing <br/>\u2022 Breathing cold air <br/>\u2022 Drinking cold liquid",
                                                                         "Yes": {
                                                                             "question": {
                                                                                 "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
@@ -181,7 +181,7 @@
                                                         },
                                                         "No": {
                                                             "question": {
-                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? <br/>\u2022 Touching your face <br/>\u2022 Chewing <br/>\u2022 Breathing cold air <br/>\u2022 Drinking cold liquid",
                                                                 "Yes": {
                                                                     "question": {
                                                                         "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
@@ -260,7 +260,7 @@
                                                                 },
                                                                 "No": {
                                                                     "question": {
-                                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? <br/>\u2022 Touching your face <br/>\u2022 Chewing <br/>\u2022 Breathing cold air <br/>\u2022 Drinking cold liquid",
                                                                         "Yes": {
                                                                             "question": {
                                                                                 "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
@@ -287,7 +287,7 @@
                                                         },
                                                         "No": {
                                                             "question": {
-                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? <br/>\u2022 Touching your face <br/>\u2022 Chewing <br/>\u2022 Breathing cold air <br/>\u2022 Drinking cold liquid",
                                                                 "Yes": {
                                                                     "question": {
                                                                         "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
@@ -331,7 +331,7 @@
                                                         },
                                                         "No": {
                                                             "question": {
-                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                                "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? <br/>\u2022 Touching your face <br/>\u2022 Chewing <br/>\u2022 Breathing cold air <br/>\u2022 Drinking cold liquid",
                                                                 "Yes": {
                                                                     "question": {
                                                                         "Q": "See your doctor. The pain is probably caused by a damaged nerve.",
@@ -358,7 +358,7 @@
                                                 },
                                                 "No": {
                                                     "question": {
-                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? \n\u2022 Touching your face \n\u2022 Chewing \n\u2022 Breathing cold air \n\u2022 Drinking cold liquid",
+                                                        "Q": "Do you have stabbing pain on one side of your face, brought on by any of the following? <br/>\u2022 Touching your face <br/>\u2022 Chewing <br/>\u2022 Breathing cold air <br/>\u2022 Drinking cold liquid",
                                                         "Yes": {
                                                             "question": {
                                                                 "Q": "See your doctor. The pain is probably caused by a damaged nerve.",

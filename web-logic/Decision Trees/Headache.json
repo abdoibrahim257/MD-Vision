@@ -93,7 +93,7 @@
                                 },
                                 "No": {
                                     "question": {
-                                        "Q": "Do you also have any of the following symptoms? \n\u2022 Pain when you bend your head forward \n\u2022 Drowsiness or confusion \n\u2022 Fever",
+                                        "Q": "Do you also have any of the following symptoms? <br/>\u2022 Pain when you bend your head forward <br/>\u2022 Drowsiness or confusion <br/>\u2022 Fever",
                                         "Yes": {
                                             "question": {
                                                 "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have MENINGITIS, a life-threatening infection of the brain. Or you could have bleeding inside your brain.",
@@ -230,7 +230,7 @@
                                                                                         },
                                                                                         "No": {
                                                                                             "question": {
-                                                                                                "Q": "Did any of the following occur within the 12 hours before your headache started? \n\u2022 You were exposed to strong sunlight. \n\u2022 You were in stuffy, smoky, or noisy surroundings. \n\u2022 You drank more alcohol than usual. \n\u2022 You missed a meal.",
+                                                                                                "Q": "Did any of the following occur within the 12 hours before your headache started? <br/>\u2022 You were exposed to strong sunlight. <br/>\u2022 You were in stuffy, smoky, or noisy surroundings. <br/>\u2022 You drank more alcohol than usual. <br/>\u2022 You missed a meal.",
                                                                                                 "Yes": {
                                                                                                     "question": {
                                                                                                         "Q": "These factors Often bring on headaches.",
@@ -241,7 +241,7 @@
                                                                                                 },
                                                                                                 "No": {
                                                                                                     "question": {
-                                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms.\n\nIf you have worsening headaches\nsee a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly if you also have vomiting without nausea",
+                                                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms.<br/><br/>If you have worsening headaches<br/>see a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly if you also have vomiting without nausea",
                                                                                                         "Yes": {},
                                                                                                         "No": {},
                                                                                                         "diagnosis": []
@@ -356,7 +356,7 @@
                                                         },
                                                         "No": {
                                                             "question": {
-                                                                "Q": "Did any of the following occur within the 12 hours before your headache started? \n\u2022 You were exposed to strong sunlight. \n\u2022 You were in stuffy, smoky, or noisy surroundings. \n\u2022 You drank more alcohol than usual. \n\u2022 You missed a meal.",
+                                                                "Q": "Did any of the following occur within the 12 hours before your headache started? <br/>\u2022 You were exposed to strong sunlight. <br/>\u2022 You were in stuffy, smoky, or noisy surroundings. <br/>\u2022 You drank more alcohol than usual. <br/>\u2022 You missed a meal.",
                                                                 "Yes": {
                                                                     "question": {
                                                                         "Q": "These factors Often bring on headaches.",
@@ -367,7 +367,7 @@
                                                                 },
                                                                 "No": {
                                                                     "question": {
-                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms.\n\nIf you have worsening headaches\nsee a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly if you also have vomiting without nausea",
+                                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat and your headache persists overnight or if you develop other symptoms.<br/><br/>If you have worsening headaches<br/>see a doctor immediately. A headache that is present when you wake in the morning and worsens progressively throughout the day may be a sign of a brain tumor, particularly if you also have vomiting without nausea",
                                                                         "Yes": {},
                                                                         "No": {},
                                                                         "diagnosis": []

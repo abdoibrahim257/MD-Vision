@@ -6,7 +6,7 @@
                 "Q": "Is your temperature 100 \u2109 (37.8 \u2103 ) or higher?",
                 "Yes": {
                     "question": {
-                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Headache \n\u2022 Cough \n\u2022 Aching joints or bones",
+                        "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Headache <br/>\u2022 Cough <br/>\u2022 Aching joints or bones",
                         "Yes": {
                             "question": {
                                 "Q": "Call your doctor. You probably have a viral infection such as INFLUENZA.",

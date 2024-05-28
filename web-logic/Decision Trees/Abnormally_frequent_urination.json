@@ -11,7 +11,7 @@
         "Q": "Do you seem to be urinating more than usual, or do you have to get up at night to urinate?",
         "Yes": {
           "question": {
-            "Q": "Have you noticed two or more of the following symptoms? \n\u2022 Increased thirst \n\u2022 Weight loss \n\u2022 Unexplained tiredness \n\u2022 Blurred vision",
+            "Q": "Have you noticed two or more of the following symptoms? <br/>\u2022 Increased thirst <br/>\u2022 Weight loss <br/>\u2022 Unexplained tiredness <br/>\u2022 Blurred vision",
             "Yes": {
               "question": {
                 "Q": "See a doctor immediately. Any Of these symptoms can result from DIABETES.",
@@ -111,7 +111,7 @@
                                 "Q": "Are you a man over 50?",
                                 "Yes": {
                                   "question": {
-                                    "Q": "Do you have two or more of the following symptoms? \n\u2022 Waking up at night to urinate \n\u2022 Difficulty starting to urinate \n\u2022 Weak stream of urine \n\u2022 Dribbling urine after urination",
+                                    "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Waking up at night to urinate <br/>\u2022 Difficulty starting to urinate <br/>\u2022 Weak stream of urine <br/>\u2022 Dribbling urine after urination",
                                     "Yes": {
                                       "question": {
                                         "Q": "See your doctor. You may have an enlarged prostate gland.",
@@ -245,7 +245,7 @@
                     "Q": "Are you a man over 50?",
                     "Yes": {
                       "question": {
-                        "Q": "Do you have two or more of the following symptoms? \n\u2022 Waking up at night to urinate \n\u2022 Difficulty starting to urinate \n\u2022 Weak stream of urine \n\u2022 Dribbling urine after urination",
+                        "Q": "Do you have two or more of the following symptoms? <br/>\u2022 Waking up at night to urinate <br/>\u2022 Difficulty starting to urinate <br/>\u2022 Weak stream of urine <br/>\u2022 Dribbling urine after urination",
                         "Yes": {
                           "question": {
                             "Q": "See your doctor. You may have an enlarged prostate gland.",

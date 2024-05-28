@@ -6,7 +6,7 @@
         "Q": "Did the pain follow a fall or other injury to your back?",
         "Yes": {
           "question": {
-            "Q": "Have you noticed one or more of the following symptoms?\n\u2022 Loss of bladder or bowel control\n\u2022 Difficulty moving a limb\n\u2022 Numbness or tingling in a limb",
+            "Q": "Have you noticed one or more of the following symptoms?<br/>\u2022 Loss of bladder or bowel control<br/>\u2022 Difficulty moving a limb<br/>\u2022 Numbness or tingling in a limb",
             "Yes": {
               "question": {
                 "Q": "EMERGENCY: Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have damaged your spinal cord.",

@@ -14,7 +14,7 @@
                 },
                 "No": {
                     "question": {
-                        "Q": "Do you have two or more Of the following symptoms? \n\u2022 Unexplained weight loss \n\u2022 Increased appetite \n\u2022 Weakness or trembling \n\u2022 Bulging eyes \n\u2022 Rapid heartbeat",
+                        "Q": "Do you have two or more Of the following symptoms? <br/>\u2022 Unexplained weight loss <br/>\u2022 Increased appetite <br/>\u2022 Weakness or trembling <br/>\u2022 Bulging eyes <br/>\u2022 Rapid heartbeat",
                         "Yes": {
                             "question": {
                                 "Q": "See your doctor. You could have an overactive thyroid gland.",

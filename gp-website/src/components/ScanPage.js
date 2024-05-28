@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import NavBar from './navbar'
 import LoadingComponent from './LoadingComponent'
+import CaptionGen from './CaptionGen';
+
 import '../styles/ScanPage.css'
+
 import uploadIcon from "../assets/upload.svg"
 import bono from "../assets/bono.svg"
 
@@ -13,15 +16,18 @@ const ScanPage = () => {
 
     const handleFileChange = (e) => {
         var f = e.target.files[0]
+        // console.log(f.type)
         
-        if (!f || f.type !== 'image/'){
+        if (!f || f.type !== 'image/png'){
             setIsUploaded(false)
             return
         }
+        // setIsUploaded(true)
 
         // send the file to back end
         const formData = new FormData()
         formData.append('file', f)
+        // console.log(formData)
 
         const requestOptions = {
             method: 'POST',
@@ -49,9 +55,7 @@ const ScanPage = () => {
         setPredicting(true)
         
         //play loading screen
-        setTimeout(() => {
-            setPredicting(false)
-        }, 7000)
+        //send get request to backend to
 
         setPredictions(["No acute cardiopulmonary abnormality. The heart is normal in size. The mediasti is unremarkable. The lungs are clear."] )
         
@@ -85,7 +89,7 @@ const ScanPage = () => {
                     <div class="scan-wrapper">
                         <p className='objective'>Use AI to Diagnose for your scan.</p>
                         <div class="scan">
-                            <p className='instructions'>1. upload .png file of your scan</p>
+                            <p className='instructions'>1. Upload .png file of your scan</p>
                             <input type="file" id="fileInput" onChange={handleFileChange} accept="image/*" style={{ display: 'none' }} />
                             <button className='upload' onClick={() => document.getElementById('fileInput').click()}>
                                 <img className='upIcon' src = {uploadIcon} alt='upload button'/>
@@ -94,9 +98,10 @@ const ScanPage = () => {
                             <span className={uploaded ? "success" : "successHidden"}><img src={bono}/>Uploaded Successfully</span>
                         </div>
                         <div className='start-scan'>
-                            <p className='instructions'>2. know your diagnosis</p>
+                            <p className='instructions'>2. Know your diagnosis</p>
                             <button onClick={handlePredict} className='start'>Start Diagnosing</button>
                         </div>
+                        { predictions.length > 0 ? <CaptionGen preds = {predictions}/> : null}
                     </div>
                 </div>
             </div>

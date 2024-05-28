@@ -17,7 +17,7 @@ function HeroSection() {
                     Improving Health.
                 </p>
                 <p className="goal">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                Experience the future of medical care today. Our innovative AI technology, combined with compassionate healthcare professionals, ensures you receive the most accurate and personalized treatment. Because your health deserves the best of both worlds. 
                 </p>
             </div>
             <img src={robot} alt = "Robot representing our project"/>

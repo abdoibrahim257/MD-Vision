@@ -43,7 +43,7 @@
                                         "Q": "Does the numbness or tingling affect only one side of your body?",
                                         "Yes": {
                                             "question": {
-                                                "Q": "Did you have one or more of the following symptoms before or after the numbness or tingling began? \n\u2022 Difficulty speaking \n\u2022 Blurred vision \n\u2022 Confusion \n\u2022 Dizziness \n\u2022 Weakness in the arms or legs",
+                                                "Q": "Did you have one or more of the following symptoms before or after the numbness or tingling began? <br/>\u2022 Difficulty speaking <br/>\u2022 Blurred vision <br/>\u2022 Confusion <br/>\u2022 Dizziness <br/>\u2022 Weakness in the arms or legs",
                                                 "Yes": {
                                                     "question": {
                                                         "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE or a TRANSIENT ISCHEMIC ATTACK. Or you may have MULTIPLE SCLEROSIS.",
@@ -121,7 +121,7 @@
                         "Q": "Does the numbness or tingling affect only one side of your body?",
                         "Yes": {
                             "question": {
-                                "Q": "Did you have one or more of the following symptoms before or after the numbness or tingling began? \n\u2022 Difficulty speaking \n\u2022 Blurred vision \n\u2022 Confusion \n\u2022 Dizziness \n\u2022 Weakness in the arms or legs",
+                                "Q": "Did you have one or more of the following symptoms before or after the numbness or tingling began? <br/>\u2022 Difficulty speaking <br/>\u2022 Blurred vision <br/>\u2022 Confusion <br/>\u2022 Dizziness <br/>\u2022 Weakness in the arms or legs",
                                 "Yes": {
                                     "question": {
                                         "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE or a TRANSIENT ISCHEMIC ATTACK. Or you may have MULTIPLE SCLEROSIS.",

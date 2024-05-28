@@ -66,7 +66,7 @@
                                         },
                                         "No": {
                                             "question": {
-                                                "Q": "Have you had one or more of the following symptoms? \n\u2022 Numbness or tingling in any part of your body \n\u2022 Blurred vision \n\u2022 Confusion \n\u2022 Difficulty speaking \n\u2022 Loss of movement in your arms or legs",
+                                                "Q": "Have you had one or more of the following symptoms? <br/>\u2022 Numbness or tingling in any part of your body <br/>\u2022 Blurred vision <br/>\u2022 Confusion <br/>\u2022 Difficulty speaking <br/>\u2022 Loss of movement in your arms or legs",
                                                 "Yes": {
                                                     "question": {
                                                         "Q": "EMERGENCY Get medical help now! Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department. You may have had a STROKE or a TRANSIENT ISCHEMIC ATTACK.",
@@ -129,7 +129,7 @@
                                                                         },
                                                                         "No": {
                                                                             "question": {
-                                                                                "Q": "Did you feel faint while doing any of the following? \n\u2022 Coughing \n\u2022 Urinating \n\u2022 Stretching \n\u2022 Holding your breath",
+                                                                                "Q": "Did you feel faint while doing any of the following? <br/>\u2022 Coughing <br/>\u2022 Urinating <br/>\u2022 Stretching <br/>\u2022 Holding your breath",
                                                                                 "Yes": {
                                                                                     "question": {
                                                                                         "Q": "See your doctor if you faint or feel faint more than once. Any of these activities can occasionally affect the oxygen supply to the brain.",

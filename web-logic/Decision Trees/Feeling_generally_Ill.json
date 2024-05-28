@@ -52,7 +52,7 @@
                                                 },
                                                 "No": {
                                                     "question": {
-                                                        "Q": "Do you have one or more of the following symptoms? \n\u2022 Difficulty sleeping \n\u2022 Inability to concentrate or make decisions \n\u2022 Lack of interest in sex \n\u2022 Recurring headaches \n\u2022 Frequently feeling sad",
+                                                        "Q": "Do you have one or more of the following symptoms? <br/>\u2022 Difficulty sleeping <br/>\u2022 Inability to concentrate or make decisions <br/>\u2022 Lack of interest in sex <br/>\u2022 Recurring headaches <br/>\u2022 Frequently feeling sad",
                                                         "Yes": {
                                                             "tree": {
                                                                 "symptom": "DEPRESSION"

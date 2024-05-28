@@ -50,7 +50,7 @@
                         },
                         "No": {
                           "question": {
-                            "Q": "Do you frequently use any Of the following techniques on your hair? \n\u2022 Tight braiding or corn-rowing \n\u2022 Straightening \n\u2022 Curling iron or hot rollers \n\u2022 Bleaching or dyeing \n\u2022 Permanent",
+                            "Q": "Do you frequently use any Of the following techniques on your hair? <br/>\u2022 Tight braiding or corn-rowing <br/>\u2022 Straightening <br/>\u2022 Curling iron or hot rollers <br/>\u2022 Bleaching or dyeing <br/>\u2022 Permanent",
                             "Yes": {
                               "question": {
                                 "Q": "See your doctor if the thinning persists. All of these techniques can damage hair. Change to a more natural hairstyle and your hair should return to normal.",
@@ -89,7 +89,7 @@
                     },
                     "No": {
                       "question": {
-                        "Q": "Do you frequently use any Of the following techniques on your hair? \n\u2022 Tight braiding or corn-rowing \n\u2022 Straightening \n\u2022 Curling iron or hot rollers \n\u2022 Bleaching or dyeing \n\u2022 Permanent",
+                        "Q": "Do you frequently use any Of the following techniques on your hair? <br/>\u2022 Tight braiding or corn-rowing <br/>\u2022 Straightening <br/>\u2022 Curling iron or hot rollers <br/>\u2022 Bleaching or dyeing <br/>\u2022 Permanent",
                         "Yes": {
                           "question": {
                             "Q": "See your doctor if the thinning persists. All of these techniques can damage hair. Change to a more natural hairstyle and your hair should return to normal.",
@@ -137,7 +137,7 @@
         },
         "No": {
           "question": {
-            "Q": "Do you frequently use any Of the following techniques on your hair? \n\u2022 Tight braiding or corn-rowing \n\u2022 Straightening \n\u2022 Curling iron or hot rollers \n\u2022 Bleaching or dyeing \n\u2022 Permanent",
+            "Q": "Do you frequently use any Of the following techniques on your hair? <br/>\u2022 Tight braiding or corn-rowing <br/>\u2022 Straightening <br/>\u2022 Curling iron or hot rollers <br/>\u2022 Bleaching or dyeing <br/>\u2022 Permanent",
             "Yes": {
               "question": {
                 "Q": "See your doctor if the thinning persists. All of these techniques can damage hair. Change to a more natural hairstyle and your hair should return to normal.",

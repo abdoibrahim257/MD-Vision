@@ -3,12 +3,11 @@ from starlette.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 from PIL import Image
-from io import BytesIO
 import os
 
-from build_vocab import Vocabulary
 from predict import *
 from treeTraversal import *
+from build_vocab import Vocabulary
 
 from pydantic import BaseModel
 
@@ -23,6 +22,7 @@ app.add_middleware(
 )
 
 print("HERE")
+# vocab = joblib.load('./Data/vocab.pkl')
 answerList = []
 
 class Answer(BaseModel):
@@ -69,12 +69,10 @@ async def upload_file(file: UploadFile = File(...)):
         return JSONResponse(status_code=500, content={"message": "An error occurred while uploading the file"})
 
 @app.get("/upload")
-async def startPrediction():
-    try:    
-        image_path = "./upload/user_image.png"
-        image = Image.open(image_path)
-        captions = predict(image)
+def startPrediction():
+    image_path = "Data\Images\CXR2_IM-0652-1001.png"
+    image = Image.open(image_path)
+    captions = predict(image)
+    
+    return JSONResponse(status_code=200, content={"message": captions})
         
-        return JSONResponse(status_code=200, content={"message": captions})
-    except Exception as e:
-        return JSONResponse(status_code=500, content={"message": str(e)})

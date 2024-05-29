@@ -9,8 +9,7 @@
 }
 
 .navContainer {
-    width: 82%;
-    margin-top: 16px;
+    width: 80%;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -116,8 +115,8 @@
     z-index: 1000;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 25px;
-    padding: 0px 16px;
+    border-radius: 15px;
+    padding: 0px 2px 0px 2px;
     transition: all 0.5s ease-in;
 }
  

@@ -74,4 +74,4 @@ def main(caption_path, vocab_path, threshold):
 #     args = parser.parse_args()
 #     main(args.caption_path, args.vocab_path, args.threshold)  
 
-# main('Data/captions.json', 'Data/vocab1.pkl', 1)
+# main('Data/captions.json', 'Data/vocab.pkl', 1)

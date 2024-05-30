@@ -35,7 +35,7 @@ def initialize_models () :
     word_lstm.eval()
     
     # Load the vocab
-    vocab = joblib.load('./Data/vocab1.pkl')
+    vocab = joblib.load('./Data/vocab.pkl')
     
     return mlc, visual_extractor, sentence_lstm, word_lstm , vocab
 
@@ -52,16 +52,13 @@ def improve_punctuation(text, nlp):
     return punctuated_text
 
 
-def predict (image) :
+def predict (image , mlc , visual_extractor , sentence_lstm , word_lstm , vocab) :
     """
     Function to predict the caption for the image provided.
     
     Args:
         image : Image for which caption is to be predicted.
     """
-    
-    # Initialize the models
-    mlc, visual_extractor, sentence_lstm, word_lstm , vocab = initialize_models()
     
     # Transform the image to tensor
     transform = transforms.Compose([

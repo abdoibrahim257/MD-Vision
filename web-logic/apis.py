@@ -13,6 +13,9 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+# Initialize the models
+mlc, visual_extractor, sentence_lstm, word_lstm , vocab = initialize_models()
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Allows all origins
@@ -72,6 +75,6 @@ async def upload_file(file: UploadFile = File(...)):
 def startPrediction():
     image_path = "upload/user_image.png"
     image = Image.open(image_path)
-    captions = predict(image)
+    captions = predict(image, mlc, visual_extractor, sentence_lstm, word_lstm, vocab)
     
     return JSONResponse(status_code=200, content={"message": captions})

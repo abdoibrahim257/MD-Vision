@@ -65,17 +65,21 @@ const ChatPage = () => {
     }, 23);
   };
    
-  const fetchFirstMessage = async () => {
+const fetchFirstMessage = async () => {
     let symptom = currentLink.split('/').pop()
-    const response = await fetch('https://fd8d-197-134-70-167.ngrok-free.app/maven/'+symptom)
+    const response = await fetch('https://fd8d-197-134-70-167.ngrok-free.app/maven/'+symptom , {
+        headers: new Headers({
+            "ngrok-skip-browser-warning": "69420",
+        }),
+    })
     const data = await response.json()
-    
 
     const message = {
       // message: data.Question,
       message: "",
       sender: 'Maven'
     }
+}
 
     setMessages((oldMessages = {}) => {
       var newMessages = {...oldMessages};

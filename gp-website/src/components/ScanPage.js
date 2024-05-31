@@ -35,20 +35,19 @@ const ScanPage = () => {
             method: 'POST',
             body: formData
         }
-        fetch('https://bffe-35-237-74-64.ngrok-free.app/upload', requestOptions)
-            .then(response => {
-                if (response.ok) {
-                    setIsUploaded(true)
-                    // show the image we uploaded here
-                    setUploadedImage(URL.createObjectURL(formData.get('file')))
-
-                } else {
-                    setIsUploaded(false)
-                }
-            })
-            .catch(error => {
-                console.error('There was an error!', error);
-            });
+        fetch('https://187e-197-134-70-167.ngrok-free.app/upload', requestOptions)
+    .then(response => {
+        if (response.ok) {
+            setIsUploaded(true)
+            // show the image we uploaded here
+            setUploadedImage(URL.createObjectURL(formData.get('file')))
+        } else {
+            setIsUploaded(false)
+        }
+    })
+    .catch(error => {
+        console.error('There was an error!', error);
+    });
     };
 
     //useeffect for loading screen
@@ -58,8 +57,12 @@ const ScanPage = () => {
         //call the back and get predictions but for now
         setPredicting(true)
 
-        //send get request to backend to get predictions
-        fetch('https://bffe-35-237-74-64.ngrok-free.app/upload').then(response => {
+                //send get request to backend to get predictions
+        fetch('https://187e-197-134-70-167.ngrok-free.app/upload', {
+            headers: new Headers({
+                "ngrok-skip-browser-warning": "69420",
+            }),
+        }).then(response => {
             if (response.ok) {
                 //convert response to json and set predictions
                 response.json().then(data => {

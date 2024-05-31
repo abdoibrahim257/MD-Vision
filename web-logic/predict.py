@@ -5,11 +5,8 @@ from torchvision import transforms
 from models_new1 import VisualExtractor, SentenceLSTM, WordLSTM , MLC
 import spacy
 from build_vocab import Vocabulary
-import os
 
-path = "/content/drive/MyDrive/GP"
-
-def initialize_models():
+def initialize_models () :
     """
     Function to initialize the models and return them.
     
@@ -19,26 +16,26 @@ def initialize_models():
     
     # Initialize the model
     mlc = MLC(vis_features_dim= 1024 , embed_dim= 512 , classes = 210 , k=10)
-    mlc.load_state_dict(torch.load(os.path.join(path, 'Data/models/mlc.pth'), map_location=torch.device('cpu')))
+    mlc.load_state_dict(torch.load('./Data/models/mlc.pth', map_location=torch.device('cpu')))
     mlc.eval()
     
     # Initialize the visual extractor
     visual_extractor = VisualExtractor( model_name='resnet152',output_embed_size=1024, pretrained=True)
-    visual_extractor.load_state_dict(torch.load(os.path.join(path, 'Data/models/visual_extractor.pth'), map_location=torch.device('cpu')))
+    visual_extractor.load_state_dict(torch.load('./Data/models/visual_extractor.pth', map_location=torch.device('cpu')))
     visual_extractor.eval()
     
     # Initialize the sentence lstm
     sentence_lstm = SentenceLSTM(vis_features_dim= 1024 , sem_features_dim=512 , hidden_dim=512 , att_dim= 256 , sent_input_dim= 1024 , word_input_dim= 512 , stop_dim= 256 , device='cpu')
-    sentence_lstm.load_state_dict(torch.load(os.path.join(path, 'Data/models/sentence_lstm.pth'), map_location=torch.device('cpu')))
+    sentence_lstm.load_state_dict(torch.load('./Data/models/sentence_lstm.pth', map_location=torch.device('cpu')))
     sentence_lstm.eval()
     
     # Initialize the word lstm
     word_lstm = WordLSTM(word_hidden_dim=512, word_input_dim= 512, vocab_size= 1977, num_layers= 1 )
-    word_lstm.load_state_dict(torch.load(os.path.join(path, 'Data/models/word_lstm.pth'), map_location=torch.device('cpu')))
+    word_lstm.load_state_dict(torch.load('./Data/models/word_lstm.pth', map_location=torch.device('cpu')))
     word_lstm.eval()
     
     # Load the vocab
-    vocab = joblib.load(os.path.join(path, 'Data/vocab.pkl'))
+    vocab = joblib.load('./Data/vocab.pkl')
     
     return mlc, visual_extractor, sentence_lstm, word_lstm , vocab
 

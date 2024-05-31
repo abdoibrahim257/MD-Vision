@@ -15,7 +15,7 @@ const SearchBar = ( { setResults } ) => {
         //         console.log(results);
         //         // setResults(results);
         //     });
-        fetch("https://187e-197-134-70-167.ngrok-free.app/maven", {
+        fetch("https://fd8d-197-134-70-167.ngrok-free.app/maven", {
             headers: new Headers({
                 "ngrok-skip-browser-warning": "69420",
             }),

@@ -100,15 +100,15 @@ const ChatPage = () => {
   }, [])
   
 
-
   async function fetchNextQuestion (answer) {
     let symptom = currentLink.split('/').pop();
-    let url = 'http://127.0.0.1:8000/maven/'+symptom;
+    let url = 'https://fd8d-197-134-70-167.ngrok-free.app/maven/'+symptom;
 
     fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', //specify the content type
+        'ngrok-skip-browser-warning': '69420',
       },
       body: JSON.stringify({ans: answer}),
     }).then(response => response.json())
@@ -136,7 +136,7 @@ const ChatPage = () => {
       typeWriter(state.index, Q,0)
       incrementIndex();
     })
-  }
+}
 
   const handleYes = async () => {
     const newMessage = {

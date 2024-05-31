@@ -67,7 +67,7 @@ const ChatPage = () => {
    
   const fetchFirstMessage = async () => {
     let symptom = currentLink.split('/').pop()
-    const response = await fetch('https://fd8d-197-134-70-167.ngrok-free.app/maven/'+symptom , {
+    const response = await fetch('https://9014-102-42-81-246.ngrok-free.app/maven/'+symptom , {
         headers: new Headers({
             "ngrok-skip-browser-warning": "69420",
         }),
@@ -102,7 +102,7 @@ const ChatPage = () => {
 
   async function fetchNextQuestion (answer) {
     let symptom = currentLink.split('/').pop();
-    let url = 'https://fd8d-197-134-70-167.ngrok-free.app/maven/'+symptom;
+    let url = 'https://9014-102-42-81-246.ngrok-free.app/maven/'+symptom;
 
     fetch(url, {
       method: 'POST',

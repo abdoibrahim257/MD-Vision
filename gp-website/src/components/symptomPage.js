@@ -16,7 +16,7 @@ const SymptomPage = () => {
     /* first get symptom names from the backend  */
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch("https://fd8d-197-134-70-167.ngrok-free.app/maven", {
+            const response = await fetch("https://9014-102-42-81-246.ngrok-free.app/maven", {
                     headers: new Headers({
                     "ngrok-skip-browser-warning": "69420",
                 }),

@@ -35,7 +35,7 @@ const ScanPage = () => {
             method: 'POST',
             body: formData
         }
-        fetch('https://6d73-35-221-56-247.ngrok-free.app/upload', requestOptions)
+        fetch('https://bffe-35-237-74-64.ngrok-free.app/upload', requestOptions)
             .then(response => {
                 if (response.ok) {
                     setIsUploaded(true)
@@ -59,7 +59,7 @@ const ScanPage = () => {
         setPredicting(true)
 
         //send get request to backend to get predictions
-        fetch('https://6d73-35-221-56-247.ngrok-free.app/upload').then(response => {
+        fetch('https://bffe-35-237-74-64.ngrok-free.app/upload').then(response => {
             if (response.ok) {
                 //convert response to json and set predictions
                 response.json().then(data => {

@@ -67,7 +67,7 @@ const ChatPage = () => {
    
   const fetchFirstMessage = async () => {
     let symptom = currentLink.split('/').pop()
-    const response = await fetch('http://127.0.0.1:8000/maven/'+symptom)
+    const response = await fetch('https://fd8d-197-134-70-167.ngrok-free.app/maven/'+symptom)
     const data = await response.json()
     
 

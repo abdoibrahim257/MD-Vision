@@ -15,7 +15,7 @@ const SearchBar = ( { setResults } ) => {
         //         console.log(results);
         //         // setResults(results);
         //     });
-        fetch("https://e7d1-35-194-85-15.ngrok-free.app/maven").then(response => response.json())
+        fetch("https://6d73-35-221-56-247.ngrok-free.app/maven").then(response => response.json())
             .then(json => {
                 const symptoms = json.fileList
                 const results = symptoms.filter((symptom) => {

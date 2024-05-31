@@ -16,7 +16,7 @@ const SymptomPage = () => {
     /* first get symptom names from the backend  */
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch("http://localhost:8000/maven");
+            const response = await fetch("http://e7d1-35-194-85-15.ngrok-free.app/maven");
             const data = await response.json();
             // console.log(data)
             const symptomsList = data.fileList;

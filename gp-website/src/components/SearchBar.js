@@ -15,7 +15,7 @@ const SearchBar = ( { setResults } ) => {
         //         console.log(results);
         //         // setResults(results);
         //     });
-        fetch("https://9014-102-42-81-246.ngrok-free.app/maven", {
+        fetch("https://shad-honest-anchovy.ngrok-free.app/maven", {
             headers: new Headers({
                 "ngrok-skip-browser-warning": "69420",
             }),

@@ -35,7 +35,7 @@ const ScanPage = () => {
             method: 'POST',
             body: formData
         }
-        fetch('https://9014-102-42-81-246.ngrok-free.app/upload', requestOptions)
+        fetch('https://shad-honest-anchovy.ngrok-free.app/upload', requestOptions)
     .then(response => {
         if (response.ok) {
             setIsUploaded(true)
@@ -58,7 +58,7 @@ const ScanPage = () => {
         setPredicting(true)
 
                 //send get request to backend to get predictions
-        fetch('https://9014-102-42-81-246.ngrok-free.app/upload', {
+        fetch('https://shad-honest-anchovy.ngrok-free.app/upload', {
             headers: new Headers({
                 "ngrok-skip-browser-warning": "69420",
             }),

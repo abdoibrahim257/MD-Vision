@@ -87,31 +87,10 @@ def check_connection(sentence,ngrams_dfs):
     n = len(sentence_tokens)
     ngrams = []
     #apply filtering process for extracting this exact sentence from the corpus
-    if n == 1:
-        ngrams = ngrams_dfs[1]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-    elif n == 2:
-        ngrams = ngrams_dfs[2]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-    elif n == 3:
-        ngrams = ngrams_dfs[3]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-        ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
-    elif n == 4:
-        ngrams = ngrams_dfs[4]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-        ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
-        ngrams = ngrams[ngrams[4] == sentence_tokens[3]]
-    elif n == 5:
-        ngrams = ngrams_dfs[5]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-        ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
-        ngrams = ngrams[ngrams[4] == sentence_tokens[3]]
-        ngrams = ngrams[ngrams[5] == sentence_tokens[4]]
+    ngrams = ngrams_dfs[n]
+    
+    for i in range(1, n+1):
+        ngrams = ngrams[ngrams[i] == sentence_tokens[i-1]]
     
     if len(ngrams) > 0:
         count = ngrams['count'].values[0] #get the count of the sentence in the corpus if the 

@@ -78,10 +78,6 @@ def main(image_path):
             
         global_caption[k] = [(np.round(top_costs[i],2),top_captions[i]) for i in range(len(top_captions))]
         k+=1
-        
-        # bleuScores = get_metrics(top_captions, eval(references[1])) 
-        # for i in range(len(top_captions)):
-        #     print('\n', 'Caption:', top_captions[i], 'Cost:', top_costs[i])
             
     # print(global_caption)
     #for each key get the best caption make it as a list of captions to run bleu scre
@@ -91,12 +87,13 @@ def main(image_path):
         best_caption_generated.append(global_caption[key][0][1])
     
     #get the bleu score
-    bleuScores = get_bleu(best_caption_generated, image_refs)
-    print('\n', 'Average Bleu Score:', np.round(np.mean(bleuScores),3))
+    # bleuScores = get_bleu(best_caption_generated, image_refs)
+    # print('\n', 'Average Bleu Score:', np.round(np.mean(bleuScores),3))
     
     #Punctuate each sentence and Capitalize the first letter
-    print('\n', 'Generated Captions:', '\n')
-    print(punctuate_and_capitalize(best_caption_generated))
+    # print('\n', 'Generated Captions:', '\n')
+    
+    return punctuate_and_capitalize(best_caption_generated) 
     
 def punctuate_and_capitalize(sentences):
     punctuated_sentences = []

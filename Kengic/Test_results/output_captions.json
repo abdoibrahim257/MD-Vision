@@ -1,0 +1,51 @@
+{
+    "CXR1_1_IM-0001-4001.png":{
+        "kengic":[
+            "No focal airspace consolidation pneumothorax or pneumonia.",
+            "No focal airspace consolidation pneumothorax or nodule.",
+            "No focal airspace consolidation pneumothorax or atelectasis.", 
+            "Opacity or focal airspace consolidation no fracture of the heart size and pulmonary granuloma.", 
+            "Calcified granuloma. Degenerative change of the thoracic spine. No pleural effusion."
+        ],
+        "Actual":[
+            "the cardiac silhouette and mediastinum size are within normal limits",
+            "there is no pulmonary edema",
+            "there is no focal consolidation",
+            "there are no of a pleural effusion",
+            "there is no evidence of pneumothorax"
+        ]
+    },
+    "CXR3110_IM-1460-1001.png":{
+        "kengic":[
+            "No focal airspace consolidation pneumothorax or nodule.",
+            "Scarring or pneumothorax is hyperexpansion of the lungs are clear without focal opacity to suggest a granuloma.", 
+            "Degenerative change of the thoracic spine.",
+            "No pleural effusion."
+        ],
+        "Actual":[
+            "no evidence of active disease",
+            "heart size mediastinal and aortic contours are within normal limits",
+            "normal pulmonary vasculature",
+            "the lungs are clear",
+            "no visible pneumothorax or large pleural effusion",
+            "elevated right hemidiaphragm",
+            "mild degenerative changes of the spine"
+        ]
+    },
+    "CXR1173_IM-0118-5001.png":{
+        "kengic":[
+            "No focal airspace consolidation pneumothorax or nodule.",
+            "No focal airspace consolidation pneumothorax or atelectasis.",
+            "No evidence of emphysema. Opacity is no acute pulmonary and granuloma.",
+            "Degenerative change of the thoracic spine.",
+            "No acute pulmonary are clear without evidence of focal airspace opacities compatible with emphysema."
+        ],
+        "Actual":[
+            "pa and moderate loss of the chest demonstrate stable moderate cardiomediastinal silhouette with atherosclerotic calcifications of the aortic and mild aortic ectasia",
+            "blunting of the costophrenic and secondary to scarring/emphysematous changes",
+            "no evidence of focal airspace consolidation large pleural effusion or pneumothorax",
+            "visualized osseous structures appear intact",
+            "emphysematous changes without evidence of focal airspace disease or pulmonary edema"
+        ] 
+    }
+}

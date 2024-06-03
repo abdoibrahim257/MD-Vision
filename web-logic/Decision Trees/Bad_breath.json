@@ -20,7 +20,14 @@
                 "symptom": "SORE MOUTH OR TONGUE"
               }
             },
-            "No": {},
+            "No": {
+              "question": {
+                "Q": "An infection or sore in the mouth or on the tongue can cause bad breath.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
             "diagnosis": []
           }
         },
@@ -97,7 +104,14 @@
                                             "symptom": "FEVER"
                                           }
                                         },
-                                        "No": {},
+                                        "No": {
+                                          "question": {
+                                            "Q": "Bad breath sometimes occurs with a fever. Some people have tiny pockets in their tonsils that trap bacteria, resulting in chronic TONSILLITIS.",
+                                            "Yes": {},
+                                            "No": {},
+                                            "diagnosis": []
+                                          }
+                                        },
                                         "diagnosis": ["TONSILLITIS"]
                                       }
                                     },
@@ -182,7 +196,14 @@
                                         "symptom": "FEVER"
                                       }
                                     },
-                                    "No": {},
+                                    "No": {
+                                      "question": {
+                                        "Q": "Bad breath sometimes occurs with a fever. Some people have tiny pockets in their tonsils that trap bacteria, resulting in chronic TONSILLITIS.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
                                     "diagnosis": ["TONSILLITIS"]
                                   }
                                 },

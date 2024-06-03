@@ -101,7 +101,14 @@
                                         "symptom": "DIFFICULTY BREATHING"
                                       }
                                     },
-                                    "No": {},
+                                    "No": {
+                                      "question": {
+                                        "Q": "Diagnosis: You may have PNEUMONIA, ACUTE BRONCHITIS, or INFLUENZA.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
                                     "diagnosis": [
                                       "PNEUMONIA",
                                       "ACUTE BRONCHITIS",
@@ -131,7 +138,14 @@
                                         "symptom": "WHEEZING"
                                       }
                                     },
-                                    "No": {},
+                                    "No": {
+                                      "question": {
+                                        "Q": "You may have ASTHMA.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                      }
+                                    },
                                     "diagnosis": ["ASTHMA"]
                                   }
                                 },
@@ -157,7 +171,14 @@
                                                 "symptom": "DIFFICULTY BREATHING"
                                               }
                                             },
-                                            "No": {},
+                                            "No": {
+                                              "question": {
+                                                "Q": "You could have CONGESTIVE HEART FAILURE.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                              }
+                                            },
                                             "diagnosis": ["CONGESTIVE HEART FAILURE"]
                                           }
                                         },
@@ -226,7 +247,14 @@
                                     "symptom": "DIFFICULTY BREATHING"
                                   }
                                 },
-                                "No": {},
+                                "No": {
+                                  "question": {
+                                    "Q": "You could have CONGESTIVE HEART FAILURE.",
+                                    "Yes": {},
+                                    "No": {},
+                                    "diagnosis": []
+                                  }
+                                },
                                 "diagnosis": ["CONGESTIVE HEART FAILURE"]
                               }
                             },
@@ -301,7 +329,14 @@
                         "symptom": "DIFFICULTY BREATHING"
                       }
                     },
-                    "No": {},
+                    "No": {
+                      "question": {
+                        "Q": "You may have PNEUMONIA, ACUTE BRONCHITIS, or INFLUENZA.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
                     "diagnosis": ["PNEUMONIA", "ACUTE BRONCHITIS", "INFLUENZA"]
                   }
                 },
@@ -327,7 +362,14 @@
                         "symptom": "WHEEZING"
                       }
                     },
-                    "No": {},
+                    "No": {
+                      "question": {
+                        "Q": "You may have ASTHMA.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
                     "diagnosis": ["ASTHMA"]
                   }
                 },
@@ -353,7 +395,14 @@
                                 "symptom": "DIFFICULTY BREATHING"
                               }
                             },
-                            "No": {},
+                            "No": {
+                              "question": {
+                                "Q": "You could have CONGESTIVE HEART FAILURE.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                              }
+                            },
                             "diagnosis": ["CONGESTIVE HEART FAILURE"]
                           }
                         },
@@ -416,7 +465,14 @@
                     "symptom": "DIFFICULTY BREATHING"
                   }
                 },
-                "No": {},
+                "No": {
+                  "question": {
+                    "Q": "You could have CONGESTIVE HEART FAILURE.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
                 "diagnosis": ["CONGESTIVE HEART FAILURE"]
               }
             },

@@ -20,7 +20,14 @@
                 "symptom": "PAINFUL URINATION"
               }
             },
-            "No": {},
+            "No": {
+              "question": {
+                "Q": "You may have a urinary tract infection.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
             "diagnosis": ["CYSTITIS"]
           }
         },

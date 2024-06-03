@@ -42,7 +42,14 @@
                         "symptom": "FEVER"
                       }
                     },
-                    "No": {},
+                    "No": {
+                      "question": {
+                        "Q": "A fever can cause palpitations.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
                     "diagnosis": []
                   }
                 },

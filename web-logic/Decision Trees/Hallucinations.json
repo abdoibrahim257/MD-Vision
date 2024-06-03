@@ -1,83 +1,90 @@
 {
-    "question": {
-        "Q": "Do you have one or more of the following symptoms? <br/>\u2022 General confusion about time, places, or events <br/>\u2022 Agitated behavior <br/>\u2022 Signs of physical illness",
+  "question": {
+    "Q": "Do you have one or more of the following symptoms? <br/>\u2022 General confusion about time, places, or events <br/>\u2022 Agitated behavior <br/>\u2022 Signs of physical illness",
+    "Yes": {
+      "question": {
+        "Q": "See a doctor immediately. You could be experiencing delirium. Would you like to review symptoms commonly associated with confusion?.",
         "Yes": {
-            "question": {
-                "Q": "See a doctor immediately. You could be experiencing delirium. Would you like to review symptoms commonly associated with confusion?.",
-                "Yes": {
-                    "tree": {
-                        "symptom": "confusion"
-                    }
-                },
-                "No": {},
-                "diagnosis": []
-            }
+          "tree": {
+            "symptom": "confusion"
+          }
         },
         "No": {
-            "question": {
-                "Q": "Do the hallucinations occur only just before you fall asleep or just after you wake up?",
+          "question": {
+            "Q": "You could be experiencing delirium.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Do the hallucinations occur only just before you fall asleep or just after you wake up?",
+        "Yes": {
+          "question": {
+            "Q": "It is normal for hallucinations to occur at the point between sleeping and waking.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Do you drink a lot of alcohol, or do you use illegal drugs?",
+            "Yes": {
+              "question": {
+                "Q": "Talk to your doctor. Abuse of alcohol or other drugs can cause hallucinations.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Did you think that you saw or heard a close relative or friend who died recently?",
                 "Yes": {
-                    "question": {
-                        "Q": "It is normal for hallucinations to occur at the point between sleeping and waking.",
+                  "question": {
+                    "Q": "Talk to your doctor, although this type of hallucination often occurs as part of the grieving process.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Do you hear voices?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See a doctor immediately. Hearing voices may be a sign of a mood disorder or a psychotic disorder, especially if the hallucinations are accompanied by feelings of guilt.",
                         "Yes": {},
                         "No": {},
                         "diagnosis": []
-                    }
-                },
-                "No": {
-                    "question": {
-                        "Q": "Do you drink a lot of alcohol, or do you use illegal drugs?",
-                        "Yes": {
-                            "question": {
-                                "Q": "Talk to your doctor. Abuse of alcohol or other drugs can cause hallucinations.",
-                                "Yes": {},
-                                "No": {},
-                                "diagnosis": []
-                            }
-                        },
-                        "No": {
-                            "question": {
-                                "Q": "Did you think that you saw or heard a close relative or friend who died recently?",
-                                "Yes": {
-                                    "question": {
-                                        "Q": "Talk to your doctor, although this type of hallucination often occurs as part of the grieving process.",
-                                        "Yes": {},
-                                        "No": {},
-                                        "diagnosis": []
-                                    }
-                                },
-                                "No": {
-                                    "question": {
-                                        "Q": "Do you hear voices?",
-                                        "Yes": {
-                                            "question": {
-                                                "Q": "See a doctor immediately. Hearing voices may be a sign of a mood disorder or a psychotic disorder, especially if the hallucinations are accompanied by feelings of guilt.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "No": {
-                                            "question": {
-                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "diagnosis": []
-                                    }
-                                },
-                                "diagnosis": []
-                            }
-                        },
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                        "Yes": {},
+                        "No": {},
                         "diagnosis": []
-                    }
+                      }
+                    },
+                    "diagnosis": []
+                  }
                 },
                 "diagnosis": []
-            }
+              }
+            },
+            "diagnosis": []
+          }
         },
         "diagnosis": []
+      }
     },
-    "age-group": ""
+    "diagnosis": []
+  },
+  "age-group": ""
 }

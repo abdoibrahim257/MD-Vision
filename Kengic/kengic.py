@@ -71,7 +71,7 @@ def traverse(graph, max_iters, keywords, n2, optimiser,ngram_dfs): #Algorithm 4
         
         #store the top caption in another global set for backup
         if len(topCaptions) > 0:
-            bestCaption,bestCaptionCost = hnadle_global(bestCaption,bestCaptionCost,topCaptions,topCosts,top_n)
+            bestCaption,bestCaptionCost = handle_global(bestCaption,bestCaptionCost,topCaptions,topCosts,top_n)
             Q = topCaptions
         else:
             break

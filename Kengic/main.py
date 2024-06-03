@@ -62,13 +62,13 @@ def main(image_path):
     
     k = 0
     for keywords in total:
-        graph,edges = create_graph(ngram_dfs[n],keywords , n, parents, hops)
+        graph,_ = create_graph(ngram_dfs[n],keywords , n, parents, hops)
         
         #graph generation top down
         graph = top_down_traversal(graph, keywords, ngram_dfs)
         
         #graph traversal 
-        top_captions, top_costs, V, iterations = traverse(graph, max_iters, keywords, nlogP, optimiser, ngram_dfs)
+        top_captions, top_costs,_,_ = traverse(graph, max_iters, keywords, nlogP, optimiser, ngram_dfs)
         
         #check the size of the captions if greater than 3 then take the top 3
         if len(top_captions) > 3:

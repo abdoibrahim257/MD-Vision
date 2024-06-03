@@ -7,9 +7,9 @@ import pickle
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
-from pycocoevalcap.cider.cider import Cider
-from pycocotools.coco import COCO
-from pycocoevalcap.eval import COCOEvalCap
+# from pycocoevalcap.cider.cider import Cider
+# from pycocotools.coco import COCO
+# from pycocoevalcap.eval import COCOEvalCap
 import tempfile
 
 def ngrams(x, n): #Algorithm 1
@@ -183,13 +183,19 @@ def rank(Q,keywords,top_n,n2,Cost_func,ngram_dfs):
     best_captions = list(best_captions)
     best_costs = list(best_costs)
 
-    if '' in best_captions:
-        best_captions = [i for i in best_captions if i != '']
-        best_costs = [i for i in best_costs if i != '']
+    temp_captions=[]
+    temp_costs=[]
+    for i in range(best_captions):
+        if best_captions[i]!='':
+            temp_captions.append(best_captions[i])
+            temp_costs.append(best_costs[i])
+
+    best_captions=temp_captions
+    best_costs=temp_costs
         
     return best_captions,best_costs
 
-def hnadle_global(global_captions,global_costs,top_captions,top_costs, top_n):
+def handle_global(global_captions,global_costs,top_captions,top_costs, top_n):
     
     for i in range(len(top_captions)):
         temp = ' '.join(top_captions[i])
@@ -200,7 +206,7 @@ def hnadle_global(global_captions,global_costs,top_captions,top_costs, top_n):
     pairs = list(zip(global_captions, global_costs)) # zip bygma3 el 2 lists 3la ba3d w byrag3 iterator
     pairs.sort(key=lambda x: x[1], reverse=True)
 
-    global_captions, global_costs = zip(*pairs) # 3lashan nrag3 el 7aga zy ma kanet
+    global_captions, global_costs = zip(*pairs) # 3lashan nrag3 el 7aga zy ma kanet (unzip the tuples)
 
     # Convert back to list if necessary
     global_captions = list(global_captions)[0:top_n]

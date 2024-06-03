@@ -60,7 +60,6 @@ def main(image_path):
         
     global_caption = {}
     
-    # total = [['patchy' ,'atelectasis']]
     k = 0
     for keywords in total:
         graph,edges = create_graph(ngram_dfs[n],keywords , n, parents, hops)
@@ -87,8 +86,8 @@ def main(image_path):
         best_caption_generated.append(global_caption[key][0][1])
     
     #get the bleu score
-    # bleuScores = get_bleu(best_caption_generated, image_refs)
-    # print('\n', 'Average Bleu Score:', np.round(np.mean(bleuScores),3))
+    bleuScores = get_bleu(best_caption_generated, image_refs)
+    print('\n', 'Average Bleu Score:', np.round(np.mean(bleuScores),3))
     
     #Punctuate each sentence and Capitalize the first letter
     # print('\n', 'Generated Captions:', '\n')
@@ -125,5 +124,8 @@ def initialize(image_path):
     # keywords = eval(input['keywords'].values[0])
     return ngram_dfs,refs,link
 
-main('Test_results\CXR1173_IM-0118-5001.png')
-    
+
+#MAIN
+
+caption = main('Data\\nlm_images\\CXR2867_IM-1274-1001.png')
+print(caption)

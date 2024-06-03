@@ -1,5 +1,6 @@
 from utils import *
-
+import pandas as pd
+stopwords = pd.read_csv('stopwords.csv').values
 
 def create_graph(ngram_df,keywords,n,parents,hops): #Algorithm 3
     queue = keywords
@@ -8,7 +9,7 @@ def create_graph(ngram_df,keywords,n,parents,hops): #Algorithm 3
     graph = {}
     edges = {}
     
-    print('Generating graph with keywords:' + str(keywords), "hops: ", str(hops), "parents: ", str(parents))
+    print('\nGenerating graph with keywords:' + str(keywords), "hops: ", str(hops), "parents: ", str(parents))
     
     while hop < hops and len(queue) > 0:
         current_parent = queue[0].split()
@@ -17,7 +18,7 @@ def create_graph(ngram_df,keywords,n,parents,hops): #Algorithm 3
         if len(current_parent) == 1:
             current_node = current_parent[0]
         else:
-            current_node = ' '.join(current_parent[0:-1]) 
+            current_node = ' '.join(current_parent[0:-1])
         
         graph_node = queue[0]
         queue = queue[1:]
@@ -26,23 +27,24 @@ def create_graph(ngram_df,keywords,n,parents,hops): #Algorithm 3
             if current_hop > hop:
                 hop = hop + 1
             continue
+        
+        elif graph_node not in stopwords:
+            parents_data = get_parents(n,ngram_df,graph_node, parents) #gab 23la 5 probabilities were en el kelma fe 25r el ngram   
+            captions = parents_data[columns].apply(lambda x: ' '.join(x), axis=1).values #joining the n-gram into one sentence 
+            if current_node not in graph.keys():
+                graph[current_node] = []    
 
-        parents_data = get_parents(n,ngram_df,graph_node, parents) #gab 23la 5 probabilities were en el kelma fe 25r el ngram   
-        captions = parents_data[columns].apply(lambda x: ' '.join(x), axis=1).values #joining the n-gram into one sentence 
-        if current_node not in graph.keys():
-            graph[current_node] = []
+            for cap_idx, cap in enumerate(captions):
+                parent_node = ' '.join(cap.split()[0:-1])
+                from_prob = parents_data[cap_idx:cap_idx+1]['from_prob'].values[0]
+                edges[parent_node + ':' + current_node] = from_prob
+                graph[parent_node] = [current_node]
 
-        for cap_idx, cap in enumerate(captions):
-            parent_node = ' '.join(cap.split()[0:-1])
-            from_prob = parents_data[cap_idx:cap_idx+1]['from_prob'].values[0]
-            edges[parent_node + ':' + current_node] = from_prob
-            graph[parent_node] = [current_node]
-
-        queue += [str(hop+1)] + list(captions)
+            queue += [str(hop+1)] + list(captions)
     
     return graph, edges
 
-def top_down_traversal(graph, keywords, ngram_dfs,e_f=2): #Algorithm 3
+def top_down_traversal(graph, keywords, ngram_dfs,e_f=1): #Algorithm 3
     print('Top down traversal for graph (size:' + str(len(graph.keys())) + ') keywords:' + str(keywords))
     for first_node in graph.keys():
         for second_node in graph.keys():
@@ -60,7 +62,7 @@ def traverse(graph, max_iters, keywords, n2, optimiser,ngram_dfs): #Algorithm 4
     Q = [[keyword] for keyword in keywords]
     qi=0
     top_n = 5
-    
+    print('Traversing graph with keywords:' + str(keywords), "max_iters: ", str(max_iters))
     bestCaption = []
     bestCaptionCost = []
     
@@ -68,10 +70,9 @@ def traverse(graph, max_iters, keywords, n2, optimiser,ngram_dfs): #Algorithm 4
         topCaptions,topCosts = rank(Q,keywords,top_n,n2,optimiser,ngram_dfs)
         
         #store the top caption in another global set for backup
-        bestCaption,bestCaptionCost = hnadle_global(bestCaption,bestCaptionCost,topCaptions,topCosts,top_n)
-        
         if len(topCaptions) > 0:
-                Q = topCaptions
+            bestCaption,bestCaptionCost = hnadle_global(bestCaption,bestCaptionCost,topCaptions,topCosts,top_n)
+            Q = topCaptions
         else:
             break
         
@@ -89,12 +90,12 @@ def traverse(graph, max_iters, keywords, n2, optimiser,ngram_dfs): #Algorithm 4
                     else:
                         Q.append(q + [child])
         Q.remove(q)
-        print("iteration:", qi,'/',max_iters, "Captions generated: ", len(S))
+        # print("iteration:", qi,'/',max_iters, "Captions generated: ", len(S))
         qi+=1
     
-    print("\nRanking the captions in S")
+    # print("\nRanking the captions in S")
     if len(S) == 0:
-        print("\nNo captions in S using global captions instead...\n")
+        # print("\nNo captions in S using global captions instead...\n")
         S = bestCaption
     S_splitted = [caption.split() for caption in S]
     top_S, top_S_cost = rank(S_splitted,keywords,top_n,n2,optimiser,ngram_dfs)

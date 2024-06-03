@@ -6,7 +6,7 @@ import numpy as np
 import pickle
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
-from nltk.translate.bleu_score import sentence_bleu
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from pycocoevalcap.cider.cider import Cider
 from pycocotools.coco import COCO
 from pycocoevalcap.eval import COCOEvalCap
@@ -52,7 +52,7 @@ def create_ngrams(data):
 
 def load_data(img_id):
         data = pd.read_csv('./indiana_reports_cleaned3.csv')
-        references = data[data['imgID'] == img_id].values[0]
+        references = eval(data[data['imgID'] == img_id].values[0][1])
         try:
             print('Loading ngrams_dic.pkl...')
             with open('ngrams_dic2.pkl','rb') as f:
@@ -67,7 +67,7 @@ def load_data(img_id):
             with open('ngrams_dic2.pkl', 'wb') as f:
                 pickle.dump(ngrams_dic, f)  
         ngrams_dfs = convert_ngram_dict_to_df(ngrams_dic) #convert ngrams_dic to dictionary of dataframes
-        return ngrams_dfs,references
+        return ngrams_dfs, references
 
 def get_parents(n,ngram_data,graph_node,parents_no=5): #DOESNT REMOVE THE KEYWORD FROM THE PARENTS
  
@@ -87,31 +87,10 @@ def check_connection(sentence,ngrams_dfs):
     n = len(sentence_tokens)
     ngrams = []
     #apply filtering process for extracting this exact sentence from the corpus
-    if n == 1:
-        ngrams = ngrams_dfs[1]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-    elif n == 2:
-        ngrams = ngrams_dfs[2]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-    elif n == 3:
-        ngrams = ngrams_dfs[3]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-        ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
-    elif n == 4:
-        ngrams = ngrams_dfs[4]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-        ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
-        ngrams = ngrams[ngrams[4] == sentence_tokens[3]]
-    elif n == 5:
-        ngrams = ngrams_dfs[5]
-        ngrams = ngrams[ngrams[1] == sentence_tokens[0]]
-        ngrams = ngrams[ngrams[2] == sentence_tokens[1]]
-        ngrams = ngrams[ngrams[3] == sentence_tokens[2]]
-        ngrams = ngrams[ngrams[4] == sentence_tokens[3]]
-        ngrams = ngrams[ngrams[5] == sentence_tokens[4]]
+    ngrams = ngrams_dfs[n]
+    
+    for i in range(1, n+1):
+        ngrams = ngrams[ngrams[i] == sentence_tokens[i-1]]
     
     if len(ngrams) > 0:
         count = ngrams['count'].values[0] #get the count of the sentence in the corpus if the 
@@ -230,25 +209,26 @@ def hnadle_global(global_captions,global_costs,top_captions,top_costs, top_n):
     return global_captions,global_costs
     
 
-
 def get_bleu(topCaptions, reference):
     bleu_scores = []
+    smoothie = SmoothingFunction().method4
     for caption in topCaptions:
-        bleu_score = sentence_bleu(reference, caption.split())
+        bleu_score = sentence_bleu(reference, caption.split(), smoothing_function=smoothie)
         bleu_scores.append(bleu_score)
     return bleu_scores
 
 
-def get_CIDEr(topCaptions, references):
-    meteric = Cider()
-    #gts is the reference captions
-    #res is the generated captions
-    gts = {}
-    res = {}
-    gts[0] = references
-    for i in range(len(topCaptions)):
-        res[0] =[topCaptions[i].split()]
-        
-        score, scores = meteric.compute_score(gts, res)
 
-        print('CIDEr Score:', score)
+# def get_CIDEr(topCaptions, references):
+#     meteric = Cider()
+#     #gts is the reference captions
+#     #res is the generated captions
+#     gts = {}
+#     res = {}
+#     gts[0] = references
+#     for i in range(len(topCaptions)):
+#         res[0] =[topCaptions[i].split()]
+        
+#         score, scores = meteric.compute_score(gts, res)
+
+#         print('CIDEr Score:', score)

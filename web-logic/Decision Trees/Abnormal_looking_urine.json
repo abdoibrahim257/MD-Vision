@@ -12,7 +12,13 @@
                                 "symptom": "FEVER"
                             }
                         },
-                        "No": {},
+                        "No": {
+                            "question":{
+                                "Q": "You are likely dehydrated. Drink more fluids, especially water.",
+                                "Yes": {},
+                                "No": {}
+                            }
+                        },
                         "diagnosis": []
                     }
                 },
@@ -27,7 +33,13 @@
                                         "symptom": "VOMITING"
                                     }
                                 },
-                                "No": {},
+                                "No": {
+                                    "question":{
+                                        "Q": "You are likely dehydrated. Drink more fluids, especially water.",
+                                        "Yes": {},
+                                        "No": {}
+                                    }
+                                },
                                 "diagnosis": []
                             }
                         },
@@ -42,7 +54,13 @@
                                                 "symptom": "DIARRHEA"
                                             }
                                         },
-                                        "No": {},
+                                        "No": {
+                                            "question":{
+                                                "Q": "You are likely dehydrated. Drink more fluids, especially water.",
+                                                "Yes": {},
+                                                "No": {}
+                                            }
+                                        },
                                         "diagnosis": []
                                     }
                                 },

@@ -17,7 +17,14 @@
                                 "symptom": "DEPRESSION"
                             }
                         },
-                        "No": {},
+                        "No": {
+                            "question": {
+                                "Q": "Talk to the person's doctor. Withdrawal can be a sign of DEPRESSION or SCHIZOPHRENIA.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
                         "diagnosis": [
                             "DEPRESSION",
                             "SCHIZOPHRENIA"
@@ -51,7 +58,14 @@
                                                         "symptom": "DEPRESSION"
                                                     }
                                                 },
-                                                "No": {},
+                                                "No": {
+                                                    "question": {
+                                                        "Q": "Talk to the person's doctor. Such behavior may be a sign of DEPRESSION or OBSESSIVE-COMPULSIVE DISORDER.",
+                                                        "Yes": {},
+                                                        "No": {},
+                                                        "diagnosis": []
+                                                    }
+                                                },
                                                 "diagnosis": [
                                                     "DEPRESSION",
                                                     "OBSESSIVE-COMPULSIVE DISORDER"
@@ -99,7 +113,14 @@
                                                 "symptom": "DEPRESSION"
                                             }
                                         },
-                                        "No": {},
+                                        "No": {
+                                            "question": {
+                                                "Q": "Talk to the person's doctor. Such behavior may be a sign of DEPRESSION or OBSESSIVE-COMPULSIVE DISORDER.",
+                                                "Yes": {},
+                                                "No": {},
+                                                "diagnosis": []
+                                            }
+                                        },
                                         "diagnosis": [
                                             "DEPRESSION",
                                             "OBSESSIVE-COMPULSIVE DISORDER"

@@ -23,7 +23,14 @@
                                         "symptom": "Fever"
                                     }
                                 },
-                                "No": {},
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor immediately. A high fever often causes some degree of confusion. Call 123 or your local emergency number or have someone take you to the nearest hospital emergency department if your confusion is severe. You could have MENINGITIS or ENCEPHALITIS.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
                                 "diagnosis": [
                                     "Meningitis",
                                     "Encephalitis"

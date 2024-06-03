@@ -53,13 +53,19 @@
                                         "Q": "Did you gain weight when you were feeling depressed, or have you been taking medication for depression?",
                                         "Yes": {
                                             "question": {
-                                                "Q": "See your doctor. Many people overeat when they are depressed, and some antidepressants can cause weight gain. Would you like to review symptoms commonly associated with depression?",
+                                                "Q": "See your doctor. Many people overeact when they are depressed, and some antidepressants can cause weight gain. Would you like to review symptoms commonly associated with depression?",
                                                 "Yes": {
                                                     "tree": {
                                                         "symptom": "DEPRESSION"
                                                     }
                                                 },
-                                                "No": {},
+                                                "No": {
+                                                    "question":{
+                                                        "Q": "Many people overeact when they are depressed, and some antidepressants can cause weight gain.",
+                                                        "Yes": {},
+                                                        "No": {}
+                                                    }
+                                                },
                                                 "diagnosis": ["DEPRESSION"]
                                             }
                                         },
@@ -144,7 +150,13 @@
                                                 "symptom": "DEPRESSION"
                                             }
                                         },
-                                        "No": {},
+                                        "No": {
+                                            "question":{
+                                                "Q": "Many people overeact when they are depressed, and some antidepressants can cause weight gain.",
+                                                "Yes": {},
+                                                "No": {}
+                                            }
+                                        },
                                         "diagnosis": ["DEPRESSION"]
                                     }
                                 },

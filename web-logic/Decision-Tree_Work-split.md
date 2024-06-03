@@ -1,19 +1,19 @@
-- [x] Feeling generally ill
-- [x] Unexplained weight loss
-- [x] Overweight
-- [x] Difficulty sleeping
+- [x] Feeling generally ill -done
+- [x] Unexplained weight loss -done
+- [x] Overweight -done
+- [x] Difficulty sleeping -done
 - [x] Fever
-- [x] Excessive sweating
+- [x] Excessive sweating -done
 - [x] Swellings under the skin
 - [x] Itching without a rash
 - [x] Feeling faint and fainting
 - [x] Dizziness
-- [x] Headache
+- [x] Headache -done
 - [x] Numbness or tingling
 - [x] Twitching and trembling
 - [x] Pain in the face
-- [x] Confusion
-- [x] Impaired memory
+- [x] Confusion -done
+- [x] Impaired memory 
 - [x] Difficulty speaking
 - [x] Disturbing thought or feelings
 - [x] Unusual behavior

@@ -52,7 +52,13 @@
                                                                 "symptom": "FEVER"
                                                             }
                                                         },
-                                                        "No": {},
+                                                        "No": {
+                                                            "question":{
+                                                                "Q": "Sweating is the normal response to fever",
+                                                                "Yes": {},
+                                                                "No": {}
+                                                            }
+                                                        },
                                                         "diagnosis": []
                                                     }
                                                 },
@@ -263,7 +269,13 @@
                                                         "symptom": "FEVER"
                                                     }
                                                 },
-                                                "No": {},
+                                                "No": {
+                                                    "question":{
+                                                        "Q": "Sweating is the normal response to fever",
+                                                        "Yes": {},
+                                                        "No": {}
+                                                    }
+                                                },
                                                 "diagnosis": []
                                             }
                                         },
@@ -480,7 +492,13 @@
                                 "symptom": "FEVER"
                             }
                         },
-                        "No": {},
+                        "No": {
+                            "question":{
+                                "Q": "Sweating is the normal response to fever",
+                                "Yes": {},
+                                "No": {}
+                            }
+                        },
                         "diagnosis": []
                     }
                 },

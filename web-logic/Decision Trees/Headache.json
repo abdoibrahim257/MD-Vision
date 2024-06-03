@@ -26,7 +26,14 @@
                                         "symptom": "Fever"
                                     }
                                 },
-                                "No": {},
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor. Headaches often occur with fevers.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
                                 "diagnosis": []
                             }
                         },
@@ -41,7 +48,14 @@
                                 "symptom": "Fever"
                             }
                         },
-                        "No": {},
+                        "No": {
+                            "question": {
+                                "Q": "See your doctor. Headaches often occur with fevers.",
+                                "Yes": {},
+                                "No": {},
+                                "diagnosis": []
+                            }
+                        },
                         "diagnosis": []
                     }
                 },
@@ -213,7 +227,14 @@
                                                                                                 "symptom": "Anxiety"
                                                                                             }
                                                                                         },
-                                                                                        "No": {},
+                                                                                        "No": {
+                                                                                            "question": {
+                                                                                                "Q": "See your doctor. Anxiety, stress, and lack Of sleep often cause headaches.",
+                                                                                                "Yes": {},
+                                                                                                "No": {},
+                                                                                                "diagnosis": []
+                                                                                            }
+                                                                                        },
                                                                                         "diagnosis": []
                                                                                     }
                                                                                 },
@@ -339,7 +360,14 @@
                                                                 "symptom": "Anxiety"
                                                             }
                                                         },
-                                                        "No": {},
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor. Anxiety, stress, and lack Of sleep often cause headaches.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
                                                         "diagnosis": []
                                                     }
                                                 },

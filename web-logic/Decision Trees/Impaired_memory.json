@@ -48,7 +48,14 @@
                                                                 "symptom": "anxiety"
                                                             }
                                                         },
-                                                        "No": {},
+                                                        "No": {
+                                                            "question": {
+                                                                "Q": "See your doctor if you are feeling anxious. However, stress may be affecting your ability to concentrate.",
+                                                                "Yes": {},
+                                                                "No": {},
+                                                                "diagnosis": []
+                                                            }
+                                                        },
                                                         "diagnosis": []
                                                     }
                                                 },
@@ -254,7 +261,14 @@
                                         "symptom": "anxiety"
                                     }
                                 },
-                                "No": {},
+                                "No": {
+                                    "question": {
+                                        "Q": "See your doctor if you are feeling anxious. However, stress may be affecting your ability to concentrate.",
+                                        "Yes": {},
+                                        "No": {},
+                                        "diagnosis": []
+                                    }
+                                },
                                 "diagnosis": []
                             }
                         },

@@ -77,7 +77,6 @@ async def upload_file(file: UploadFile = File(...)):
 
 @app.get("/upload")
 def startPrediction(model : str):
-    
     image_path = "upload/user_image.png"
     image = Image.open(image_path)
     if (model == "coAtt"):

@@ -15,11 +15,15 @@ const SearchBar = ( { setResults } ) => {
         //         console.log(results);
         //         // setResults(results);
         //     });
-        fetch("https://shad-honest-anchovy.ngrok-free.app/maven", {
-            headers: new Headers({
-                "ngrok-skip-browser-warning": "69420",
-            }),
-        }).then(response => response.json())
+
+        
+        // fetch("https://shad-honest-anchovy.ngrok-free.app/maven", {
+        //     headers: new Headers({
+        //         "ngrok-skip-browser-warning": "69420",
+        //     }),
+        // }).then(response => response.json())
+        fetch("http://127.0.0.1:8000/maven")
+            .then(response => response.json())
             .then(json => {
                 const symptoms = json.fileList
                 const results = symptoms.filter((symptom) => {

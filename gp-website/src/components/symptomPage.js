@@ -16,11 +16,12 @@ const SymptomPage = () => {
     /* first get symptom names from the backend  */
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch("https://shad-honest-anchovy.ngrok-free.app/maven", {
-                    headers: new Headers({
-                    "ngrok-skip-browser-warning": "69420",
-                }),
-            });
+            // const response = await fetch("https://shad-honest-anchovy.ngrok-free.app/maven", {
+            //         headers: new Headers({
+            //         "ngrok-skip-browser-warning": "69420",
+            //     }),
+            // });
+            const response = await fetch("http://127.0.0.1:8000/maven");
             const data = await response.json();
             // console.log(data)
             const symptomsList = data.fileList;
@@ -30,34 +31,8 @@ const SymptomPage = () => {
     }, [])
 
 
-    // const sympNames = [ //examples
-    //     "Abdominal pain",
-    //     "Anxiety",
-    //     "Back pain",
-    //     "Bleeding",
-    //     "Chest pain",
-    //     "Cough",
-    //     "Diarrhea",
-    //     "Dizziness",
-    //     "Fatigue",
-    //     "Fever",
-    //     "Headache",
-    //     "Heartburn",
-    //     "Joint pain",
-    //     "Nausea",
-    //     "Rash",
-    //     "Shortness of breath",
-    //     "Sore throat",
-    //     "Vomiting"
-    // ]
-
-
     const createSymDict = () => {
         let symDict = {};
-
-        // Letters.forEach(letter => {
-        //     symDict[letter] = []
-        // })
         
         sympList.forEach(sym => {
             let firstLetter = sym[0].toUpperCase()
@@ -69,11 +44,8 @@ const SymptomPage = () => {
 
         return symDict;
     }
-    // const dict = {}
     
     const dict = createSymDict()
-
-    // console.log(symDict)
     
     return (
         <div>

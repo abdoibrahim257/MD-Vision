@@ -4,9 +4,11 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from PIL import Image
 import os
+import pandas as pd
 
 from predict import *
 from treeTraversal import *
+from kengic_main import *
 from build_vocab import Vocabulary
 
 from pydantic import BaseModel
@@ -15,6 +17,7 @@ app = FastAPI()
 
 # Initialize the models
 mlc, visual_extractor, sentence_lstm, word_lstm , vocab = initialize_models()
+ngrams_dfs = initialize_kengic()
 
 app.add_middleware(
     CORSMiddleware,
@@ -33,6 +36,7 @@ class Answer(BaseModel):
 
 class response(BaseModel):
     fileList: list[str]
+    
 
 #our start of the chat is at /maven/sypmtom
 @app.get("/maven/{symptom}")
@@ -72,9 +76,15 @@ async def upload_file(file: UploadFile = File(...)):
         return JSONResponse(status_code=500, content={"message": "An error occurred while uploading the file"})
 
 @app.get("/upload")
-def startPrediction():
+def startPrediction(model : str):
+    
     image_path = "upload/user_image.png"
     image = Image.open(image_path)
-    captions = predict(image, mlc, visual_extractor, sentence_lstm, word_lstm, vocab)
-    
-    return JSONResponse(status_code=200, content={"message": captions})
+    if (model == "coAtt"):
+        captions = predict(image, mlc, visual_extractor, sentence_lstm, word_lstm, vocab)
+        return JSONResponse(status_code=200, content={"message": captions})
+    elif(model == "kengic"):
+        captions = kengic_main(image, mlc, visual_extractor, ngrams_dfs)
+        return JSONResponse(status_code=200, content={"message": captions})
+    else:
+        return JSONResponse(status_code=500, content={"message": "An error occurred while starting the prediction"})

@@ -4,7 +4,7 @@ import '../styles/heroSection.css'
 import NavBar from './navbar.js'
 import robot from '../assets/loveBot.svg'
 import warning from '../assets/WARNING.png'
-
+// eslint-disable-next-line
 import * as LottiePlayer from "@lottiefiles/lottie-player";
 
 import {
@@ -27,7 +27,7 @@ function reducer(state, action) {
 }
 
 const ChatPage = () => {
-  const [padded, setPadded] = React.useState(false)
+  // const [padded, setPadded] = React.useState(false)
   const [state, dispatch] = useReducer(reducer, initialState);
   const incrementIndex = () => {
     dispatch({ type: 'increment' });
@@ -67,30 +67,36 @@ const ChatPage = () => {
    
   const fetchFirstMessage = async () => {
     let symptom = currentLink.split('/').pop()
-    const response = await fetch('https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom , {
-        headers: new Headers({
-            "ngrok-skip-browser-warning": "69420",
-        }),
-    })
-    const data = await response.json()
-    
+    // const response = await fetch('https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom , {
+    //     headers: new Headers({
+    //         "ngrok-skip-browser-warning": "69420",
+    //     }),
+    // })
 
-    const message = {
-      // message: data.Question,
-      message: "",
-      sender: 'Maven'
-    }
-
-    setMessages((oldMessages = {}) => {
-      var newMessages = {...oldMessages};
-      let newKey = state.index; // get the next key
-      // console.log(newKey)
-      newMessages[newKey] = message;
-      return newMessages;
-    });
+    // const response = await fetch('http://127.0.0.1:8000/maven/'+symptom)
     
-    typeWriter(state.index, data.Question, 0);
-    incrementIndex();
+    // const data = await response.json()
+    
+    fetch('http://127.0.0.1:8000/maven/'+symptom)
+      .then(response => response.json())
+      .then(data =>{
+          const message = {
+            // message: data.Question,
+            message: "",
+            sender: 'Maven'
+          }
+      
+          setMessages((oldMessages = {}) => {
+            var newMessages = {...oldMessages};
+            let newKey = state.index; // get the next key
+            // console.log(newKey)
+            newMessages[newKey] = message;
+            return newMessages;
+          });
+          
+          typeWriter(state.index, data.Question, 0);
+          incrementIndex();
+      })
 
   }
 
@@ -102,13 +108,14 @@ const ChatPage = () => {
 
   async function fetchNextQuestion (answer) {
     let symptom = currentLink.split('/').pop();
-    let url = 'https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom;
+    // let url = 'https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom;
+    let url = 'http://127.0.0.1:8000/maven/'+symptom;
 
     fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json', //specify the content type
-        'ngrok-skip-browser-warning': '69420',
+        'Content-Type': 'application/json' //specify the content type
+        // 'ngrok-skip-browser-warning': '69420',
       },
       body: JSON.stringify({ans: answer}),
     }).then(response => response.json())
@@ -118,7 +125,7 @@ const ChatPage = () => {
       if (Q.includes('Diagnosis:')) {
         setDiagnosed(true)
       }
-      // setTyping(true)
+
       const m = {
         // message: Q,
         message: "",

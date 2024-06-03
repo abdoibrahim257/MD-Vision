@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavBar from './navbar'
 import LoadingComponent from './LoadingComponent'
 import CaptionGen from './CaptionGen';
+import Swal from 'sweetalert2';
 
 import '../styles/ScanPage.css'
 
@@ -11,43 +12,47 @@ import reload from "../assets/reload.svg"
 
 
 const ScanPage = () => {
+    const [model, setModel] = useState('')
+    const [padded, setPadded] = useState(false)
     const [predictions, setPredictions] = useState([])
     const [predicting, setPredicting] = useState(false)
     const [uploaded, setIsUploaded] = useState(false)
     const [uploadedImage, setUploadedImage] = useState('')
 
+    const handleModelChange = (e) => {
+        setModel(e.target.value)
+    };
+
     const handleFileChange = (e) => {
         var f = e.target.files[0]
-        // console.log(f.type)
 
         if (!f || f.type !== 'image/png') {
             setIsUploaded(false)
             return
         }
-        // setIsUploaded(true)
 
         // send the file to back end
         const formData = new FormData()
         formData.append('file', f)
-        // console.log(formData)
 
         const requestOptions = {
             method: 'POST',
             body: formData
         }
-        fetch('https://shad-honest-anchovy.ngrok-free.app/upload', requestOptions)
-    .then(response => {
-        if (response.ok) {
-            setIsUploaded(true)
-            // show the image we uploaded here
-            setUploadedImage(URL.createObjectURL(formData.get('file')))
-        } else {
-            setIsUploaded(false)
-        }
-    })
-    .catch(error => {
-        console.error('There was an error!', error);
-    });
+        // fetch('https://shad-honest-anchovy.ngrok-free.app/upload', requestOptions)
+        fetch('http://127.0.0.1:8000/upload', requestOptions)
+        .then(response => {
+            if (response.ok) {
+                setIsUploaded(true)
+                // show the image we uploaded here
+                setUploadedImage(URL.createObjectURL(formData.get('file')))
+            } else {
+                setIsUploaded(false)
+            }
+        })
+        .catch(error => {
+            console.error('There was an error!', error);
+        });
     };
 
     //useeffect for loading screen
@@ -55,38 +60,48 @@ const ScanPage = () => {
     const handlePredict = () => {
 
         //call the back and get predictions but for now
-        setPredicting(true)
+        if (model === "coAtt" || model === "kengic") {
 
-                //send get request to backend to get predictions
-        fetch('https://shad-honest-anchovy.ngrok-free.app/upload', {
-            headers: new Headers({
-                "ngrok-skip-browser-warning": "69420",
-            }),
-        }).then(response => {
-            if (response.ok) {
-                //convert response to json and set predictions
-                response.json().then(data => {
-                    console.log(data.message)
-                    //add data to list of predictions
-                    setPredictions([data.message])
-                    // setPredictions(...predictions, data.message)
+            setPredicting(true)
+    
+            // fetch('https://shad-honest-anchovy.ngrok-free.app/upload', {
+            //     headers: new Headers({
+            //         "ngrok-skip-browser-warning": "69420",
+            //     }),
+            // }).then(response => {
+            fetch(`http://127.0.0.1:8000/upload/?model=${model}`).then(response => {
+                if (response.ok) {
+                    //convert response to json and set predictions
+                    response.json().then(data => {
+                        console.log(data.message)
+                        //add data to list of predictions
+                        setPredictions([data.message])
+                        // setPredictions(...predictions, data.message)
+                        setPredicting(false)
+                    })
+                } else {
                     setPredicting(false)
-                })
-            } else {
-                setPredicting(false)
-            }
-        }).catch(error => {
-            console.error('There was an error!', error);
-        });
-    }
+                }
+            }).catch(error => {
+                console.error('There was an error!', error);
+            });
+        }
+        else{
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please select a model to start diagnosing!',
+            })
+        }
+    };
 
     return (
         <div>
             {predicting ? <LoadingComponent /> : null}
             <div className='test'>
-                <div class="scan-background">
-                    <NavBar />
-                    <div class="content">
+                <div className="scan-background">
+                    <NavBar setPadding={setPadded}/>
+                    <div className={padded ? "content maintain-content" : "content"}>
                         <div className='hero-wrapper'>
                             <div className='page-quote'>
                                 <p><span id='upload'>Upload</span> a scan</p>
@@ -106,7 +121,7 @@ const ScanPage = () => {
                 </div>
                 <div className='content'>
                     <div class="scan-wrapper">
-                        <p className='objective'>Use AI to Diagnose for your scan.</p>
+                        <p className='objective'>Use AI to Diagnose your scan.</p>
                         <div class="scan">
                             <div className='nashat'>
                                 <p className='instructions'>1. Upload .png file of your scan</p>
@@ -127,19 +142,25 @@ const ScanPage = () => {
                                             Click to upload
                                         </div>
                                     </button>
-
                             }
-                            <span className={uploaded ? "success" : "successHidden"}><img src={bono} />Uploaded Successfully</span>
+                            <span className={uploaded ? "success" : "successHidden"}><img src={bono} alt='successfull upload'/>Uploaded Successfully</span>
+                        </div>
+                        <div className="model-type">
+                            <p className='instructions'>2.Choose the model to use</p>
+                            <select className='DropDown' onChange={handleModelChange}>
+                                <option value = "" disabled selected> Select a model</option>
+                                <option value = "kengic">Kengic</option>
+                                <option value = "coAtt">LSTM</option>
+                            </select>
                         </div>
                         <div className={uploaded? 'start-uploaded' : 'start-scan'}>
-                            <p className='instructions'>2. Know your diagnosis</p>
+                            <p className='instructions'>3. Know your diagnosis</p>
                             <button onClick={handlePredict} className='start' disabled={!uploaded}>Start Diagnosing</button>
                         </div>
                         {predictions.length > 0 ? <CaptionGen preds={predictions} /> : null}
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

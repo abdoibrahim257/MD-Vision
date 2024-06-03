@@ -1,249 +1,255 @@
 {
-    "question": {
-        "Q": "Have your periods always been heavy?",
+  "question": {
+    "Q": "Have your periods always been heavy?",
+    "Yes": {
+      "question": {
+        "Q": "Have your periods become heavier in recent months?",
         "Yes": {
-            "question": {
-                "Q": "Have your periods become heavier in recent months?",
+          "question": {
+            "Q": "Did your periods become heavier after an intrauterine device (IUD) was inserted?",
+            "Yes": {
+              "question": {
+                "Q": "Call your doctor. Heavier periods are a common side effect of IUDS.",
+                "Yes": {},
+                "No": {},
+                "diagnosis": []
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Have your periods become more painful?",
                 "Yes": {
-                    "question": {
-                        "Q": "Did your periods become heavier after an intrauterine device (IUD) was inserted?",
+                  "question": {
+                    "Q": "Is the pain worse toward the end of a period?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have a disorder of the pelvic organs such as ENDOMETRIOSIS. Would you like to see symptoms associated with PAINFUL PERIODS?",
                         "Yes": {
-                            "question": {
-                                "Q": "Call your doctor. Heavier periods are a common side effect of IUDS.",
+                          "tree": {
+                            "symptom": "painful periods"
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "You may have a disorder of the pelvic organs such as ENDOMETRIOSIS.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Do you have a vaginal discharge between periods that is unusually heavy or that has an unpleasant odor, or is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. You may have an infection of the uterus, fallopian tubes, ovaries, or surrounding tissues.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "See your doctor. may have a benign growth in the uterus.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Have you had only one heavy period that was a week or more late?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. A delayed period can be heavier than usual and is seldom a cause for concern. However, if there is a possibility that you were pregnant, you could have had an early MISCARRIAGE.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Have you recently started to have a few days of light bleeding at the beginning or end of a period?",
+                        "Yes": {
+                          "question": {
+                            "Q": "See your doctor. These symptoms are common as women approach MENOPAUSE. However, they can also be symptoms of FIBROIDS or POLYCYSTIC OVARIAN SYNDROME.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": ["FIBROIDS", "POLYCYSTIC OVARIAN SYNDROME"]
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "Have you recently had a baby?",
+                            "Yes": {
+                              "question": {
+                                "Q": "Talk to your doctor. The first period after childbirth is often heavier than usual.",
                                 "Yes": {},
                                 "No": {},
                                 "diagnosis": []
-                            }
-                        },
-                        "No": {
-                            "question": {
-                                "Q": "Have your periods become more painful?",
-                                "Yes": {
-                                    "question": {
-                                        "Q": "Is the pain worse toward the end of a period?",
-                                        "Yes": {
-                                            "question": {
-                                                "Q": "See your doctor. You may have a disorder of the pelvic organs such as ENDOMETRIOSIS. Would you like to see symptoms associated with PAINFUL PERIODS?",
-                                                "Yes": {
-                                                    "tree": {
-                                                        "symptom": "painful periods"
-                                                    }
-                                                },
-                                                "No": {},
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "No": {
-                                            "question": {
-                                                "Q": "Do you have a vaginal discharge between periods that is unusually heavy or that has an unpleasant odor, or is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
-                                                "Yes": {
-                                                    "question": {
-                                                        "Q": "See your doctor. You may have an infection of the uterus, fallopian tubes, ovaries, or surrounding tissues.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "No": {
-                                                    "question": {
-                                                        "Q": "See your doctor. may have a benign growth in the uterus.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "diagnosis": []
-                                    }
-                                },
-                                "No": {
-                                    "question": {
-                                        "Q": "Have you had only one heavy period that was a week or more late?",
-                                        "Yes": {
-                                            "question": {
-                                                "Q": "See your doctor. A delayed period can be heavier than usual and is seldom a cause for concern. However, if there is a possibility that you were pregnant, you could have had an early MISCARRIAGE.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "No": {
-                                            "question": {
-                                                "Q": "Have you recently started to have a few days of light bleeding at the beginning or end of a period?",
-                                                "Yes": {
-                                                    "question": {
-                                                        "Q": "See your doctor. These symptoms are common as women approach MENOPAUSE. However, they can also be symptoms of FIBROIDS or POLYCYSTIC OVARIAN SYNDROME.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": [
-                                                            "FIBROIDS",
-                                                            "POLYCYSTIC OVARIAN SYNDROME"
-                                                        ]
-                                                    }
-                                                },
-                                                "No": {
-                                                    "question": {
-                                                        "Q": "Have you recently had a baby?",
-                                                        "Yes": {
-                                                            "question": {
-                                                                "Q": "Talk to your doctor. The first period after childbirth is often heavier than usual.",
-                                                                "Yes": {},
-                                                                "No": {},
-                                                                "diagnosis": []
-                                                            }
-                                                        },
-                                                        "No": {
-                                                            "question": {
-                                                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
-                                                                "Yes": {},
-                                                                "No": {},
-                                                                "diagnosis": []
-                                                            }
-                                                        },
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "diagnosis": []
-                                    }
-                                },
+                              }
+                            },
+                            "No": {
+                              "question": {
+                                "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                                "Yes": {},
+                                "No": {},
                                 "diagnosis": []
-                            }
+                              }
+                            },
+                            "diagnosis": []
+                          }
                         },
                         "diagnosis": []
-                    }
-                },
-                "No": {
-                    "question": {
-                        "Q": "See your doctor. Your heavy periods are probably not a cause for concern, but you are at risk of IRON DEFICIENCY ANEMIA from heavy blood loss.",
-                        "Yes": {},
-                        "No": {},
-                        "diagnosis": [
-                            "IRON DEFICIENCY ANEMIA"
-                        ]
-                    }
+                      }
+                    },
+                    "diagnosis": []
+                  }
                 },
                 "diagnosis": []
-            }
+              }
+            },
+            "diagnosis": []
+          }
         },
         "No": {
-            "question": {
-                "Q": "Did your periods become heavier after an intrauterine device (IUD) was inserted?",
+          "question": {
+            "Q": "See your doctor. Your heavy periods are probably not a cause for concern, but you are at risk of IRON DEFICIENCY ANEMIA from heavy blood loss.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": ["IRON DEFICIENCY ANEMIA"]
+          }
+        },
+        "diagnosis": []
+      }
+    },
+    "No": {
+      "question": {
+        "Q": "Did your periods become heavier after an intrauterine device (IUD) was inserted?",
+        "Yes": {
+          "question": {
+            "Q": "Call your doctor. Heavier periods are a common side effect of IUDS.",
+            "Yes": {},
+            "No": {},
+            "diagnosis": []
+          }
+        },
+        "No": {
+          "question": {
+            "Q": "Have your periods become more painful?",
+            "Yes": {
+              "question": {
+                "Q": "Is the pain worse toward the end of a period?",
                 "Yes": {
-                    "question": {
-                        "Q": "Call your doctor. Heavier periods are a common side effect of IUDS.",
+                  "question": {
+                    "Q": "See your doctor. You may have a disorder of the pelvic organs such as ENDOMETRIOSIS. Would you like to see symptoms associated with PAINFUL PERIODS?",
+                    "Yes": {
+                      "tree": {
+                        "symptom": "painful periods"
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "You may have a disorder of the pelvic organs such as ENDOMETRIOSIS.",
                         "Yes": {},
                         "No": {},
                         "diagnosis": []
-                    }
+                      }
+                    },
+                    "diagnosis": []
+                  }
                 },
                 "No": {
-                    "question": {
-                        "Q": "Have your periods become more painful?",
-                        "Yes": {
-                            "question": {
-                                "Q": "Is the pain worse toward the end of a period?",
-                                "Yes": {
-                                    "question": {
-                                        "Q": "See your doctor. You may have a disorder of the pelvic organs such as ENDOMETRIOSIS. Would you like to see symptoms associated with PAINFUL PERIODS?",
-                                        "Yes": {
-                                            "tree": {
-                                                "symptom": "painful periods"
-                                            }
-                                        },
-                                        "No": {},
-                                        "diagnosis": []
-                                    }
-                                },
-                                "No": {
-                                    "question": {
-                                        "Q": "Do you have a vaginal discharge between periods that is unusually heavy or that has an unpleasant odor, or is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
-                                        "Yes": {
-                                            "question": {
-                                                "Q": "See your doctor. You may have an infection of the uterus, fallopian tubes, ovaries, or surrounding tissues.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "No": {
-                                            "question": {
-                                                "Q": "See your doctor. may have a benign growth in the uterus.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "diagnosis": []
-                                    }
-                                },
-                                "diagnosis": []
-                            }
-                        },
-                        "No": {
-                            "question": {
-                                "Q": "Have you had only one heavy period that was a week or more late?",
-                                "Yes": {
-                                    "question": {
-                                        "Q": "See your doctor. A delayed period can be heavier than usual and is seldom a cause for concern. However, if there is a possibility that you were pregnant, you could have had an early MISCARRIAGE.",
-                                        "Yes": {},
-                                        "No": {},
-                                        "diagnosis": []
-                                    }
-                                },
-                                "No": {
-                                    "question": {
-                                        "Q": "Have you recently started to have a few days of light bleeding at the beginning or end of a period?",
-                                        "Yes": {
-                                            "question": {
-                                                "Q": "See your doctor. These symptoms are common as women approach MENOPAUSE. However, they can also be symptoms of FIBROIDS or POLYCYSTIC OVARIAN SYNDROME.",
-                                                "Yes": {},
-                                                "No": {},
-                                                "diagnosis": [
-                                                    "FIBROIDS",
-                                                    "POLYCYSTIC OVARIAN SYNDROME"
-                                                ]
-                                            }
-                                        },
-                                        "No": {
-                                            "question": {
-                                                "Q": "Have you recently had a baby?",
-                                                "Yes": {
-                                                    "question": {
-                                                        "Q": "Talk to your doctor. The first period after childbirth is often heavier than usual.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "No": {
-                                                    "question": {
-                                                        "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
-                                                        "Yes": {},
-                                                        "No": {},
-                                                        "diagnosis": []
-                                                    }
-                                                },
-                                                "diagnosis": []
-                                            }
-                                        },
-                                        "diagnosis": []
-                                    }
-                                },
-                                "diagnosis": []
-                            }
-                        },
+                  "question": {
+                    "Q": "Do you have a vaginal discharge between periods that is unusually heavy or that has an unpleasant odor, or is your temperature 100 \u2109 ( 37.8 \u2103 ) or higher?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. You may have an infection of the uterus, fallopian tubes, ovaries, or surrounding tissues.",
+                        "Yes": {},
+                        "No": {},
                         "diagnosis": []
-                    }
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "See your doctor. may have a benign growth in the uterus.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
                 },
                 "diagnosis": []
-            }
+              }
+            },
+            "No": {
+              "question": {
+                "Q": "Have you had only one heavy period that was a week or more late?",
+                "Yes": {
+                  "question": {
+                    "Q": "See your doctor. A delayed period can be heavier than usual and is seldom a cause for concern. However, if there is a possibility that you were pregnant, you could have had an early MISCARRIAGE.",
+                    "Yes": {},
+                    "No": {},
+                    "diagnosis": []
+                  }
+                },
+                "No": {
+                  "question": {
+                    "Q": "Have you recently started to have a few days of light bleeding at the beginning or end of a period?",
+                    "Yes": {
+                      "question": {
+                        "Q": "See your doctor. These symptoms are common as women approach MENOPAUSE. However, they can also be symptoms of FIBROIDS or POLYCYSTIC OVARIAN SYNDROME.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": ["FIBROIDS", "POLYCYSTIC OVARIAN SYNDROME"]
+                      }
+                    },
+                    "No": {
+                      "question": {
+                        "Q": "Have you recently had a baby?",
+                        "Yes": {
+                          "question": {
+                            "Q": "Talk to your doctor. The first period after childbirth is often heavier than usual.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "No": {
+                          "question": {
+                            "Q": "See your doctor if you are unable to make a diagnosis from this chat.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
+                        "diagnosis": []
+                      }
+                    },
+                    "diagnosis": []
+                  }
+                },
+                "diagnosis": []
+              }
+            },
+            "diagnosis": []
+          }
         },
         "diagnosis": []
+      }
     },
-    "age-group": ""
+    "diagnosis": []
+  },
+  "age-group": ""
 }

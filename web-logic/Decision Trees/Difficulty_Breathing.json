@@ -74,7 +74,14 @@
                             "symptom": "ANXIETY"
                           }
                         },
-                        "No": {},
+                        "No": {
+                          "question": {
+                            "Q": "Your problem is probably hyperventilation resulting from ANXIETY.",
+                            "Yes": {},
+                            "No": {},
+                            "diagnosis": []
+                          }
+                        },
                         "diagnosis": ["ANXIETY"]
                       }
                     },

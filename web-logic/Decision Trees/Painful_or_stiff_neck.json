@@ -62,7 +62,14 @@
                         "symptom": "SWELLING UNDER THE SKIN"
                       }
                     },
-                    "No": {},
+                    "No": {
+                      "question": {
+                        "Q": "You may have swollen lymph glands.",
+                        "Yes": {},
+                        "No": {},
+                        "diagnosis": []
+                      }
+                    },
                     "diagnosis": []
                   }
                 },

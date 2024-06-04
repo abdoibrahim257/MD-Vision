@@ -127,5 +127,5 @@ def initialize(image_path):
 
 #MAIN
 
-caption = main('Data\\nlm_images\\CXR2867_IM-1274-1001.png')
+caption = main('Test_results\CXR793_IM-2330-1001.png')
 print(caption)

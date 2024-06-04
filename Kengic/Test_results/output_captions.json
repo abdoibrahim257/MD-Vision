@@ -86,7 +86,8 @@
             "No focal airspace consolidation to moderate cardiomegaly.",
             "No focal airspace consolidation pneumothorax or atelectasis.",
             "Scarring or pneumothorax is no opacity to the lungs are clear without focal airspace consolidation suspicious pulmonary findings of diaphragm.",
-            "Degenerative change of the thoracic spine. Calcified granuloma."
+            "Degenerative change of the thoracic spine.", 
+            "Calcified granuloma."
         ],
         "Actual":[
             "cardiomegaly with unfolded aorta",

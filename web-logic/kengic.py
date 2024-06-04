@@ -44,7 +44,7 @@ def create_graph(ngram_df,keywords,n,parents,hops): #Algorithm 3
     
     return graph, edges
 
-def top_down_traversal(graph, keywords, ngram_dfs,e_f=1): #Algorithm 3
+def top_down_traversal(graph, keywords, ngram_dfs,e_f=2): #Algorithm 3
     # print('Top down traversal for graph (size:' + str(len(graph.keys())) + ') keywords:' + str(keywords))
     for first_node in graph.keys():
         for second_node in graph.keys():
@@ -71,7 +71,7 @@ def traverse(graph, max_iters, keywords, n2, optimiser,ngram_dfs): #Algorithm 4
         
         #store the top caption in another global set for backup
         if len(topCaptions) > 0:
-            bestCaption,bestCaptionCost = hnadle_global(bestCaption,bestCaptionCost,topCaptions,topCosts,top_n)
+            bestCaption,bestCaptionCost = handle_global(bestCaption,bestCaptionCost,topCaptions,topCosts,top_n)
             Q = topCaptions
         else:
             break

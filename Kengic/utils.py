@@ -185,7 +185,7 @@ def rank(Q,keywords,top_n,n2,Cost_func,ngram_dfs):
 
     temp_captions=[]
     temp_costs=[]
-    for i in range(best_captions):
+    for i in range(len(best_captions)):
         if best_captions[i]!='':
             temp_captions.append(best_captions[i])
             temp_costs.append(best_costs[i])

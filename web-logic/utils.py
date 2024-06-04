@@ -185,13 +185,20 @@ def rank(Q,keywords,top_n,n2,Cost_func,ngram_dfs):
     best_captions = list(best_captions)
     best_costs = list(best_costs)
 
-    if '' in best_captions:
-        best_captions = [i for i in best_captions if i != '']
-        best_costs = [i for i in best_costs if i != '']
+    temp_captions=[]
+    temp_costs=[]
+    for i in range(len(best_captions)):
+        if best_captions[i]!='':
+            temp_captions.append(best_captions[i])
+            temp_costs.append(best_costs[i])
+            
+    if len(temp_captions) > 0:
+        best_captions=temp_captions
+        best_costs=temp_costs
         
     return best_captions,best_costs
 
-def hnadle_global(global_captions,global_costs,top_captions,top_costs, top_n):
+def handle_global(global_captions,global_costs,top_captions,top_costs, top_n):
     
     for i in range(len(top_captions)):
         temp = ' '.join(top_captions[i])

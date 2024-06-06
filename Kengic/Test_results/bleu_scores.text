@@ -1,3 +1,4 @@
+model: resnet152
 "Image: CXR3110_IM-1460-1001.png Average Bleu Score: 0.154"
 "Image: CXR1173_IM-0118-5001.png Average Bleu Score: 0.206"
 "Image: CXR2030_IM-0675-1001.png Average Bleu Score: 0.115"

@@ -1,5 +1,6 @@
 from kengic import *
 from predict import *
+import os
 
 n = 2 #ngrams default = 3
 parents = 5 #parents default = 5
@@ -16,8 +17,8 @@ def main(image_path):
     
     #remove the cxr getid
     image = Image.open(image_path)
-    mlc, visual_extractor, vocab = initialize_models()
-    topics = predict(image, mlc, visual_extractor, vocab)
+    mlc, visual_extractor, _, _ , vocab = initialize_models('resnet50')
+    topics = kengic_predict(image, mlc, visual_extractor)
     
     #remove commas from the topics
     topics = [str(topic).replace(',', '') for topic in topics]
@@ -54,7 +55,7 @@ def main(image_path):
         total = [x for x in total if len(x) > 1]
         
     else:
-        single = [topic for topic in topics if len(topic.split())==1] 
+        single = [topic for topic in topics if len(topic.split())==1]
         multi = [topic.split() for topic in topics if len(topic.split()) > 1]
         total = [single]+  multi
         
@@ -83,7 +84,9 @@ def main(image_path):
     best_caption_generated = []
     
     for key in global_caption.keys():
-        best_caption_generated.append(global_caption[key][0][1])
+        if len(global_caption[key]) > 1:
+            best_caption_generated.append(global_caption[key][0][1])
+        # best_caption_generated.append(global_caption[key][0][1])
     
     #get the bleu score
     bleuScores = get_bleu(best_caption_generated, image_refs)
@@ -92,7 +95,7 @@ def main(image_path):
     #Punctuate each sentence and Capitalize the first letter
     # print('\n', 'Generated Captions:', '\n')
     
-    return punctuate_and_capitalize(best_caption_generated) 
+    return np.round(np.mean(bleuScores),3), punctuate_and_capitalize(best_caption_generated) 
     
 def punctuate_and_capitalize(sentences):
     punctuated_sentences = []
@@ -126,6 +129,14 @@ def initialize(image_path):
 
 
 #MAIN
-
-caption = main('Test_results\CXR793_IM-2330-1001.png')
-print(caption)
+#loop on images in Test_results run main using the images path and write in file each image and its bleu
+imgDir = 'Test_results/imgs'
+for img in os.listdir(imgDir):
+    bleu, caption = main(os.path.join(imgDir,img))
+    with open('Test_results/caption_gen.txt', 'a') as f:
+        # "Image: CXR686_IM-2254-2001.png Average Bleu Score: 0.055"
+        f.write("iamge: "+ img + "Caption output: " + caption + ' Average Bleu Score: ' + str(bleu) + '\n')
+    # print(img + ' : ' + caption)
+    
+# caption = main('Test_results\CXR3110_IM-1460-1001.png')
+# print(caption)

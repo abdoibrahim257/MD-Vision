@@ -13,11 +13,31 @@ import reload from "../assets/reload.svg"
 
 const ScanPage = () => {
     const [model, setModel] = useState('')
+    const [initType, setInitialisedType] = useState('')
     const [padded, setPadded] = useState(false)
     const [predictions, setPredictions] = useState([])
     const [predicting, setPredicting] = useState(false)
     const [uploaded, setIsUploaded] = useState(false)
     const [uploadedImage, setUploadedImage] = useState('')
+
+
+    const handleInitializeModel = (e) => {
+        setInitialisedType(e.target.value)
+        let initType = e.target.value
+        if (initType !== ""){
+            fetch(`http://127.0.0.1:8000/upload/?init=0&model=${initType}`)
+            .then(response => {
+                if (response.ok) {
+                    console.log("model initialised")
+                } else {
+                    console.log("model not initialised")
+                }
+            }).catch(error => {
+                console.error('There was an error!', error);
+            });
+        }
+    }
+
 
     const handleModelChange = (e) => {
         setModel(e.target.value)
@@ -60,37 +80,52 @@ const ScanPage = () => {
     const handlePredict = () => {
 
         //call the back and get predictions but for now
-        if (model === "coAtt" || model === "kengic") {
-
-            setPredicting(true)
+        if (initType !== ""){
+            if (model === "coAtt" || model === "kengic") {
     
-            // fetch('https://shad-honest-anchovy.ngrok-free.app/upload', {
-            //     headers: new Headers({
-            //         "ngrok-skip-browser-warning": "69420",
-            //     }),
-            // }).then(response => {
-            fetch(`http://127.0.0.1:8000/upload/?model=${model}`).then(response => {
-                if (response.ok) {
-                    //convert response to json and set predictions
-                    response.json().then(data => {
-                        console.log(data.message)
-                        //add data to list of predictions
-                        setPredictions([data.message])
-                        // setPredictions(...predictions, data.message)
+                setPredicting(true)
+        
+                // fetch('https://shad-honest-anchovy.ngrok-free.app/upload', {
+                //     headers: new Headers({
+                //         "ngrok-skip-browser-warning": "69420",
+                //     }),
+                // }).then(response => {
+                fetch(`http://127.0.0.1:8000/upload/?init=1&model=${model}`).then(response => {
+                    if (response.ok) {
+                        //convert response to json and set predictions
+                        response.json().then(data => {
+                            console.log(data.message)
+                            //add data to list of predictions
+                            setPredictions([data.message])
+                            // setPredictions(...predictions, data.message)
+                            setPredicting(false)
+                        })
+                    } else {
                         setPredicting(false)
-                    })
-                } else {
+                    }
+                }).catch(error => {
+                    console.error('There was an error!', error);
                     setPredicting(false)
-                }
-            }).catch(error => {
-                console.error('There was an error!', error);
-            });
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'An error occured while diagnosing your scan! Please try again later.',
+                    })
+                });
+            }
+            else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please select a model to start diagnosing!',
+                })
+            }
         }
         else{
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Please select a model to start diagnosing!',
+                text: 'Please select which Visual Extractor to use First!',
             })
         }
     };
@@ -146,7 +181,17 @@ const ScanPage = () => {
                             <span className={uploaded ? "success" : "successHidden"}><img src={bono} alt='successfull upload'/>Uploaded Successfully</span>
                         </div>
                         <div className="model-type">
-                            <p className='instructions'>2.Choose the model to use</p>
+                            <p className='instructions'>2. Choose the Visual Extractor to use</p>
+                            <select className='DropDown' onChange={handleInitializeModel}>
+                                <option value = "" disabled selected> Select a model</option>
+                                <option value = "densenet121">DenseNet121</option>
+                                <option value = "hog_pca">Hog&PCA</option>
+                                <option value = "resnet50">ResNet50</option>
+                                <option value = "resnet152">ResNet152</option>
+                            </select>
+                        </div>
+                        <div className="model-type">
+                            <p className='instructions'>3. Choose the caption Generation model to use</p>
                             <select className='DropDown' onChange={handleModelChange}>
                                 <option value = "" disabled selected> Select a model</option>
                                 <option value = "kengic">Kengic</option>
@@ -154,7 +199,7 @@ const ScanPage = () => {
                             </select>
                         </div>
                         <div className={uploaded? 'start-uploaded' : 'start-scan'}>
-                            <p className='instructions'>3. Know your diagnosis</p>
+                            <p className='instructions'>4. Know your diagnosis</p>
                             <button onClick={handlePredict} className='start' disabled={!uploaded}>Start Diagnosing</button>
                         </div>
                         {predictions.length > 0 ? <CaptionGen preds={predictions} /> : null}

@@ -16,7 +16,7 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # Initialize the models
-mlc, visual_extractor, sentence_lstm, word_lstm , vocab = initialize_models()
+
 ngrams_dfs = initialize_kengic()
 
 app.add_middleware(
@@ -30,6 +30,11 @@ app.add_middleware(
 print("HERE")
 # vocab = joblib.load('./Data/vocab.pkl')
 answerList = []
+mlc = None
+visual_extractor = None
+sentence_lstm = None
+word_lstm = None
+vocab = None
 
 class Answer(BaseModel):
     ans: str
@@ -76,14 +81,38 @@ async def upload_file(file: UploadFile = File(...)):
         return JSONResponse(status_code=500, content={"message": "An error occurred while uploading the file"})
 
 @app.get("/upload")
-def startPrediction(model : str):
-    image_path = "upload/user_image.png"
-    image = Image.open(image_path)
-    if (model == "coAtt"):
-        captions = predict(image, mlc, visual_extractor, sentence_lstm, word_lstm, vocab)
-        return JSONResponse(status_code=200, content={"message": captions})
-    elif(model == "kengic"):
-        captions = kengic_main(image, mlc, visual_extractor, ngrams_dfs)
-        return JSONResponse(status_code=200, content={"message": captions})
-    else:
-        return JSONResponse(status_code=500, content={"message": "An error occurred while starting the prediction"})
+def startOrInit(init: int, model: str):
+    def initialise(model: str):
+        global mlc, visual_extractor, sentence_lstm, word_lstm , vocab
+        mlc, visual_extractor, sentence_lstm, word_lstm , vocab = initialize_models(model)
+        if all(var is not None for var in [mlc, visual_extractor, sentence_lstm, word_lstm, vocab]):
+            return JSONResponse(status_code=200, content={"message": "Models initialized successfully"})
+        else:
+            return JSONResponse(status_code=500, content={"message": "An error occurred while initializing the models"})
+        
+    def startPrediction(model : str):
+        image_path = "upload/user_image.png"
+        image = Image.open(image_path)
+        
+        #check if any of mlc, visual_extractor, sentence_lstm, word_lstm, vocab is None
+        if any(var is None for var in [mlc, visual_extractor, sentence_lstm, word_lstm, vocab]):
+            return JSONResponse(status_code=500, content={"message": "Models not initialized"})
+        
+        if (model == "coAtt"):
+            captions = predict(image, mlc, visual_extractor, sentence_lstm, word_lstm, vocab)
+            return JSONResponse(status_code=200, content={"message": captions})
+        elif(model == "kengic"):
+            captions = kengic_main(image, mlc, visual_extractor, ngrams_dfs)
+            return JSONResponse(status_code=200, content={"message": captions})
+        else:
+            return JSONResponse(status_code=500, content={"message": "An error occurred while starting the prediction"})
+    
+    return startPrediction(model) if init == 1 else initialise(model)
+    
+# def blabla(init):
+#     def init():
+#         print("HERE")
+#     def predict():
+#         print("HERE")
+    
+#     return init() if init else predict()

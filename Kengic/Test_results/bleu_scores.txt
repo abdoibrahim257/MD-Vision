@@ -1,0 +1,36 @@
+model: resnet152                            ///////////////////avg: 0.10962
+Image: CXR1173_IM-0118-5001.png Average Bleu Score: 0.176
+Image: CXR1_1_IM-0001-4001.png Average Bleu Score: 0.032
+Image: CXR2030_IM-0675-1001.png Average Bleu Score: 0.061
+Image: CXR2867_IM-1274-1001.png Average Bleu Score: 0.139
+Image: CXR3110_IM-1460-1001.png Average Bleu Score: 0.152
+Image: CXR3969_IM-2030-1001.png Average Bleu Score: 0.13
+Image: CXR686_IM-2254-2001.png Average Bleu Score: 0.102
+Image: CXR793_IM-2330-1001.png Average Bleu Score: 0.085
+model: resnet50                             ///////////////////avg: 0.1038
+Image: CXR1173_IM-0118-5001.png Average Bleu Score: 0.175
+Image: CXR1_1_IM-0001-4001.png Average Bleu Score: 0.129
+Image: CXR2030_IM-0675-1001.png Average Bleu Score: 0.061
+Image: CXR2867_IM-1274-1001.png Average Bleu Score: 0.164
+Image: CXR3110_IM-1460-1001.png Average Bleu Score: 0.055
+Image: CXR3969_IM-2030-1001.png Average Bleu Score: 0.057
+Image: CXR686_IM-2254-2001.png Average Bleu Score: 0.128
+Image: CXR793_IM-2330-1001.png Average Bleu Score: 0.062
+model: dense121                             ///////////////////avg: 0.0895
+Image: CXR1173_IM-0118-5001.png Average Bleu Score: 0.063
+Image: CXR1_1_IM-0001-4001.png Average Bleu Score: 0.128
+Image: CXR2030_IM-0675-1001.png Average Bleu Score: 0.034
+Image: CXR2867_IM-1274-1001.png Average Bleu Score: 0.193
+Image: CXR3110_IM-1460-1001.png Average Bleu Score: 0.056
+Image: CXR3969_IM-2030-1001.png Average Bleu Score: 0.119
+Image: CXR686_IM-2254-2001.png Average Bleu Score: 0.079
+Image: CXR793_IM-2330-1001.png Average Bleu Score: 0.044
+model : hog_pca                             ///////////////////avg: 0.099125
+Image: CXR1173_IM-0118-5001.png Average Bleu Score: 0.137
+Image: CXR1_1_IM-0001-4001.png Average Bleu Score: 0.061
+Image: CXR2030_IM-0675-1001.png Average Bleu Score: 0.043
+Image: CXR2867_IM-1274-1001.png Average Bleu Score: 0.18
+Image: CXR3110_IM-1460-1001.png Average Bleu Score: 0.053
+Image: CXR3969_IM-2030-1001.png Average Bleu Score: 0.096
+Image: CXR686_IM-2254-2001.png Average Bleu Score: 0.131
+Image: CXR793_IM-2330-1001.png Average Bleu Score: 0.092

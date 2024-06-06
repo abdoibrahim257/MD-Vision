@@ -45,7 +45,7 @@ function NavBar({sticky = 0, setPadding}) {
                 {/* here is going to bee the rest of the buttons*/}
                 <NavLink className = "navBtns hideOnMobile" to="/upload">Upload a Scan</NavLink>
                 <NavLink className = "navBtns hideOnMobile" to="/maven">Meet Maven</NavLink>
-                <NavLink className = "navBtns hideOnMobile" to="/about">About us</NavLink>
+                {/*<NavLink className = "navBtns hideOnMobile" to="/about">About us</NavLink>*/}
                 {/* <NavLink className = "navBtns hideOnMobile" style={{color: '#d13f4e',  fontWeight: '600'}} to="/login">Login</NavLink> */}
                 <img className = 'mobileShow' onClick={toggleSideBar} src={humburger} alt = 'menu button for mobile view'/>
             </div>
@@ -55,7 +55,7 @@ function NavBar({sticky = 0, setPadding}) {
                 <img onClick ={toggleSideBar} src={close} alt = 'close button for mobile view'/>
                 <NavLink className = "navBtns" to="/upload">Upload a Scan</NavLink>
                 <NavLink className = "navBtns" to="/maven">Meet Maven</NavLink>
-                <NavLink className = "navBtns" to="/about">About us</NavLink>
+                {/* <NavLink className = "navBtns" to="/about">About us</NavLink> */}
                 {/* <NavLink className = "navBtns" style={{color: '#d13f4e',  fontWeight: '600'}} to="/login">Login</NavLink> */}
             </div>
 

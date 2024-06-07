@@ -1,10 +1,16 @@
 .objective-wrapper {
-    background-color: #e6f5ff99;
+    /* background-color: #e6f5ff99; */
     padding-bottom: 3rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 1%, rgba(250, 253, 254, 1) 15%, rgba(230, 245, 255, 1) 100%);
 }
 
-.obj > h1{
-    font-weight: 500;    
+#page-top{
+    margin-top: 4rem;
+}
+
+.title{
+    font-weight: 500;  
+    text-align: center;  
 }
 
 .obj{
@@ -13,7 +19,7 @@
 
 .obj > p{
     text-align: justify;
-    line-height: 1.5;
+    line-height: 2;
 
 }
 
@@ -43,8 +49,57 @@
     box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
 }
 
+#margin{
+    width:50%;
+}
+
 .uss {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 4rem;
     margin-top: 3rem;
+}
+
+.individual {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.75em;
+}
+
+.quote{
+    margin: 2rem 10%;
+    text-align: justify;
+    line-height: 2;
+}
+
+#md{
+    color: #d13f4e;
+    font-weight: 700;
+    }
+    
+#vision{
+    color: #1f59a2;
+    font-weight: 600;
+}
+
+.us-wrapper{
+    padding-bottom: 6%;
+}
+
+.interact{
+    width:20px;
+}
+
+#name{
+    margin:0;
+    margin-bottom: 0.35rem;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }

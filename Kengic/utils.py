@@ -52,7 +52,13 @@ def create_ngrams(data):
 
 def load_data(img_id):
         data = pd.read_csv('./indiana_reports_cleaned3.csv')
-        references = eval(data[data['imgID'] == img_id].values[0][1])
+        
+        id = data[data['imgID'] == img_id]
+        
+        if len(id.values) == 0:
+            return None, None
+        
+        references = eval(id.values[0][1])
         try:
             print('Loading ngrams_dic.pkl...')
             with open('ngrams_dic2.pkl','rb') as f:

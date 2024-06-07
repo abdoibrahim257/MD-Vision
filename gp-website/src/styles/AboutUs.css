@@ -1,0 +1,50 @@
+.objective-wrapper {
+    background-color: #e6f5ff99;
+    padding-bottom: 3rem;
+}
+
+.obj > h1{
+    font-weight: 500;    
+}
+
+.obj{
+    margin: 3rem 20% 1rem 20%;
+}
+
+.obj > p{
+    text-align: justify;
+    line-height: 1.5;
+
+}
+
+#Abod{
+    background-image: url('../assets/Me.jpg');
+}
+#Amroy{    
+    background-image: url('../assets/amroy.jpg');
+}
+#Amr {
+    background-image: url('../assets/amr.png');
+    background-position: center;
+    align-self: flex-end;
+}
+#emad {
+    background-image: url('../assets/emad.jpeg');
+    align-self: flex-end;
+}
+
+.picture {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    /* background-position: center;  */
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+}
+
+.uss {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 3rem;
+}

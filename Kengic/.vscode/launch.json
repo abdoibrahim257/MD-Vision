@@ -8,7 +8,7 @@
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
-            "program": "D:\\GAM3A\\5-Senior02\\GP\\1-ChatBot\\GP-Chatbot\\Kengic\\main.py",
+            "program": "${workspaceFolder}/main.py",
             "console": "integratedTerminal"
         }
     ]

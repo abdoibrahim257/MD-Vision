@@ -5,6 +5,7 @@ import LandingPage from './components/landingPage';
 import SymptomPage from './components/symptomPage';
 import ChatPage from './components/ChatPage';
 import ScanPage from './components/ScanPage';
+import AboutUs from './components/AboutUs';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         {/* <ChatPage /> */}
 
         <Route path="/upload" element={<ScanPage/>}/>
+
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
     </>
   );

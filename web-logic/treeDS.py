@@ -40,27 +40,6 @@ class TreeDS:
         self.root = TreeNode(root_question)
         self.symptom = symptom.lower()
         
-    #setters    
-    def add_node(self, parent_question, newNodeQuestion, direction):
-        # find the parent node
-        parent_node = self._find_node(parent_question)
-        if parent_node:
-            # add the child node
-            parent_node.add_Left(newNodeQuestion) if direction == 'No' else parent_node.add_Right(newNodeQuestion)
-        else:
-            print(f"Parent node {parent_question} not found")
-            
-    #here in this function we need to link the warehouse we just did in the other file
-    #another note that we dont need the TreeRoot for anython since the warehouse exists
-    #we just need to get the whole tree from the warehouse
-    def add_tree(self, parent_question, Symptom, direction):
-        newTree = anotherTreeNode(Symptom) #need to get the whole other tree not create a new one 
-        parent_node = self._find_node(parent_question)
-        if parent_node:
-            parent_node.add_child(newTree, direction)
-        else:
-            print(f"Parent node {parent_question} not found")
-    
     #getters
     def get_root(self):
         return self.root
@@ -93,53 +72,3 @@ class TreeDS:
         else:
             return
     
-    
-    
-    # def _find_node(self, question):
-    #     # search BFS since solution is sparse and tree is not deep
-    #     queue = [self.root]
-    #     #lazem ne check lw el node el maskenha de another tree node wla node question
-    #     # w dymn 3ndna el question node how el parent ely bndawra 3aleh
-    #     while queue:
-    #         node = queue.pop(0)
-    #         if node.question_string == question:
-    #             return node
-    #         for child in node.children.values():
-    #             if isinstance(child, TreeNode):
-    #                 queue.append(child)
-                
-                
-    # def build_tree1(self, jsonObject):
-    #     """
-    #     Recursively build a decision tree from a JSON object.
-    #     """
-    #     if isinstance(jsonObject, dict):
-    #         nodeDetails = jsonObject.get('question', None)
-    #         if nodeDetails:
-    #             parentQ = nodeDetails.get('Q')
-    #             yesNode = nodeDetails.get('Yes')
-    #             noNode = nodeDetails.get('No')
-    #             #mmkn ba3d ma n5las build lel trees n3ml el diagnosis w el care 3lashan el chat yb2a more lively
-    #             if yesNode:
-    #                 #get tyoe of next node a question ot a tree
-    #                 if yesNode.get('question', None):
-    #                     self.add_node(parentQ, yesNode['question'].get('Q'), "Yes")
-    #                     self.build_tree1(yesNode)
-    #                 else:
-    #                     self.add_tree(parentQ, yesNode['tree'].get('symptom'), "Yes")
-    #                     # return
-    #             else:
-    #                 return
-    #             if noNode:
-    #                 if noNode.get('question', None):
-    #                     self.add_node(parentQ, noNode['question'].get('Q'), "No")
-    #                     self.build_tree1(noNode)
-    #                 else:
-    #                     self.add_tree(parentQ, noNode['tree'].get('symptom'), "No")
-    #                     # return
-    #             else:
-    #                 return
-    #         else:
-    #             return
-            
-

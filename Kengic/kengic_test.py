@@ -26,7 +26,7 @@ def main_kengic(keywords,unique_refs):
     if len(top_captions) > 3:
         top_captions = top_captions[:3]
         top_costs = top_costs[:3]
-    bleu_scores = get_bleu(top_captions, unique_refs)
+    avg_bleu_1,avg_bleu_2,avg_bleu_3,avg_bleu_4 = get_bleu_all(top_captions, unique_refs)
+    meteor = get_meteor_all(top_captions, unique_refs)
     #get average of the bleu scores
-    avg_bleu = np.mean(bleu_scores)
-    return avg_bleu
+    return avg_bleu_1,avg_bleu_2,avg_bleu_3,avg_bleu_4,meteor

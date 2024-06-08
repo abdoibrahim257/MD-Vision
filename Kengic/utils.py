@@ -257,7 +257,7 @@ def get_meteor_all(topCaptions, reference):
     meteor_scores = []
     for caption in topCaptions:
         # Calculate METEOR score
-        score = meteor_score([reference], caption)
+        score = meteor_score(reference, caption.split())
         
         # Append the score to the list
         meteor_scores.append(score)

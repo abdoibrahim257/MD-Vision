@@ -7,6 +7,7 @@ import pickle
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+from nltk.translate.meteor_score import meteor_score
 # from pycocoevalcap.cider.cider import Cider
 # from pycocotools.coco import COCO
 # from pycocoevalcap.eval import COCOEvalCap
@@ -249,6 +250,22 @@ def get_bleu_all(topCaptions, reference):
     avg_bleu_4 = sum(score[3] for score in bleu_scores) / len(bleu_scores)
     
     return avg_bleu_1, avg_bleu_2, avg_bleu_3, avg_bleu_4
+
+
+
+def get_meteor_all(topCaptions, reference):
+    meteor_scores = []
+    for caption in topCaptions:
+        # Calculate METEOR score
+        score = meteor_score([reference], caption)
+        
+        # Append the score to the list
+        meteor_scores.append(score)
+    
+    # Calculate the average score
+    avg_meteor = sum(meteor_scores) / len(meteor_scores)
+    
+    return avg_meteor
 
 # def get_CIDEr(topCaptions, references):
 #     meteric = Cider()

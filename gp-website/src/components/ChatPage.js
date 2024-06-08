@@ -129,7 +129,7 @@ const fetchFirstMessage = async () => {
         var newMessages = {...oldMessages};
         let newKey = state.index 
         console.log("HANDLE NEXT Q: ",newKey)
-        newMessages[newKey] = m;
+        newMessages[newKey+1] = m;
         return newMessages;
       });
 

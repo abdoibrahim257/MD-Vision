@@ -33,8 +33,6 @@ const ChatPage = () => {
     dispatch({ type: 'increment' });
   };
 
-  
-  // const [messages, setMessages] = React.useState([])
   const [messages, setMessages] = React.useState({})
 
   //   message: "Hello, I'm Maven, your personal health assistant. How can I help you today?",
@@ -87,7 +85,7 @@ const ChatPage = () => {
       .then(data =>{
           const message = {
             // message: data.Question,
-            message: "",
+            message: data.Question,
             sender: 'Maven'
           }
       
@@ -99,7 +97,7 @@ const ChatPage = () => {
             return newMessages;
           });
           
-          typeWriter(state.index, data.Question, 0);
+          // typeWriter(state.index, data.Question, 0);
           incrementIndex();
       })
 

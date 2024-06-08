@@ -16,12 +16,11 @@ const SymptomPage = () => {
     /* first get symptom names from the backend  */
     useEffect(() => {
         const fetchData = async () => {
-            // const response = await fetch("https://shad-honest-anchovy.ngrok-free.app/maven", {
-            //         headers: new Headers({
-            //         "ngrok-skip-browser-warning": "69420",
-            //     }),
-            // });
-            const response = await fetch("http://127.0.0.1:8000/maven");
+            const response = await fetch("https://shad-honest-anchovy.ngrok-free.app/maven", {
+                    headers: new Headers({
+                    "ngrok-skip-browser-warning": "69420",
+                }),
+            });
             const data = await response.json();
             // console.log(data)
             const symptomsList = data.fileList;

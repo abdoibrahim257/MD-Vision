@@ -6,32 +6,20 @@ const SearchBar = ( { setResults } ) => {
     const [input, setInput] = React.useState('')
 
     const fetchData = (data) => {
-        // fetch("https://jsonplaceholder.typicode.com/users")
-        //     .then((response) => (response.json())) //geeting response and converting it to json
-        //     .then((json) => {
-        //         const results = json.filter((user) => {
-        //             return data && user && user.name && user.name.toLowerCase().includes(data.toLowerCase());
-        //         }); //this must be done on the backend side just for prototype
-        //         console.log(results);
-        //         // setResults(results);
-        //     });
-
-        
-        // fetch("https://shad-honest-anchovy.ngrok-free.app/maven", {
-        //     headers: new Headers({
-        //         "ngrok-skip-browser-warning": "69420",
-        //     }),
-        // }).then(response => response.json())
-        fetch("http://127.0.0.1:8000/maven")
-            .then(response => response.json())
-            .then(json => {
-                const symptoms = json.fileList
-                const results = symptoms.filter((symptom) => {
-                    return data && (symptom.toLowerCase().includes(data.toLowerCase())) 
-                })
-                // console.log(results)
-                setResults(results)
-            });
+        fetch("https://shad-honest-anchovy.ngrok-free.app/maven", {
+            headers: new Headers({
+                "ngrok-skip-browser-warning": "69420",
+            }),
+        })
+        .then(response => response.json())
+        .then(json => {
+            const symptoms = json.fileList
+            const results = symptoms.filter((symptom) => {
+                return data && (symptom.toLowerCase().includes(data.toLowerCase())) 
+            })
+            // console.log(results)
+            setResults(results)
+        });
     }
 
     const handleSearch = (data) => {

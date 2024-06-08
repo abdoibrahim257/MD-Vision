@@ -18,23 +18,31 @@ const ScanPage = () => {
     const [predictions, setPredictions] = useState([])
     const [predicting, setPredicting] = useState(false)
     const [uploaded, setIsUploaded] = useState(false)
+    const [initialized, setInitialized] = useState(false)
     const [uploadedImage, setUploadedImage] = useState('')
 
 
-    const handleInitializeModel = (e) => {
+    const handleInitializeModel = async (e) => {
         setInitialisedType(e.target.value)
         let initType = e.target.value
         if (initType !== ""){
-            fetch(`http://127.0.0.1:8000/upload/?init=0&model=${initType}`)
-            .then(response => {
+            setInitialized(true)
+            try {
+                const response = await fetch(`https://shad-honest-anchovy.ngrok-free.app/upload/?init=0&model=${initType}`, {
+                    headers: new Headers({
+                        "ngrok-skip-browser-warning": "69420",
+                    }),
+                });
                 if (response.ok) {
+                    setInitialized(false)
                     console.log("model initialised")
                 } else {
+                    setInitialized(false)
                     console.log("model not initialised")
                 }
-            }).catch(error => {
+            } catch (error) {
                 console.error('There was an error!', error);
-            });
+            }
         }
     }
 
@@ -59,8 +67,7 @@ const ScanPage = () => {
             method: 'POST',
             body: formData
         }
-        // fetch('https://shad-honest-anchovy.ngrok-free.app/upload', requestOptions)
-        fetch('http://127.0.0.1:8000/upload', requestOptions)
+        fetch('https://shad-honest-anchovy.ngrok-free.app/upload', requestOptions)
         .then(response => {
             if (response.ok) {
                 setIsUploaded(true)
@@ -85,12 +92,11 @@ const ScanPage = () => {
     
                 setPredicting(true)
         
-                // fetch('https://shad-honest-anchovy.ngrok-free.app/upload', {
-                //     headers: new Headers({
-                //         "ngrok-skip-browser-warning": "69420",
-                //     }),
-                // }).then(response => {
-                fetch(`http://127.0.0.1:8000/upload/?init=1&model=${model}`).then(response => {
+                fetch(`https://shad-honest-anchovy.ngrok-free.app/upload/?init=1&model=${model}`, {
+                    headers: new Headers({
+                        "ngrok-skip-browser-warning": "69420",
+                    }),
+                }).then(response => {
                     if (response.ok) {
                         //convert response to json and set predictions
                         response.json().then(data => {
@@ -133,6 +139,7 @@ const ScanPage = () => {
     return (
         <div>
             {predicting ? <LoadingComponent /> : null}
+            {initialized ? <LoadingComponent />: null}
             <div className='test'>
                 <div className="scan-background">
                     <NavBar setPadding={setPadded}/>

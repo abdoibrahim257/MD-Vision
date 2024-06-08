@@ -64,41 +64,34 @@ const ChatPage = () => {
       }
     }, 23);
   };
-   
-  const fetchFirstMessage = async () => {
+
+const fetchFirstMessage = async () => {
     let symptom = currentLink.split('/').pop()
-    // const response = await fetch('https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom , {
-    //     headers: new Headers({
-    //         "ngrok-skip-browser-warning": "69420",
-    //     }),
-    // })
 
-    // const response = await fetch('http://127.0.0.1:8000/maven/'+symptom)
-    
-    // const data = await response.json()
-    
-    fetch('http://127.0.0.1:8000/maven/'+symptom)
-      .then(response => response.json())
-      .then(data =>{
-          const message = {
-            // message: data.Question,
-            message: "",
-            sender: 'Maven'
-          }
-      
-          setMessages((oldMessages = {}) => {
-            var newMessages = {...oldMessages};
-            let newKey = state.index; // get the next key
-            // console.log(newKey)
-            newMessages[newKey] = message;
-            return newMessages;
-          });
-          
-          typeWriter(state.index, data.Question, 0);
-          incrementIndex();
-      })
+    const response = await fetch('https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom , {
+        headers: new Headers({
+            "ngrok-skip-browser-warning": "69420",
+        }),
+    })
 
-  }
+    const data = await response.json()
+
+    const message = {
+        // message: data.Question,
+        message: "",
+        sender: 'Maven'
+    }
+
+    setMessages((oldMessages = {}) => {
+        var newMessages = {...oldMessages};
+        let newKey = state.index; // get the next key
+        newMessages[newKey] = message;
+        return newMessages;
+    });
+
+    typeWriter(state.index, data.Question, 0);
+    incrementIndex();
+}
 
   useEffect(() => {
     fetchFirstMessage()
@@ -108,8 +101,7 @@ const ChatPage = () => {
 
   async function fetchNextQuestion (answer) {
     let symptom = currentLink.split('/').pop();
-    // let url = 'https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom;
-    let url = 'http://127.0.0.1:8000/maven/'+symptom;
+    let url = 'https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom;
 
     fetch(url, {
       method: 'POST',

@@ -78,19 +78,19 @@ const fetchFirstMessage = async () => {
 
     const message = {
         // message: data.Question,
-        message: data.Question,
+        message: "",
         sender: 'Maven'
     }
 
     setMessages((oldMessages = {}) => {
         var newMessages = {...oldMessages};
         let newKey = state.index; // get the next key
-        console.log("FIRST: ",newKey)
+        // console.log("FIRST: ",newKey)
         newMessages[newKey] = message;
         return newMessages;
     });
 
-    // typeWriter(state.index, data.Question, 0);
+    typeWriter(state.index, data.Question, 0);
     incrementIndex();
 }
 

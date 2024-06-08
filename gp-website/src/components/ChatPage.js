@@ -78,7 +78,7 @@ const fetchFirstMessage = async () => {
 
     const message = {
         // message: data.Question,
-        message: "",
+        message: data.Question,
         sender: 'Maven'
     }
 
@@ -89,7 +89,7 @@ const fetchFirstMessage = async () => {
         return newMessages;
     });
 
-    typeWriter(state.index, data.Question, 0);
+    // typeWriter(state.index, data.Question, 0);
     incrementIndex();
 }
 
@@ -156,7 +156,7 @@ const fetchFirstMessage = async () => {
     })
 
     incrementIndex();
-    fetchNextQuestion('yes')
+    await fetchNextQuestion('yes')
 
     bottomRef.current.scrollIntoView({ behavior: "smooth" });
     
@@ -182,7 +182,7 @@ const fetchFirstMessage = async () => {
     })
 
     incrementIndex();
-    fetchNextQuestion('no')
+    await fetchNextQuestion('no')
 
     bottomRef.current.scrollIntoView({ behavior: "smooth" });
   }

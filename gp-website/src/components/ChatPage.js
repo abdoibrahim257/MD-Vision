@@ -128,6 +128,7 @@ const fetchFirstMessage = async () => {
       setMessages((oldMessages = {}) => {
         var newMessages = {...oldMessages};
         let newKey = state.index 
+        console.log("HANDLE NEXT Q: ",newKey)
         newMessages[newKey] = m;
         return newMessages;
       });

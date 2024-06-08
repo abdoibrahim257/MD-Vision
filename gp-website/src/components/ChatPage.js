@@ -77,7 +77,12 @@ const ChatPage = () => {
     
     // const data = await response.json()
     
-    fetch('http://127.0.0.1:8000/maven/'+symptom)
+    // fetch('http://127.0.0.1:8000/maven/'+symptom)
+    fetch('https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom, {
+          headers: new Headers({
+              "ngrok-skip-browser-warning": "69420",
+          }),
+      })
       .then(response => response.json())
       .then(data =>{
           const message = {
@@ -108,14 +113,14 @@ const ChatPage = () => {
 
   async function fetchNextQuestion (answer) {
     let symptom = currentLink.split('/').pop();
-    // let url = 'https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom;
-    let url = 'http://127.0.0.1:8000/maven/'+symptom;
+    let url = 'https://shad-honest-anchovy.ngrok-free.app/maven/'+symptom;
+    // let url = 'http://127.0.0.1:8000/maven/'+symptom;
 
     fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json' //specify the content type
-        // 'ngrok-skip-browser-warning': '69420',
+        'Content-Type': 'application/json', //specify the content type
+        'ngrok-skip-browser-warning': '69420'
       },
       body: JSON.stringify({ans: answer}),
     }).then(response => response.json())
@@ -164,10 +169,9 @@ const ChatPage = () => {
     })
 
     incrementIndex();
-    fetchNextQuestion('yes')
+    await fetchNextQuestion('yes')
 
     bottomRef.current.scrollIntoView({ behavior: "smooth" });
-    
   }
 
   const handleNo = async () => {
@@ -190,7 +194,7 @@ const ChatPage = () => {
     })
 
     incrementIndex();
-    fetchNextQuestion('no')
+    await fetchNextQuestion('no')
 
     bottomRef.current.scrollIntoView({ behavior: "smooth" });
   }

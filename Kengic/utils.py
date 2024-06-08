@@ -229,6 +229,8 @@ def get_bleu(topCaptions, reference):
         bleu_scores.append(bleu_score)
     return bleu_scores
 
+# get_bleu
+
 
 
 # def get_CIDEr(topCaptions, references):

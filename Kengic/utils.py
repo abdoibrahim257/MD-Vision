@@ -229,7 +229,26 @@ def get_bleu(topCaptions, reference):
         bleu_scores.append(bleu_score)
     return bleu_scores
 
-
+def get_bleu_all(topCaptions, reference):
+    bleu_scores = []
+    smoothie = SmoothingFunction().method4
+    for caption in topCaptions:
+        # Calculate BLEU-1, BLEU-2, BLEU-3, BLEU-4
+        bleu_1 = sentence_bleu(reference, caption.split(), weights=(1, 0, 0, 0), smoothing_function=smoothie)
+        bleu_2 = sentence_bleu(reference, caption.split(), weights=(0.5, 0.5, 0, 0), smoothing_function=smoothie)
+        bleu_3 = sentence_bleu(reference, caption.split(), weights=(0.33, 0.33, 0.33, 0), smoothing_function=smoothie)
+        bleu_4 = sentence_bleu(reference, caption.split(), weights=(0.25, 0.25, 0.25, 0.25), smoothing_function=smoothie)
+        
+        # Append the scores to the list
+        bleu_scores.append((bleu_1, bleu_2, bleu_3, bleu_4))
+    
+    # Calculate the average scores
+    avg_bleu_1 = sum(score[0] for score in bleu_scores) / len(bleu_scores)
+    avg_bleu_2 = sum(score[1] for score in bleu_scores) / len(bleu_scores)
+    avg_bleu_3 = sum(score[2] for score in bleu_scores) / len(bleu_scores)
+    avg_bleu_4 = sum(score[3] for score in bleu_scores) / len(bleu_scores)
+    
+    return avg_bleu_1, avg_bleu_2, avg_bleu_3, avg_bleu_4
 
 # def get_CIDEr(topCaptions, references):
 #     meteric = Cider()

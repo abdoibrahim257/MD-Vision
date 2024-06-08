@@ -134,7 +134,7 @@ const fetchFirstMessage = async () => {
       });
 
       // console.log(messages)
-      typeWriter(state.index, Q,0)
+      typeWriter(state.index+1, Q,0)
       incrementIndex();
     })
 }

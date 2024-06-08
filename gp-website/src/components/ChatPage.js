@@ -174,8 +174,8 @@ const fetchFirstMessage = async () => {
       var newMessages = {...oldMessages};
       let newKey = state.index; 
       console.log(newKey)
-      newMessages[newKey-2] = {...newMessages[newKey-2], status: "answered"};
-      newMessages[newKey-1] = newMessage;
+      newMessages[newKey-1] = {...newMessages[newKey-1], status: "answered"};
+      newMessages[newKey] = newMessage;
       console.log(newMessages)
 
       return newMessages;

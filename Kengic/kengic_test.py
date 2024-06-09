@@ -11,7 +11,7 @@ out_folder = 'output_captions'
 
 
 def main_kengic(keywords,unique_refs):
-    data = pd.read_csv('./indiana_reports_cleaned3.csv')
+    data = pd.read_csv('./Kengic/indiana_reports_cleaned3.csv')
     with open('ngrams_dic2.pkl','rb') as f:
         ngrams_dic = pickle.load(f)
     ngrams_dfs = convert_ngram_dict_to_df(ngrams_dic)

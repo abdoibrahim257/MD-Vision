@@ -52,7 +52,7 @@ def create_ngrams(data):
     return ngrams_dict
 
 def load_data(img_id):
-        data = pd.read_csv('./indiana_reports_cleaned3.csv')
+        data = pd.read_csv('./Kengic/indiana_reports_cleaned3.csv')
         
         id = data[data['imgID'] == img_id]
         

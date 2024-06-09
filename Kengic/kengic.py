@@ -1,6 +1,6 @@
 from utils import *
 import pandas as pd
-stopwords = pd.read_csv('stopwords.csv').values
+stopwords = pd.read_csv('./Kengic/stopwords.csv').values
 
 def create_graph(ngram_df,keywords,n,parents,hops): #Algorithm 3
     queue = keywords

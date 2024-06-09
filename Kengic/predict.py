@@ -15,7 +15,7 @@ def initialize_models (model_name = 'hog_pca') :
         model : Model for captioning the images.
     """
     model = model_name
-    path = f'./Trials/{model}/models'
+    path = f'./web-logic/Trials/{model}/models'
     
     
     # Initialize the model
@@ -40,7 +40,7 @@ def initialize_models (model_name = 'hog_pca') :
     word_lstm.eval()
     
     # Load the vocab
-    vocab = joblib.load('Data/vocab.pkl')
+    vocab = joblib.load('./web-logic/Trials/vocab.pkl')
     
     return mlc, visual_extractor, sentence_lstm, word_lstm , vocab
 

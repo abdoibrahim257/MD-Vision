@@ -2,9 +2,9 @@ from PIL import Image
 import torch
 import joblib
 from torchvision import transforms
-from models import VisualExtractor, SentenceLSTM, WordLSTM , MLC
+from Hierarchical_LSTM.models import VisualExtractor, SentenceLSTM, WordLSTM , MLC
 import spacy
-from build_vocab import Vocabulary
+from Hierarchical_LSTM.build_vocab import Vocabulary
 import cv2
 import numpy as np
 def initialize_models (model_name = 'hog_pca') :

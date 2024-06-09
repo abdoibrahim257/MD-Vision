@@ -15,7 +15,7 @@ def initialize_models () :
         model : Model for captioning the images.
     """
     model = 'densenet121'
-    path = f'./Trials/{model}/models'
+    path = f'./web-logic/Trials/{model}/models'
     
     
     # Initialize the model
@@ -40,7 +40,7 @@ def initialize_models () :
     word_lstm.eval()
     
     # Load the vocab
-    vocab = joblib.load('./Trials/vocab.pkl')
+    vocab = joblib.load('./web-logic/Trials/vocab.pkl')
     
     return mlc, visual_extractor, sentence_lstm, word_lstm , vocab
 
@@ -146,7 +146,7 @@ def predict (image) :
 
 
 if __name__ == '__main__' :
-    image = 'Data/Images/CXR4_IM-2050-2001.png'
+    image = 'Images/CXR7_IM-2263-1001.png'
     image = Image.open(image)
     captions = predict(image)
     print(captions)

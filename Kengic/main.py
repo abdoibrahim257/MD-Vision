@@ -169,5 +169,5 @@ def initialize(image_path):
   
     
 #MAIN
-_,_,_,_,_,caption= main('Test_results\imgs\CXR3110_IM-1460-1001.png')
+_,_,_,_,_,caption= main('Images\CXR3110_IM-1460-1001.png')
 print(caption)

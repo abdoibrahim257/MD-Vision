@@ -6,10 +6,10 @@ from PIL import Image
 import os
 import pandas as pd
 
-from Hierarchical_LSTM.predict import *
+from predict import *
 from treeTraversal import *
 from kengic_main import *
-from Hierarchical_LSTM.build_vocab import Vocabulary
+from build_vocab import Vocabulary
 
 from pydantic import BaseModel
 

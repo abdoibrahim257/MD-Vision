@@ -2,9 +2,9 @@ from PIL import Image
 import torch
 import joblib
 from torchvision import transforms
-from Hierarchical_LSTM.models import VisualExtractor, SentenceLSTM, WordLSTM , MLC
+from models import VisualExtractor, SentenceLSTM, WordLSTM , MLC
 import spacy
-from Hierarchical_LSTM.build_vocab import Vocabulary
+from build_vocab import Vocabulary
 import cv2
 import numpy as np
 def initialize_models (model_name = 'hog_pca') :
@@ -40,7 +40,7 @@ def initialize_models (model_name = 'hog_pca') :
     word_lstm.eval()
     
     # Load the vocab
-    vocab = joblib.load('Trials/vocab.pkl')
+    vocab = joblib.load('./Trials/vocab.pkl')
     
     return mlc, visual_extractor, sentence_lstm, word_lstm , vocab
 

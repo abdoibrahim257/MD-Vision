@@ -200,7 +200,7 @@ def kengic_predict(image , mlc , visual_extractor) :
     top_K_classes = top_K_classes.tolist()
     top_K_classes = [tags[w] for w in top_K_classes]
     top_K_classes = [accept for accept in top_K_classes if '<t>' not in accept]
-    print(top_K_classes)
+
     return top_K_classes
 
 

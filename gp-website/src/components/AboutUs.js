@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from './navbar'
 import '../styles/AboutUs.css'
 import linkedin from '../assets/linkedin.svg'
@@ -6,11 +6,12 @@ import github from '../assets/github.svg'
 import email from '../assets/email.svg'
 
 const AboutUs = () => {
+  const [padded, setPadding] = useState(false)
   return (
     <div>
         <div className='objective-wrapper'>
-            <NavBar />
-            <h1 className='content title' id='page-top'>Hi, we're <span id = "md">MD</span><spav id = "vision">Vision</spav>.</h1>
+            <NavBar setPadding={setPadding}/>
+            <h1 className={padded ? 'content title maintain-content' : 'content title'} id='page-top'>Hi, we're <span id = "md">MD</span><spav id = "vision">Vision</spav>.</h1>
             <hr id='margin'/>
             <div className='content obj'>
                 <p> Welcome to our platform! We understand how important it is for you to be informed about your health, especially before visiting your doctor. With busy schedules and limited availability, doctors often don't have the time to conduct detailed pre-assessment questionnaires. That's where we come in!</p>

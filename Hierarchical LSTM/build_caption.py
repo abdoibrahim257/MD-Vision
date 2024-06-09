@@ -6,6 +6,7 @@ from tag import Tag
 tags = Tag().static_tags
 
 if __name__ == '__main__':
+    
     # Load the data from the pickle file
     with open('./Data/image_to_attributes_full.pkl', 'rb') as f:
         data = pickle.load(f)

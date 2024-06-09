@@ -40,7 +40,7 @@ def initialize_models (model_name = 'hog_pca') :
     word_lstm.eval()
     
     # Load the vocab
-    vocab = joblib.load('Data/vocab.pkl')
+    vocab = joblib.load('Trials/vocab.pkl')
     
     return mlc, visual_extractor, sentence_lstm, word_lstm , vocab
 

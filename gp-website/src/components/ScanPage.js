@@ -19,6 +19,7 @@ const ScanPage = () => {
     const [predicting, setPredicting] = useState(false)
     const [uploaded, setIsUploaded] = useState(false)
     const [initialized, setInitialized] = useState(false)
+    const [uploadLoading, setUploadLoading] = useState(false)
     const [uploadedImage, setUploadedImage] = useState('')
 
 
@@ -53,7 +54,7 @@ const ScanPage = () => {
 
     const handleFileChange = (e) => {
         var f = e.target.files[0]
-
+        setUploadLoading(true)
         if (!f || f.type !== 'image/png') {
             setIsUploaded(false)
             return
@@ -71,14 +72,17 @@ const ScanPage = () => {
         .then(response => {
             if (response.ok) {
                 setIsUploaded(true)
+                setUploadLoading(false)
                 // show the image we uploaded here
                 setUploadedImage(URL.createObjectURL(formData.get('file')))
             } else {
                 setIsUploaded(false)
+                setUploadLoading(false)
             }
         })
         .catch(error => {
             console.error('There was an error!', error);
+            setUploadLoading(false)
         });
     };
 
@@ -140,6 +144,7 @@ const ScanPage = () => {
         <div>
             {predicting ? <LoadingComponent /> : null}
             {initialized ? <LoadingComponent />: null}
+            {uploadLoading ? <LoadingComponent /> : null}
             <div className='test'>
                 <div className="scan-background">
                     <NavBar setPadding={setPadded}/>
@@ -201,7 +206,7 @@ const ScanPage = () => {
                             <p className='instructions'>3. Choose the caption Generation model to use</p>
                             <select className='DropDown' onChange={handleModelChange}>
                                 <option value = "" disabled selected> Select a model</option>
-                                <option value = "kengic">Kengic</option>
+                                <option value = "kengic">KENGIC</option>
                                 <option value = "coAtt">LSTM</option>
                             </select>
                         </div>

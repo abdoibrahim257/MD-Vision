@@ -262,7 +262,7 @@ class MLC(nn.Module):
         # Sum across the dim=1
         embeddings = torch.sum(embeddings, dim=1)
         
-        return tags, embeddings
+        return top_k_classes, embeddings
         
     
 class AttentionVisual(nn.Module):

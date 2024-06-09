@@ -26,7 +26,7 @@ def main(image_path):
     topics = [str(topic).replace(',', '') for topic in topics]
     
     deseases = ["atelectasis", "cardiomegaly", "effusion", "infiltration", "nodule", "pneumonia", "pneumothorax", "edema", "emphysema", "fibrosis", "pleural", "thickening", "hernia"]
-        
+    
     #make multi-word topics in a seperate list
     normal = [[topic] for topic in topics if topic == 'normal']
     if len(normal) > 0:
@@ -99,79 +99,75 @@ def main(image_path):
     for key in global_caption.keys():
         if len(global_caption[key]) > 1:
             best_caption_generated.append(global_caption[key][0][1])
-        # best_caption_generated.append(global_caption[key][0][1])
     
+    bleu_1 = 0
+    bleu_2 = 0
+    bleu_3 = 0
+    bleu_4 = 0
+    meteor_score = 0
+         
+    if (len(best_caption_generated) > 0):
     #get the bleu score
-    #join the list of captions to make it a string
-    bleuScores = get_bleu(best_caption_generated, image_refs)
-    print('\n', 'Average Bleu Score:', np.round(np.mean(bleuScores),3))
-    
-    #Punctuate each sentence and Capitalize the first letter
-    # print('\n', 'Generated Captions:', '\n')
-    
-    return np.round(np.mean(bleuScores),3), punctuate_and_capitalize(best_caption_generated) 
+        bleu_1,bleu_2,bleu_3,bleu_4 = get_bleu_all(best_caption_generated, image_refs)
+        print('\n', 'Average Bleu Score:', np.round(bleu_1,3), np.round(bleu_2,3),np.round(bleu_3,3),np.round(bleu_4,3))
+        
+        meteor_score = get_meteor_all(best_caption_generated, image_refs)
+        print('\n', 'Meteor Score:', np.round(meteor_score,3))
+        
+    return np.round(bleu_1,3), np.round(bleu_2,3),np.round(bleu_3,3),np.round(bleu_4,3), np.round(meteor_score,3), punctuate_and_capitalize(best_caption_generated) 
     
 def punctuate_and_capitalize(sentences):
     punctuated_sentences = []
-    for sentence in sentences:
-        # Strip leading and trailing whitespace
-        sentence = sentence.strip()
-        # Capitalize the first letter
-        sentence = sentence.capitalize()
-        # Ensure the sentence ends with a period (or appropriate punctuation)
-        if sentence and sentence[-1] not in '.!?':
-            sentence += '.'
-        punctuated_sentences.append(sentence)
-        
-    # join the sentences
-    punctuated_sentences = ' '.join(punctuated_sentences)
+    if(len(sentences) > 0):
+        for sentence in sentences:
+            # Strip leading and trailing whitespace
+            sentence = sentence.strip()
+            # Capitalize the first letter
+            sentence = sentence.capitalize()
+            # Ensure the sentence ends with a period (or appropriate punctuation)
+            if sentence and sentence[-1] not in '.!?':
+                sentence += '.'
+            punctuated_sentences.append(sentence)
+            
+        # join the sentences
+        punctuated_sentences = ' '.join(punctuated_sentences)
     return punctuated_sentences
     
 
 def initialize(image_path):
-    # input = pd.read_csv('./input.csv') #CNN output will be here
-    
     # image = 'Data\Images\CXR1383_IM-0245-1002.png' #get the image ID after CXR
     link = image_path.split('\\')[-1]
     getid = link.split('_')[0] #===> getid = 'CXR2'
     img_id = eval(getid[3:])
     
-    # img_id = input['img_id'].values[0]
     print('Image ID:', img_id)
     ngram_dfs, refs = load_data(img_id)
-    # keywords = eval(input['keywords'].values[0])
+    
     return ngram_dfs,refs
 
 
-#MAIN
+#TESTING
 #loop on images in Test_results run main using the images path and write in file each image and its bleu
-imgDir = '.\\Data\\blaaaa'
-results = []
+# imgDir = 'Test_results\\test_imgs3'
+# results = []
 
-#saving to excel file
+# # saving to excel file
 # for img in os.listdir(imgDir):
 #     # with open('Test_results/BLAA.txt', 'a') as f:
 #     #     f.write("Image: " + img + '\n')
 #     result = main(os.path.join(imgDir,img))
 #     if result:
-#         bleu, caption = result
-#     results.append([img, caption, bleu])
+#         bleu_1, bleu_2, bleu_3, bleu_4, meteor, caption = result
+#     results.append([img, caption, bleu_1, bleu_2, bleu_3, bleu_4, meteor])
 
 # # Create a DataFrame from the results
-# df = pd.DataFrame(results, columns=['Image', 'Caption', 'Bleu Score'])
+# df = pd.DataFrame(results, columns=['Image', 'Caption', 'Bleu_1', 'Bleu_2', 'Bleu_3', 'Bleu_4', 'Meteor'])
+# # Write the DataFrame to an Excel file
+# df.to_excel('Test_results/caption_genn5.xlsx', index=False)
+# print('Done!')
 
-
-#Write the DataFrame to an Excel file
-# df.to_excel('Test_results/caption_gen.xlsx', index=False)
-# imgDir = 'Test_results/imgs'
-# for img in os.listdir(imgDir):
-#     bleu, caption = main(os.path.join(imgDir,img))
-#     with open('Test_results/caption_gen.txt', 'a') as f:s
-#         # "Image: CXR686_IM-2254-2001.png Average Bleu Score: 0.055"
-#         f.write("iamge: "+ img + "Caption output: " + caption + ' Average Bleu Score: ' + str(bleu) + '\n')
-    # print(img + ' : ' + caption)
+  
     
-    
-    
-_, caption = main('Test_results\imgs\CXR3110_IM-1460-1001.png')
+#MAIN
+_,_,_,_,_,caption= main('Test_results\imgs\CXR3110_IM-1460-1001.png')
 print(caption)

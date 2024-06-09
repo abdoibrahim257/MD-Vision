@@ -9,7 +9,7 @@ def create_graph(ngram_df,keywords,n,parents,hops): #Algorithm 3
     graph = {}
     edges = {}
     
-    print('\nGenerating graph with keywords:' + str(keywords), "hops: ", str(hops), "parents: ", str(parents))
+    # print('\nGenerating graph with keywords:' + str(keywords), "hops: ", str(hops), "parents: ", str(parents))
     
     while hop < hops and len(queue) > 0:
         current_parent = queue[0].split()
@@ -45,7 +45,7 @@ def create_graph(ngram_df,keywords,n,parents,hops): #Algorithm 3
     return graph, edges
 
 def top_down_traversal(graph, keywords, ngram_dfs,e_f=2): #Algorithm 3
-    print('Top down traversal for graph (size:' + str(len(graph.keys())) + ') keywords:' + str(keywords))
+    # print('Top down traversal for graph (size:' + str(len(graph.keys())) + ') keywords:' + str(keywords))
     for first_node in graph.keys():
         for second_node in graph.keys():
             # check if they are not the same node nor the second sentence is a start sentence
@@ -62,7 +62,7 @@ def traverse(graph, max_iters, keywords, n2, optimiser,ngram_dfs): #Algorithm 4
     Q = [[keyword] for keyword in keywords]
     qi=0
     top_n = 5
-    print('Traversing graph with keywords:' + str(keywords), "max_iters: ", str(max_iters))
+    # print('Traversing graph with keywords:' + str(keywords), "max_iters: ", str(max_iters))
     bestCaption = []
     bestCaptionCost = []
     

@@ -22,5 +22,6 @@
         "SUBARACHNOID",
         "TEMPOROMANDIBULAR",
         "VASCULITIS"
-    ]
+    ],
+    "vercelVSCode.accessToken": ""
 }

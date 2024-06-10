@@ -7,9 +7,6 @@ import pickle
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
-from pycocoevalcap.cider.cider import Cider
-from pycocotools.coco import COCO
-from pycocoevalcap.eval import COCOEvalCap
 import tempfile
 
 def ngrams(x, n): #Algorithm 1

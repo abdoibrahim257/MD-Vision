@@ -14,3 +14,13 @@
 .caption-wrapper{
     width:50%;
 }
+
+
+@media screen and (max-width: 768px){
+    .diagnose-wrapper{
+        font-size: 0.5em;
+    }
+    .caption-wrapper{
+        width:60%;
+    }
+}

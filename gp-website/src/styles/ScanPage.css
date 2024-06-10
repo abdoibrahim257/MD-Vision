@@ -253,3 +253,83 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
     background-color: #1f59a2;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
 }
+
+
+@media screen and (max-width:700px) {
+
+    .page-quote{
+        width: auto;
+        font-size: 0.4em;
+        padding-bottom: 4vh;
+    }
+
+    .page-quote > p{
+        margin:0;
+    }
+
+    .lottie{
+        height: 30vh;
+    }
+
+    .instructions{
+        font-size: 0.5em;
+    }
+
+    .upload{
+        font-size: 0.5em;
+        max-height: 110px;
+    }
+
+    .upIcon{
+        width: 25px;
+    }
+
+    .objective{
+        font-size: 1.1em;
+    }
+
+    .scan{
+        width: 60%;
+    }
+
+    .model-type{
+        width: 60%;
+    }
+
+    .start-scan{
+        width: 60%;
+    }
+
+    .start-uploaded{
+        width: 60%;
+    }
+
+    .start{
+        height: 50px;
+        border-radius: 0.5rem;
+        font-size: 0.7em;
+    }
+
+    .DropDown{
+        font-size: 0.5em;
+        height: 100%;
+        border-radius: 0.5rem;
+        padding: 7px;
+    }
+
+    .success{
+        font-size: 0.4em;
+    }
+
+    .success > img{
+        width: 10px;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    
+    .objective{
+        font-size: 0.9em;
+    }
+}

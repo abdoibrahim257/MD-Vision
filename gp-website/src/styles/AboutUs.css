@@ -103,3 +103,40 @@
     justify-content: center;
     gap: 1rem;
 }
+
+
+@media screen and (max-width:700px){
+
+    #page-top{
+        margin-top: 2rem;
+        font-size: 1.25em;
+    }
+
+    .obj{
+        margin: 6% 20%;
+        font-size: 0.8em;
+    }
+
+    .obj > p{
+        line-height: 1.5;
+    }
+
+    .uss{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quote{
+        line-height: 1.5;
+        font-size: 0.8em;
+    }
+
+    .title{
+        font-size: 1.25em;
+    }
+
+    .picture{
+        width: 100px;
+        height: 100px;
+    }
+}

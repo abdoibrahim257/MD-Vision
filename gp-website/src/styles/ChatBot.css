@@ -61,3 +61,14 @@ p{
 }
 
 
+@media screen and (max-width: 700px) {
+    .textContainer{
+        font-size: 0.8em;
+    }
+
+    .textContainer img{
+        width: 40px;
+    }
+}
+
+

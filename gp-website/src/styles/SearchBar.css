@@ -30,3 +30,10 @@
     color : #365091;
     width: 1.5em;
 }
+
+
+@media screen and (max-width: 768px){
+    .input-wrapper{
+        font-size: 0.8em;
+    }
+}

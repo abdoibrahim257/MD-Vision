@@ -324,6 +324,13 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
     .success > img{
         width: 10px;
     }
+
+    .reupload{
+        top: -3px;
+        width: 10px;
+        height: 10px;
+        padding: 0.4rem 0.5rem;
+    }
     
 }
 

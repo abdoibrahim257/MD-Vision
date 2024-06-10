@@ -203,7 +203,7 @@ const fetchFirstMessage = async () => {
             ></lottie-player>
 
             <div className='warning-wrapper'>
-              <img width="40px" height="40px" src={warning} alt='Warning logo' />
+              <img className='warning-img' width="40px" height="40px" src={warning} alt='Warning logo' />
               <div className='warning-message'>
                 <p> This tool is not a substitute for professional medical advice, diagnosis, or treatment. If you are experiencing a life-threatening emergency that requires immediate attention please call 123 or the number for your local emergency service.</p>
               </div>

@@ -74,3 +74,16 @@ ul{
     row-gap: 0.5rem;
     column-gap: 1.25rem;
 }
+
+@media screen and (max-width:700px) {
+    .symptom-section{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 0.75rem;
+    }
+
+    .card-wrapper > h2 {
+        font-size: 28px;
+    }
+    
+}

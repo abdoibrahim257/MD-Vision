@@ -7,3 +7,15 @@
 .maintain-content {
     padding-top: 85px;
 }
+
+@media screen and (max-width: 700px) {
+    .Symptom-background{
+        height: 50vh;
+    }
+    
+    .welcome > p{
+        text-align: left;
+    }
+
+    
+}

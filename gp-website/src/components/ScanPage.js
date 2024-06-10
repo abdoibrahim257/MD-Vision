@@ -142,7 +142,6 @@ const ScanPage = () => {
 
     return (
         <div>
-            {true ? <loadingComponent />: null}
             {predicting ? <LoadingComponent /> : null}
             {initialized ? <LoadingComponent />: null}
             {uploadLoading ? <LoadingComponent /> : null}
